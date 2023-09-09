@@ -51,6 +51,18 @@ public class Chapters : MonoBehaviour
             }
     }
 
+    /// <summary>
+    /// Called when the resumed button is pressed
+    /// </summary>
+    public void Resume()
+    {
+        PlayAct(currentAct);
+    }
+
+    /// <summary>
+    /// Plays the act by loading the scene
+    /// </summary>
+    /// <param name="act">Act to be played</param>
     public void PlayAct(int act)
     {
         SceneManager.LoadScene(act + 1);
