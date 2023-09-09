@@ -1,0 +1,68 @@
+using System.Collections;
+using System.Collections.Generic;
+using TMPro;
+using Unity.VisualScripting;
+using UnityEngine;
+
+public class TextWriter : MonoBehaviour
+{
+    /// <summary>
+    /// The text shower used to display the text
+    /// </summary>
+    public TextMeshProUGUI textShower;
+
+    /// <summary>
+    /// Key used to skip the writing effect
+    /// </summary>
+    public KeyCode skipWriting = KeyCode.Return;
+
+    /// <summary>
+    /// The text to be written
+    /// </summary>
+    [TextArea]
+    public string text;
+
+    /// <summary>
+    /// Speed at which to write each character
+    /// </summary>
+    public float speed;
+
+    /// <summary>
+    /// The coroutine used for the writing effect
+    /// </summary>
+    public Coroutine coroutine;
+
+    /// <summary>
+    /// The progress of writing the text
+    /// </summary>
+    string currentProgress;
+
+    public void Start()
+    {
+        coroutine = StartCoroutine(WriterCoroutine());
+    }
+
+    private void Update()
+    {
+        if(Input.GetKeyDown(skipWriting))
+        {
+            if(coroutine != null) 
+                StopCoroutine(coroutine);
+
+            textShower.text = text;
+        }
+    }
+
+    IEnumerator WriterCoroutine()
+    {
+        currentProgress = string.Empty;
+        foreach (char c in text)
+        {
+            yield return new WaitForSeconds(speed);
+
+            currentProgress += c;
+
+            textShower.text = currentProgress;
+        }
+    }
+}
