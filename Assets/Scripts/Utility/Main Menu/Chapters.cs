@@ -65,7 +65,7 @@ public class Chapters : MonoBehaviour
     /// <param name="act">Act to be played</param>
     public void PlayAct(int act)
     {
-        SceneManager.LoadScene(act + 1);
+        Utility.singleton.LoadScene(act + 1);
     }
 
     /// <summary>

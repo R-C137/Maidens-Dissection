@@ -1,3 +1,14 @@
+/*
+ * TextWriter.cs - Maiden's Dissection
+ * 
+ * Creation Date: 09/09/2023
+ * Authors: C137
+ * Original: C137
+ * 
+ * Changes: 
+ *  [09/09/2023] - Initial Implementation (C137)
+ *  
+ */
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
