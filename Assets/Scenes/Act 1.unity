@@ -1203,6 +1203,7 @@ GameObject:
   - component: {fileID: 1812362467}
   - component: {fileID: 1812362466}
   - component: {fileID: 1812362465}
+  - component: {fileID: 1812362468}
   m_Layer: 5
   m_Name: Title Screen
   m_TagString: Untagged
@@ -1324,6 +1325,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1812362463}
   m_CullTransparentMesh: 1
+--- !u!114 &1812362468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1812362463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 802507dd8e9d7614f973de0a42a96e6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sizeMultiplier: 1.05
+  text: {fileID: 0}
 --- !u!1 &1907369869
 GameObject:
   m_ObjectHideFlags: 0

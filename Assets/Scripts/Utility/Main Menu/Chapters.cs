@@ -47,6 +47,7 @@ public class Chapters : MonoBehaviour
             for (int i = currentAct + 1; i < acts.Length; i++)
             {
                 acts[i].enabled = false;
+                Destroy(acts[i].GetComponent<HoverAnimation>());
                 acts[i].transform.GetChild(0).GetComponent<TextMeshProUGUI>().color = Color.grey;
             }
     }
