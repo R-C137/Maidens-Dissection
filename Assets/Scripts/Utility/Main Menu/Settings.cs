@@ -28,9 +28,14 @@ public class Settings : MonoBehaviour
     public GameObject settings;
 
     /// <summary>
-    /// The checkbox of the voiceover setting
+    /// The slider of the voice setting
     /// </summary>
-    public Slider voiceOverSlider;
+    public Slider voiceSlider;
+
+    /// <summary>
+    /// The checkbox of the sounds setting
+    /// </summary>
+    public Slider soundsSlider;
 
     /// <summary>
     /// Slider for the master volume
@@ -39,9 +44,11 @@ public class Settings : MonoBehaviour
 
     private void Start()
     {
-        voiceOverSlider.value = PlayerPrefs.GetFloat("settings.voiceover", 1);
-
         masterVolumeSlider.value = PlayerPrefs.GetFloat("settings.mastervolume", 1);
+
+        voiceSlider.value = PlayerPrefs.GetFloat("settings.voice", 1);
+
+        soundsSlider.value = PlayerPrefs.GetFloat("settings.sounds", 1);
     }
 
     /// <summary>
@@ -58,8 +65,13 @@ public class Settings : MonoBehaviour
         PlayerPrefs.SetFloat("settings.mastervolume", value);
     }
 
-    public void VoiceOverUpdated(float value)
+    public void VoiceUpdated(float value)
     {
-        PlayerPrefs.SetFloat("settings.voiceover", value);
+        PlayerPrefs.SetFloat("settings.voice", value);
+    }
+
+    public void SoundsUpdated(float value)
+    {
+        PlayerPrefs.SetFloat("settings.sounds", value);
     }
 }
