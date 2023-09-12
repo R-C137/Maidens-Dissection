@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: NovelScript 15
   m_EditorClassIdentifier: 
   background: {fileID: 0}
+  characters: []
   script: You rush over to the crying girl as she lays kneeling beside a rose bush
     riddle with thorns as she clenches her bleeding hand.
   speaker: Narration
-  fontStyle: 3
+  fontStyle: 1
   writerSpeed: 0.02
   writerDelay: 0

@@ -45,11 +45,11 @@ public class WarningHandler : MonoBehaviour
 
     private void Awake()
     {
-//#if UNITY_EDITOR
-        //Destroy(gameObject);
-//#else
+#if UNITY_EDITOR
+        Destroy(gameObject);
+#else
         HandleFading();
-//#endif
+#endif
     }
 
     void HandleFading()

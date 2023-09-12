@@ -966,8 +966,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "<i>This place feels so strange. I don\u2019t quite know how to describe
-    it.</i>"
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -994,7 +993,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 45.26
+  m_fontSize: 43
   m_fontSizeBase: 43
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1467,6 +1466,19 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 398bf21bf06d4c9409187e0a3282e60b, type: 2}
   - {fileID: 11400000, guid: 1c75c8fbe68817243954c878cd17f6c8, type: 2}
   - {fileID: 11400000, guid: 3c910a06c71e3d1498325e022d765306, type: 2}
+  - {fileID: 11400000, guid: 49cc272a531625349a80fedaaf1b50b0, type: 2}
+  - {fileID: 11400000, guid: 86ac8d75984752a49bb860bdfbcb74cb, type: 2}
+  - {fileID: 11400000, guid: 245330c52729d204e9abf659ac5c6ab4, type: 2}
+  - {fileID: 11400000, guid: 60c27f778903a6b42a0c5ecc904815d4, type: 2}
+  - {fileID: 11400000, guid: 762a50cf48ac3904baa35ef73d1fb17d, type: 2}
+  - {fileID: 11400000, guid: 77898a444b7a1494686a50d12777137f, type: 2}
+  - {fileID: 11400000, guid: de3ed5296e3b0d14a99d82d51b032906, type: 2}
+  - {fileID: 11400000, guid: 7b2002b33e1ebe942bc830b74f54ab5c, type: 2}
+  - {fileID: 11400000, guid: c605112c997194f4ea4611db243a63b3, type: 2}
+  - {fileID: 11400000, guid: aa070bd5e12ea914083954262cea17ee, type: 2}
+  - {fileID: 11400000, guid: 750091378088d5b40920707a58726d72, type: 2}
+  - {fileID: 11400000, guid: 6ce437f51bd50124383de09c317ed768, type: 2}
+  - {fileID: 11400000, guid: 6ee122acd21635d438ac3095e9b501df, type: 2}
   characters:
   - {fileID: 1531909172}
   - {fileID: 444931684}

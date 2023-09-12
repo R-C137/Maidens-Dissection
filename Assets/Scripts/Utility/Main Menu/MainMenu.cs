@@ -7,6 +7,7 @@
  * 
  * Changes: 
  *  [09/09/2023] - Initial Implementation (C137)
+ *  [12/09/2023] - Added animation to play button (C137)
  *  
  */
 using System.Collections;
@@ -35,8 +36,20 @@ public class MainMenu : MonoBehaviour
     /// </summary>
     public void Play()
     {
-        mainMenu.SetActive(false);
-        chapters.SetActive(true);
+        Utility.singleton.fadingImage.gameObject.SetActive(true);
+        LeanTween.value(0, 1, .5f).setOnUpdate((v) =>
+        {
+            Utility.singleton.fadingImage.color = new Color(Utility.singleton.fadingImage.color.r, Utility.singleton.fadingImage.color.g, Utility.singleton.fadingImage.color.b, v);
+        }).setOnComplete(() =>
+        {
+            mainMenu.SetActive(false);
+            chapters.SetActive(true);
+
+            LeanTween.value(1, 0, .5f).setOnUpdate((v) =>
+            {
+                Utility.singleton.fadingImage.color = new Color(Utility.singleton.fadingImage.color.r, Utility.singleton.fadingImage.color.g, Utility.singleton.fadingImage.color.b, v);
+            }).setOnComplete(() => Utility.singleton.fadingImage.gameObject.SetActive(false));
+        });
     }
 
     /// <summary>
