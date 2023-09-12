@@ -7,7 +7,7 @@
  * 
  * Changes: 
  *  [09/09/2023] - Initial Implementation (C137)
- *  
+ *  [12/09/2023] - Added delay (C137)
  */
 using System.Collections;
 using System.Collections.Generic;
@@ -39,6 +39,11 @@ public class TextWriter : MonoBehaviour
     public float speed;
 
     /// <summary>
+    /// The delay before starting to write
+    /// </summary>
+    public float delay = 1f;
+
+    /// <summary>
     /// The coroutine used for the writing effect
     /// </summary>
     public Coroutine coroutine;
@@ -50,7 +55,7 @@ public class TextWriter : MonoBehaviour
 
     public void Start()
     {
-        coroutine = StartCoroutine(WriterCoroutine());
+        coroutine = StartCoroutine(WriterCoroutine(delay));
     }
 
     private void Update()
@@ -64,9 +69,12 @@ public class TextWriter : MonoBehaviour
         }
     }
 
-    IEnumerator WriterCoroutine()
+    IEnumerator WriterCoroutine(float delay)
     {
         currentProgress = string.Empty;
+
+        yield return new WaitForSeconds(delay);
+
         foreach (char c in text)
         {
             yield return new WaitForSeconds(speed);

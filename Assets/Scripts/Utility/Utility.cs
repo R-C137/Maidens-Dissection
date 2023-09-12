@@ -7,7 +7,8 @@
  * 
  * Changes: 
  *  [09/09/2023] - Initial Implementation (C137)
- *  [10/09/2023] - Handling of scene loading with transition
+ *  [10/09/2023] - Handling of scene loading with transition (C137)
+ *  [12/09/2023] - Show warning only once per start (C137)
  *  
  */
 using System.Collections;
@@ -28,6 +29,11 @@ public class Utility : Singleton<Utility>
     /// Time for fading in and out
     /// </summary>
     public float fadeTime;
+
+    /// <summary>
+    /// Whether the warning at the start has been shown already
+    /// </summary>
+    public static bool shownWarning = false;
 
     protected override void Awake()
     {

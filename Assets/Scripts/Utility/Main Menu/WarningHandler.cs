@@ -7,6 +7,7 @@
  * 
  * Changes: 
  *  [10/09/2023] - Initial Implementation (C137)
+ *  [12/09/2023] - Show warning only in builds + Show warning only once (C137)
  *  
  */
 using System.Collections;
@@ -42,13 +43,24 @@ public class WarningHandler : MonoBehaviour
     /// </summary>
     public float fadeDelay;
 
-    private void Start()
+    private void Awake()
     {
+//#if UNITY_EDITOR
+        //Destroy(gameObject);
+//#else
         HandleFading();
+//#endif
     }
 
     void HandleFading()
     {
+        if (Utility.shownWarning)
+            return;
+
+        Utility.shownWarning = true;
+
+        transform.GetChild(0).gameObject.SetActive(true);
+
         LeanTween.value(1, 0, fadeTime).setOnUpdate((v) =>
         {
             foreach (var text in warningTexts)
