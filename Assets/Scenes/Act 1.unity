@@ -470,7 +470,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Story Here
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -497,7 +497,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 45.26
+  m_fontSize: 43
   m_fontSizeBase: 43
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -561,15 +561,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textShower: {fileID: 1080842817}
   skipWriting: 13
-  text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac euismod
-    tortor, eu porta nisi. Donec eu libero vitae magna sodales euismod. Etiam mollis
-    purus a ornare rhoncus. Mauris convallis tempus leo ut mattis. Curabitur magna
-    neque, facilisis a finibus eu, viverra quis elit. In dictum viverra ante non
-    aliquam. Duis eros nulla, tempus ac mollis in, porta sit amet ligula. Etiam lacinia
-    varius sem quis efficitur. Nulla tempor ornare mi, vel commodo enim blandit vel.
-    Praesent elementum felis vitae orci tristique consectetur. Suspendisse nec libero
-    et diam hendrerit viverra. Nam tristique sed arcu sodales egestas.
+  writing: 0
+  text: 
   speed: 0.02
+  autoStart: 1
+  autoSkip: 0
+  delay: 1
 --- !u!1 &1091529118
 GameObject:
   m_ObjectHideFlags: 0
@@ -717,6 +714,7 @@ GameObject:
   - component: {fileID: 1313747933}
   - component: {fileID: 1313747932}
   - component: {fileID: 1313747936}
+  - component: {fileID: 1313747937}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -822,6 +820,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a1f5ba52dc987242b2e0a15f82d717f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1313747937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1313747930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8de0761de0e3fa54c8b25d028dd5fa3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scripts:
+  - {fileID: 11400000, guid: 398bf21bf06d4c9409187e0a3282e60b, type: 2}
+  - {fileID: 11400000, guid: 1c75c8fbe68817243954c878cd17f6c8, type: 2}
+  - {fileID: 11400000, guid: 3c910a06c71e3d1498325e022d765306, type: 2}
+  currentScript: -1
+  act: 1
+  background: {fileID: 2023492948}
+  speakerShower: {fileID: 1404173174}
+  dosaving: 0
+  writer: {fileID: 1080842819}
 --- !u!1 &1404173172
 GameObject:
   m_ObjectHideFlags: 0

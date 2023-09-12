@@ -7,7 +7,7 @@
  * 
  * Changes: 
  *  [09/09/2023] - Initial Implementation (C137)
- *  [12/09/2023] - Added delay (C137)
+ *  [12/09/2023] - Added delay + auto start & skip (C137)
  */
 using System.Collections;
 using System.Collections.Generic;
@@ -28,6 +28,11 @@ public class TextWriter : MonoBehaviour
     public KeyCode skipWriting = KeyCode.Return;
 
     /// <summary>
+    /// Whether there is currently a writing animation
+    /// </summary>
+    public bool writing = false;
+
+    /// <summary>
     /// The text to be written
     /// </summary>
     [TextArea]
@@ -37,6 +42,16 @@ public class TextWriter : MonoBehaviour
     /// Speed at which to write each character
     /// </summary>
     public float speed;
+
+    /// <summary>
+    /// Whether to allow for auto start
+    /// </summary>
+    public bool autoStart = true;
+
+    /// <summary>
+    /// Whether to allow for auto skip
+    /// </summary>
+    public bool autoSkip = true;
 
     /// <summary>
     /// The delay before starting to write
@@ -55,25 +70,42 @@ public class TextWriter : MonoBehaviour
 
     public void Start()
     {
-        coroutine = StartCoroutine(WriterCoroutine(delay));
+        if (autoStart)
+            Write();
+    }
+
+    public void Write(string textToWrite = null)
+    {
+        StartCoroutine(WriterCoroutine(textToWrite == null ? text : textToWrite, delay));
     }
 
     private void Update()
     {
-        if(Input.GetKeyDown(skipWriting))
+        if(Input.GetKeyDown(skipWriting) && autoSkip)
         {
-            if(coroutine != null) 
-                StopCoroutine(coroutine);
-
-            textShower.text = text;
+            Skip();
         }
     }
 
-    IEnumerator WriterCoroutine(float delay)
+    /// <summary>
+    /// Skip the writing animation
+    /// </summary>
+    public void Skip()
+    {
+        if (coroutine != null)
+            StopCoroutine(coroutine);
+
+        textShower.text = text;
+        writing = false;
+    }
+
+    IEnumerator WriterCoroutine(string text, float delay)
     {
         currentProgress = string.Empty;
 
         yield return new WaitForSeconds(delay);
+
+        writing = true;
 
         foreach (char c in text)
         {
@@ -83,5 +115,7 @@ public class TextWriter : MonoBehaviour
 
             textShower.text = currentProgress;
         }
+
+        writing = false;
     }
 }
