@@ -11,6 +11,7 @@
  */
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
 using UnityEngine.UI;
@@ -24,6 +25,11 @@ public class NovelScript : ScriptableObject
     public Sprite background;
 
     /// <summary>
+    /// The characters to show
+    /// </summary>
+    public Sprite[] characters;
+
+    /// <summary>
     /// The text to show as the script
     /// </summary>
     [TextArea]
@@ -33,6 +39,11 @@ public class NovelScript : ScriptableObject
     /// The name of the speaker
     /// </summary>
     public string speaker;
+
+    /// <summary>
+    /// The font style to use on the script
+    /// </summary>
+    public FontStyles fontStyle;
 
     /// <summary>
     /// The speed for the text writer to write the script

@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: NovelScript 1
   m_EditorClassIdentifier: 
   background: {fileID: 21300000, guid: b840b376c025769499a8e64a2f22b002, type: 3}
-  script: Other script here 2
-  speaker: speaker 2
+  script: "This place feels so strange. I don\u2019t quite know how to describe it,"
+  speaker: MC
+  fontStyle: 2
   writerSpeed: 0.02
   writerDelay: 0

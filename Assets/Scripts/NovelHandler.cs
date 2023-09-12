@@ -23,6 +23,11 @@ public class NovelHandler : MonoBehaviour
     public NovelScript[] scripts;
 
     /// <summary>
+    /// The image of the different available character shower
+    /// </summary>
+    public Image[] characters;
+
+    /// <summary>
     /// The current script the player has reached
     /// </summary>
     public int currentScript = -1;
@@ -42,7 +47,10 @@ public class NovelHandler : MonoBehaviour
     /// </summary>
     public TextMeshProUGUI speakerShower;
 
-    public bool dosaving = false;
+    /// <summary>
+    /// Whether to save the current progress
+    /// </summary>
+    public bool saveProgress = true;
 
     /// <summary>
     /// Reference to the writer, to set proper values based on the script
@@ -51,8 +59,8 @@ public class NovelHandler : MonoBehaviour
 
     private void Awake()
     {
-        if(dosaving)
-        currentScript = PlayerPrefs.GetInt($"general.act{act}.scriptpos", -1);
+        if(saveProgress)
+            currentScript = PlayerPrefs.GetInt($"general.act{act}.scriptpos", -1);
     }
 
     private void Start()
@@ -77,18 +85,50 @@ public class NovelHandler : MonoBehaviour
     void ProgressScript()
     {
         currentScript++;
-        if(dosaving)
-        PlayerPrefs.SetInt($"general.act{act}.scriptpos", currentScript);
+
+        if (currentScript >= scripts.Length)
+            return;
+
+        if(saveProgress)
+            PlayerPrefs.SetInt($"general.act{act}.scriptpos", currentScript);
 
         NovelScript script = scripts[currentScript];
 
+        //Handle background
         background.sprite = script.background == null ? background.sprite : script.background;
 
-        speakerShower.text = script.speaker;
+        if(script.characters.Length != 0 && script.characters.Length <= characters.Length)
+        {
+            for (int i = 0; i < characters.Length; i++)
+            {
+                if (i < script.characters.Length)
+                {
+                    characters[i].gameObject.SetActive(true);
+                    characters[i].sprite = script.characters[i];
+                    continue;
+                }
 
+                characters[i].gameObject.SetActive(false);
+            }
+        }
+
+        //Handle text showing
+        if (script.speaker == string.Empty || script.speaker == null)
+        {
+            speakerShower.transform.parent.gameObject.SetActive(false);
+        }
+        else
+        {
+            speakerShower.transform.parent.gameObject.SetActive(true);
+            speakerShower.text = script.speaker;
+        }
+
+        writer.textShower.fontStyle = script.fontStyle;
+
+        writer.text = script.script;
         writer.speed = script.writerSpeed;
         writer.delay = script.writerDelay;
 
-        writer.Write(script.script);
+        writer.Write();
     }
 }

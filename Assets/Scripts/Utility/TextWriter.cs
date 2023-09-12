@@ -74,9 +74,12 @@ public class TextWriter : MonoBehaviour
             Write();
     }
 
-    public void Write(string textToWrite = null)
+    public void Write()
     {
-        StartCoroutine(WriterCoroutine(textToWrite == null ? text : textToWrite, delay));
+        if (coroutine != null)
+            StopCoroutine(coroutine);
+
+        coroutine = StartCoroutine(WriterCoroutine(delay));
     }
 
     private void Update()
@@ -99,7 +102,7 @@ public class TextWriter : MonoBehaviour
         writing = false;
     }
 
-    IEnumerator WriterCoroutine(string text, float delay)
+    IEnumerator WriterCoroutine(float delay)
     {
         currentProgress = string.Empty;
 

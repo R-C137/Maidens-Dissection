@@ -13,7 +13,13 @@ MonoBehaviour:
   m_Name: NovelScript
   m_EditorClassIdentifier: 
   background: {fileID: 0}
-  script: SOme text here
-  speaker: None
+  characters: []
+  script: '*MC lingers in the front yard connected to the entrance path to a prestigious
+    academy. Lush plant life grows all over the yard and stretches up against the
+    academy walls. Flowers decorate every window, sill and rose bushes crowd the
+    edges of the pathways. We linger in the sight as the sound of cutting echoes
+    in the distance. No talking. Just cutting.*'
+  speaker: 
+  fontStyle: 0
   writerSpeed: 0.02
   writerDelay: 1
