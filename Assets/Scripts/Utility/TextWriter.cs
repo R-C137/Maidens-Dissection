@@ -7,7 +7,7 @@
  * 
  * Changes: 
  *  [09/09/2023] - Initial Implementation (C137)
- *  [12/09/2023] - Added delay + auto start & skip (C137)
+ *  [12/09/2023] - Added delay + auto start & skip + auto set text shower (C137)
  */
 using System.Collections;
 using System.Collections.Generic;
@@ -70,6 +70,8 @@ public class TextWriter : MonoBehaviour
 
     public void Start()
     {
+        textShower = textShower == null ? GetComponent<TextMeshProUGUI>() : textShower;
+
         if (autoStart)
             Write();
     }

@@ -12,6 +12,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -26,6 +27,16 @@ public class NovelHandler : MonoBehaviour
     /// The image of the different available character shower
     /// </summary>
     public Image[] characters;
+
+    /// <summary>
+    /// The text writer for the background title
+    /// </summary>
+    public TextWriter backgroundWriter;
+
+    /// <summary>
+    /// The parent of the main story ui
+    /// </summary>
+    public GameObject mainStory;
 
     /// <summary>
     /// The current script the player has reached
@@ -51,6 +62,11 @@ public class NovelHandler : MonoBehaviour
     /// Whether to save the current progress
     /// </summary>
     public bool saveProgress = true;
+
+    /// <summary>
+    /// Whether the player is in a background animation phase
+    /// </summary>
+    public bool backgroundAnimation = false;
 
     /// <summary>
     /// Reference to the writer, to set proper values based on the script
@@ -89,13 +105,34 @@ public class NovelHandler : MonoBehaviour
         if (currentScript >= scripts.Length)
             return;
 
-        if(saveProgress)
-            PlayerPrefs.SetInt($"general.act{act}.scriptpos", currentScript);
 
         NovelScript script = scripts[currentScript];
 
         //Handle background
         background.sprite = script.background == null ? background.sprite : script.background;
+
+        if (script.backgroundTitle != null && script.backgroundTitle != string.Empty && !backgroundWriter.transform.parent.gameObject.activeSelf)
+        {
+            backgroundWriter.text = script.backgroundTitle;
+            backgroundWriter.transform.parent.gameObject.SetActive(true);
+            backgroundWriter.Write();
+
+            mainStory.SetActive(false);
+
+            currentScript--;
+            return;
+        }
+        //else if (backgroundWriter.transform.parent.gameObject.activeSelf)
+        //{
+            
+        //}
+        else
+        {
+            if(backgroundWriter.writing)
+                backgroundWriter.Skip();
+            backgroundWriter.transform.parent.gameObject.SetActive(false);
+            mainStory.SetActive(true);
+        }
 
         if(script.characters.Length != 0 && script.characters.Length <= characters.Length)
         {
@@ -112,6 +149,8 @@ public class NovelHandler : MonoBehaviour
             }
         }
 
+        if (saveProgress)
+            PlayerPrefs.SetInt($"general.act{act}.scriptpos", currentScript);
         //Handle text showing
         if (script.speaker == string.Empty || script.speaker == null)
         {

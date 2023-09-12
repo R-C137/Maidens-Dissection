@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: NovelScript
   m_EditorClassIdentifier: 
   background: {fileID: 0}
+  backgroundTitle: FIRST DAY AT THE ACADEMY
   characters: []
   script: '*MC lingers in the front yard connected to the entrance path to a prestigious
     academy. Lush plant life grows all over the yard and stretches up against the

@@ -25,6 +25,11 @@ public class NovelScript : ScriptableObject
     public Sprite background;
 
     /// <summary>
+    /// Title to show for the background
+    /// </summary>
+    public string backgroundTitle;
+
+    /// <summary>
     /// The characters to show
     /// </summary>
     public Sprite[] characters;
