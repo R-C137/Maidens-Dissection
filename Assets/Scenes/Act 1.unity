@@ -1489,7 +1489,7 @@ MonoBehaviour:
   act: 1
   background: {fileID: 2023492948}
   speakerShower: {fileID: 1404173174}
-  saveProgress: 0
+  saveProgress: 1
   writer: {fileID: 1080842819}
 --- !u!1 &1404173172
 GameObject:
