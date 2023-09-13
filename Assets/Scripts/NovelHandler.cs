@@ -7,7 +7,7 @@
  * 
  * Changes: 
  *  [12/09/2023] - Initial Implementation (C137)
- *  [13/09/2023] - Choice based script progress (C137)
+ *  [13/09/2023] - Choice based script progress + Reworked background (C137)
  */
 using System.Collections;
 using System.Collections.Generic;
@@ -43,6 +43,11 @@ public class NovelHandler : MonoBehaviour
     /// The text writer for the background title
     /// </summary>
     public TextWriter backgroundWriter;
+
+    /// <summary>
+    /// Background indexes that have been shown
+    /// </summary>
+    public List<int> shownBackgrounds = new();
 
     /// <summary>
     /// The parent of the main story ui
@@ -206,7 +211,7 @@ public class NovelHandler : MonoBehaviour
         {
             background.sprite = script.background == null ? background.sprite : script.background;
 
-            if (script.backgroundTitle != null && script.backgroundTitle != string.Empty && !script.backgroundShown)
+            if (script.backgroundTitle != null && script.backgroundTitle != string.Empty && !shownBackgrounds.Contains(script.background.GetInstanceID()))
             {
                 backgroundWriter.text = script.backgroundTitle;
                 backgroundWriter.transform.parent.gameObject.SetActive(true);
@@ -214,7 +219,7 @@ public class NovelHandler : MonoBehaviour
 
                 mainStory.SetActive(false);
 
-                script.backgroundShown = true;
+                shownBackgrounds.Add(script.background.GetInstanceID());
 
                 currentScriptIndex--;
                 return false;
