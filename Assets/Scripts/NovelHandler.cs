@@ -206,13 +206,15 @@ public class NovelHandler : MonoBehaviour
         {
             background.sprite = script.background == null ? background.sprite : script.background;
 
-            if (script.backgroundTitle != null && script.backgroundTitle != string.Empty && !backgroundWriter.transform.parent.gameObject.activeSelf)
+            if (script.backgroundTitle != null && script.backgroundTitle != string.Empty && !script.backgroundShown)
             {
                 backgroundWriter.text = script.backgroundTitle;
                 backgroundWriter.transform.parent.gameObject.SetActive(true);
                 backgroundWriter.Write();
 
                 mainStory.SetActive(false);
+
+                script.backgroundShown = true;
 
                 currentScriptIndex--;
                 return false;

@@ -41,6 +41,12 @@ public class NovelScript : ScriptableObject
     public Sprite background;
 
     /// <summary>
+    /// Whether the background title has been shown. Internal use only
+    /// </summary>
+    [HideInInspector]
+    public bool backgroundShown;
+
+    /// <summary>
     /// Title to show for the background
     /// </summary>
     public string backgroundTitle;
