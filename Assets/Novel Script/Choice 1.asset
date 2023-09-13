@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 92c1ce71a98cbc241a34affdff9fbad4, type: 3}
-  m_Name: NovelScript 1
+  m_Name: Choice 1
   m_EditorClassIdentifier: 
-  background: {fileID: 21300000, guid: b840b376c025769499a8e64a2f22b002, type: 3}
-  backgroundTitle: Change of scenery
-  characters:
-  - {fileID: 21300000, guid: 17ea9d5c9387a2c4880136dbeba081f9, type: 3}
-  script: "This place feels so strange. I don\u2019t quite know how to describe it,"
-  speaker: MC
-  fontStyle: 2
+  background: {fileID: 0}
+  backgroundTitle: 
+  characters: []
+  script: Choice A text
+  choices: []
+  speaker: 
+  fontStyle: 0
   writerSpeed: 0.02
   writerDelay: 0

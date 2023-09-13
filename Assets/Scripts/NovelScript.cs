@@ -7,14 +7,30 @@
  * 
  * Changes: 
  *  [12/09/2023] - Initial Implementation (C137)
+ *  [13/09/2023] - Added choice system for choice based scripts (C137)
  *  
  */
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
 using UnityEngine.UI;
+
+[Serializable]
+public struct Choice
+{
+    /// <summary>
+    /// Name of the choice
+    /// </summary>
+    public string name;
+
+    /// <summary>
+    /// Number of followup scripts
+    /// </summary>
+    public NovelScript[] followup;
+}
 
 [CreateAssetMenu(fileName = "NovelScript", menuName = "Novel/Script", order = 1)]
 public class NovelScript : ScriptableObject
@@ -39,6 +55,11 @@ public class NovelScript : ScriptableObject
     /// </summary>
     [TextArea]
     public string script;
+
+    /// <summary>
+    /// The different choices following this script
+    /// </summary>
+    public Choice[] choices;
 
     /// <summary>
     /// The name of the speaker
