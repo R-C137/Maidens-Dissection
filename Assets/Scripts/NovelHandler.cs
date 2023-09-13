@@ -270,7 +270,7 @@ public class NovelHandler : MonoBehaviour
     {
         currentChoiceIndex++;
 
-        if (currentChoiceIndex >= currentScript.choices[currentChoiceIndex].followup.Length)
+        if (currentChoiceIndex >= currentScript.choices[choiceMadeIndex].followup.Length)
         {
             currentChoiceIndex = -1;
             return true;
