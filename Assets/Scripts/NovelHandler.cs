@@ -8,6 +8,7 @@
  * Changes: 
  *  [12/09/2023] - Initial Implementation (C137)
  *  [13/09/2023] - Choice based script progress + Reworked background (C137)
+ *  [15/09/2023] - Code cleanup
  */
 using System.Collections;
 using System.Collections.Generic;
@@ -57,16 +58,19 @@ public class NovelHandler : MonoBehaviour
     /// <summary>
     /// The current script index the player has reached
     /// </summary>
+    [HideInInspector]
     public int currentScriptIndex = -1;
 
     /// <summary>
     /// The current choice script index the player has reached
     /// </summary>
+    [HideInInspector]
     public int currentChoiceIndex = -1;
 
     /// <summary>
     /// The index of the choice made
     /// </summary>
+    [HideInInspector]
     public int choiceMadeIndex = 0;
 
     /// <summary>
@@ -88,11 +92,6 @@ public class NovelHandler : MonoBehaviour
     /// Whether to save the current progress
     /// </summary>
     public bool saveProgress = true;
-
-    /// <summary>
-    /// Whether the player is in a background animation phase
-    /// </summary>
-    public bool backgroundAnimation = false;
 
     /// <summary>
     /// Reference to the writer, to set proper values based on the script
