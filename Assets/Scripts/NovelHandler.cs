@@ -11,6 +11,7 @@
  *  [15/09/2023] - Code cleanup + Fixed choice system + Improved text writing (C137)
  *  [16/09/2023] - Save progress only in builds (C137)
  */
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -40,6 +41,11 @@ public class NovelHandler : MonoBehaviour
     /// The current script being played. Used for choice system
     /// </summary>
     public NovelScript currentScript;
+
+    /// <summary>
+    /// Reference to the back button
+    /// </summary>
+    public GameObject backButton;
 
     /// <summary>
     /// The text writer for the background title
@@ -107,8 +113,26 @@ public class NovelHandler : MonoBehaviour
         if (saveProgress)
         {
             currentScriptIndex = PlayerPrefs.GetInt($"general.act{act}.scriptpos", -1);
-            currentScriptIndex--;
+
+            if(currentScriptIndex >= 1 )
+                currentScriptIndex--;
         }
+    }
+
+    /// <summary>
+    /// Called when the back button is pressed
+    /// </summary>
+    public void Back()
+    {
+        currentScriptIndex -= 2;
+        if(currentScript != null)
+        {
+            currentChoiceIndex = -1;
+            choiceMadeIndex = -1;
+            currentScript = null;
+            choices[0].transform.parent.gameObject.SetActive(false);
+        }
+        ProgressScript();
     }
 
     private void Start()
@@ -147,11 +171,16 @@ public class NovelHandler : MonoBehaviour
         currentScriptIndex++;
 
         if (currentScriptIndex >= scripts.Length)
+        {
+            Utility.singleton.LoadScene(0);
             return;
+        }
 
         NovelScript script = scripts[currentScriptIndex];
 
         ShowScript(script, choice);
+
+        backButton.SetActive(currentScriptIndex > 0);
     }
 
     void ShowScript(NovelScript script, bool skipChoice = false, bool normalScript = true)
@@ -204,22 +233,32 @@ public class NovelHandler : MonoBehaviour
 
         void HandleCharacters()
         {
-            if (script.characters == null || !script.characters.Any())
-                return;
+            //if (script.characters == null || !script.characters.Any())
+            //    return;
 
+            LeanTween.cancel(gameObject);
             for (int i = 0; i < characters.Length; i++)
             {
                 if (i < script.characters.Length)
                 {
                     characters[i].gameObject.SetActive(true);
                     characters[i].sprite = script.characters[i];
+
+                    int index = i;
+                    LeanTween.value(0, 1, .5f).setOnUpdate(v =>
+                    {
+                        characters[index].color = new(characters[index].color.r, characters[index].color.g, characters[index].color.b, v);
+                    });
+
                     continue;
                 }
-
-                characters[i].gameObject.SetActive(false);
+                int index2 = i;
+                LeanTween.value(1, 0, .5f).setOnUpdate(v =>
+                {
+                    characters[index2].color = new(characters[index2].color.r, characters[index2].color.g, characters[index2].color.b, v);
+                }).setOnComplete(() => characters[index2].gameObject.SetActive(false));
             }
         }
-
         bool HandleBackground()
         {
             background.sprite = script.background == null ? background.sprite : script.background;
@@ -236,7 +275,7 @@ public class NovelHandler : MonoBehaviour
 
                 shownBackgrounds.Add(script.GetInstanceID());
 
-                //currentScriptIndex--;
+                backButton.SetActive(false);
                 return false;
             }
             else
@@ -263,6 +302,8 @@ public class NovelHandler : MonoBehaviour
 
             choices[0].transform.parent.gameObject.SetActive(true);
             mainStory.SetActive(false);
+
+            backButton.SetActive(true);
 
             for (int i = 0; i < choices.Length; i++)
             {
@@ -311,6 +352,7 @@ public class NovelHandler : MonoBehaviour
     {
         choices[0].transform.parent.gameObject.SetActive(false);
         mainStory.SetActive(true);
+        backButton.SetActive(false);
 
         choiceMadeIndex = choiceIndex;
 

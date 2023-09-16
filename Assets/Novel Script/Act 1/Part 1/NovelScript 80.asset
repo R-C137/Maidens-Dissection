@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: NovelScript 80
   m_EditorClassIdentifier: 
   background: {fileID: 0}
-  backgroundTitle: '[Ivy leaves]'
+  backgroundTitle: 
   characters: []
   script: 'It was lovely to meet you. Maybe after Ivy gives you the grand tour you
     two can come hang out at the gardens for a picnic with my first year partner

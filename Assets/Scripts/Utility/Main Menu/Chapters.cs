@@ -58,7 +58,7 @@ public class Chapters : MonoBehaviour
     /// </summary>
     public void Resume()
     {
-        PlayAct(currentAct);
+         Utility.singleton.LoadScene(currentAct + 1);
     }
 
     /// <summary>
@@ -68,6 +68,8 @@ public class Chapters : MonoBehaviour
     public void PlayAct(int act)
     {
         Utility.singleton.LoadScene(act + 1);
+
+        PlayerPrefs.SetInt($"general.act{act +1}.scriptpos", -1);
     }
 
     /// <summary>

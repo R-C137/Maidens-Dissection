@@ -12,8 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92c1ce71a98cbc241a34affdff9fbad4, type: 3}
   m_Name: NovelScript 1
   m_EditorClassIdentifier: 
-  background: {fileID: 0}
-  backgroundShown: 0
+  background: {fileID: 21300000, guid: c49ad90969066584aa5bfa4ab5e8c8ab, type: 3}
   backgroundTitle: 
   characters: []
   script: '*Flowers decorate every window, sill and rose bushes crowd the edges of
