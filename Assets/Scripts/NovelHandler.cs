@@ -8,7 +8,8 @@
  * Changes: 
  *  [12/09/2023] - Initial Implementation (C137)
  *  [13/09/2023] - Choice based script progress + Reworked background (C137)
- *  [15/09/2023] - Code cleanup
+ *  [15/09/2023] - Code cleanup + Fixed choice system + Improved text writing (C137)
+ *  [16/09/2023] - Save progress only in builds (C137)
  */
 using System.Collections;
 using System.Collections.Generic;
@@ -58,20 +59,17 @@ public class NovelHandler : MonoBehaviour
     /// <summary>
     /// The current script index the player has reached
     /// </summary>
-    [HideInInspector]
     public int currentScriptIndex = -1;
 
     /// <summary>
     /// The current choice script index the player has reached
     /// </summary>
-    [HideInInspector]
     public int currentChoiceIndex = -1;
 
     /// <summary>
     /// The index of the choice made
     /// </summary>
-    [HideInInspector]
-    public int choiceMadeIndex = 0;
+    public int choiceMadeIndex = -1;
 
     /// <summary>
     /// The current act, used for internal purposes
@@ -100,8 +98,17 @@ public class NovelHandler : MonoBehaviour
 
     private void Awake()
     {
-        if(saveProgress)
+#if UNITY_EDITOR
+        saveProgress = false;
+#else
+        saveProgress = true;
+#endif
+
+        if (saveProgress)
+        {
             currentScriptIndex = PlayerPrefs.GetInt($"general.act{act}.scriptpos", -1);
+            currentScriptIndex--;
+        }
     }
 
     private void Start()
@@ -125,7 +132,6 @@ public class NovelHandler : MonoBehaviour
     /// </summary>
     void ProgressScript()
     {
-
         bool choice = false;
 
         if(currentScript != null)
@@ -148,11 +154,17 @@ public class NovelHandler : MonoBehaviour
         ShowScript(script, choice);
     }
 
-    void ShowScript(NovelScript script, bool skipChoice = false)
+    void ShowScript(NovelScript script, bool skipChoice = false, bool normalScript = true)
     {
         //Handle background
         if (!HandleBackground())
+        {
+            if (!normalScript)
+                currentChoiceIndex--;
+
+            currentScriptIndex--;
             return;
+        }
 
         ///Handle choices
         if (!skipChoice && !HandleChoices())
@@ -182,6 +194,8 @@ public class NovelHandler : MonoBehaviour
             writer.textShower.fontStyle = script.fontStyle;
 
             writer.text = script.script;
+            if(writer.textShower != null)
+                writer.textShower.text = string.Empty;
             writer.speed = script.writerSpeed;
             writer.delay = script.writerDelay;
 
@@ -210,17 +224,19 @@ public class NovelHandler : MonoBehaviour
         {
             background.sprite = script.background == null ? background.sprite : script.background;
 
-            if (script.backgroundTitle != null && script.backgroundTitle != string.Empty && !shownBackgrounds.Contains(script.background.GetInstanceID()))
+            if (script.backgroundTitle != null && script.backgroundTitle != string.Empty && !shownBackgrounds.Contains(script.GetInstanceID()))
             {
                 backgroundWriter.text = script.backgroundTitle;
+                if(backgroundWriter.textShower != null)
+                    backgroundWriter.textShower.text = string.Empty;
                 backgroundWriter.transform.parent.gameObject.SetActive(true);
                 backgroundWriter.Write();
 
                 mainStory.SetActive(false);
 
-                shownBackgrounds.Add(script.background.GetInstanceID());
+                shownBackgrounds.Add(script.GetInstanceID());
 
-                currentScriptIndex--;
+                //currentScriptIndex--;
                 return false;
             }
             else
@@ -274,15 +290,19 @@ public class NovelHandler : MonoBehaviour
 
     bool HandleChoiceProgress()
     {
+        if (choiceMadeIndex == -1)
+            return false;
+
         currentChoiceIndex++;
 
         if (currentChoiceIndex >= currentScript.choices[choiceMadeIndex].followup.Length)
         {
             currentChoiceIndex = -1;
+            choiceMadeIndex = -1;
             return true;
         }
 
-        ShowScript(currentScript.choices[choiceMadeIndex].followup[currentChoiceIndex]);
+        ShowScript(currentScript.choices[choiceMadeIndex].followup[currentChoiceIndex], normalScript: false);
 
         return false;
     }
