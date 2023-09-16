@@ -15,7 +15,7 @@ MonoBehaviour:
   background: {fileID: 0}
   backgroundTitle: 
   characters: []
-  script: " I don\u2019t even sense when someone interrupts me. It\u2019s too hard
+  script: "I don\u2019t even sense when someone interrupts me. It\u2019s too hard
     to even notice them. "
   choices: []
   speaker: Ivy

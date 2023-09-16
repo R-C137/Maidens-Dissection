@@ -9,7 +9,7 @@
  *  [12/09/2023] - Initial Implementation (C137)
  *  [13/09/2023] - Choice based script progress + Reworked background (C137)
  *  [15/09/2023] - Code cleanup + Fixed choice system + Improved text writing (C137)
- *  [16/09/2023] - Save progress only in builds (C137)
+ *  [16/09/2023] - Save progress only in builds + Unlock new act on finish (C137)
  */
 using System;
 using System.Collections;
@@ -172,6 +172,11 @@ public class NovelHandler : MonoBehaviour
 
         if (currentScriptIndex >= scripts.Length)
         {
+            int currentSavedAct = PlayerPrefs.GetInt("general.acts", 0);
+
+            if(act <= currentSavedAct)
+                PlayerPrefs.SetInt("general.acts", act + 1 );
+
             Utility.singleton.LoadScene(0);
             return;
         }

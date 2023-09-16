@@ -15,7 +15,7 @@ MonoBehaviour:
   background: {fileID: 0}
   backgroundTitle: 
   characters: []
-  script: " No, don\u2019t worry, Ivy here doesn\u2019t like to be interrupted from
+  script: "No, don\u2019t worry, Ivy here doesn\u2019t like to be interrupted from
     her lectures. Afterall, she is the student prez so it\u2019s understandable for
     her to be pretentious. I find that admirable."
   choices: []
