@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: NovelScript 2
   m_EditorClassIdentifier: 
   background: {fileID: 0}
-  backgroundShown: 0
+  speakingAudio: {fileID: 0}
+  backgroundMusic: {fileID: 0}
   backgroundTitle: 
   characters: []
   script: "This place feels so strange. I don\u2019t quite know how to describe it."

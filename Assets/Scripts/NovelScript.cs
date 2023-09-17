@@ -8,7 +8,7 @@
  * Changes: 
  *  [12/09/2023] - Initial Implementation (C137)
  *  [13/09/2023] - Added choice system for choice based scripts (C137)
- *  
+ *  [17/09/2023] - Implemented audio system (C137)
  */
 using System;
 using System.Collections;
@@ -32,13 +32,33 @@ public struct Choice
     public NovelScript[] followup;
 }
 
+[Serializable]
+public struct Audio
+{
+    /// <summary>
+    /// The voice acting audio to play
+    /// </summary>
+    public AudioClip voiceActing;
+
+    /// <summary>
+    /// The background audio clip to play
+    /// </summary>
+    public AudioClip background;
+
+    /// <summary>
+    /// Whether to loop the background audio
+    /// </summary>
+    public bool loopBackground;
+}
+
 [CreateAssetMenu(fileName = "NovelScript", menuName = "Novel/Script", order = 1)]
 public class NovelScript : ScriptableObject
 {
+    [Header("Background")]
     /// <summary>
     /// The background to be used
     /// </summary>
-    public Sprite background;
+    public Sprite backgroundSprite;
 
     /// <summary>
     /// Title to show for the background
@@ -46,20 +66,27 @@ public class NovelScript : ScriptableObject
     public string backgroundTitle;
 
     /// <summary>
+    /// The audio to play if any
+    /// </summary>
+    public Audio audio;
+
+    [Header("Foreground")]
+    /// <summary>
+    /// The different choices following this script
+    /// </summary>
+    public Choice[] choices;
+
+    /// <summary>
     /// The characters to show
     /// </summary>
     public Sprite[] characters;
 
+    [Header("Story Text")]
     /// <summary>
     /// The text to show as the script
     /// </summary>
     [TextArea]
     public string script;
-
-    /// <summary>
-    /// The different choices following this script
-    /// </summary>
-    public Choice[] choices;
 
     /// <summary>
     /// The name of the speaker

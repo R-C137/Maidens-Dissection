@@ -10,6 +10,7 @@
  *  [13/09/2023] - Choice based script progress + Reworked background (C137)
  *  [15/09/2023] - Code cleanup + Fixed choice system + Improved text writing (C137)
  *  [16/09/2023] - Save progress only in builds + Unlock new act on finish (C137)
+ *  [17/09/2023] - Re order variables + Implemented audio system (C137)
  */
 using System;
 using System.Collections;
@@ -38,49 +39,38 @@ public class NovelHandler : MonoBehaviour
     public Button[] choices;
 
     /// <summary>
-    /// The current script being played. Used for choice system
+    /// Background indexes that have been shown
     /// </summary>
-    public NovelScript currentScript;
+    [HideInInspector]
+    public List<int> shownBackgrounds = new();
 
     /// <summary>
-    /// Reference to the back button
+    /// The current script being played. Used for choice system
     /// </summary>
-    public GameObject backButton;
+    [HideInInspector]
+    public NovelScript currentScript;
 
     /// <summary>
     /// The text writer for the background title
     /// </summary>
+    [Header("Writers")]
     public TextWriter backgroundWriter;
 
     /// <summary>
-    /// Background indexes that have been shown
+    /// Reference to the writer, to set proper values based on the script
     /// </summary>
-    public List<int> shownBackgrounds = new();
+    public TextWriter storyWriter;
+
+    /// <summary>
+    /// Reference to the back button
+    /// </summary>
+    [Header("General References")]
+    public GameObject backButton;
 
     /// <summary>
     /// The parent of the main story ui
     /// </summary>
     public GameObject mainStory;
-
-    /// <summary>
-    /// The current script index the player has reached
-    /// </summary>
-    public int currentScriptIndex = -1;
-
-    /// <summary>
-    /// The current choice script index the player has reached
-    /// </summary>
-    public int currentChoiceIndex = -1;
-
-    /// <summary>
-    /// The index of the choice made
-    /// </summary>
-    public int choiceMadeIndex = -1;
-
-    /// <summary>
-    /// The current act, used for internal purposes
-    /// </summary>
-    public int act = 1;
 
     /// <summary>
     /// Reference to the background image, to change based on the script
@@ -97,10 +87,28 @@ public class NovelHandler : MonoBehaviour
     /// </summary>
     public bool saveProgress = true;
 
+    [Header("Indexes")]
     /// <summary>
-    /// Reference to the writer, to set proper values based on the script
+    /// The current script index the player has reached
     /// </summary>
-    public TextWriter writer;
+    public int currentScriptIndex = -1;
+
+    /// <summary>
+    /// The current choice script index the player has reached
+    /// </summary>
+    public int currentChoiceIndex = -1;
+
+    /// <summary>
+    /// The index of the choice made
+    /// </summary>
+    public int choiceMadeIndex = -1;
+
+    [Space(10)]
+    /// <summary>
+    /// The current act, used for internal purposes
+    /// </summary>
+    public int act = 1;
+
 
     private void Awake()
     {
@@ -144,10 +152,10 @@ public class NovelHandler : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Return))
         {
-            if (!writer.writing)
+            if (!storyWriter.writing)
                 ProgressScript();
             else
-                writer.Skip();
+                storyWriter.Skip();
         }
     }
 
@@ -204,6 +212,9 @@ public class NovelHandler : MonoBehaviour
         if (!skipChoice && !HandleChoices())
             return;
 
+        //Handle audio
+        HandleAudio();
+
         //Handle characters
         HandleCharacters();
 
@@ -225,15 +236,15 @@ public class NovelHandler : MonoBehaviour
                 speakerShower.text = script.speaker;
             }
 
-            writer.textShower.fontStyle = script.fontStyle;
+            storyWriter.textShower.fontStyle = script.fontStyle;
 
-            writer.text = script.script;
-            if(writer.textShower != null)
-                writer.textShower.text = string.Empty;
-            writer.speed = script.writerSpeed;
-            writer.delay = script.writerDelay;
+            storyWriter.text = script.script;
+            if(storyWriter.textShower != null)
+                storyWriter.textShower.text = string.Empty;
+            storyWriter.speed = script.writerSpeed;
+            storyWriter.delay = script.writerDelay;
 
-            writer.Write();
+            storyWriter.Write();
         }
 
         void HandleCharacters()
@@ -264,9 +275,19 @@ public class NovelHandler : MonoBehaviour
                 }).setOnComplete(() => characters[index2].gameObject.SetActive(false));
             }
         }
+
+        void HandleAudio()
+        {
+            //Voice acting
+            AudioHandler.PlayVoiceActing(script.audio.voiceActing);
+
+            //Background music
+            AudioHandler.PlayBackground(script.audio.background, script.audio.loopBackground);
+        }
+
         bool HandleBackground()
         {
-            background.sprite = script.background == null ? background.sprite : script.background;
+            background.sprite = script.backgroundSprite == null ? background.sprite : script.backgroundSprite;
 
             if (script.backgroundTitle != null && script.backgroundTitle != string.Empty && !shownBackgrounds.Contains(script.GetInstanceID()))
             {

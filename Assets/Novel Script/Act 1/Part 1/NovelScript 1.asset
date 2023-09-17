@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: NovelScript 1
   m_EditorClassIdentifier: 
   background: {fileID: 21300000, guid: c49ad90969066584aa5bfa4ab5e8c8ab, type: 3}
+  speakingAudio: {fileID: 0}
+  backgroundMusic: {fileID: 8300000, guid: 62c8c71ba79795844b0f2439d6db0b7e, type: 3}
   backgroundTitle: 
   characters: []
   script: '*Flowers decorate every window, sill and rose bushes crowd the edges of

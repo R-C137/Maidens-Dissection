@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: NovelScript 3
   m_EditorClassIdentifier: 
   background: {fileID: 0}
-  backgroundShown: 0
+  speakingAudio: {fileID: 0}
+  backgroundMusic: {fileID: 8300000, guid: ebb15887566acc747a15d2576dc945a0, type: 3}
   backgroundTitle: 
   characters: []
   script: Hardly anyone ever speaks or even looks at one another, and all I have

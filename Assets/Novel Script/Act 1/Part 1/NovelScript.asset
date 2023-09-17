@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: NovelScript
   m_EditorClassIdentifier: 
   background: {fileID: 0}
+  speakingAudio: {fileID: 0}
+  backgroundMusic: {fileID: 8300000, guid: ebb15887566acc747a15d2576dc945a0, type: 3}
   backgroundTitle: FIRST DAY AT THE ACADEMY
   characters: []
   script: '*MC lingers in the front yard connected to the entrance path to a prestigious
