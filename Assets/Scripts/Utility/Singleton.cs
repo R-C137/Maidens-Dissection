@@ -1,4 +1,4 @@
-/* Singleton.cs - REDACTED
+/* Singleton.cs - Imported
  * 
  * Creation Date: 28/07/2023
  * Authors: Archetype, C137

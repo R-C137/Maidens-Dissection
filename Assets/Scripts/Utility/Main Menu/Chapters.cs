@@ -69,7 +69,7 @@ public class Chapters : MonoBehaviour
     {
         Utility.singleton.LoadScene(act + 1);
 
-        PlayerPrefs.SetInt($"general.act{act +1}.scriptpos", -1);
+        PlayerPrefs.SetInt($"general.act{act}.scriptpos", -1);
     }
 
     /// <summary>

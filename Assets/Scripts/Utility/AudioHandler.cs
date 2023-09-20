@@ -124,4 +124,10 @@ public class AudioHandler : Singleton<AudioHandler>
         source.clip = clip;
         source.Play();
     }
+
+    private void OnDisable()
+    {
+        LeanTween.cancel(backgroundFadeInTween);
+        LeanTween.cancel(backgroundFadeOutTween);
+    }
 }
