@@ -20,6 +20,7 @@ MonoBehaviour:
     loopBackground: 0
   choices: []
   characters:
+  - {fileID: 21300000, guid: 0e6ce51c30cbcfb46888ab3fd1a36907, type: 3}
   - {fileID: 21300000, guid: 53b7eb4f61ce4424bb850c96dfe5f1c1, type: 3}
   script: "My mom was a doctor\u2026 she always mentioned how lonely her patients
     felt when they were left by their families, especially when they were on their

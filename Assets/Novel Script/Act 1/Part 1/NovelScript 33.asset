@@ -12,11 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92c1ce71a98cbc241a34affdff9fbad4, type: 3}
   m_Name: NovelScript 33
   m_EditorClassIdentifier: 
-  background: {fileID: 0}
+  backgroundSprite: {fileID: 0}
   backgroundTitle: 
-  characters: []
-  script: 'Is this how all biology majors are? '
+  audio:
+    voiceActing: {fileID: 0}
+    background: {fileID: 0}
+    loopBackground: 0
   choices: []
+  characters:
+  - {fileID: 21300000, guid: 617003e00f554c343b43b6d28f613922, type: 3}
+  - {fileID: 21300000, guid: 33ce4c9bceb61b54ab848673a78e70e8, type: 3}
+  script: 'Is this how all biology majors are? '
   speaker: MC
   fontStyle: 2
   writerSpeed: 0.02

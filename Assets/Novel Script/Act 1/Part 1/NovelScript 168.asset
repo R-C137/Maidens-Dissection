@@ -21,6 +21,7 @@ MonoBehaviour:
   choices: []
   characters:
   - {fileID: 21300000, guid: 0e6ce51c30cbcfb46888ab3fd1a36907, type: 3}
+  - {fileID: 21300000, guid: 53b7eb4f61ce4424bb850c96dfe5f1c1, type: 3}
   script: "I\u2019m so sorry for bringing down the mood. I just feel like I speak
     so freely with you two. Ivy too. "
   speaker: Camille

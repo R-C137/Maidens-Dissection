@@ -20,6 +20,7 @@ MonoBehaviour:
     loopBackground: 0
   choices: []
   characters:
+  - {fileID: 21300000, guid: 0e6ce51c30cbcfb46888ab3fd1a36907, type: 3}
   - {fileID: 21300000, guid: 53b7eb4f61ce4424bb850c96dfe5f1c1, type: 3}
   script: "Umm.... excuse me but\u2026 we w-were going to draw some flowers for our
     portfolios... Do y-you want to join us?"

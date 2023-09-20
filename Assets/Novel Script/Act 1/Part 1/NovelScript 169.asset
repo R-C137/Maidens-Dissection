@@ -21,6 +21,7 @@ MonoBehaviour:
   choices: []
   characters:
   - {fileID: 21300000, guid: 0e6ce51c30cbcfb46888ab3fd1a36907, type: 3}
+  - {fileID: 21300000, guid: 53b7eb4f61ce4424bb850c96dfe5f1c1, type: 3}
   script: "Hopefully,  when I meet with the director, I\u2019ll have a chance to
     talk with them on how we can bring some relief to the students here."
   speaker: Camille

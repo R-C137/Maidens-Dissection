@@ -20,6 +20,7 @@ MonoBehaviour:
     loopBackground: 0
   choices: []
   characters:
+  - {fileID: 21300000, guid: 617003e00f554c343b43b6d28f613922, type: 3}
   - {fileID: 21300000, guid: 33ce4c9bceb61b54ab848673a78e70e8, type: 3}
   script: "With the way flowers present themselves to the world, they have become
     a symbol of beauty in their own right. But if you ask me, their real beauty can

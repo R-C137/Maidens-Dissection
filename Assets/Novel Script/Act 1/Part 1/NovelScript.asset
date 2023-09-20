@@ -12,15 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92c1ce71a98cbc241a34affdff9fbad4, type: 3}
   m_Name: NovelScript
   m_EditorClassIdentifier: 
-  background: {fileID: 0}
-  speakingAudio: {fileID: 0}
-  backgroundMusic: {fileID: 8300000, guid: ebb15887566acc747a15d2576dc945a0, type: 3}
+  backgroundSprite: {fileID: 0}
   backgroundTitle: FIRST DAY AT THE ACADEMY
-  characters: []
+  audio:
+    voiceActing: {fileID: 0}
+    background: {fileID: 0}
+    loopBackground: 0
+  choices: []
+  characters:
+  - {fileID: 21300000, guid: 617003e00f554c343b43b6d28f613922, type: 3}
   script: '*MC lingers in the front yard connected to the entrance path to a prestigious
     academy. Lush plant life grows all over the yard and stretches up against the
     academy walls.*'
-  choices: []
   speaker: 
   fontStyle: 0
   writerSpeed: 0.02
