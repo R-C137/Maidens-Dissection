@@ -1,25 +1,60 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEditor;
 using UnityEngine;
 
-[CustomEditor(typeof(NovelScript))]
-public class SelectAll : Editor
+public class SelectAll : MonoBehaviour
 {
-    public override void OnInspectorGUI()
+    public static void SelectAllByName(string search)
     {
-        base.OnInspectorGUI();
+       List<NovelScript> scripts = new List<NovelScript>();
 
-        GUILayout.Space(10);
+       scripts.Add(AssetDatabase.LoadAssetAtPath<NovelScript>("Assets/Novel Script/Act 1/Part 1/NovelScript.asset"));
 
-        string searchName = GUILayout.TextField("Speaker name");
+       for (int i = 1; i < 215; i++) 
+       { 
+           scripts.Add(AssetDatabase.LoadAssetAtPath<NovelScript>($"Assets/Novel Script/Act 1/Part 1/NovelScript {i}.asset"));
+       }
 
-        if(GUILayout.Button("Conditional Select"))
-        {
-            var objs = AssetDatabase.LoadAllAssetRepresentationsAtPath("Assets/Novel Script/Act 1/Part 1").Where((obj) => ((NovelScript)obj).speaker == searchName);
+       List<NovelScript> sortedScripts = new();
+       
+       foreach(NovelScript script in scripts)
+       {
+           try
+           {
+               if (script.speaker == search)
+                   sortedScripts.Add(script);
+           }catch(Exception e)
+           {
+           }
+       }
+       Selection.objects = sortedScripts.ToArray();
+        
+    }
 
-            Selection.objects = objs.ToArray();
-        }
+    [MenuItem("Tools/SelectAll/MC")]
+    public static void SelectAllMC()
+    {
+        SelectAllByName("MC");
+    }
+
+    [MenuItem("Tools/SelectAll/Ivy")]
+    public static void SelectAllIvy()
+    {
+        SelectAllByName("Ivy");
+    }
+
+    [MenuItem("Tools/SelectAll/Camille")]
+    public static void SelectAllCamille()
+    {
+        SelectAllByName("Camille");
+    }
+
+    [MenuItem("Tools/SelectAll/Aster")]
+    public static void SelectAllAster()
+    {
+        SelectAllByName("Aster");
     }
 }
