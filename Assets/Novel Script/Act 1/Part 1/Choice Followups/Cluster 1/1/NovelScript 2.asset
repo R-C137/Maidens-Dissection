@@ -12,12 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92c1ce71a98cbc241a34affdff9fbad4, type: 3}
   m_Name: NovelScript 2
   m_EditorClassIdentifier: 
-  background: {fileID: 0}
+  backgroundSprite: {fileID: 0}
   backgroundTitle: 
-  characters: []
+  audio:
+    voiceActing: {fileID: 0}
+    background: {fileID: 0}
+    loopBackground: 0
+  choices: []
+  characters:
+  - {fileID: 21300000, guid: 33ce4c9bceb61b54ab848673a78e70e8, type: 3}
   script: "I don\u2019t even sense when someone interrupts me. It\u2019s too hard
     to even notice them. "
-  choices: []
   speaker: Ivy
   fontStyle: 0
   writerSpeed: 0.02

@@ -12,13 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92c1ce71a98cbc241a34affdff9fbad4, type: 3}
   m_Name: NovelScript 118
   m_EditorClassIdentifier: 
-  background: {fileID: 0}
+  backgroundSprite: {fileID: 0}
   backgroundTitle: 
-  characters: []
-  script: "Oh you two are too kind. Honestly, if I were to give you any tips, I\u2019d
-    say the pen position is most crucial. Other than that, drawing is just about
-    analyzing the picture, creating a mental model of it, and then putting it all
-    together. \r\n\r\n"
+  audio:
+    voiceActing: {fileID: 0}
+    background: {fileID: 0}
+    loopBackground: 0
   choices:
   - name: "I\u2019ve never really drawn before"
     followup:
@@ -36,6 +35,12 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 561e78b1f393234419ad3081096a1142, type: 2}
     - {fileID: 11400000, guid: d99c29bd410b09741939d07c9b1b9d87, type: 2}
     - {fileID: 11400000, guid: cef84caaf03f66043ab2ccf1d57cd1f5, type: 2}
+  characters:
+  - {fileID: 21300000, guid: 53b7eb4f61ce4424bb850c96dfe5f1c1, type: 3}
+  script: "Oh you two are too kind. Honestly, if I were to give you any tips, I\u2019d
+    say the pen position is most crucial. Other than that, drawing is just about
+    analyzing the picture, creating a mental model of it, and then putting it all
+    together. \r\n\r\n"
   speaker: Aster
   fontStyle: 0
   writerSpeed: 0.02

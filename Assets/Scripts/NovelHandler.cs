@@ -11,7 +11,7 @@
  *  [15/09/2023] - Code cleanup + Fixed choice system + Improved text writing (C137)
  *  [16/09/2023] - Save progress only in builds + Unlock new act on finish (C137)
  *  [17/09/2023] - Re order variables + Implemented audio system (C137)
- *  [20/09/2023] - Remap speaker names + Fix progress saving + Speaker name flower animation + Error handling (C137)
+ *  [20/09/2023] - Remap speaker names + Fix progress saving + Speaker name flower animation + Error handling + Improved character fading(C137)
  */
 using System;
 using System.Collections;
@@ -326,6 +326,9 @@ public class NovelHandler : MonoBehaviour
             {
                 if (i < script.characters.Length)
                 {
+                    if (characters[i].sprite == script.characters[i] && characters[i].gameObject.activeSelf)
+                        continue;
+
                     characters[i].gameObject.SetActive(true);
                     characters[i].sprite = script.characters[i];
 
@@ -360,6 +363,7 @@ public class NovelHandler : MonoBehaviour
                     try
                     {
                         characters[index2].gameObject.SetActive(false);
+                        characters[index2].color = new(characters[index2].color.r, characters[index2].color.g, characters[index2].color.b, 1);
                     }catch(Exception)
                     { 
                         return; 
