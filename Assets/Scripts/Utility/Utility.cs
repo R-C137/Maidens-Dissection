@@ -9,8 +9,10 @@
  *  [09/09/2023] - Initial Implementation (C137)
  *  [10/09/2023] - Handling of scene loading with transition (C137)
  *  [12/09/2023] - Show warning only once per start (C137)
+ *  [20/09/2023] - Unity editor only screen shots (C137)
  *  
  */
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -34,6 +36,10 @@ public class Utility : Singleton<Utility>
     /// Whether the warning at the start has been shown already
     /// </summary>
     public static bool shownWarning = false;
+
+    public int screenShotMultiplier = 1;
+
+    public Sprite[] characters;
 
     protected override void Awake()
     {
@@ -69,4 +75,18 @@ public class Utility : Singleton<Utility>
         SceneManager.LoadScene(0, LoadSceneMode.Single);
     }
 
+    private void Update()
+    {
+#if UNITY_EDITOR
+        if(Input.GetKeyDown(KeyCode.L))
+            StartCoroutine(Screenshot());
+#endif
+    }
+
+    public IEnumerator Screenshot()
+    {
+        yield return new WaitForEndOfFrame();
+
+        ScreenCapture.CaptureScreenshot("Screenshots/" + Guid.NewGuid().ToString() + ".png", screenShotMultiplier);
+    }
 }
