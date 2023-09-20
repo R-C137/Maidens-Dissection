@@ -1080,9 +1080,9 @@ RectTransform:
   - {fileID: 977616764}
   m_Father: {fileID: 1016951255}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 317.095, y: -122.00833}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 540, y: 145}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &164387542
@@ -2038,9 +2038,9 @@ RectTransform:
   - {fileID: 8277316}
   m_Father: {fileID: 1016951255}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 317.095, y: -610.0416}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 540, y: 145}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &458637805
@@ -2232,8 +2232,8 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a43f4454bd226234b8e9de2f1701137d, type: 2}
+  m_sharedMaterial: {fileID: -1517896459467318721, guid: a43f4454bd226234b8e9de2f1701137d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3473,7 +3473,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 165.1385, y: -91.3055}
-  m_SizeDelta: {x: 230.277, y: 82.611}
+  m_SizeDelta: {x: 209, y: 97}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &664695467
 MonoBehaviour:
@@ -3551,7 +3551,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d9ad5fbd87b2e4b46b26e0b312efef9f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: af86536c01627f1499169abc3977b808, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3625,9 +3625,9 @@ RectTransform:
   - {fileID: 454189680}
   m_Father: {fileID: 1016951255}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 317.095, y: -366.025}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 540, y: 145}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &665744741
@@ -5411,8 +5411,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: ACT 1
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a43f4454bd226234b8e9de2f1701137d, type: 2}
+  m_sharedMaterial: {fileID: -1517896459467318721, guid: a43f4454bd226234b8e9de2f1701137d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5834,8 +5834,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: continue
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a43f4454bd226234b8e9de2f1701137d, type: 2}
+  m_sharedMaterial: {fileID: -1517896459467318721, guid: a43f4454bd226234b8e9de2f1701137d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -7079,8 +7079,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: ACT 2
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a43f4454bd226234b8e9de2f1701137d, type: 2}
+  m_sharedMaterial: {fileID: -1517896459467318721, guid: a43f4454bd226234b8e9de2f1701137d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -7398,7 +7398,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1585868601
 RectTransform:
   m_ObjectHideFlags: 0
