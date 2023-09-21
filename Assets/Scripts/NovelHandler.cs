@@ -12,6 +12,7 @@
  *  [16/09/2023] - Save progress only in builds + Unlock new act on finish (C137)
  *  [17/09/2023] - Re order variables + Implemented audio system (C137)
  *  [20/09/2023] - Remap speaker names + Fix progress saving + Speaker name flower animation + Error handling + Improved character fading(C137)
+ *  [21/09/2023] - Moved text handler to its own script
  */
 using System;
 using System.Collections;
@@ -79,16 +80,6 @@ public class NovelHandler : MonoBehaviour
     public Image background;
 
     /// <summary>
-    /// The text shower for the speaker
-    /// </summary>
-    public TextMeshProUGUI speakerShower;
-
-    /// <summary>
-    /// The image for the text shower of the speaker
-    /// </summary>
-    public Image speakerImage;
-
-    /// <summary>
     /// Whether to save the current progress
     /// </summary>
     public bool saveProgress = true;
@@ -114,16 +105,6 @@ public class NovelHandler : MonoBehaviour
     /// The current act, used for internal purposes
     /// </summary>
     public int act = 1;
-
-    /// <summary>
-    /// Tween used for the fading out of the speaker text
-    /// </summary>
-    int speakerTweenFadeOut = -1;
-
-    /// <summary>
-    /// Tween used for the fading in of the speaker text
-    /// </summary>
-    int speakerTweenFadeIn = -1;
 
     private void Awake()
     {
@@ -242,79 +223,79 @@ public class NovelHandler : MonoBehaviour
         void HandleText()
         {
             TextHandler.HandleText(script);
-            //if (script.speaker == string.Empty || script.speaker == null)
-            //{
-            //    if (!speakerImage.gameObject.activeSelf)
-            //        goto NormalFlow;
+        //    if (script.speaker == string.Empty || script.speaker == null)
+        //    {
+        //        if (!speakerImage.gameObject.activeSelf)
+        //            goto NormalFlow;
 
-            //    if(speakerTweenFadeOut != -1)
-            //        LeanTween.cancel(speakerTweenFadeOut);
+        //        if (speakerTweenFadeOut != -1)
+        //            LeanTween.cancel(speakerTweenFadeOut);
 
-            //    speakerTweenFadeOut = LeanTween.value(1, 0, .5f)
-            //        .setOnUpdate(v => 
-            //        { 
-            //            try 
-            //            { 
-            //                speakerImage.fillAmount = v; 
-            //            } 
-            //            catch (Exception) 
-            //            { 
-            //                return; 
-            //            } 
-            //        }).setOnComplete(() => { try { speakerShower.transform.parent.gameObject.SetActive(false); } catch (Exception) { return; } }).uniqueId;
-            //}
-            //else
-            //{
-            //    if (speakerShower.text == RemapName(script.speaker) && speakerImage.gameObject.activeSelf)
-            //        goto NormalFlow;
+        //        speakerTweenFadeOut = LeanTween.value(1, 0, .5f)
+        //            .setOnUpdate(v =>
+        //            {
+        //                try
+        //                {
+        //                    speakerImage.fillAmount = v;
+        //                }
+        //                catch (Exception)
+        //                {
+        //                    return;
+        //                }
+        //            }).setOnComplete(() => { try { speakerShower.transform.parent.gameObject.SetActive(false); } catch (Exception) { return; } }).uniqueId;
+        //    }
+        //    else
+        //    {
+        //        if (speakerShower.text == RemapName(script.speaker) && speakerImage.gameObject.activeSelf)
+        //            goto NormalFlow;
 
-            //    if (speakerTweenFadeIn != -1)
-            //        LeanTween.cancel(speakerTweenFadeIn);
+        //        if (speakerTweenFadeIn != -1)
+        //            LeanTween.cancel(speakerTweenFadeIn);
 
-            //    speakerTweenFadeIn = LeanTween.value(0, 1, .5f)
-            //        .setOnUpdate(v =>
-            //        {
-            //            try
-            //            {
-            //                speakerImage.fillAmount = v;
-            //            }
-            //            catch (Exception)
-            //            {
-            //                return;
-            //            }
-            //        }).uniqueId;
+        //        speakerTweenFadeIn = LeanTween.value(0, 1, .5f)
+        //            .setOnUpdate(v =>
+        //            {
+        //                try
+        //                {
+        //                    speakerImage.fillAmount = v;
+        //                }
+        //                catch (Exception)
+        //                {
+        //                    return;
+        //                }
+        //            }).uniqueId;
 
-            //    speakerShower.transform.parent.gameObject.SetActive(true);
-            //    speakerShower.text = RemapName(script.speaker);
-            //}
+        //        speakerShower.transform.parent.gameObject.SetActive(true);
+        //        speakerShower.text = RemapName(script.speaker);
+        //    }
 
-            //NormalFlow:
-            //storyWriter.textShower.fontStyle = script.fontStyle;
+        //NormalFlow:
+        //    storyWriter.textShower.fontStyle = script.fontStyle;
 
-            //storyWriter.text = script.script;
-            //if(storyWriter.textShower != null)
-            //    storyWriter.textShower.text = string.Empty;
+        //    storyWriter.text = script.script;
+        //    if (storyWriter.textShower != null)
+        //        storyWriter.textShower.text = string.Empty;
 
-            //storyWriter.speed = script.writerSpeed;
-            //storyWriter.delay = script.writerDelay;
+        //    storyWriter.speed = script.writerSpeed;
+        //    storyWriter.delay = script.writerDelay;
 
-            //storyWriter.Write();
+        //    storyWriter.Write();
 
-            ////Remaps the names of the speakers
-            //string RemapName(string name)
-            //{
-            //    switch (name)
-            //    {
-            //        case "NARRATION":
-            //            return "Narration";
+        //    //Remaps the names of the speakers
+        //    string RemapName(string name)
+        //    {
+        //        switch (name)
+        //        {
+        //            case "NARRATION":
+        //                return "Narration";
 
-            //        case "MC":
-            //            return "MC";
+        //            case "MC":
+        //                return "MC";
 
-            //        default:
-            //            return name;
-            //    }
-            //}
+        //            default:
+        //                return name;
+        //        }
+        //    }
         }
 
         void HandleCharacters()

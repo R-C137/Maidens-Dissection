@@ -141,7 +141,7 @@ public class TextWriter : MonoBehaviour
     void AnimateText()
     {
         int movementSpeed = 5;
-        int rainbowStrength = 10;
+        //int rainbowStrength = 10;
         Vector2 movementStrength = new(0.1f, 0.1f);
 
         textShower.ForceMeshUpdate();
