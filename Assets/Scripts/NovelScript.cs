@@ -51,6 +51,49 @@ public struct Audio
     public bool loopBackground;
 }
 
+public enum FeelingColour
+{
+    Neutral,
+    Angry,
+    Embarassed,
+    Afraid,
+    Sad,
+}
+
+[Serializable]
+public struct Character
+{
+    /// <summary>
+    /// The sprite related to the character
+    /// </summary>
+    public Sprite sprite;
+
+    /// <summary>
+    /// The color to be applied to the sprite based on the feeling
+    /// </summary>
+    public FeelingColour feeling;
+
+    /// <summary>
+    /// The custom color of the feeling (if any)
+    /// </summary>
+    public Color customColor;
+
+    /// <summary>
+    /// Whether to use the custom color or not
+    /// </summary>
+    public bool useCustomColor;
+
+    /// <summary>
+    /// Whether it is only a pose change (Set to true for fading)
+    /// </summary>
+    public bool poseChange;
+
+    /// <summary>
+    /// Whether this is the sprite of the current speaker
+    /// </summary>
+    public bool speaker;
+}
+
 [CreateAssetMenu(fileName = "NovelScript", menuName = "Novel/Script", order = 1)]
 public class NovelScript : ScriptableObject
 {
@@ -79,7 +122,7 @@ public class NovelScript : ScriptableObject
     /// <summary>
     /// The characters to show
     /// </summary>
-    public Sprite[] characters;
+    public Character[] characters;
 
     [Header("Story Text")]
     /// <summary>

@@ -26,7 +26,7 @@ public class SelectAll : MonoBehaviour
            {
                if (script.speaker == search)
                    sortedScripts.Add(script);
-           }catch(Exception e)
+           }catch(Exception)
            {
            }
        }

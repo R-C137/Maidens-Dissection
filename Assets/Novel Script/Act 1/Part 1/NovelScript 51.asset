@@ -19,8 +19,7 @@ MonoBehaviour:
     background: {fileID: 0}
     loopBackground: 0
   choices: []
-  characters:
-  - {fileID: 21300000, guid: 33ce4c9bceb61b54ab848673a78e70e8, type: 3}
+  characters: []
   script: 'Heh. But this is the role of the gardener, one that I must play. You cannot
     take action out of pity. And if I did, what would I do? Should I just leave it
     be? LET IT ROT ON THE GROUND?

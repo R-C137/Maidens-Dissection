@@ -19,8 +19,7 @@ MonoBehaviour:
     background: {fileID: 0}
     loopBackground: 0
   choices: []
-  characters:
-  - {fileID: 21300000, guid: 617003e00f554c343b43b6d28f613922, type: 3}
+  characters: []
   script: '*The sounds of flowers being cut echoes for a moment.*'
   speaker: 
   fontStyle: 0

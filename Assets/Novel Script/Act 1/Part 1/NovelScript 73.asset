@@ -12,14 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92c1ce71a98cbc241a34affdff9fbad4, type: 3}
   m_Name: NovelScript 73
   m_EditorClassIdentifier: 
-  background: {fileID: 0}
+  backgroundSprite: {fileID: 0}
   backgroundTitle: 
+  audio:
+    voiceActing: {fileID: 0}
+    background: {fileID: 0}
+    loopBackground: 0
+  choices: []
   characters: []
   script: "Oh no\u2026 5 min ago this girl was on the floor hysterically crying about
     some scratch. Now I learn she is the student president who wants to be my Maiden.
     I already would have loved to be partnered with Camille, but I supposed I don\u2019t
     have much of a choice."
-  choices: []
   speaker: MC
   fontStyle: 2
   writerSpeed: 0.02

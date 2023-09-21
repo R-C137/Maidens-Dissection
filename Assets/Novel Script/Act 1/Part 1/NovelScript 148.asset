@@ -19,8 +19,7 @@ MonoBehaviour:
     background: {fileID: 0}
     loopBackground: 0
   choices: []
-  characters:
-  - {fileID: 21300000, guid: 0e6ce51c30cbcfb46888ab3fd1a36907, type: 3}
+  characters: []
   script: "I wouldn\u2019t be saying this if I didn\u2019t trust you\u2026 and please
     tell me if I shouldn\u2019t but\u2026"
   speaker: Camille

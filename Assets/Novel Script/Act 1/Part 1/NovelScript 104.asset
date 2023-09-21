@@ -19,8 +19,7 @@ MonoBehaviour:
     background: {fileID: 0}
     loopBackground: 0
   choices: []
-  characters:
-  - {fileID: 21300000, guid: 0e6ce51c30cbcfb46888ab3fd1a36907, type: 3}
+  characters: []
   script: "Aster, I\u2019ve already told you about them."
   speaker: Camille
   fontStyle: 0

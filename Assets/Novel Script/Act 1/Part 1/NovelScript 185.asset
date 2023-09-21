@@ -19,8 +19,7 @@ MonoBehaviour:
     background: {fileID: 0}
     loopBackground: 0
   choices: []
-  characters:
-  - {fileID: 21300000, guid: 53b7eb4f61ce4424bb850c96dfe5f1c1, type: 3}
+  characters: []
   script: "Don\u2019t-don\u2019t\u2026 apologize. You\u2019ve done nothing wrong."
   speaker: Aster
   fontStyle: 0

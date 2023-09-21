@@ -19,8 +19,7 @@ MonoBehaviour:
     background: {fileID: 0}
     loopBackground: 0
   choices: []
-  characters:
-  - {fileID: 21300000, guid: 33ce4c9bceb61b54ab848673a78e70e8, type: 3}
+  characters: []
   script: 'I am the gardener and these pitiful roses try to cut me back. Pitiful. '
   speaker: Ivy
   fontStyle: 0

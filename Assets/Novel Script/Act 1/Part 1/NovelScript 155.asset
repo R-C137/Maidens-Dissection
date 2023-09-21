@@ -19,8 +19,7 @@ MonoBehaviour:
     background: {fileID: 0}
     loopBackground: 0
   choices: []
-  characters:
-  - {fileID: 21300000, guid: 0e6ce51c30cbcfb46888ab3fd1a36907, type: 3}
+  characters: []
   script: "Over half end up being subjects in their own medical studies, and not
     many even make it to their second year. So most don\u2019t even bother to get
     to know others."

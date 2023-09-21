@@ -35,8 +35,7 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 561e78b1f393234419ad3081096a1142, type: 2}
     - {fileID: 11400000, guid: d99c29bd410b09741939d07c9b1b9d87, type: 2}
     - {fileID: 11400000, guid: cef84caaf03f66043ab2ccf1d57cd1f5, type: 2}
-  characters:
-  - {fileID: 21300000, guid: 53b7eb4f61ce4424bb850c96dfe5f1c1, type: 3}
+  characters: []
   script: "Oh you two are too kind. Honestly, if I were to give you any tips, I\u2019d
     say the pen position is most crucial. Other than that, drawing is just about
     analyzing the picture, creating a mental model of it, and then putting it all

@@ -19,8 +19,7 @@ MonoBehaviour:
     background: {fileID: 0}
     loopBackground: 0
   choices: []
-  characters:
-  - {fileID: 21300000, guid: 0e6ce51c30cbcfb46888ab3fd1a36907, type: 3}
+  characters: []
   script: "You see, the program\u2019s director, the head of this academy, is also
     a doctor that helmed the floral allure study which basically researched why people
     are drawn to the beauty of flowers. My whole thesis was analyzing the Iris flower

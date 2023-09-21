@@ -12,12 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92c1ce71a98cbc241a34affdff9fbad4, type: 3}
   m_Name: NovelScript 78
   m_EditorClassIdentifier: 
-  background: {fileID: 0}
+  backgroundSprite: {fileID: 0}
   backgroundTitle: 
+  audio:
+    voiceActing: {fileID: 0}
+    background: {fileID: 0}
+    loopBackground: 0
+  choices: []
   characters: []
   script: "Yes, yes! I was just thinking that. Not to mention the abnormality in
     their leaves\u2026 Also, about your offer, I'll take it! "
-  choices: []
   speaker: MC
   fontStyle: 0
   writerSpeed: 0.02

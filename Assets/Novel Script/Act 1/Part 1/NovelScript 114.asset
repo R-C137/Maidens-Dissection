@@ -19,8 +19,7 @@ MonoBehaviour:
     background: {fileID: 0}
     loopBackground: 0
   choices: []
-  characters:
-  - {fileID: 21300000, guid: 0e6ce51c30cbcfb46888ab3fd1a36907, type: 3}
+  characters: []
   script: "Oh\u2026 I do hope she isn\u2019t overworking herself again. We should
     see if she needs some help later."
   speaker: Camille

@@ -12,14 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92c1ce71a98cbc241a34affdff9fbad4, type: 3}
   m_Name: NovelScript 131
   m_EditorClassIdentifier: 
-  background: {fileID: 0}
+  backgroundSprite: {fileID: 0}
   backgroundTitle: 
+  audio:
+    voiceActing: {fileID: 0}
+    background: {fileID: 0}
+    loopBackground: 0
+  choices: []
   characters: []
   script: "*Camille turns back to MC, holding a beautifully radiant Iris flower.
     Its violet petals glisten in the sunlight just as Camille\u2019s eyes and wavy
     hair. She smiles at MC as the world feels slightly more dreamy with the wind
     whistling by.*"
-  choices: []
   speaker: 
   fontStyle: 0
   writerSpeed: 0.02

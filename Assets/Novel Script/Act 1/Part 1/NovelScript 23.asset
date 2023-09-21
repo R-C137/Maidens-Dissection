@@ -20,8 +20,18 @@ MonoBehaviour:
     loopBackground: 0
   choices: []
   characters:
-  - {fileID: 21300000, guid: 617003e00f554c343b43b6d28f613922, type: 3}
-  - {fileID: 21300000, guid: 33ce4c9bceb61b54ab848673a78e70e8, type: 3}
+  - sprite: {fileID: 21300000, guid: 617003e00f554c343b43b6d28f613922, type: 3}
+    feeling: 0
+    customColor: {r: 0, g: 0, b: 0, a: 0}
+    useCustomColor: 0
+    poseChange: 0
+    speaker: 0
+  - sprite: {fileID: 21300000, guid: 33ce4c9bceb61b54ab848673a78e70e8, type: 3}
+    feeling: 0
+    customColor: {r: 0, g: 1, b: 0.9896784, a: 0}
+    useCustomColor: 0
+    poseChange: 0
+    speaker: 1
   script: "It\u2019s for my biology class. First, we cut up their stem so that all
     there is left is the flower. We then dismember its petals and analyze them down
     to their very cells and tissue. "

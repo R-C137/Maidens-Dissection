@@ -19,8 +19,7 @@ MonoBehaviour:
     background: {fileID: 0}
     loopBackground: 0
   choices: []
-  characters:
-  - {fileID: 21300000, guid: 0e6ce51c30cbcfb46888ab3fd1a36907, type: 3}
+  characters: []
   script: 'It was lovely to meet you. Maybe after Ivy gives you the grand tour you
     two can come hang out at the gardens for a picnic with my first year partner
     and I?

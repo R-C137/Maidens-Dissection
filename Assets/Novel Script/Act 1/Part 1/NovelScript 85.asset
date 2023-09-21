@@ -12,13 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92c1ce71a98cbc241a34affdff9fbad4, type: 3}
   m_Name: NovelScript 85
   m_EditorClassIdentifier: 
-  background: {fileID: 0}
+  backgroundSprite: {fileID: 0}
   backgroundTitle: 
+  audio:
+    voiceActing: {fileID: 0}
+    background: {fileID: 0}
+    loopBackground: 0
+  choices: []
   characters: []
   script: "It is about that time when I meet Camille and her 1st year partner. \r\nIvy
     told me she couldn\u2019t come. I would have thought she would be interested
     since it seems her and Camille are friends, but Ivy seemed\u2026\r\n"
-  choices: []
   speaker: MC
   fontStyle: 2
   writerSpeed: 0.02

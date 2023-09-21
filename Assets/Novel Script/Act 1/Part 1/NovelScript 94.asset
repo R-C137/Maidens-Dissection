@@ -12,12 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92c1ce71a98cbc241a34affdff9fbad4, type: 3}
   m_Name: NovelScript 94
   m_EditorClassIdentifier: 
-  background: {fileID: 0}
+  backgroundSprite: {fileID: 0}
   backgroundTitle: 
+  audio:
+    voiceActing: {fileID: 0}
+    background: {fileID: 0}
+    loopBackground: 0
+  choices: []
   characters: []
   script: "Camille isn\u2019t tho. Back then, in the front yard, I saw how genuine
     she was. Her year 1 is lucky to have her. "
-  choices: []
   speaker: MC
   fontStyle: 2
   writerSpeed: 0.02

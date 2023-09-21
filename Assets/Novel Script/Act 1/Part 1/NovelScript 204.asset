@@ -12,10 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92c1ce71a98cbc241a34affdff9fbad4, type: 3}
   m_Name: NovelScript 204
   m_EditorClassIdentifier: 
-  background: {fileID: 0}
+  backgroundSprite: {fileID: 0}
   backgroundTitle: 
-  characters: []
-  script: '[Camille leaves. Aster glares at MC before leaving soon after.]'
+  audio:
+    voiceActing: {fileID: 0}
+    background: {fileID: 0}
+    loopBackground: 0
   choices:
   - name: When would you be able to hang out again?
     followup:
@@ -40,6 +42,8 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 212522953262e3a44b83f99198b0d65b, type: 2}
     - {fileID: 11400000, guid: a94223ea0bc82e24faa5ff87a28cef13, type: 2}
     - {fileID: 11400000, guid: 9264623ad796b7f4480e476723820f6e, type: 2}
+  characters: []
+  script: '[Camille leaves. Aster glares at MC before leaving soon after.]'
   speaker: 
   fontStyle: 0
   writerSpeed: 0.02

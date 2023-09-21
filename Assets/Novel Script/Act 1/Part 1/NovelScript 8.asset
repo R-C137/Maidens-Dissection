@@ -20,7 +20,10 @@ MonoBehaviour:
     loopBackground: 0
   choices: []
   characters:
-  - {fileID: 21300000, guid: 617003e00f554c343b43b6d28f613922, type: 3}
+  - sprite: {fileID: 21300000, guid: 617003e00f554c343b43b6d28f613922, type: 3}
+    feeling: 0
+    poseChange: 0
+    speaker: 0
   script: At least I can say I tried.
   speaker: MC
   fontStyle: 2

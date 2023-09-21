@@ -32,8 +32,7 @@ MonoBehaviour:
     - {fileID: 11400000, guid: bf1b5f223cf0fa1449e646eac278bb37, type: 2}
     - {fileID: 11400000, guid: 01ab3821d8a6f91409e9f33a9b21b5f7, type: 2}
     - {fileID: 11400000, guid: 8f9a9632d08d0af4c84f9555dbe96e1f, type: 2}
-  characters:
-  - {fileID: 21300000, guid: 33ce4c9bceb61b54ab848673a78e70e8, type: 3}
+  characters: []
   script: So where were we?
   speaker: Ivy
   fontStyle: 0

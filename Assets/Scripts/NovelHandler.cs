@@ -321,55 +321,57 @@ public class NovelHandler : MonoBehaviour
             //if (script.characters == null || !script.characters.Any())
             //    return;
 
-            LeanTween.cancel(gameObject);
-            for (int i = 0; i < characters.Length; i++)
-            {
-                if (i < script.characters.Length)
-                {
-                    if (characters[i].sprite == script.characters[i] && characters[i].gameObject.activeSelf)
-                        continue;
+            CharacterHandler.ShowCharacters(script);
 
-                    characters[i].gameObject.SetActive(true);
-                    characters[i].sprite = script.characters[i];
+            //LeanTween.cancel(gameObject);
+            //for (int i = 0; i < characters.Length; i++)
+            //{
+            //    if (i < script.characters.Length)
+            //    {
+            //        if (characters[i].sprite == script.characters[i] && characters[i].gameObject.activeSelf)
+            //            continue;
 
-                    int index = i;
-                    LeanTween.value(0, 1, .5f).setOnUpdate(v =>
-                    {
-                        try
-                        {
-                            characters[index].color = new(characters[index].color.r, characters[index].color.g, characters[index].color.b, v);
-                        }
-                        catch (Exception)
-                        {
-                            return;
-                        }
-                    });
+            //        characters[i].gameObject.SetActive(true);
+            //        characters[i].sprite = script.characters[i];
 
-                    continue;
-                }
-                int index2 = i;
-                LeanTween.value(1, 0, .5f).setOnUpdate(v =>
-                {
-                    try
-                    {
-                        characters[index2].color = new(characters[index2].color.r, characters[index2].color.g, characters[index2].color.b, v);
-                    }
-                    catch (Exception)
-                    {
-                        return;
-                    }
-                }).setOnComplete(() =>
-                {
-                    try
-                    {
-                        characters[index2].gameObject.SetActive(false);
-                        characters[index2].color = new(characters[index2].color.r, characters[index2].color.g, characters[index2].color.b, 1);
-                    }catch(Exception)
-                    { 
-                        return; 
-                    }
-                });
-            }
+            //        int index = i;
+            //        LeanTween.value(0, 1, .5f).setOnUpdate(v =>
+            //        {
+            //            try
+            //            {
+            //                characters[index].color = new(characters[index].color.r, characters[index].color.g, characters[index].color.b, v);
+            //            }
+            //            catch (Exception)
+            //            {
+            //                return;
+            //            }
+            //        });
+
+            //        continue;
+            //    }
+            //    int index2 = i;
+            //    LeanTween.value(1, 0, .5f).setOnUpdate(v =>
+            //    {
+            //        try
+            //        {
+            //            characters[index2].color = new(characters[index2].color.r, characters[index2].color.g, characters[index2].color.b, v);
+            //        }
+            //        catch (Exception)
+            //        {
+            //            return;
+            //        }
+            //    }).setOnComplete(() =>
+            //    {
+            //        try
+            //        {
+            //            characters[index2].gameObject.SetActive(false);
+            //            characters[index2].color = new(characters[index2].color.r, characters[index2].color.g, characters[index2].color.b, 1);
+            //        }catch(Exception)
+            //        { 
+            //            return; 
+            //        }
+            //    });
+            //}
         }
 
         void HandleAudio()
