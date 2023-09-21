@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92c1ce71a98cbc241a34affdff9fbad4, type: 3}
+  m_Name: NovelScript 173_choice_cl2
+  m_EditorClassIdentifier: 
+  backgroundSprite: {fileID: 0}
+  backgroundTitle: 
+  audio:
+    voiceActing: {fileID: 0}
+    background: {fileID: 0}
+    loopBackground: 0
+  choices:
+  - name: We can talk about this.
+    followup:
+    - {fileID: 11400000, guid: 1924c60aa24f6284895969aa07857f1b, type: 2}
+    - {fileID: 11400000, guid: 758c3bbc02638b94cb1a99dd0e5dbdd5, type: 2}
+    - {fileID: 11400000, guid: e01f9eb518ea42d41af310ecf4b1e8eb, type: 2}
+    - {fileID: 11400000, guid: 274a6d80e64530946900f74adfeb9261, type: 2}
+    - {fileID: 11400000, guid: 6bcbbd1db965d244ca5dfd32e29665da, type: 2}
+    - {fileID: 11400000, guid: 7b1b8527ff343324c8f8626aec1d969a, type: 2}
+    - {fileID: 11400000, guid: d9d419cd95146e647b800f753e5abdcd, type: 2}
+    - {fileID: 11400000, guid: 770547ecf75e2dd4492a4955d9b594ef, type: 2}
+    - {fileID: 11400000, guid: 611fa2ae0960ba047ae947d6f8ae8281, type: 2}
+    - {fileID: 11400000, guid: 53d9b9fe339450f44a89ed71a646bfe3, type: 2}
+    - {fileID: 11400000, guid: 93d01ac290414b54491f298782291795, type: 2}
+    - {fileID: 11400000, guid: 83e8799f72986e04cbcdae0ef1a2ce87, type: 2}
+    - {fileID: 11400000, guid: 08afd464228f94a4f86d471ea322bf9e, type: 2}
+  - name: '*Flee*'
+    followup:
+    - {fileID: 11400000, guid: 7da88dd384f02344690fc9e698a037bd, type: 2}
+    - {fileID: 11400000, guid: 561e78b1f393234419ad3081096a1142, type: 2}
+    - {fileID: 11400000, guid: d99c29bd410b09741939d07c9b1b9d87, type: 2}
+    - {fileID: 11400000, guid: cef84caaf03f66043ab2ccf1d57cd1f5, type: 2}
+    - {fileID: 11400000, guid: 223b728840af92742b9d363b53ce1079, type: 2}
+    - {fileID: 11400000, guid: cb4eedf6ed85bfc40b9f783ebf158418, type: 2}
+    - {fileID: 11400000, guid: fa856f75b5ac51c43a2978932193eb8e, type: 2}
+    - {fileID: 11400000, guid: b99c02f50d5180e45bd4999700e1f462, type: 2}
+  characters: []
+  script: "*Aster raises her scissors and lunges at MC.*\r"
+  speaker: 
+  fontStyle: 0
+  writerSpeed: 0.02
+  writerDelay: 0
