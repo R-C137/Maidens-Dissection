@@ -57,6 +57,10 @@ public class CharacterDescription : MonoBehaviour
         leftButton.SetActive(currentIndex > 0);
     }
 
+    /// <summary>
+    /// Moves to the next index
+    /// </summary>
+    /// <param name="progressRight">Whether to progresss to the right or to the left</param>
     public void NextIndex(bool progressRight)
     {
         ShowIndex(currentIndex + (progressRight ? 1 : -1));

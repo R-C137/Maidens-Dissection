@@ -75,4 +75,5 @@ public class CharacterSelection : Singleton<CharacterSelection>
         chapterMenu.SetActive(true);
         characterSelection.SetActive(false);
     }
+
 }
