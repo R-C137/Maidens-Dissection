@@ -106,6 +106,9 @@ public class NovelHandler : MonoBehaviour
     /// </summary>
     public int act = 1;
 
+    /// <summary>
+    /// Handles the saving and resuming of the novel's progress
+    /// </summary>
     private void Awake()
     {
 #if UNITY_EDITOR
@@ -139,11 +142,17 @@ public class NovelHandler : MonoBehaviour
         ProgressScript();
     }
 
+    /// <summary>
+    /// Progresses the script at the start
+    /// </summary>
     private void Start()
     {
         ProgressScript();
     }
 
+    /// <summary>
+    /// Handles the progressing of the script and text writing skipping
+    /// </summary>
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Return))
@@ -192,7 +201,13 @@ public class NovelHandler : MonoBehaviour
         backButton.SetActive(currentScriptIndex > 0);
     }
 
-    void ShowScript(NovelScript script, bool skipChoice = false, bool normalScript = true)
+    /// <summary>
+    /// Handles the showing of the script on screen
+    /// </summary>
+    /// <param name="script">The script to be shown</param>
+    /// <param name="skipChoices">Whether to skip the handling of choices</param>
+    /// <param name="normalScript">Whether this script is part of the normal timeline or a choice followup</param>
+    void ShowScript(NovelScript script, bool skipChoices = false, bool normalScript = true)
     {
         //Handle background
         if (!HandleBackground())
@@ -205,156 +220,22 @@ public class NovelHandler : MonoBehaviour
         }
 
         ///Handle choices
-        if (!skipChoice && !HandleChoices())
+        if (!skipChoices && !HandleChoices())
             return;
 
         //Handle audio
         HandleAudio();
 
         //Handle characters
-        HandleCharacters();
+        CharacterHandler.ShowCharacters(script);
 
         //Handle text showing
-        HandleText();
+        TextHandler.HandleText(script);
 
+        //Saves the progress
         if (saveProgress)
             PlayerPrefs.SetInt($"general.act{act}.scriptpos", currentScriptIndex);
 
-        void HandleText()
-        {
-            TextHandler.HandleText(script);
-        //    if (script.speaker == string.Empty || script.speaker == null)
-        //    {
-        //        if (!speakerImage.gameObject.activeSelf)
-        //            goto NormalFlow;
-
-        //        if (speakerTweenFadeOut != -1)
-        //            LeanTween.cancel(speakerTweenFadeOut);
-
-        //        speakerTweenFadeOut = LeanTween.value(1, 0, .5f)
-        //            .setOnUpdate(v =>
-        //            {
-        //                try
-        //                {
-        //                    speakerImage.fillAmount = v;
-        //                }
-        //                catch (Exception)
-        //                {
-        //                    return;
-        //                }
-        //            }).setOnComplete(() => { try { speakerShower.transform.parent.gameObject.SetActive(false); } catch (Exception) { return; } }).uniqueId;
-        //    }
-        //    else
-        //    {
-        //        if (speakerShower.text == RemapName(script.speaker) && speakerImage.gameObject.activeSelf)
-        //            goto NormalFlow;
-
-        //        if (speakerTweenFadeIn != -1)
-        //            LeanTween.cancel(speakerTweenFadeIn);
-
-        //        speakerTweenFadeIn = LeanTween.value(0, 1, .5f)
-        //            .setOnUpdate(v =>
-        //            {
-        //                try
-        //                {
-        //                    speakerImage.fillAmount = v;
-        //                }
-        //                catch (Exception)
-        //                {
-        //                    return;
-        //                }
-        //            }).uniqueId;
-
-        //        speakerShower.transform.parent.gameObject.SetActive(true);
-        //        speakerShower.text = RemapName(script.speaker);
-        //    }
-
-        //NormalFlow:
-        //    storyWriter.textShower.fontStyle = script.fontStyle;
-
-        //    storyWriter.text = script.script;
-        //    if (storyWriter.textShower != null)
-        //        storyWriter.textShower.text = string.Empty;
-
-        //    storyWriter.speed = script.writerSpeed;
-        //    storyWriter.delay = script.writerDelay;
-
-        //    storyWriter.Write();
-
-        //    //Remaps the names of the speakers
-        //    string RemapName(string name)
-        //    {
-        //        switch (name)
-        //        {
-        //            case "NARRATION":
-        //                return "Narration";
-
-        //            case "MC":
-        //                return "MC";
-
-        //            default:
-        //                return name;
-        //        }
-        //    }
-        }
-
-        void HandleCharacters()
-        {
-            //if (script.characters == null || !script.characters.Any())
-            //    return;
-
-            CharacterHandler.ShowCharacters(script);
-
-            //LeanTween.cancel(gameObject);
-            //for (int i = 0; i < characters.Length; i++)
-            //{
-            //    if (i < script.characters.Length)
-            //    {
-            //        if (characters[i].sprite == script.characters[i] && characters[i].gameObject.activeSelf)
-            //            continue;
-
-            //        characters[i].gameObject.SetActive(true);
-            //        characters[i].sprite = script.characters[i];
-
-            //        int index = i;
-            //        LeanTween.value(0, 1, .5f).setOnUpdate(v =>
-            //        {
-            //            try
-            //            {
-            //                characters[index].color = new(characters[index].color.r, characters[index].color.g, characters[index].color.b, v);
-            //            }
-            //            catch (Exception)
-            //            {
-            //                return;
-            //            }
-            //        });
-
-            //        continue;
-            //    }
-            //    int index2 = i;
-            //    LeanTween.value(1, 0, .5f).setOnUpdate(v =>
-            //    {
-            //        try
-            //        {
-            //            characters[index2].color = new(characters[index2].color.r, characters[index2].color.g, characters[index2].color.b, v);
-            //        }
-            //        catch (Exception)
-            //        {
-            //            return;
-            //        }
-            //    }).setOnComplete(() =>
-            //    {
-            //        try
-            //        {
-            //            characters[index2].gameObject.SetActive(false);
-            //            characters[index2].color = new(characters[index2].color.r, characters[index2].color.g, characters[index2].color.b, 1);
-            //        }catch(Exception)
-            //        { 
-            //            return; 
-            //        }
-            //    });
-            //}
-        }
 
         void HandleAudio()
         {
@@ -435,6 +316,10 @@ public class NovelHandler : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Handles the progressing of the choice follow ups
+    /// </summary>
+    /// <returns>Whether the script has returned to its normal timeline</returns>
     bool HandleChoiceProgress()
     {
         if (choiceMadeIndex == -1)
@@ -454,6 +339,10 @@ public class NovelHandler : MonoBehaviour
         return false;
     }
 
+    /// <summary>
+    /// Called when the player makes a choice
+    /// </summary>
+    /// <param name="choiceIndex">The index of the choice made</param>
     void ChoiceMade(int choiceIndex)
     {
         choices[0].transform.parent.gameObject.SetActive(false);
@@ -463,10 +352,5 @@ public class NovelHandler : MonoBehaviour
         choiceMadeIndex = choiceIndex;
 
         HandleChoiceProgress();
-    }
-
-    private void OnDisable()
-    {
-        LeanTween.cancel(gameObject);
     }
 }

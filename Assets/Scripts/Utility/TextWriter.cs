@@ -97,7 +97,7 @@ public class TextWriter : MonoBehaviour
     }
 
     /// <summary>
-    /// Skip the writing animation
+    /// Skips the writing animation
     /// </summary>
     public void Skip()
     {

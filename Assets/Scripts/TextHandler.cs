@@ -46,16 +46,46 @@ public class TextHandler : Singleton<TextHandler>
     /// <summary>
     /// Used for remapping names if any
     /// </summary>
-    public Dictionary<string, string> nameRemap = new();
+    public static Dictionary<string, string> nameRemap = new()
+    {
+        {"NARRATION", "Narration"},
+        {"MC", "MC" }
+    };
 
+    /// <summary>
+    /// Handles the showing of the text of the story telling and speakers
+    /// </summary>
+    /// <param name="script">The script to base the text handling on</param>
     public static void HandleText(NovelScript script)
+    {
+        HandleSpeaker(script);
+
+        singleton.storyWriter.textShower.fontStyle = script.fontStyle;
+
+        singleton.storyWriter.text = script.script;
+
+        if (singleton.storyWriter.textShower != null)
+            singleton.storyWriter.textShower.text = string.Empty;
+
+        singleton.storyWriter.speed = script.writerSpeed;
+        singleton.storyWriter.delay = script.writerDelay;
+
+        singleton.storyWriter.Write();
+
+    }
+
+    /// <summary>
+    /// Handles animations related to the speaker
+    /// </summary>
+    /// <param name="script">The script to base the animations</param>
+    public static void HandleSpeaker(NovelScript script)
     {
         string remappedName = RemapName(script.speaker);
 
         if (script.speaker == string.Empty || script.speaker == null)
         {
             if (!singleton.speakerImage.gameObject.activeSelf)
-                goto NormalFlow;
+                return;
 
             if (speakerTweenFadeOut != -1)
                 LeanTween.cancel(speakerTweenFadeOut);
@@ -76,7 +106,7 @@ public class TextHandler : Singleton<TextHandler>
         else
         {
             if (singleton.speakerShower.text == remappedName && singleton.speakerImage.gameObject.activeSelf)
-                goto NormalFlow;
+                return;
 
             if (speakerTweenFadeIn != -1)
                 LeanTween.cancel(speakerTweenFadeIn);
@@ -87,26 +117,17 @@ public class TextHandler : Singleton<TextHandler>
             singleton.speakerShower.transform.parent.gameObject.SetActive(true);
             singleton.speakerShower.text = remappedName;
         }
-
-    NormalFlow:
-        singleton.storyWriter.textShower.fontStyle = script.fontStyle;
-
-        singleton.storyWriter.text = script.script;
-
-        if (singleton.storyWriter.textShower != null)
-            singleton.storyWriter.textShower.text = string.Empty;
-
-        singleton.storyWriter.speed = script.writerSpeed;
-        singleton.storyWriter.delay = script.writerDelay;
-
-        singleton.storyWriter.Write();
-
     }
 
+    /// <summary>
+    /// Remaps speakers' name where appropriate
+    /// </summary>
+    /// <param name="name">The name to be remapped</param>
+    /// <returns>The remapped name</returns>
     static string RemapName(string name)
     {
-        if(singleton.nameRemap.ContainsKey(name))
-            return singleton.nameRemap[name];
+        if(nameRemap.ContainsKey(name))
+            return nameRemap[name];
 
         return name;
     }

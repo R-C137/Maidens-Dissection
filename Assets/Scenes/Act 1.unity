@@ -706,7 +706,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -131.176, y: -64.99994}
+  m_AnchoredPosition: {x: -131.17603, y: -64.99994}
   m_SizeDelta: {x: 209, y: 97}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &555316290
@@ -1088,7 +1088,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 313.66, y: -52}
+  m_AnchoredPosition: {x: 313.66003, y: -52}
   m_SizeDelta: {x: 577.316, y: 142.885}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &728069349
@@ -1930,8 +1930,8 @@ Canvas:
   m_GameObject: {fileID: 1313747930}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 431922841}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -2225,8 +2225,6 @@ MonoBehaviour:
   backButton: {fileID: 555316288}
   mainStory: {fileID: 2039657768}
   background: {fileID: 2023492948}
-  speakerShower: {fileID: 1404173174}
-  speakerImage: {fileID: 728069349}
   saveProgress: 0
   currentScriptIndex: -1
   currentChoiceIndex: -1
@@ -2278,6 +2276,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   storyWriter: {fileID: 1080842819}
+  speakerShower: {fileID: 1404173174}
+  speakerImage: {fileID: 728069349}
 --- !u!1 &1394497971
 GameObject:
   m_ObjectHideFlags: 0
@@ -2697,7 +2697,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1469424128
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3481,7 +3481,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 131.176, y: -65}
+  m_AnchoredPosition: {x: 131.17603, y: -65}
   m_SizeDelta: {x: 209, y: 97}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1812362465
