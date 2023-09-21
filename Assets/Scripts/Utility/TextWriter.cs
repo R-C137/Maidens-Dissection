@@ -8,9 +8,12 @@
  * Changes: 
  *  [09/09/2023] - Initial Implementation (C137)
  *  [12/09/2023] - Added delay + auto start & skip + auto set text shower (C137)
+ *  [21/09/2023] - Added html tag support (C137)
  */
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text.RegularExpressions;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -86,6 +89,7 @@ public class TextWriter : MonoBehaviour
 
     private void Update()
     {
+        AnimateText();
         if(Input.GetKeyDown(skipWriting) && autoSkip)
         {
             Skip();
@@ -112,9 +116,19 @@ public class TextWriter : MonoBehaviour
 
         writing = true;
 
+        bool writingTag = false;
         foreach (char c in text)
         {
-            yield return new WaitForSeconds(speed);
+            if (c == '<')
+                writingTag = true;
+
+            if (!writingTag)
+                yield return new WaitForSeconds(speed);
+            else
+            {
+                if (c == '>')
+                    writingTag = false;
+            }
 
             currentProgress += c;
 
@@ -122,5 +136,51 @@ public class TextWriter : MonoBehaviour
         }
 
         writing = false;
+    }
+
+    void AnimateText()
+    {
+        int movementSpeed = 5;
+        int rainbowStrength = 10;
+        Vector2 movementStrength = new(0.1f, 0.1f);
+
+        textShower.ForceMeshUpdate();
+
+        // Loops each link tag
+        foreach (TMP_LinkInfo link in textShower.textInfo.linkInfo)
+        {
+
+            // Is it a rainbow tag? (<link="rainbow"></link>)
+            if (link.GetLinkID() == "wavy")
+            {
+
+                // Loops all characters containing the rainbow link.
+                for (int i = link.linkTextfirstCharacterIndex; i < link.linkTextfirstCharacterIndex + link.linkTextLength; i++)
+                {
+                    TMP_CharacterInfo charInfo = textShower.textInfo.characterInfo[i]; // Gets info on the current character
+                    int materialIndex = charInfo.materialReferenceIndex; // Gets the index of the current character material
+
+                    Color32[] newColors = textShower.textInfo.meshInfo[materialIndex].colors32;
+                    Vector3[] newVertices = textShower.textInfo.meshInfo[materialIndex].vertices;
+
+                    // Loop all vertexes of the current characters
+                    for (int j = 0; j < 4; j++)
+                    {
+                        if (charInfo.character == ' ') continue; // Skips spaces
+                        int vertexIndex = charInfo.vertexIndex + j;
+
+                        // Offset and Rainbow effects, replace it with any other effect you want.
+                        Vector3 offset = new Vector2(Mathf.Sin((Time.realtimeSinceStartup * movementSpeed) + (vertexIndex * movementStrength.x)), Mathf.Cos((Time.realtimeSinceStartup * movementSpeed) + (vertexIndex * movementStrength.y))) * 10f;
+                        //Color32 rainbow = Color.HSVToRGB(((Time.realtimeSinceStartup * movementSpeed) + (vertexIndex * (0.001f * rainbowStrength))) % 1f, 1f, 1f);
+
+                        // Sets the new effects
+                        //newColors[vertexIndex] = rainbow;
+                        newVertices[vertexIndex] += offset;
+                    }
+                }
+            }
+        }
+
+        textShower.UpdateVertexData(TMP_VertexDataUpdateFlags.All); // IMPORTANT! applies all vertex and color changes.
     }
 }

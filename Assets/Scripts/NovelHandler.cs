@@ -241,79 +241,80 @@ public class NovelHandler : MonoBehaviour
 
         void HandleText()
         {
-            if (script.speaker == string.Empty || script.speaker == null)
-            {
-                if (!speakerImage.gameObject.activeSelf)
-                    goto NormalFlow;
+            TextHandler.HandleText(script);
+            //if (script.speaker == string.Empty || script.speaker == null)
+            //{
+            //    if (!speakerImage.gameObject.activeSelf)
+            //        goto NormalFlow;
 
-                if(speakerTweenFadeOut != -1)
-                    LeanTween.cancel(speakerTweenFadeOut);
+            //    if(speakerTweenFadeOut != -1)
+            //        LeanTween.cancel(speakerTweenFadeOut);
 
-                speakerTweenFadeOut = LeanTween.value(1, 0, .5f)
-                    .setOnUpdate(v => 
-                    { 
-                        try 
-                        { 
-                            speakerImage.fillAmount = v; 
-                        } 
-                        catch (Exception) 
-                        { 
-                            return; 
-                        } 
-                    }).setOnComplete(() => { try { speakerShower.transform.parent.gameObject.SetActive(false); } catch (Exception) { return; } }).uniqueId;
-            }
-            else
-            {
-                if (speakerShower.text == RemapName(script.speaker) && speakerImage.gameObject.activeSelf)
-                    goto NormalFlow;
+            //    speakerTweenFadeOut = LeanTween.value(1, 0, .5f)
+            //        .setOnUpdate(v => 
+            //        { 
+            //            try 
+            //            { 
+            //                speakerImage.fillAmount = v; 
+            //            } 
+            //            catch (Exception) 
+            //            { 
+            //                return; 
+            //            } 
+            //        }).setOnComplete(() => { try { speakerShower.transform.parent.gameObject.SetActive(false); } catch (Exception) { return; } }).uniqueId;
+            //}
+            //else
+            //{
+            //    if (speakerShower.text == RemapName(script.speaker) && speakerImage.gameObject.activeSelf)
+            //        goto NormalFlow;
 
-                if (speakerTweenFadeIn != -1)
-                    LeanTween.cancel(speakerTweenFadeIn);
+            //    if (speakerTweenFadeIn != -1)
+            //        LeanTween.cancel(speakerTweenFadeIn);
 
-                speakerTweenFadeIn = LeanTween.value(0, 1, .5f)
-                    .setOnUpdate(v =>
-                    {
-                        try
-                        {
-                            speakerImage.fillAmount = v;
-                        }
-                        catch (Exception)
-                        {
-                            return;
-                        }
-                    }).uniqueId;
+            //    speakerTweenFadeIn = LeanTween.value(0, 1, .5f)
+            //        .setOnUpdate(v =>
+            //        {
+            //            try
+            //            {
+            //                speakerImage.fillAmount = v;
+            //            }
+            //            catch (Exception)
+            //            {
+            //                return;
+            //            }
+            //        }).uniqueId;
 
-                speakerShower.transform.parent.gameObject.SetActive(true);
-                speakerShower.text = RemapName(script.speaker);
-            }
+            //    speakerShower.transform.parent.gameObject.SetActive(true);
+            //    speakerShower.text = RemapName(script.speaker);
+            //}
 
-            NormalFlow:
-            storyWriter.textShower.fontStyle = script.fontStyle;
+            //NormalFlow:
+            //storyWriter.textShower.fontStyle = script.fontStyle;
 
-            storyWriter.text = script.script;
-            if(storyWriter.textShower != null)
-                storyWriter.textShower.text = string.Empty;
+            //storyWriter.text = script.script;
+            //if(storyWriter.textShower != null)
+            //    storyWriter.textShower.text = string.Empty;
 
-            storyWriter.speed = script.writerSpeed;
-            storyWriter.delay = script.writerDelay;
+            //storyWriter.speed = script.writerSpeed;
+            //storyWriter.delay = script.writerDelay;
 
-            storyWriter.Write();
+            //storyWriter.Write();
 
-            //Remaps the names of the speakers
-            string RemapName(string name)
-            {
-                switch (name)
-                {
-                    case "NARRATION":
-                        return "Narration";
+            ////Remaps the names of the speakers
+            //string RemapName(string name)
+            //{
+            //    switch (name)
+            //    {
+            //        case "NARRATION":
+            //            return "Narration";
 
-                    case "MC":
-                        return "MC";
+            //        case "MC":
+            //            return "MC";
 
-                    default:
-                        return name;
-                }
-            }
+            //        default:
+            //            return name;
+            //    }
+            //}
         }
 
         void HandleCharacters()
