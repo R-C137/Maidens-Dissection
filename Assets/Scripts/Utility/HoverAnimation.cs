@@ -8,7 +8,7 @@
  * Changes: 
  *  [10/09/2023] - Initial Implementation (C137)
  *  [19/09/2023] - Change colour on hover (C137)
- *  
+ *  [22/09/2023] - Auto-sizing support + special use case animation (C137)
  */
 using System.Collections;
 using System.Collections.Generic;
@@ -51,7 +51,28 @@ public class HoverAnimation : MonoBehaviour, IPointerEnterHandler, IPointerExitH
     public float size;
 
     /// <summary>
-    /// Whether the mouse is currently hovering over the ui
+    /// Whether the text has auto sizing enabled
+    /// </summary>
+    public bool hasAutoSizing = false;
+
+    [Header("Better Animation (special use case)")]
+    /// <summary>
+    /// The sprite handler to force show the sprite
+    /// </summary>
+    public Image spriteHandler;
+
+    /// <summary>
+    /// The sprite to force show
+    /// </summary>
+    public Sprite forceShow;
+
+    /// <summary>
+    /// The normal sprite of the sprite handler
+    /// </summary>
+    public Sprite normalSprite;
+
+    /// <summary>
+    /// Whether the cursor is currently hovering the button
     /// </summary>
     [HideInInspector]
     public bool hovering = false;
@@ -60,21 +81,26 @@ public class HoverAnimation : MonoBehaviour, IPointerEnterHandler, IPointerExitH
     {
         text = text == null ? transform.GetChild(0).GetComponent<TextMeshProUGUI>() : text;
         size = text.fontSize;
+
+        hasAutoSizing = text.enableAutoSizing;
     }
 
     private void Update()
     {
-        hovering = true;
-
         if (Input.GetKeyUp(KeyCode.Mouse0))
             OnPointerExit(null);
+
+        if(hovering && forceShow != null)
+            spriteHandler.sprite = forceShow;
     }
 
     public void OnPointerEnter(PointerEventData eventData)
     {
+        hovering = true;
+
         if (changeColour)
             text.color = Color.black;
-        if (text.enableAutoSizing)
+        if (text.enableAutoSizing && hasAutoSizing)
         {
             text.enableAutoSizing = false;
             size = text.fontSize;
@@ -97,11 +123,18 @@ public class HoverAnimation : MonoBehaviour, IPointerEnterHandler, IPointerExitH
 
     public void OnPointerExit(PointerEventData eventData)
     {
+        hovering = false;
+
+        if (forceShow != null)
+            spriteHandler.sprite = normalSprite;
+
         if (changeColour)
             text.color = Color.white;
 
         text.fontSize = size;
-        text.enableAutoSizing = true;
+
+        if(hasAutoSizing)
+            text.enableAutoSizing = true;
 
         if (selectionImage == null)
             return;

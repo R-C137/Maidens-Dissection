@@ -274,9 +274,13 @@ MonoBehaviour:
   changeColour: 1
   text: {fileID: 0}
   selectionImage: {fileID: 949005984}
+  spriteHandler: {fileID: 39665014}
+  forceShow: {fileID: 21300000, guid: d9ad5fbd87b2e4b46b26e0b312efef9f, type: 3}
+  normalSprite: {fileID: 21300000, guid: b5c16ebd23680b243b592a5c3e0dbafd, type: 3}
   selectionShowTime: 0.5
   size: 0
   hovering: 0
+  hasAutoSizing: 0
 --- !u!1 &79114988
 GameObject:
   m_ObjectHideFlags: 0
@@ -1136,9 +1140,13 @@ MonoBehaviour:
   changeColour: 1
   text: {fileID: 0}
   selectionImage: {fileID: 977616765}
+  spriteHandler: {fileID: 0}
+  forceShow: {fileID: 0}
+  normalSprite: {fileID: 0}
   selectionShowTime: 0.5
   size: 0
   hovering: 0
+  hasAutoSizing: 0
 --- !u!114 &164387546
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2039,9 +2047,13 @@ MonoBehaviour:
   changeColour: 0
   text: {fileID: 0}
   selectionImage: {fileID: 0}
+  spriteHandler: {fileID: 0}
+  forceShow: {fileID: 0}
+  normalSprite: {fileID: 0}
   selectionShowTime: 0.5
   size: 0
   hovering: 0
+  hasAutoSizing: 0
 --- !u!1 &434545361
 GameObject:
   m_ObjectHideFlags: 0
@@ -3274,9 +3286,13 @@ MonoBehaviour:
   changeColour: 1
   text: {fileID: 0}
   selectionImage: {fileID: 1417223117}
+  spriteHandler: {fileID: 0}
+  forceShow: {fileID: 0}
+  normalSprite: {fileID: 0}
   selectionShowTime: 0.5
   size: 0
   hovering: 0
+  hasAutoSizing: 0
 --- !u!1 &644276332
 GameObject:
   m_ObjectHideFlags: 0
@@ -3641,9 +3657,13 @@ MonoBehaviour:
   changeColour: 0
   text: {fileID: 0}
   selectionImage: {fileID: 0}
+  spriteHandler: {fileID: 0}
+  forceShow: {fileID: 0}
+  normalSprite: {fileID: 0}
   selectionShowTime: 1.5
   size: 0
   hovering: 0
+  hasAutoSizing: 0
 --- !u!1 &665744739
 GameObject:
   m_ObjectHideFlags: 0
@@ -3796,9 +3816,13 @@ MonoBehaviour:
   changeColour: 1
   text: {fileID: 0}
   selectionImage: {fileID: 454189678}
+  spriteHandler: {fileID: 0}
+  forceShow: {fileID: 0}
+  normalSprite: {fileID: 0}
   selectionShowTime: 0.5
   size: 0
   hovering: 0
+  hasAutoSizing: 0
 --- !u!114 &665744745
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8467,9 +8491,13 @@ MonoBehaviour:
   changeColour: 0
   text: {fileID: 0}
   selectionImage: {fileID: 0}
+  spriteHandler: {fileID: 0}
+  forceShow: {fileID: 0}
+  normalSprite: {fileID: 0}
   selectionShowTime: 1.5
   size: 0
   hovering: 0
+  hasAutoSizing: 0
 --- !u!114 &1349555061
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11209,9 +11237,13 @@ MonoBehaviour:
   changeColour: 1
   text: {fileID: 0}
   selectionImage: {fileID: 1920961053}
+  spriteHandler: {fileID: 0}
+  forceShow: {fileID: 0}
+  normalSprite: {fileID: 0}
   selectionShowTime: 0.5
   size: 0
   hovering: 0
+  hasAutoSizing: 0
 --- !u!114 &1948640366
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11902,9 +11934,13 @@ MonoBehaviour:
   changeColour: 1
   text: {fileID: 0}
   selectionImage: {fileID: 1638416748}
+  spriteHandler: {fileID: 0}
+  forceShow: {fileID: 0}
+  normalSprite: {fileID: 0}
   selectionShowTime: 0.5
   size: 0
   hovering: 0
+  hasAutoSizing: 0
 --- !u!1 &2038942538
 GameObject:
   m_ObjectHideFlags: 0
