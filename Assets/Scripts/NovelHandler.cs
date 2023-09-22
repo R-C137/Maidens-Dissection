@@ -256,44 +256,32 @@ public class NovelHandler : MonoBehaviour
 
         bool HandleBackground()
         {
-            try
+            background.sprite = script.backgroundSprite == null ? background.sprite : script.backgroundSprite;
+
+            if (script.backgroundTitle != null && script.backgroundTitle != string.Empty && !shownBackgrounds.Contains(script.GetInstanceID()))
             {
-                background.sprite = script.backgroundSprite == null ? background.sprite : script.backgroundSprite;
+                backgroundWriter.text = script.backgroundTitle;
+                if (backgroundWriter.textShower != null)
+                    backgroundWriter.textShower.text = string.Empty;
+                backgroundWriter.transform.parent.gameObject.SetActive(true);
+                backgroundWriter.Write();
+
+                mainStory.SetActive(false);
+
+                shownBackgrounds.Add(script.GetInstanceID());
+
+                backButton.SetActive(false);
+                return false;
             }
-            catch(Exception e)
+            else
             {
-
+                if (backgroundWriter.writing)
+                    backgroundWriter.Skip();
+                backgroundWriter.transform.parent.gameObject.SetActive(false);
+                mainStory.SetActive(true);
             }
-            try
-            {
-                if (script.backgroundTitle != null && script.backgroundTitle != string.Empty && !shownBackgrounds.Contains(script.GetInstanceID()))
-                {
-                    backgroundWriter.text = script.backgroundTitle;
-                    if (backgroundWriter.textShower != null)
-                        backgroundWriter.textShower.text = string.Empty;
-                    backgroundWriter.transform.parent.gameObject.SetActive(true);
-                    backgroundWriter.Write();
 
-                    mainStory.SetActive(false);
-
-                    shownBackgrounds.Add(script.GetInstanceID());
-
-                    backButton.SetActive(false);
-                    return false;
-                }
-                else
-                {
-                    if (backgroundWriter.writing)
-                        backgroundWriter.Skip();
-                    backgroundWriter.transform.parent.gameObject.SetActive(false);
-                    mainStory.SetActive(true);
-                }
-            }
-            catch(Exception ex)
-            {
-
-            }
-                return true;
+            return true;
         }
 
         bool HandleChoices()

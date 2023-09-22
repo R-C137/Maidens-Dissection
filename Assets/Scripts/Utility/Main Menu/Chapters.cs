@@ -36,7 +36,7 @@ public class Chapters : MonoBehaviour
     public Button[] acts;
 
     /// <summary>
-    /// The current act reached
+    /// The current act reache
     /// </summary>
     public int currentAct;
 
