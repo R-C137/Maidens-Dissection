@@ -8,10 +8,12 @@
  * Changes: 
  *  [09/09/2023] - Initial Implementation (C137)
  *  [12/09/2023] - Added animation to play button (C137)
+ *  [21/09/2023] - Added character name selection (C137)
  *  
  */
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class MainMenu : MonoBehaviour
@@ -32,10 +34,26 @@ public class MainMenu : MonoBehaviour
     public GameObject settings;
 
     /// <summary>
+    /// Reference to the character name selection section
+    /// </summary>
+    public GameObject characterNameSelection;
+
+    /// <summary>
+    /// Reference to the character name input field
+    /// </summary>
+    public TMP_InputField characterNameInputField;
+
+    /// <summary>
     /// Called when the play button is pressed
     /// </summary>
     public void Play()
     {
+        if (!PlayerPrefs.HasKey("general.mc-name"))
+        {
+            characterNameSelection.SetActive(true);
+            return;
+        }
+
         Utility.singleton.fadingImage.gameObject.SetActive(true);
         LeanTween.value(0, 1, .5f).setOnUpdate((v) =>
         {
@@ -43,6 +61,7 @@ public class MainMenu : MonoBehaviour
         }).setOnComplete(() =>
         {
             mainMenu.SetActive(false);
+            characterNameSelection.SetActive(false);
             chapters.SetActive(true);
 
             LeanTween.value(1, 0, .5f).setOnUpdate((v) =>
@@ -50,6 +69,19 @@ public class MainMenu : MonoBehaviour
                 Utility.singleton.fadingImage.color = new Color(Utility.singleton.fadingImage.color.r, Utility.singleton.fadingImage.color.g, Utility.singleton.fadingImage.color.b, v);
             }).setOnComplete(() => Utility.singleton.fadingImage.gameObject.SetActive(false));
         });
+    }
+
+    /// <summary>
+    /// Updates the main character's name
+    /// </summary>
+    /// <param name="name">The name to be updated with</param>
+    public void UpdateName()
+    {
+        if (characterNameInputField.text == "")
+            return;
+
+        PlayerPrefs.SetString("general.mc-name", characterNameInputField.text);
+        Play();
     }
 
     /// <summary>

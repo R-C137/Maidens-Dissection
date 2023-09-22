@@ -155,7 +155,7 @@ public class NovelHandler : MonoBehaviour
     /// </summary>
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Return))
+        if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.Mouse1))
         {
             if (!storyWriter.writing)
                 ProgressScript();
@@ -167,7 +167,7 @@ public class NovelHandler : MonoBehaviour
     /// <summary>
     /// Progresses the script to the next one
     /// </summary>
-    void ProgressScript()
+    public void ProgressScript()
     {
         bool choice = false;
 

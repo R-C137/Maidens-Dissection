@@ -48,9 +48,13 @@ public class TextHandler : Singleton<TextHandler>
     /// </summary>
     public static Dictionary<string, string> nameRemap = new()
     {
-        {"NARRATION", "Narration"},
-        {"MC", "MC" }
+        {"NARRATION", "Narration"}
     };
+
+    private void Start()
+    {
+        nameRemap.Add("MC", PlayerPrefs.GetString("general.mc-name"));
+    }
 
     /// <summary>
     /// Handles the showing of the text of the story telling and speakers
