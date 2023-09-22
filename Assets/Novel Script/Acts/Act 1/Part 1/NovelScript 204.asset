@@ -21,27 +21,27 @@ MonoBehaviour:
   choices:
   - name: When would you be able to hang out again?
     followup:
-    - {fileID: 11400000, guid: 7a75872cc7475cb48bd2418990dc059c, type: 2}
-    - {fileID: 11400000, guid: ee9f964316320604a9163ebbd7492b3d, type: 2}
-    - {fileID: 11400000, guid: 084563295c233c440a92d075379d902f, type: 2}
-    - {fileID: 11400000, guid: bbb4bb920f274ff448e544c85d9db2e5, type: 2}
-    - {fileID: 11400000, guid: 964771a0ff1e46e478966e70fddcb9e6, type: 2}
-    - {fileID: 11400000, guid: 660c95f535bd84b43a0165012710291a, type: 2}
-    - {fileID: 11400000, guid: 6e7a792c2fec7d64fb027a7eb37933ef, type: 2}
-    - {fileID: 11400000, guid: 4cf3af0c0e52144428f093f022887b5c, type: 2}
-    - {fileID: 11400000, guid: eb80be407e18ea4409d0a38366a61adc, type: 2}
-    - {fileID: 11400000, guid: 287853f41bf319f478d234ab6da28d53, type: 2}
+    - {fileID: 11400000, guid: c3661649ed8ef404d9aefbf523a485a4, type: 2}
+    - {fileID: 11400000, guid: c00b4d49f2fb7b0459165a483cfb26d0, type: 2}
+    - {fileID: 11400000, guid: cbc940864334ee74ba23b450fd4a93a8, type: 2}
+    - {fileID: 11400000, guid: 642246f430ac57644859f59b3e1b3984, type: 2}
+    - {fileID: 11400000, guid: f0518a1a3ad59e44c85d8589a158f646, type: 2}
+    - {fileID: 11400000, guid: 63ed1aebf5b271f478debfb13b8c4e76, type: 2}
+    - {fileID: 11400000, guid: bf54a1aa3746ed94a9c7455686265306, type: 2}
+    - {fileID: 11400000, guid: 4b8ecce0f0179394ea69a9e77ba7adc0, type: 2}
+    - {fileID: 11400000, guid: 1d64ee874475e0e499911501749800a8, type: 2}
+    - {fileID: 11400000, guid: 8672ac709b09ec746a567ee4da3e2413, type: 2}
   - name: Never mind.
     followup:
-    - {fileID: 11400000, guid: e53107c80bc8cb04d9e32a86080444ea, type: 2}
-    - {fileID: 11400000, guid: ebc42f3aaf41e4b45b0c7b59b8752f5b, type: 2}
-    - {fileID: 11400000, guid: 8d83e774263b80b42b8d4378bd6278f2, type: 2}
-    - {fileID: 11400000, guid: 18b7788c1f7ab66489016feaa5dc16ef, type: 2}
-    - {fileID: 11400000, guid: 3d7d3cd55839d7947893ad8de612bf8f, type: 2}
-    - {fileID: 11400000, guid: c535d49b2e3650d4396bd0b1279714d5, type: 2}
-    - {fileID: 11400000, guid: 212522953262e3a44b83f99198b0d65b, type: 2}
-    - {fileID: 11400000, guid: a94223ea0bc82e24faa5ff87a28cef13, type: 2}
-    - {fileID: 11400000, guid: 9264623ad796b7f4480e476723820f6e, type: 2}
+    - {fileID: 11400000, guid: 1cd3a2ebbc07255479180b222fac4080, type: 2}
+    - {fileID: 11400000, guid: 5cb3682b8c142784b9300e0e4e813cff, type: 2}
+    - {fileID: 11400000, guid: 2756ffe5828ccc14abc8b5d9c6867ee0, type: 2}
+    - {fileID: 11400000, guid: c848e3c137667e641a77c4448a41cf5b, type: 2}
+    - {fileID: 11400000, guid: 90888c133a37b7641a4c5d95ff71c618, type: 2}
+    - {fileID: 11400000, guid: 597975b26ab9c834fbe4c1d999f6d3c1, type: 2}
+    - {fileID: 11400000, guid: 61dd40647f4a5ab48b2d6075c057ca33, type: 2}
+    - {fileID: 11400000, guid: 396ea2e2577dec144be14d2e10a6018e, type: 2}
+    - {fileID: 11400000, guid: 719b3f3fd30891945acd427e26c1296e, type: 2}
   characters: []
   script: '[Camille leaves. Aster glares at MC before leaving soon after.]'
   speaker: 

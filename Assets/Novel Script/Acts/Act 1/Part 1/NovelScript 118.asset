@@ -21,20 +21,20 @@ MonoBehaviour:
   choices:
   - name: "I\u2019ve never really drawn before"
     followup:
-    - {fileID: 11400000, guid: 8457836c72972b540b1a32115ebd95e5, type: 2}
-    - {fileID: 11400000, guid: 1924c60aa24f6284895969aa07857f1b, type: 2}
-    - {fileID: 11400000, guid: 758c3bbc02638b94cb1a99dd0e5dbdd5, type: 2}
-    - {fileID: 11400000, guid: e01f9eb518ea42d41af310ecf4b1e8eb, type: 2}
-    - {fileID: 11400000, guid: 274a6d80e64530946900f74adfeb9261, type: 2}
-    - {fileID: 11400000, guid: 6bcbbd1db965d244ca5dfd32e29665da, type: 2}
-    - {fileID: 11400000, guid: 7b1b8527ff343324c8f8626aec1d969a, type: 2}
+    - {fileID: 11400000, guid: a56f715e16ff7c745bdd021f11e18eea, type: 2}
+    - {fileID: 11400000, guid: 8015a40d65048da40a8241d809943e21, type: 2}
+    - {fileID: 11400000, guid: f98aaa7de00c65c4fb62e35215d3b495, type: 2}
+    - {fileID: 11400000, guid: 17fd7954f95034d4da86702e4f3c28f2, type: 2}
+    - {fileID: 11400000, guid: 7b3d593772d77824da6960d59e24c530, type: 2}
+    - {fileID: 11400000, guid: 8388b03b5b659a645a6e1d79deab8c11, type: 2}
+    - {fileID: 11400000, guid: faf88c4b494373046ac3c692834ee006, type: 2}
   - name: "I don\u2019t think I\u2019ve ever had that kind of tea before"
     followup:
-    - {fileID: 11400000, guid: 51618c2f43d068743a607e4fea4002c3, type: 2}
-    - {fileID: 11400000, guid: 7da88dd384f02344690fc9e698a037bd, type: 2}
-    - {fileID: 11400000, guid: 561e78b1f393234419ad3081096a1142, type: 2}
-    - {fileID: 11400000, guid: d99c29bd410b09741939d07c9b1b9d87, type: 2}
-    - {fileID: 11400000, guid: cef84caaf03f66043ab2ccf1d57cd1f5, type: 2}
+    - {fileID: 11400000, guid: 498194f05af4cfd4a909af52729d64fe, type: 2}
+    - {fileID: 11400000, guid: acd9a7067e088d74b812c5646c774b3c, type: 2}
+    - {fileID: 11400000, guid: eda6a349fdd19b54d88925f6cdcf3c2b, type: 2}
+    - {fileID: 11400000, guid: 0ec26f813a7665444878e4f60713f2aa, type: 2}
+    - {fileID: 11400000, guid: 26acc3573f0a71f44b0a971cd473cec6, type: 2}
   characters: []
   script: "Oh you two are too kind. Honestly, if I were to give you any tips, I\u2019d
     say the pen position is most crucial. Other than that, drawing is just about

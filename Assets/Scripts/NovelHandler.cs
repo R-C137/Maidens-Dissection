@@ -13,6 +13,8 @@
  *  [17/09/2023] - Re order variables + Implemented audio system (C137)
  *  [20/09/2023] - Remap speaker names + Fix progress saving + Speaker name flower animation + Error handling + Improved character fading(C137)
  *  [21/09/2023] - Moved text handler to its own script
+ *  [22/09/2023] - Multi-act support (C137)
+ *  
  */
 using System;
 using System.Collections;
@@ -23,12 +25,18 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
+[Serializable]
+public struct Acts
+{
+    public NovelScript[] scripts;
+}
+
 public class NovelHandler : MonoBehaviour
 {
     /// <summary>
     /// The different scripts for this act
     /// </summary>
-    public NovelScript[] scripts;
+    public Acts[] scripts;
 
     /// <summary>
     /// The image of the different available character shower
@@ -104,18 +112,21 @@ public class NovelHandler : MonoBehaviour
     /// <summary>
     /// The current act, used for internal purposes
     /// </summary>
-    public int act = 1;
+    public int act = -1;
 
     /// <summary>
-    /// Handles the saving and resuming of the novel's progress
+    /// Handles the saving and resuming of the novel's progress + The progressing of the script on start
     /// </summary>
-    private void Awake()
+    private void Start()
     {
 #if UNITY_EDITOR
         saveProgress = false;
 #else
         saveProgress = true;
 #endif
+
+        if (act == -1)
+            act = Utility.currentAct;
 
         if (saveProgress)
         {
@@ -124,6 +135,8 @@ public class NovelHandler : MonoBehaviour
             if(currentScriptIndex >= 1 )
                 currentScriptIndex--;
         }
+
+        ProgressScript();
     }
 
     /// <summary>
@@ -139,14 +152,6 @@ public class NovelHandler : MonoBehaviour
             currentScript = null;
             choices[0].transform.parent.gameObject.SetActive(false);
         }
-        ProgressScript();
-    }
-
-    /// <summary>
-    /// Progresses the script at the start
-    /// </summary>
-    private void Start()
-    {
         ProgressScript();
     }
 
@@ -183,18 +188,21 @@ public class NovelHandler : MonoBehaviour
 
         currentScriptIndex++;
 
-        if (currentScriptIndex >= scripts.Length)
+        if (currentScriptIndex >= scripts[act].scripts.Length)
         {
-            int currentSavedAct = PlayerPrefs.GetInt("general.acts", 0);
+            int currentSavedAct = PlayerPrefs.GetInt("general.unlocked-acts", 0);
 
-            if(act <= currentSavedAct)
-                PlayerPrefs.SetInt("general.acts", act + 1 );
+            if (act <= currentSavedAct)
+            {
+                PlayerPrefs.SetInt("general.unlocked-acts", act + 1);
+                PlayerPrefs.SetInt("general.acts", act + 1);
+            }
 
             Utility.singleton.LoadScene(0);
             return;
         }
 
-        NovelScript script = scripts[currentScriptIndex];
+        NovelScript script = scripts[act].scripts[currentScriptIndex];
 
         ShowScript(script, choice);
 
@@ -248,31 +256,44 @@ public class NovelHandler : MonoBehaviour
 
         bool HandleBackground()
         {
-            background.sprite = script.backgroundSprite == null ? background.sprite : script.backgroundSprite;
-
-            if (script.backgroundTitle != null && script.backgroundTitle != string.Empty && !shownBackgrounds.Contains(script.GetInstanceID()))
+            try
             {
-                backgroundWriter.text = script.backgroundTitle;
-                if(backgroundWriter.textShower != null)
-                    backgroundWriter.textShower.text = string.Empty;
-                backgroundWriter.transform.parent.gameObject.SetActive(true);
-                backgroundWriter.Write();
-
-                mainStory.SetActive(false);
-
-                shownBackgrounds.Add(script.GetInstanceID());
-
-                backButton.SetActive(false);
-                return false;
+                background.sprite = script.backgroundSprite == null ? background.sprite : script.backgroundSprite;
             }
-            else
+            catch(Exception e)
             {
-                if (backgroundWriter.writing)
-                    backgroundWriter.Skip();
-                backgroundWriter.transform.parent.gameObject.SetActive(false);
-                mainStory.SetActive(true);
+
             }
-            return true;
+            try
+            {
+                if (script.backgroundTitle != null && script.backgroundTitle != string.Empty && !shownBackgrounds.Contains(script.GetInstanceID()))
+                {
+                    backgroundWriter.text = script.backgroundTitle;
+                    if (backgroundWriter.textShower != null)
+                        backgroundWriter.textShower.text = string.Empty;
+                    backgroundWriter.transform.parent.gameObject.SetActive(true);
+                    backgroundWriter.Write();
+
+                    mainStory.SetActive(false);
+
+                    shownBackgrounds.Add(script.GetInstanceID());
+
+                    backButton.SetActive(false);
+                    return false;
+                }
+                else
+                {
+                    if (backgroundWriter.writing)
+                        backgroundWriter.Skip();
+                    backgroundWriter.transform.parent.gameObject.SetActive(false);
+                    mainStory.SetActive(true);
+                }
+            }
+            catch(Exception ex)
+            {
+
+            }
+                return true;
         }
 
         bool HandleChoices()

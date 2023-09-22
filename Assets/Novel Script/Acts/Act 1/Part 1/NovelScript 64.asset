@@ -21,17 +21,17 @@ MonoBehaviour:
   choices:
   - name: Why the atitude?
     followup:
-    - {fileID: 11400000, guid: a4f8ad213616cbd42b7c66bc0ae3e4eb, type: 2}
-    - {fileID: 11400000, guid: 4b2b80aa4d330474793d61a7da0ff71b, type: 2}
-    - {fileID: 11400000, guid: 8294ebf22aa16dd4f8b0b02109150a08, type: 2}
-    - {fileID: 11400000, guid: 64284c3c800722b4badf689dbb705efa, type: 2}
-    - {fileID: 11400000, guid: d433df4e768a9f64a95bc52e8c7494fb, type: 2}
-    - {fileID: 11400000, guid: cb2601249f500ff4fa750610cf0b9516, type: 2}
+    - {fileID: 11400000, guid: 7232e3956cb88ad4dbd3718f135e2a3b, type: 2}
+    - {fileID: 11400000, guid: 7e237b9dc058e394ea061f1072d4858f, type: 2}
+    - {fileID: 11400000, guid: 5e4791163eb026e45a86a9d2b4d43919, type: 2}
+    - {fileID: 11400000, guid: f6490d429c973c6479e90de3b7905f82, type: 2}
+    - {fileID: 11400000, guid: bbd45a236e2d3b84db5f6d62066054ee, type: 2}
+    - {fileID: 11400000, guid: cd6a482a88e40c3449cf89109014206f, type: 2}
   - name: Don't say anything
     followup:
-    - {fileID: 11400000, guid: bf1b5f223cf0fa1449e646eac278bb37, type: 2}
-    - {fileID: 11400000, guid: 01ab3821d8a6f91409e9f33a9b21b5f7, type: 2}
-    - {fileID: 11400000, guid: 8f9a9632d08d0af4c84f9555dbe96e1f, type: 2}
+    - {fileID: 11400000, guid: 0a0d5c134ae32ee4791366be1c83affd, type: 2}
+    - {fileID: 11400000, guid: 905293853281762439d89c40311ddd77, type: 2}
+    - {fileID: 11400000, guid: 25d7c72bd87bc104ca4df1c554e0d74f, type: 2}
   characters: []
   script: So where were we?
   speaker: Ivy

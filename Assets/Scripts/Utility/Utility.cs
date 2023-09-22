@@ -37,9 +37,13 @@ public class Utility : Singleton<Utility>
     /// </summary>
     public static bool shownWarning = false;
 
+    /// <summary>
+    /// The current act
+    /// </summary>
+    public static int currentAct = 0;
+
     public int screenShotMultiplier = 1;
 
-    public Sprite[] characters;
 
     protected override void Awake()
     {
@@ -65,6 +69,15 @@ public class Utility : Singleton<Utility>
                     .setOnUpdate(v => fadingImage.color = new(fadingImage.color.r, fadingImage.color.g, fadingImage.color.b, v))
                     .setOnComplete(() => fadingImage.gameObject.SetActive(false));
             });
+    }
+
+    /// <summary>
+    /// Sets the current act
+    /// </summary>
+    /// <param name="act">The act to be set</param>
+    public void SetAct(int act)
+    {
+
     }
 
     /// <summary>

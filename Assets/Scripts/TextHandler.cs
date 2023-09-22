@@ -7,6 +7,7 @@
  * 
  * Changes: 
  *  [21/09/2023] - Initial Implementation (C137)
+ *  [22/09/2023] - Added default name remap for MC (C137)
  *  
  */
 using System;
@@ -46,14 +47,17 @@ public class TextHandler : Singleton<TextHandler>
     /// <summary>
     /// Used for remapping names if any
     /// </summary>
-    public static Dictionary<string, string> nameRemap = new()
+    public Dictionary<string, string> nameRemap = new()
     {
         {"NARRATION", "Narration"}
     };
 
     private void Start()
     {
-        nameRemap.Add("MC", PlayerPrefs.GetString("general.mc-name"));
+        if (PlayerPrefs.HasKey("general.mc-name"))
+            nameRemap.Add("MC", PlayerPrefs.GetString("general.mc-name"));
+        else
+            nameRemap.Add("MC", "MC");
     }
 
     /// <summary>
@@ -130,8 +134,8 @@ public class TextHandler : Singleton<TextHandler>
     /// <returns>The remapped name</returns>
     static string RemapName(string name)
     {
-        if(nameRemap.ContainsKey(name))
-            return nameRemap[name];
+        if(singleton.nameRemap.ContainsKey(name))
+            return singleton.nameRemap[name];
 
         return name;
     }
