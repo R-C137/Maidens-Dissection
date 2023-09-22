@@ -36,16 +36,16 @@ public class Chapters : MonoBehaviour
     public Button[] acts;
 
     /// <summary>
-    /// The current act reached
+    /// The current act reache
     /// </summary>
     public int currentAct;
 
     private void Start()
     {
-        currentAct = PlayerPrefs.GetInt("general.acts", 0);
+        int unlockedActs = PlayerPrefs.GetInt("general.unlocked-acts", 0);
 
         if(acts.Any())
-            for (int i = currentAct + 1; i < acts.Length; i++)
+            for (int i = unlockedActs + 1; i < acts.Length; i++)
             {
                 acts[i].enabled = false;
                 Destroy(acts[i].GetComponent<HoverAnimation>());
@@ -58,7 +58,15 @@ public class Chapters : MonoBehaviour
     /// </summary>
     public void Resume()
     {
-         Utility.singleton.LoadScene(currentAct + 1);
+        currentAct = PlayerPrefs.GetInt("general.acts", 0);
+
+        if(currentAct > 1)
+        {
+            Utility.currentAct = 1;
+            PlayerPrefs.SetInt($"general.act1.scriptpos", -1);
+        }
+
+        Utility.singleton.LoadScene(1);
     }
 
     /// <summary>
@@ -67,7 +75,9 @@ public class Chapters : MonoBehaviour
     /// <param name="act">Act to be played</param>
     public void PlayAct(int act)
     {
-        Utility.singleton.LoadScene(act + 1);
+        Utility.singleton.LoadScene(1);
+
+        Utility.currentAct = act;
 
         PlayerPrefs.SetInt($"general.act{act}.scriptpos", -1);
     }

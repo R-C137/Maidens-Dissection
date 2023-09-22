@@ -57,65 +57,71 @@ public class CharacterHandler : Singleton<CharacterHandler>
         LeanTween.cancel(characterFadeInTweenID);
         LeanTween.cancel(characterFadeOutTweenID);
 
-        characterFadeInTweenID = LeanTween.value(0, 1, .5f).setOnUpdate(v =>
+        try
         {
-            try
+            characterFadeInTweenID = LeanTween.value(0, 1, .5f).setOnUpdate(v =>
+            {
+                try
+                {
+                    for (var i = 0; i < script.characters.Length; i++)
+                    {
+                        if (singleton.characterImages[i].color.a == 1 || script.characters[i].poseChange)
+                            continue;
+
+                        singleton.characterImages[i].color = new(singleton.characterImages[i].color.r, singleton.characterImages[i].color.g, singleton.characterImages[i].color.b, v);
+                    }
+                }
+                catch (Exception)
+                {
+                    return;
+                }
+            }).setOnStart(() =>
             {
                 for (var i = 0; i < script.characters.Length; i++)
                 {
-                    if (singleton.characterImages[i].color.a == 1 || script.characters[i].poseChange)
-                        continue;
+                    (singleton.characterImages[i].transform as RectTransform).localScale =
+                        script.characters[i].speaker ?
+                            new Vector3(singleton.speakerSizeMultiplier, singleton.speakerSizeMultiplier, 1)
+                                : Vector3.one;
 
-                    singleton.characterImages[i].color = new(singleton.characterImages[i].color.r, singleton.characterImages[i].color.g, singleton.characterImages[i].color.b, v);
+                    singleton.characterImages[i].gameObject.SetActive(true);
+                    singleton.characterImages[i].sprite = script.characters[i].sprite;
+                    singleton.characterImages[i].color = GetColour(script.characters[i], singleton.characterImages[i].color.a); ;
                 }
-            }
-            catch (Exception)
-            {
-                return;
-            }
-        }).setOnStart(() =>
-        {
-            for (var i = 0; i < script.characters.Length; i++)
-            {
-                (singleton.characterImages[i].transform as RectTransform).localScale = 
-                    script.characters[i].speaker ?
-                        new Vector3(singleton.speakerSizeMultiplier, singleton.speakerSizeMultiplier, 1)
-                            : Vector3.one;
+            }).uniqueId;
 
-                singleton.characterImages[i].gameObject.SetActive(true);
-                singleton.characterImages[i].sprite = script.characters[i].sprite;
-                singleton.characterImages[i].color = GetColour(script.characters[i], singleton.characterImages[i].color.a); ;
-            }
-        }).uniqueId;
-
-        characterFadeOutTweenID = LeanTween.value(1, 0, .2f).setOnUpdate(v =>
-        {
-            try
+            characterFadeOutTweenID = LeanTween.value(1, 0, .2f).setOnUpdate(v =>
             {
-                for (var i = script.characters.Length; i < singleton.characterImages.Length; i++)
+                try
                 {
-                    singleton.characterImages[i].color = new(singleton.characterImages[i].color.r, singleton.characterImages[i].color.g, singleton.characterImages[i].color.b, v);
+                    for (var i = script.characters.Length; i < singleton.characterImages.Length; i++)
+                    {
+                        singleton.characterImages[i].color = new(singleton.characterImages[i].color.r, singleton.characterImages[i].color.g, singleton.characterImages[i].color.b, v);
+                    }
                 }
-            }
-            catch (Exception)
-            {
-                return;
-            }
-        }).setOnComplete(() =>
-        {
-            try
-            {
-                for (var i = script.characters.Length; i < singleton.characterImages.Length; i++)
+                catch (Exception)
                 {
-                    singleton.characterImages[i].gameObject.SetActive(false);
-                    singleton.characterImages[i].sprite = null;
+                    return;
                 }
-            }
-            catch (Exception)
+            }).setOnComplete(() =>
             {
-                return;
-            }
-        }).uniqueId;
+                try
+                {
+                    for (var i = script.characters.Length; i < singleton.characterImages.Length; i++)
+                    {
+                        singleton.characterImages[i].gameObject.SetActive(false);
+                        singleton.characterImages[i].sprite = null;
+                    }
+                }
+                catch (Exception)
+                {
+                    return;
+                }
+            }).uniqueId;
+        }catch(Exception e)
+        {
+            Debug.LogError(e.Message, singleton);
+        }
     }
 
     

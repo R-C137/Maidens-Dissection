@@ -74,6 +74,11 @@ public class HoverAnimation : MonoBehaviour, IPointerEnterHandler, IPointerExitH
     {
         if (changeColour)
             text.color = Color.black;
+        if (text.enableAutoSizing)
+        {
+            text.enableAutoSizing = false;
+            size = text.fontSize;
+        }
 
         if (text.fontSize != size)
             return;
@@ -96,6 +101,7 @@ public class HoverAnimation : MonoBehaviour, IPointerEnterHandler, IPointerExitH
             text.color = Color.white;
 
         text.fontSize = size;
+        text.enableAutoSizing = true;
 
         if (selectionImage == null)
             return;

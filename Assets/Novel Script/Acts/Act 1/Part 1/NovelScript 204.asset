@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92c1ce71a98cbc241a34affdff9fbad4, type: 3}
+  m_Name: NovelScript 204
+  m_EditorClassIdentifier: 
+  backgroundSprite: {fileID: 0}
+  backgroundTitle: 
+  audio:
+    voiceActing: {fileID: 0}
+    background: {fileID: 0}
+    loopBackground: 0
+  choices:
+  - name: When would you be able to hang out again?
+    followup:
+    - {fileID: 11400000, guid: c3661649ed8ef404d9aefbf523a485a4, type: 2}
+    - {fileID: 11400000, guid: c00b4d49f2fb7b0459165a483cfb26d0, type: 2}
+    - {fileID: 11400000, guid: cbc940864334ee74ba23b450fd4a93a8, type: 2}
+    - {fileID: 11400000, guid: 642246f430ac57644859f59b3e1b3984, type: 2}
+    - {fileID: 11400000, guid: f0518a1a3ad59e44c85d8589a158f646, type: 2}
+    - {fileID: 11400000, guid: 63ed1aebf5b271f478debfb13b8c4e76, type: 2}
+    - {fileID: 11400000, guid: bf54a1aa3746ed94a9c7455686265306, type: 2}
+    - {fileID: 11400000, guid: 4b8ecce0f0179394ea69a9e77ba7adc0, type: 2}
+    - {fileID: 11400000, guid: 1d64ee874475e0e499911501749800a8, type: 2}
+    - {fileID: 11400000, guid: 8672ac709b09ec746a567ee4da3e2413, type: 2}
+  - name: Never mind.
+    followup:
+    - {fileID: 11400000, guid: 1cd3a2ebbc07255479180b222fac4080, type: 2}
+    - {fileID: 11400000, guid: 5cb3682b8c142784b9300e0e4e813cff, type: 2}
+    - {fileID: 11400000, guid: 2756ffe5828ccc14abc8b5d9c6867ee0, type: 2}
+    - {fileID: 11400000, guid: c848e3c137667e641a77c4448a41cf5b, type: 2}
+    - {fileID: 11400000, guid: 90888c133a37b7641a4c5d95ff71c618, type: 2}
+    - {fileID: 11400000, guid: 597975b26ab9c834fbe4c1d999f6d3c1, type: 2}
+    - {fileID: 11400000, guid: 61dd40647f4a5ab48b2d6075c057ca33, type: 2}
+    - {fileID: 11400000, guid: 396ea2e2577dec144be14d2e10a6018e, type: 2}
+    - {fileID: 11400000, guid: 719b3f3fd30891945acd427e26c1296e, type: 2}
+  characters: []
+  script: '[Camille leaves. Aster glares at MC before leaving soon after.]'
+  speaker: 
+  fontStyle: 0
+  writerSpeed: 0.02
+  writerDelay: 0
