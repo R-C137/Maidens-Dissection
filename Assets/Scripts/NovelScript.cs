@@ -9,6 +9,7 @@
  *  [12/09/2023] - Initial Implementation (C137)
  *  [13/09/2023] - Added choice system for choice based scripts (C137)
  *  [17/09/2023] - Implemented audio system (C137)
+ *  [23/09/2023] - Added custom font support (C137)
  */
 using System;
 using System.Collections;
@@ -139,7 +140,12 @@ public class NovelScript : ScriptableObject
     /// <summary>
     /// The font style to use on the script
     /// </summary>
-    public FontStyles fontStyle;
+    public TMPro.FontStyles fontStyle;
+
+    /// <summary>
+    /// To font to be used
+    /// </summary>
+    public TMP_FontAsset fontAsset;
 
     /// <summary>
     /// The speed for the text writer to write the script

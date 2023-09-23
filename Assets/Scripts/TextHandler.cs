@@ -8,6 +8,7 @@
  * Changes: 
  *  [21/09/2023] - Initial Implementation (C137)
  *  [22/09/2023] - Added default name remap for MC (C137)
+ *  [23/09/2023] - Added custom font support (C137)
  *  
  */
 using System;
@@ -69,6 +70,9 @@ public class TextHandler : Singleton<TextHandler>
         HandleSpeaker(script);
 
         singleton.storyWriter.textShower.fontStyle = script.fontStyle;
+
+        if(script.fontAsset != null)
+            singleton.storyWriter.textShower.font = script.fontAsset;
 
         singleton.storyWriter.text = script.script;
 
