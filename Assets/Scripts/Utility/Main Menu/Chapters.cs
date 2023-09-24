@@ -10,6 +10,7 @@
  *  [12/09/2023] - Added animation to back button (C137)
  *  
  */
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -29,6 +30,16 @@ public class Chapters : MonoBehaviour
     /// Reference to the chapters section
     /// </summary>
     public GameObject chapters;
+
+    /// <summary>
+    /// Reference to the tutorial section
+    /// </summary>
+    public GameObject tutorial;
+
+    /// <summary>
+    /// The amount of time the tutorial is shown for
+    /// </summary>
+    public float tutorialShowTime;
 
     /// <summary>
     /// A collection of the different acts
@@ -58,15 +69,38 @@ public class Chapters : MonoBehaviour
     /// </summary>
     public void Resume()
     {
-        currentAct = PlayerPrefs.GetInt("general.acts", 0);
-
-        if(currentAct > 1)
+        ShowTutorial(() =>
         {
-            Utility.currentAct = 1;
-            PlayerPrefs.SetInt($"general.act1.scriptpos", -1);
-        }
+            currentAct = PlayerPrefs.GetInt("general.acts", 0);
 
-        Utility.singleton.LoadScene(1);
+            if (currentAct > 1)
+            {
+                Utility.currentAct = 1;
+                PlayerPrefs.SetInt($"general.act1.scriptpos", -1);
+            }
+
+            Utility.singleton.LoadScene(1);
+
+            PlayerPrefs.SetInt("genereal.first-start", 0);
+        });
+    }
+
+    /// <summary>
+    /// Shows the tutorial 
+    /// </summary>
+    /// <param name="onFinish">Callback to execute on finish</param>
+    public void ShowTutorial(Action onFinish)
+    {
+
+        bool firstPlay = PlayerPrefs.GetInt("genereal.first-start", 1) == 1;
+
+        if (firstPlay)
+        {
+            tutorial.SetActive(true);
+            LeanTween.delayedCall(tutorialShowTime, () => onFinish?.Invoke());
+        }
+        else
+            onFinish?.Invoke();
     }
 
     /// <summary>
@@ -75,11 +109,16 @@ public class Chapters : MonoBehaviour
     /// <param name="act">Act to be played</param>
     public void PlayAct(int act)
     {
-        Utility.singleton.LoadScene(1);
+        ShowTutorial(() =>
+        {
+            Utility.singleton.LoadScene(1);
 
-        Utility.currentAct = act;
+            Utility.currentAct = act;
 
-        PlayerPrefs.SetInt($"general.act{act}.scriptpos", -1);
+            PlayerPrefs.SetInt($"general.act{act}.scriptpos", -1);
+
+            PlayerPrefs.SetInt("genereal.first-start", 0);
+        });
     }
 
     /// <summary>
