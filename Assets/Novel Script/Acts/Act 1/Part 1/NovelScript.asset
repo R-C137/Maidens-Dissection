@@ -21,9 +21,9 @@ MonoBehaviour:
     sfx: []
   choices: []
   characters: []
-  script: '*MC lingers in the front yard connected to the entrance path to a prestigious
+  script: You linger in the front yard connected to the entrance path to a prestigious
     academy. Lush plant life grows all over the yard and stretches up against the
-    academy walls.*'
+    academy walls.
   speaker: 
   fontStyle: 0
   fontAsset: {fileID: 0}
