@@ -7,6 +7,7 @@
  * 
  * Changes: 
  *  [21/09/2023] - Initial Implementation (C137)
+ *  [25/09/2023] - Customizable speaker size (C137)
  *  
  */
 using System;
@@ -23,7 +24,7 @@ public class CharacterHandler : Singleton<CharacterHandler>
     public Image[] characterImages;
 
     /// <summary>
-    /// Size multiplier for the speaker sprite
+    /// The default size multiplier for the speaker sprite
     /// </summary>
     public float speakerSizeMultiplier;
 
@@ -81,7 +82,8 @@ public class CharacterHandler : Singleton<CharacterHandler>
                 {
                     (singleton.characterImages[i].transform as RectTransform).localScale =
                         script.characters[i].speaker ?
-                            new Vector3(singleton.speakerSizeMultiplier, singleton.speakerSizeMultiplier, 1)
+                            new Vector3(script.characters[i].speakerSizeMultiplier == 0 ? singleton.speakerSizeMultiplier : script.characters[i].speakerSizeMultiplier,
+                            script.characters[i].speakerSizeMultiplier == 0 ? singleton.speakerSizeMultiplier : script.characters[i].speakerSizeMultiplier, 1)
                                 : Vector3.one;
 
                     singleton.characterImages[i].gameObject.SetActive(true);

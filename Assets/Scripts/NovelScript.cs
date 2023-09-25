@@ -10,7 +10,7 @@
  *  [13/09/2023] - Added choice system for choice based scripts (C137)
  *  [17/09/2023] - Implemented audio system (C137)
  *  [23/09/2023] - Added custom font support (C137)
- *  [25/09/2023] - Added sfx audio support (C137)
+ *  [25/09/2023] - Added sfx audio support + Custom speaker size support (C137)
  */
 using System;
 using System.Collections;
@@ -101,6 +101,11 @@ public struct Character
     /// Whether this is the sprite of the current speaker
     /// </summary>
     public bool speaker;
+
+    /// <summary>
+    /// Size multiplier for a speaker
+    /// </summary>
+    public float speakerSizeMultiplier;
 }
 
 [CreateAssetMenu(fileName = "NovelScript", menuName = "Novel/Script", order = 1)]

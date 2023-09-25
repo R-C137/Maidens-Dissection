@@ -9,6 +9,7 @@
  *  [10/09/2023] - Initial Implementation (C137)
  *  [19/09/2023] - Change colour on hover (C137)
  *  [22/09/2023] - Auto-sizing support + special use case animation (C137)
+ *  [25/09/2023] - Fix sizing bug (C137)
  */
 using System.Collections;
 using System.Collections.Generic;
@@ -102,8 +103,11 @@ public class HoverAnimation : MonoBehaviour, IPointerEnterHandler, IPointerExitH
             text.color = Color.black;
         if (text.enableAutoSizing && hasAutoSizing)
         {
-            text.enableAutoSizing = false;
-            size = text.fontSize;
+            if (text.fontSize == text.fontSizeMax)
+            {
+                text.enableAutoSizing = false;
+                size = text.fontSize;
+            }
         }
 
         if (text.fontSize != size)
