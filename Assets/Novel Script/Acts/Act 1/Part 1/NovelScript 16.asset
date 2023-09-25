@@ -23,7 +23,7 @@ MonoBehaviour:
   characters: []
   script: You rush over to the crying girl as she lays kneeling beside a rose bush
     riddle with thorns as she clenches her bleeding hand.
-  speaker: NARRATION
+  speaker: 
   fontStyle: 1
   fontAsset: {fileID: 0}
   writerSpeed: 0.02
