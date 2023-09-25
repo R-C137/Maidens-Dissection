@@ -18,7 +18,8 @@ MonoBehaviour:
     voiceActing: {fileID: 0}
     background: {fileID: 0}
     loopBackground: 0
-    sfx: []
+    sfx:
+    - {fileID: 0}
   choices: []
   characters:
   - sprite: {fileID: 21300000, guid: 394d1e989a40bb148ac25638cd3db835, type: 3}
@@ -27,6 +28,7 @@ MonoBehaviour:
     useCustomColor: 0
     poseChange: 0
     speaker: 1
+    speakerSizeMultiplier: 0
   script: "I GOT CUT WHILE I WAS TRYING TO PICK UP SOME OF THESE DAMNED FLOWERS!!!
     \r\n"
   speaker: Ivy

@@ -21,12 +21,13 @@ MonoBehaviour:
     sfx: []
   choices: []
   characters:
-  - sprite: {fileID: 21300000, guid: 33ce4c9bceb61b54ab848673a78e70e8, type: 3}
+  - sprite: {fileID: 21300000, guid: 394d1e989a40bb148ac25638cd3db835, type: 3}
     feeling: 0
     customColor: {r: 0, g: 0, b: 0, a: 0}
     useCustomColor: 0
     poseChange: 0
     speaker: 1
+    speakerSizeMultiplier: 0
   script: 'Heh. But this is the role of the gardener, one that I must play. You cannot
     take action out of pity. And if I did, what would I do? Should I just leave it
     be? LET IT ROT ON THE GROUND?

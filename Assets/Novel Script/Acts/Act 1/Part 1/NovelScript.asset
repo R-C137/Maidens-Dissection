@@ -16,7 +16,7 @@ MonoBehaviour:
   backgroundTitle: FIRST DAY AT THE ACADEMY
   audio:
     voiceActing: {fileID: 0}
-    background: {fileID: 0}
+    background: {fileID: 8300000, guid: eb34e50f06e76fe43b35895c5a31995b, type: 3}
     loopBackground: 0
     sfx: []
   choices: []
