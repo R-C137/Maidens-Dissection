@@ -27,7 +27,7 @@ MonoBehaviour:
     useCustomColor: 0
     poseChange: 0
     speaker: 0
-  script: '[ keeps silent ] '
+  script: ...
   speaker: MC
   fontStyle: 0
   fontAsset: {fileID: 0}

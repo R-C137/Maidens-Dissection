@@ -26,7 +26,7 @@ MonoBehaviour:
     customColor: {r: 0, g: 0, b: 0, a: 0}
     useCustomColor: 0
     poseChange: 0
-    speaker: 0
+    speaker: 1
   script: 'I am the gardener and these pitiful roses try to cut me back. Pitiful. '
   speaker: Ivy
   fontStyle: 0

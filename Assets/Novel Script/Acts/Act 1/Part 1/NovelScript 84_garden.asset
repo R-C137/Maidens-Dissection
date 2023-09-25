@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 92c1ce71a98cbc241a34affdff9fbad4, type: 3}
-  m_Name: NovelScript 84
+  m_Name: NovelScript 84_garden
   m_EditorClassIdentifier: 
   backgroundSprite: {fileID: 0}
   backgroundTitle: Hangout In The Garden
@@ -18,11 +18,13 @@ MonoBehaviour:
     voiceActing: {fileID: 0}
     background: {fileID: 0}
     loopBackground: 0
+    sfx: []
   choices: []
   characters: []
-  script: '*MC stands in the middle of a pristine corridor with a classroom door
-    ahead of them. The window in the classroom door peaks into an empty lab.*'
+  script: "You find yourself in a vibrant garden with a wide array of flowers blooming
+    all around. A picnic table is decorated under a booth.\r"
   speaker: 
-  fontStyle: 0
+  fontStyle: 1
+  fontAsset: {fileID: 0}
   writerSpeed: 0.02
   writerDelay: 0

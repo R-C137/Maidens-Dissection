@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92c1ce71a98cbc241a34affdff9fbad4, type: 3}
   m_Name: NovelScript 21
   m_EditorClassIdentifier: 
-  backgroundSprite: {fileID: 0}
+  backgroundSprite: {fileID: 21300000, guid: 90e0393f7f22fa2458f5de7b0ebc5680, type: 3}
   backgroundTitle: 
   audio:
     voiceActing: {fileID: 0}
@@ -20,13 +20,7 @@ MonoBehaviour:
     loopBackground: 0
     sfx: []
   choices: []
-  characters:
-  - sprite: {fileID: 21300000, guid: 33ce4c9bceb61b54ab848673a78e70e8, type: 3}
-    feeling: 0
-    customColor: {r: 0, g: 0, b: 0, a: 0}
-    useCustomColor: 0
-    poseChange: 0
-    speaker: 0
+  characters: []
   script: I got the rose I was looking for.
   speaker: Ivy
   fontStyle: 0

@@ -26,7 +26,7 @@ MonoBehaviour:
     customColor: {r: 0, g: 0, b: 0, a: 0}
     useCustomColor: 0
     poseChange: 0
-    speaker: 0
+    speaker: 1
   script: 'Heh. But this is the role of the gardener, one that I must play. You cannot
     take action out of pity. And if I did, what would I do? Should I just leave it
     be? LET IT ROT ON THE GROUND?

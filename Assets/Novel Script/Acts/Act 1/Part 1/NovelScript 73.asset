@@ -18,13 +18,27 @@ MonoBehaviour:
     voiceActing: {fileID: 0}
     background: {fileID: 0}
     loopBackground: 0
+    sfx: []
   choices: []
-  characters: []
+  characters:
+  - sprite: {fileID: 21300000, guid: 33ce4c9bceb61b54ab848673a78e70e8, type: 3}
+    feeling: 0
+    customColor: {r: 0, g: 0, b: 0, a: 0}
+    useCustomColor: 0
+    poseChange: 0
+    speaker: 0
+  - sprite: {fileID: 21300000, guid: e0ce6333ed2fc5147aae77505e31a18d, type: 3}
+    feeling: 0
+    customColor: {r: 0, g: 0, b: 0, a: 0}
+    useCustomColor: 0
+    poseChange: 0
+    speaker: 0
   script: "Oh no\u2026 5 min ago this girl was on the floor hysterically crying about
     some scratch. Now I learn she is the student president who wants to be my Maiden.
     I already would have loved to be partnered with Camille, but I supposed I don\u2019t
     have much of a choice."
   speaker: MC
   fontStyle: 2
+  fontAsset: {fileID: 0}
   writerSpeed: 0.02
   writerDelay: 0
