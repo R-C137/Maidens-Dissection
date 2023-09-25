@@ -10,6 +10,7 @@
  *  [13/09/2023] - Added choice system for choice based scripts (C137)
  *  [17/09/2023] - Implemented audio system (C137)
  *  [23/09/2023] - Added custom font support (C137)
+ *  [25/09/2023] - Added sfx audio support (C137)
  */
 using System;
 using System.Collections;
@@ -50,6 +51,13 @@ public struct Audio
     /// Whether to loop the background audio
     /// </summary>
     public bool loopBackground;
+
+    /// <summary>
+    /// The sfx audios to play
+    /// </summary>
+    [Space(10)]
+    public AudioClip[] sfx;
+
 }
 
 public enum FeelingColour

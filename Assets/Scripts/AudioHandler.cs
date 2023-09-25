@@ -7,10 +7,12 @@
  * 
  * Changes: 
  *  [17/09/2023] - Initial Implementation (C137)
+ *  [25/09/2023] - SFX support (C137)
  *  
  */
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class AudioHandler : Singleton<AudioHandler>
@@ -24,6 +26,16 @@ public class AudioHandler : Singleton<AudioHandler>
     /// Reference to the audio source used for background music
     /// </summary>
     public AudioSource backgroundAudioSource;
+
+    /// <summary>
+    /// Audio sources handling the sfx
+    /// </summary>
+    public List<AudioSource> sfxAudioSources;
+
+    /// <summary>
+    /// Parent for the dynamic sfx audio sources
+    /// </summary>
+    public Transform sfxAudioParent;
 
     /// <summary>
     /// The id of the tween for the voice acting
@@ -117,6 +129,29 @@ public class AudioHandler : Singleton<AudioHandler>
             backgroundFadeInTween = fadeInTween.uniqueId;
         }
     }
+
+    public static void PlaySFX(AudioClip[] clips)
+    {
+        if(clips.Length > singleton.sfxAudioSources.Count)
+        {
+            AddSFXSources(singleton.sfxAudioSources.Count - clips.Length);
+        }
+
+
+        for (int i = 0; i < clips.Length; i++)
+        {
+            PlayAudio(singleton.sfxAudioSources[i], clips[i]);
+        }
+    }
+
+    public static void AddSFXSources(int amount)
+    {
+        for (int i = 0; i < amount; i++)
+        {
+            singleton.sfxAudioSources.Add(singleton.sfxAudioParent.AddComponent<AudioSource>());
+        }
+    }
+
     static void PlayAudio(AudioSource source, AudioClip clip, bool setVolume = true)
     {
         if(setVolume)

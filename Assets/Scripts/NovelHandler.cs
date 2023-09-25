@@ -252,6 +252,10 @@ public class NovelHandler : MonoBehaviour
 
             //Background music
             AudioHandler.PlayBackground(script.audio.background, script.audio.loopBackground);
+
+            //SFX
+            if(script.audio.sfx.Any())
+                AudioHandler.PlaySFX(script.audio.sfx);
         }
 
         bool HandleBackground()
