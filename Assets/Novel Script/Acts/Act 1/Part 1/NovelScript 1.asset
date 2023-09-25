@@ -25,5 +25,6 @@ MonoBehaviour:
     No talking. Just cutting.*'
   speaker: 
   fontStyle: 0
+  fontAsset: {fileID: 0}
   writerSpeed: 0.02
   writerDelay: 0

@@ -29,5 +29,6 @@ MonoBehaviour:
   script: "This place feels so strange. I don\u2019t quite know how to describe it."
   speaker: MC
   fontStyle: 2
+  fontAsset: {fileID: 0}
   writerSpeed: 0.02
   writerDelay: 0
