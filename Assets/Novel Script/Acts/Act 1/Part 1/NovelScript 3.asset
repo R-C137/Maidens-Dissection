@@ -18,15 +18,13 @@ MonoBehaviour:
     voiceActing: {fileID: 0}
     background: {fileID: 0}
     loopBackground: 0
+    sfx: []
   choices: []
-  characters:
-  - sprite: {fileID: 21300000, guid: 617003e00f554c343b43b6d28f613922, type: 3}
-    feeling: 0
-    poseChange: 0
-    speaker: 0
+  characters: []
   script: Hardly anyone ever speaks or even looks at one another, and all I have
     heard today is that incessant chopping.
   speaker: MC
   fontStyle: 2
+  fontAsset: {fileID: 0}
   writerSpeed: 0.02
   writerDelay: 0

@@ -18,6 +18,7 @@ MonoBehaviour:
     voiceActing: {fileID: 0}
     background: {fileID: 0}
     loopBackground: 0
+    sfx: []
   choices: []
   characters: []
   script: '*Flowers decorate every window, sill and rose bushes crowd the edges of

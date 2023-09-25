@@ -18,10 +18,12 @@ MonoBehaviour:
     voiceActing: {fileID: 0}
     background: {fileID: 0}
     loopBackground: 0
+    sfx: []
   choices: []
   characters: []
   script: '*The sounds of flowers being cut echoes for a moment.*'
   speaker: 
   fontStyle: 0
+  fontAsset: {fileID: 0}
   writerSpeed: 0.02
   writerDelay: 0
