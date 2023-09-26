@@ -21,12 +21,13 @@ MonoBehaviour:
     sfx: []
   choices: []
   characters:
-  - sprite: {fileID: 21300000, guid: 33ce4c9bceb61b54ab848673a78e70e8, type: 3}
+  - sprite: {fileID: 21300000, guid: 9c0e01c5b841dba4d8e331aa5625e8c6, type: 3}
     feeling: 0
     customColor: {r: 0, g: 0, b: 0, a: 0}
     useCustomColor: 0
     poseChange: 0
     speaker: 1
+    speakerSizeMultiplier: 0
   script: "You see, flowers are beauty personified. Beauty is just so rare in our
     world that we get intoxicated by it\u2026 we like it\u2026 we love it. ."
   speaker: Ivy

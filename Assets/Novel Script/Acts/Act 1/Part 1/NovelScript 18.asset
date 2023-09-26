@@ -20,7 +20,14 @@ MonoBehaviour:
     loopBackground: 0
     sfx: []
   choices: []
-  characters: []
+  characters:
+  - sprite: {fileID: 21300000, guid: 394d1e989a40bb148ac25638cd3db835, type: 3}
+    feeling: 0
+    customColor: {r: 0, g: 0, b: 0, a: 0}
+    useCustomColor: 0
+    poseChange: 0
+    speaker: 0
+    speakerSizeMultiplier: 0
   script: Are you hurt?
   speaker: MC
   fontStyle: 0

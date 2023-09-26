@@ -21,12 +21,13 @@ MonoBehaviour:
     sfx: []
   choices: []
   characters:
-  - sprite: {fileID: 21300000, guid: 33ce4c9bceb61b54ab848673a78e70e8, type: 3}
+  - sprite: {fileID: 21300000, guid: 9c0e01c5b841dba4d8e331aa5625e8c6, type: 3}
     feeling: 0
     customColor: {r: 0, g: 0, b: 0, a: 0}
     useCustomColor: 0
     poseChange: 0
     speaker: 1
+    speakerSizeMultiplier: 0
   script: "It\u2019s for my biology class. First, we cut up their stem so that all
     there is left is the flower. We then dismember its petals and analyze them down
     to their very cells and tissue. "

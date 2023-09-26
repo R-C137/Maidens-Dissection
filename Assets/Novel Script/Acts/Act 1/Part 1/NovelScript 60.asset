@@ -12,13 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92c1ce71a98cbc241a34affdff9fbad4, type: 3}
   m_Name: NovelScript 60
   m_EditorClassIdentifier: 
-  backgroundSprite: {fileID: 0}
+  backgroundSprite: {fileID: 21300000, guid: a389774d9c254f34e9f6e2d110f5d7b5, type: 3}
   backgroundTitle: 
   audio:
     voiceActing: {fileID: 0}
     background: {fileID: 0}
     loopBackground: 0
-    sfx: []
+    sfx:
+    - {fileID: 8300000, guid: 84577ffec5717734cbf7f0fe3e427286, type: 3}
   choices: []
   characters:
   - sprite: {fileID: 21300000, guid: e0ce6333ed2fc5147aae77505e31a18d, type: 3}
@@ -27,6 +28,7 @@ MonoBehaviour:
     useCustomColor: 0
     poseChange: 0
     speaker: 1
+    speakerSizeMultiplier: 0
   script: "Ivy, is that you? It has been so long! I heard some crying and I just
     knew it was you! \r\n"
   speaker: Camille

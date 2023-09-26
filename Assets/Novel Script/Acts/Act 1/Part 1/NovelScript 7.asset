@@ -18,7 +18,8 @@ MonoBehaviour:
     voiceActing: {fileID: 0}
     background: {fileID: 0}
     loopBackground: 0
-    sfx: []
+    sfx:
+    - {fileID: 8300000, guid: 322cf8a23a1b8ae488716b7d93c4cfbf, type: 3}
   choices: []
   characters: []
   script: Perhaps I should just withdraw. Leave this place.

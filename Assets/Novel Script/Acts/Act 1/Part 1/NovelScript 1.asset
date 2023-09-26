@@ -21,9 +21,9 @@ MonoBehaviour:
     sfx: []
   choices: []
   characters: []
-  script: '*Flowers decorate every window, sill and rose bushes crowd the edges of
-    the pathways. We dally around  as the sound of cutting echoes in the distance.
-    No talking. Just cutting.*'
+  script: Flowers decorate every window, sill and rose bushes crowd the edges of
+    the pathways. You dally around as the sound of cutting echoes in the distance.
+    No talking. Just cutting.
   speaker: 
   fontStyle: 0
   fontAsset: {fileID: 0}

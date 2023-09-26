@@ -34,18 +34,20 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 905293853281762439d89c40311ddd77, type: 2}
     - {fileID: 11400000, guid: 25d7c72bd87bc104ca4df1c554e0d74f, type: 2}
   characters:
-  - sprite: {fileID: 21300000, guid: 33ce4c9bceb61b54ab848673a78e70e8, type: 3}
+  - sprite: {fileID: 21300000, guid: 1b297e42a7bd8ba42a9dc5907808da12, type: 3}
     feeling: 0
     customColor: {r: 0, g: 0, b: 0, a: 0}
     useCustomColor: 0
     poseChange: 0
     speaker: 0
+    speakerSizeMultiplier: 0
   - sprite: {fileID: 21300000, guid: e0ce6333ed2fc5147aae77505e31a18d, type: 3}
     feeling: 0
     customColor: {r: 0, g: 0, b: 0, a: 0}
     useCustomColor: 0
     poseChange: 0
     speaker: 0
+    speakerSizeMultiplier: 0
   script: So where were we?
   speaker: Ivy
   fontStyle: 0

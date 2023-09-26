@@ -13,11 +13,12 @@ MonoBehaviour:
   m_Name: NovelScript 0
   m_EditorClassIdentifier: 
   backgroundSprite: {fileID: 0}
-  backgroundTitle: FIRST DAY AT THE ACADEMY
+  backgroundTitle: 
   audio:
     voiceActing: {fileID: 0}
     background: {fileID: 0}
     loopBackground: 0
+    sfx: []
   choices: []
   characters: []
   script: 'Oh how the weeks and months fly by like a dandelion in the wind.
@@ -25,5 +26,6 @@ MonoBehaviour:
 '
   speaker: MC
   fontStyle: 0
+  fontAsset: {fileID: 0}
   writerSpeed: 0.02
   writerDelay: 0
