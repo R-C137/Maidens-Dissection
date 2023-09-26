@@ -9,7 +9,7 @@
  *  [21/09/2023] - Initial Implementation (C137)
  *  [22/09/2023] - Added default name remap for MC (C137)
  *  [23/09/2023] - Added custom font support (C137)
- *  [26/09/2023] - Custom color utility support + Speaker name colour support (C137)
+ *  [26/09/2023] - Custom color utility support + Speaker name colour support + Name remap is setup in Awake() (C137)
  *  
  */
 using System;
@@ -60,8 +60,10 @@ public class TextHandler : Singleton<TextHandler>
         {"NARRATION", "Narration"}
     };
 
-    private void Start()
+    protected override void Awake()
     {
+        base.Awake();
+
         if (PlayerPrefs.HasKey("general.mc-name"))
             nameRemap.Add("MC", PlayerPrefs.GetString("general.mc-name"));
         else
