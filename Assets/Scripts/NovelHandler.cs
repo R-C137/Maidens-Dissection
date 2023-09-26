@@ -175,11 +175,19 @@ public class NovelHandler : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.Mouse1))
         {
-            if (!storyWriter.writing)
-                ProgressScript();
-            else
-                storyWriter.Skip();
+            HandleProgression();
         }
+    }
+
+    /// <summary>
+    /// Either skips the writing effect of progresses the script
+    /// </summary>
+    public void HandleProgression()
+    {
+        if (!storyWriter.writing)
+            ProgressScript();
+        else
+            storyWriter.Skip();
     }
 
     /// <summary>
@@ -219,7 +227,10 @@ public class NovelHandler : MonoBehaviour
 
         ShowScript(script, choice);
 
-        //backButton.SetActive(currentScriptIndex > 0);
+        if (act == 0)
+            backButton.SetActive(currentScriptIndex > -1);
+        else
+            backButton.SetActive(currentScriptIndex > 0);
     }
 
     /// <summary>

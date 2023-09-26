@@ -207,7 +207,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1313747937}
         m_TargetAssemblyTypeName: NovelHandler, Assembly-CSharp
-        m_MethodName: ProgressScript
+        m_MethodName: HandleProgression
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
