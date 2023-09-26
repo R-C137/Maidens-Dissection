@@ -186,6 +186,11 @@ public class NovelScript : ScriptableObject
     public float writerDelay;
 
     /// <summary>
+    /// Changes the colour of the whole dialogue
+    /// </summary>
+    public Color dialogueColour = Color.white;
+
+    /// <summary>
     /// Handles the changing of colour for links;
     /// </summary>
     public ColourChange[] colourChanges;

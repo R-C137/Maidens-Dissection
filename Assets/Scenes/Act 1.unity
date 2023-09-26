@@ -2767,6 +2767,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   storyWriter: {fileID: 1080842819}
+  currentScript: {fileID: 0}
   speakerShower: {fileID: 1404173174}
   speakerImage: {fileID: 728069349}
 --- !u!1 &1394497971

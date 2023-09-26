@@ -99,10 +99,13 @@ public class TextHandler : Singleton<TextHandler>
 
         singleton.storyWriter.Write();
 
+
     }
 
     public static void HandleColourChanges(NovelScript script)
     {
+        singleton.storyWriter.textShower.color = script.dialogueColour;
+
         singleton.storyWriter.textShower.ForceMeshUpdate();
 
         foreach (TMP_LinkInfo link in singleton.storyWriter.textShower.textInfo.linkInfo)
