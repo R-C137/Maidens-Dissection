@@ -9,7 +9,7 @@
  *  [21/09/2023] - Initial Implementation (C137)
  *  [22/09/2023] - Added default name remap for MC (C137)
  *  [23/09/2023] - Added custom font support (C137)
- *  [26/09/2023] - Custom color utility support (C137)
+ *  [26/09/2023] - Custom color utility support + Speaker name colour support (C137)
  *  
  */
 using System;
@@ -104,8 +104,10 @@ public class TextHandler : Singleton<TextHandler>
 
     public static void HandleColourChanges(NovelScript script)
     {
+        //Total dialogue colour
         singleton.storyWriter.textShower.color = script.dialogueColour;
 
+        //Section based colour override
         singleton.storyWriter.textShower.ForceMeshUpdate();
 
         foreach (TMP_LinkInfo link in singleton.storyWriter.textShower.textInfo.linkInfo)
@@ -145,7 +147,11 @@ public class TextHandler : Singleton<TextHandler>
     /// <param name="script">The script to base the animations</param>
     public static void HandleSpeaker(NovelScript script)
     {
+        //Remap the names of the spakers (if any)
         string remappedName = RemapName(script.speaker);
+
+        //Set the colour of the speaker
+        singleton.speakerShower.color = script.speakerColour;
 
         if (script.speaker == string.Empty || script.speaker == null)
         {

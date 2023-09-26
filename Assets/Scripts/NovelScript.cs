@@ -11,7 +11,7 @@
  *  [17/09/2023] - Implemented audio system (C137)
  *  [23/09/2023] - Added custom font support (C137)
  *  [25/09/2023] - Added sfx audio support + Custom speaker size support (C137)
- *  [26/09/2023] - Custom color utility support (C137)
+ *  [26/09/2023] - Custom color utility support + Speaker name colour support + Improved display in the inspector (C137)
  */
 using System;
 using System.Collections;
@@ -161,14 +161,9 @@ public class NovelScript : ScriptableObject
     public string script;
 
     /// <summary>
-    /// The name of the speaker
-    /// </summary>
-    public string speaker;
-
-    /// <summary>
     /// The font style to use on the script
     /// </summary>
-    public TMPro.FontStyles fontStyle;
+    public FontStyles fontStyle;
 
     /// <summary>
     /// To font to be used
@@ -176,8 +171,25 @@ public class NovelScript : ScriptableObject
     public TMP_FontAsset fontAsset;
 
     /// <summary>
+    /// Changes the colour of the whole dialogue
+    /// </summary>
+    public Color dialogueColour = Color.white;
+
+    /// <summary>
+    /// The name of the speaker
+    /// </summary>
+    [Header("Speaker Settings")]
+    public string speaker;
+
+    /// <summary>
+    /// The colour to use for the speaker text
+    /// </summary>
+    public Color speakerColour = Color.white;
+
+    /// <summary>
     /// The speed for the text writer to write the script
     /// </summary>
+    [Header("Writing Effect")]
     public float writerSpeed = 0.02f;
 
     /// <summary>
@@ -186,12 +198,8 @@ public class NovelScript : ScriptableObject
     public float writerDelay;
 
     /// <summary>
-    /// Changes the colour of the whole dialogue
-    /// </summary>
-    public Color dialogueColour = Color.white;
-
-    /// <summary>
     /// Handles the changing of colour for links;
     /// </summary>
+    [Header("Editor Only")]
     public ColourChange[] colourChanges;
 }
