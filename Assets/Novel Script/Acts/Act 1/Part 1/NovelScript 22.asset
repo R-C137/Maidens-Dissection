@@ -29,10 +29,11 @@ MonoBehaviour:
     speaker: 0
     speakerSizeMultiplier: 0
   script: Do you normally go picking roses in thorn bushes?
-  speaker: MC
   fontStyle: 0
   fontAsset: {fileID: 0}
+  dialogueColour: {r: 1, g: 1, b: 1, a: 1}
+  speaker: MC
+  speakerColour: {r: 1, g: 1, b: 1, a: 1}
   writerSpeed: 0.02
   writerDelay: 0
-  dialogueColour: {r: 1, g: 1, b: 1, a: 1}
   colourChanges: []

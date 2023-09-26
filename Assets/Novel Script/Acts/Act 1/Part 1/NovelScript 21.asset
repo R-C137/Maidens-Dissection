@@ -15,17 +15,18 @@ MonoBehaviour:
   backgroundSprite: {fileID: 21300000, guid: 90e0393f7f22fa2458f5de7b0ebc5680, type: 3}
   backgroundTitle: 
   audio:
-    voiceActing: {fileID: 0}
+    voiceActing: {fileID: 8300000, guid: 2cd878935cca0df43a26c3b748e3cb1b, type: 3}
     background: {fileID: 0}
     loopBackground: 0
     sfx: []
   choices: []
   characters: []
   script: I got the rose I was looking for.
-  speaker: Ivy
   fontStyle: 0
   fontAsset: {fileID: 0}
+  dialogueColour: {r: 0.8039216, g: 0.8352941, b: 0.9607843, a: 1}
+  speaker: Ivy
+  speakerColour: {r: 1, g: 1, b: 1, a: 1}
   writerSpeed: 0.02
   writerDelay: 0
-  dialogueColour: {r: 0.8039216, g: 0.8352941, b: 0.9607843, a: 1}
   colourChanges: []
