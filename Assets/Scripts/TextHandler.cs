@@ -9,11 +9,13 @@
  *  [21/09/2023] - Initial Implementation (C137)
  *  [22/09/2023] - Added default name remap for MC (C137)
  *  [23/09/2023] - Added custom font support (C137)
+ *  [26/09/2023] - Custom color utility support (C137)
  *  
  */
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -24,6 +26,11 @@ public class TextHandler : Singleton<TextHandler>
     /// Reference to the writer, to set proper values based on the script
     /// </summary>
     public TextWriter storyWriter;
+
+    /// <summary>
+    /// The current script being handled
+    /// </summary>
+    public NovelScript currentScript;
 
     /// <summary>
     /// The text shower for the speaker
@@ -61,12 +68,20 @@ public class TextHandler : Singleton<TextHandler>
             nameRemap.Add("MC", "MC");
     }
 
+    private void Update()
+    {
+        if(currentScript != null)
+            HandleColourChanges(currentScript);
+    }
+
     /// <summary>
     /// Handles the showing of the text of the story telling and speakers
     /// </summary>
     /// <param name="script">The script to base the text handling on</param>
     public static void HandleText(NovelScript script)
     {
+        singleton.currentScript = script;
+
         HandleSpeaker(script);
 
         singleton.storyWriter.textShower.fontStyle = script.fontStyle;
@@ -84,6 +99,41 @@ public class TextHandler : Singleton<TextHandler>
 
         singleton.storyWriter.Write();
 
+    }
+
+    public static void HandleColourChanges(NovelScript script)
+    {
+        singleton.storyWriter.textShower.ForceMeshUpdate();
+
+        foreach (TMP_LinkInfo link in singleton.storyWriter.textShower.textInfo.linkInfo)
+        {
+            ColourChange colourChange;
+
+            var tmp = script.colourChanges.Where(c => link.GetLinkID() == c.linkID);
+            if (tmp.Any())
+                colourChange = tmp.First();
+            else
+                continue;
+
+            for (int i = link.linkTextfirstCharacterIndex; i < link.linkTextfirstCharacterIndex + link.linkTextLength; i++)
+            {
+                TMP_CharacterInfo charInfo = singleton.storyWriter.textShower.textInfo.characterInfo[i]; // Gets info on the current character
+                int materialIndex = charInfo.materialReferenceIndex; // Gets the index of the current character material
+
+                Color32[] newColors = singleton.storyWriter.textShower.textInfo.meshInfo[materialIndex].colors32;
+
+                // Loop all vertexes of the current characters
+                for (int j = 0; j < 4; j++)
+                {
+                    if (charInfo.character == ' ') continue; // Skips spaces
+                    int vertexIndex = charInfo.vertexIndex + j;
+
+                    // Sets the new effects
+                    newColors[vertexIndex] = colourChange.color;
+                }
+            }
+        }
+        singleton.storyWriter.textShower.UpdateVertexData(TMP_VertexDataUpdateFlags.All);
     }
 
     /// <summary>

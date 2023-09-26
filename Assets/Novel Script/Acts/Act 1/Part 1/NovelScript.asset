@@ -29,3 +29,4 @@ MonoBehaviour:
   fontAsset: {fileID: 0}
   writerSpeed: 0.02
   writerDelay: 0
+  colourChanges: []

@@ -11,6 +11,7 @@
  *  [17/09/2023] - Implemented audio system (C137)
  *  [23/09/2023] - Added custom font support (C137)
  *  [25/09/2023] - Added sfx audio support + Custom speaker size support (C137)
+ *  [26/09/2023] - Custom color utility support (C137)
  */
 using System;
 using System.Collections;
@@ -108,6 +109,20 @@ public struct Character
     public float speakerSizeMultiplier;
 }
 
+[Serializable]
+public struct ColourChange
+{
+    /// <summary>
+    /// The name of the link
+    /// </summary>
+    public string linkID;
+
+    /// <summary>
+    /// The colour to change to
+    /// </summary>
+    public Color color;
+}
+
 [CreateAssetMenu(fileName = "NovelScript", menuName = "Novel/Script", order = 1)]
 public class NovelScript : ScriptableObject
 {
@@ -169,4 +184,9 @@ public class NovelScript : ScriptableObject
     /// The delay before the writer starts writing
     /// </summary>
     public float writerDelay;
+
+    /// <summary>
+    /// Handles the changing of colour for links;
+    /// </summary>
+    public ColourChange[] colourChanges;
 }
