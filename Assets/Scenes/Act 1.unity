@@ -2714,7 +2714,7 @@ MonoBehaviour:
   currentScriptIndex: -1
   currentChoiceIndex: -1
   choiceMadeIndex: -1
-  act: 1
+  act: -1
 --- !u!114 &1313747938
 MonoBehaviour:
   m_ObjectHideFlags: 0
