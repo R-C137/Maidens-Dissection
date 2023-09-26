@@ -12,12 +12,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92c1ce71a98cbc241a34affdff9fbad4, type: 3}
   m_Name: NovelScript 2
   m_EditorClassIdentifier: 
-  background: {fileID: 0}
+  backgroundSprite: {fileID: 21300000, guid: eb61d8aeb2ea0da4a9a82e5f754dd6f3, type: 3}
   backgroundTitle: 
-  characters: []
-  script: What? This girl is the Student Council President? I find that hard to believe.
+  audio:
+    voiceActing: {fileID: 0}
+    background: {fileID: 0}
+    loopBackground: 0
+    sfx: []
   choices: []
+  characters:
+  - sprite: {fileID: 21300000, guid: 1b297e42a7bd8ba42a9dc5907808da12, type: 3}
+    feeling: 0
+    customColor: {r: 0, g: 0, b: 0, a: 0}
+    useCustomColor: 0
+    poseChange: 0
+    speaker: 0
+    speakerSizeMultiplier: 0
+  - sprite: {fileID: 21300000, guid: f825f2b2e6739b4459c569e214cb9b32, type: 3}
+    feeling: 0
+    customColor: {r: 0, g: 0, b: 0, a: 0}
+    useCustomColor: 0
+    poseChange: 0
+    speaker: 0
+    speakerSizeMultiplier: 0
+  script: What? This girl is the Student Council President? I find that hard to believe.
   speaker: MC
   fontStyle: 0
+  fontAsset: {fileID: 0}
   writerSpeed: 0.02
   writerDelay: 0
+  dialogueColour: {r: 1, g: 1, b: 1, a: 1}
+  colourChanges: []

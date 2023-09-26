@@ -27,3 +27,5 @@ MonoBehaviour:
   fontAsset: {fileID: 0}
   writerSpeed: 0.02
   writerDelay: 0
+  dialogueColour: {r: 0.9607843, g: 0.8039216, b: 0.91764706, a: 1}
+  colourChanges: []
