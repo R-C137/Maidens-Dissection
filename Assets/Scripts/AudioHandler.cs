@@ -8,10 +8,11 @@
  * Changes: 
  *  [17/09/2023] - Initial Implementation (C137)
  *  [25/09/2023] - SFX support (C137)
- *  
+ *  [26/09/2023] - SFX no longer carry over scripts (C137)
  */
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -132,6 +133,16 @@ public class AudioHandler : Singleton<AudioHandler>
 
     public static void PlaySFX(AudioClip[] clips)
     {
+        if (!clips.Any())
+        {
+            foreach(var audioSource in singleton.sfxAudioSources)
+            {
+                audioSource.Stop();
+                audioSource.clip = null;
+            }
+            return;
+        }
+
         if(clips.Length > singleton.sfxAudioSources.Count)
         {
             AddSFXSources(singleton.sfxAudioSources.Count - clips.Length);

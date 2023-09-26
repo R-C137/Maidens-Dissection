@@ -14,7 +14,7 @@
  *  [20/09/2023] - Remap speaker names + Fix progress saving + Speaker name flower animation + Error handling + Improved character fading(C137)
  *  [21/09/2023] - Moved text handler to its own script
  *  [22/09/2023] - Multi-act support (C137)
- *  [26/09/2023] - Background improvements (C137)
+ *  [26/09/2023] - Background improvements + Progressin buttons improvements + SFX improvements (C137)
  *  
  */
 using System;
@@ -278,8 +278,7 @@ public class NovelHandler : MonoBehaviour
             AudioHandler.PlayBackground(script.audio.background, script.audio.loopBackground);
 
             //SFX
-            if(script.audio.sfx.Any())
-                AudioHandler.PlaySFX(script.audio.sfx);
+            AudioHandler.PlaySFX(script.audio.sfx);
         }
 
         bool HandleBackground()
