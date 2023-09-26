@@ -21,7 +21,7 @@ MonoBehaviour:
     sfx: []
   choices: []
   characters:
-  - sprite: {fileID: 21300000, guid: cd6a257efdd005b44bcc5f5c5acdd484, type: 3}
+  - sprite: {fileID: 21300000, guid: fdca4b828ce6ad34481a4c7003142442, type: 3}
     feeling: 0
     customColor: {r: 0, g: 0, b: 0, a: 0}
     useCustomColor: 0
@@ -31,10 +31,11 @@ MonoBehaviour:
   script: "No, no. The gardener cannot let themself be intoxicated by the flower\u2019s
     beauty. Otherwise they die with it. The gardener is here to see the next generation
     of flowers bloom and that\u2019s it!  I am simply here to fulfill my role. "
-  speaker: Ivy
   fontStyle: 0
   fontAsset: {fileID: 0}
+  dialogueColour: {r: 0.8039216, g: 0.8352941, b: 0.9607843, a: 1}
+  speaker: Ivy
+  speakerColour: {r: 1, g: 1, b: 1, a: 1}
   writerSpeed: 0.02
   writerDelay: 0
-  dialogueColour: {r: 0.8039216, g: 0.8352941, b: 0.9607843, a: 1}
   colourChanges: []

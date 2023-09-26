@@ -24,10 +24,11 @@ MonoBehaviour:
   script: Flowers decorate every window, sill and rose bushes crowd the edges of
     the pathways. You dally around as the sound of cutting echoes in the distance.
     No talking. Just cutting.
-  speaker: 
-  fontStyle: 0
+  fontStyle: 1
   fontAsset: {fileID: 0}
+  dialogueColour: {r: 1, g: 1, b: 1, a: 1}
+  speaker: 
+  speakerColour: {r: 1, g: 1, b: 1, a: 1}
   writerSpeed: 0.02
   writerDelay: 0
-  dialogueColour: {r: 1, g: 1, b: 1, a: 1}
   colourChanges: []

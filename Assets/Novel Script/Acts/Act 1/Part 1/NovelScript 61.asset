@@ -21,7 +21,7 @@ MonoBehaviour:
     sfx: []
   choices: []
   characters:
-  - sprite: {fileID: 21300000, guid: e0ce6333ed2fc5147aae77505e31a18d, type: 3}
+  - sprite: {fileID: 21300000, guid: b7ff68ee59653fe4c9edd90db039ee8b, type: 3}
     feeling: 0
     customColor: {r: 0, g: 0, b: 0, a: 0}
     useCustomColor: 0
@@ -30,10 +30,11 @@ MonoBehaviour:
     speakerSizeMultiplier: 0
   script: "Who is she? She looks so much more alive. I can\u2019t quite place my
     finger on why."
-  speaker: MC
   fontStyle: 2
   fontAsset: {fileID: 0}
+  dialogueColour: {r: 1, g: 1, b: 1, a: 1}
+  speaker: MC
+  speakerColour: {r: 1, g: 1, b: 1, a: 1}
   writerSpeed: 0.02
   writerDelay: 0
-  dialogueColour: {r: 1, g: 1, b: 1, a: 1}
   colourChanges: []

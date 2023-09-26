@@ -21,7 +21,7 @@ MonoBehaviour:
     sfx: []
   choices: []
   characters:
-  - sprite: {fileID: 21300000, guid: 1b297e42a7bd8ba42a9dc5907808da12, type: 3}
+  - sprite: {fileID: 21300000, guid: fdca4b828ce6ad34481a4c7003142442, type: 3}
     feeling: 0
     customColor: {r: 0, g: 0, b: 0, a: 0}
     useCustomColor: 0
@@ -29,10 +29,11 @@ MonoBehaviour:
     speaker: 0
     speakerSizeMultiplier: 0
   script: 'Is this how all biology majors are? '
-  speaker: MC
   fontStyle: 2
   fontAsset: {fileID: 0}
+  dialogueColour: {r: 1, g: 1, b: 1, a: 1}
+  speaker: MC
+  speakerColour: {r: 1, g: 1, b: 1, a: 1}
   writerSpeed: 0.02
   writerDelay: 0
-  dialogueColour: {r: 1, g: 1, b: 1, a: 1}
   colourChanges: []

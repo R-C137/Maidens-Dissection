@@ -21,14 +21,14 @@ MonoBehaviour:
     sfx: []
   choices: []
   characters:
-  - sprite: {fileID: 21300000, guid: 0d689dae60445e942ad988a50496b297, type: 3}
+  - sprite: {fileID: 21300000, guid: 8e3f365fd4d544e45824ea6290159f79, type: 3}
     feeling: 0
     customColor: {r: 0, g: 0, b: 0, a: 0}
     useCustomColor: 0
     poseChange: 0
     speaker: 1
     speakerSizeMultiplier: 0
-  - sprite: {fileID: 21300000, guid: 34dee308b64044f40a499941bbd0e69a, type: 3}
+  - sprite: {fileID: 21300000, guid: 0b84936bbb947bf4b90991daf80bc634, type: 3}
     feeling: 0
     customColor: {r: 0, g: 0, b: 0, a: 0}
     useCustomColor: 0
@@ -38,10 +38,11 @@ MonoBehaviour:
   script: But nobody has actually ever met them though. So, I knew that If I wanted
     to, I would have to work especially hard to ensure my own studies aligned with
     theirs.
-  speaker: Camille
   fontStyle: 0
   fontAsset: {fileID: 0}
+  dialogueColour: {r: 1, g: 1, b: 1, a: 1}
+  speaker: Camille
+  speakerColour: {r: 1, g: 1, b: 1, a: 1}
   writerSpeed: 0.02
   writerDelay: 0
-  dialogueColour: {r: 1, g: 1, b: 1, a: 1}
   colourChanges: []

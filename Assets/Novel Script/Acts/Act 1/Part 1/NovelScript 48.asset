@@ -21,7 +21,7 @@ MonoBehaviour:
     sfx: []
   choices: []
   characters:
-  - sprite: {fileID: 21300000, guid: 1b297e42a7bd8ba42a9dc5907808da12, type: 3}
+  - sprite: {fileID: 21300000, guid: c7d75dc3f4053844f86785147fd46da4, type: 3}
     feeling: 0
     customColor: {r: 0, g: 0, b: 0, a: 0}
     useCustomColor: 0
@@ -31,10 +31,11 @@ MonoBehaviour:
   script: "The gardener sees them grow, bloom with excitement, and then has to cut
     them apart in order to put a value on their beauty whether it be a price or some
     scientific label. This is how it all works. \r\n"
-  speaker: Ivy
   fontStyle: 0
   fontAsset: {fileID: 0}
+  dialogueColour: {r: 0.8039216, g: 0.8352941, b: 0.9607843, a: 1}
+  speaker: Ivy
+  speakerColour: {r: 1, g: 1, b: 1, a: 1}
   writerSpeed: 0.02
   writerDelay: 0
-  dialogueColour: {r: 0.8039216, g: 0.8352941, b: 0.9607843, a: 1}
   colourChanges: []

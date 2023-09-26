@@ -21,12 +21,13 @@ MonoBehaviour:
     sfx: []
   choices: []
   characters: []
-  script: "It is weird, from initial impressions I wouldn\u2019t have ever imagined
-    Ivy being quiet. Did I do something wrong?"
-  speaker: MC
+  script: It is weird, from initial impressions I would have never imagined Ivy being
+    quiet. Did I do something wrong?
   fontStyle: 2
   fontAsset: {fileID: 0}
+  dialogueColour: {r: 1, g: 1, b: 1, a: 1}
+  speaker: MC
+  speakerColour: {r: 1, g: 1, b: 1, a: 1}
   writerSpeed: 0.02
   writerDelay: 0
-  dialogueColour: {r: 1, g: 1, b: 1, a: 1}
   colourChanges: []

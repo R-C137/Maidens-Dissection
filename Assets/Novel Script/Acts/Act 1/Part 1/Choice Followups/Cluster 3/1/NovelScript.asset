@@ -12,14 +12,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92c1ce71a98cbc241a34affdff9fbad4, type: 3}
   m_Name: NovelScript
   m_EditorClassIdentifier: 
-  background: {fileID: 0}
+  backgroundSprite: {fileID: 0}
   backgroundTitle: 
-  characters: []
+  audio:
+    voiceActing: {fileID: 0}
+    background: {fileID: 0}
+    loopBackground: 0
+    sfx: []
+  choices: []
+  characters:
+  - sprite: {fileID: 21300000, guid: d640d6dda76748f45b0119202b292982, type: 3}
+    feeling: 0
+    customColor: {r: 0, g: 0, b: 0, a: 0}
+    useCustomColor: 0
+    poseChange: 0
+    speaker: 0
+    speakerSizeMultiplier: 0
   script: 'When would you be able to hang out again?
 
 '
-  choices: []
-  speaker: MC
   fontStyle: 0
+  fontAsset: {fileID: 0}
+  dialogueColour: {r: 1, g: 1, b: 1, a: 1}
+  speaker: MC
+  speakerColour: {r: 1, g: 1, b: 1, a: 1}
   writerSpeed: 0.02
   writerDelay: 0
+  colourChanges: []

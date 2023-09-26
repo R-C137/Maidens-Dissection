@@ -21,11 +21,12 @@ MonoBehaviour:
     sfx: []
   choices: []
   characters: []
-  script: But all this academy seems interested in is the dissection of flowers.
-  speaker: MC
+  script: But all this academy seems to be interested in is the dissection of flowers.
   fontStyle: 2
   fontAsset: {fileID: 0}
+  dialogueColour: {r: 1, g: 1, b: 1, a: 1}
+  speaker: MC
+  speakerColour: {r: 1, g: 1, b: 1, a: 1}
   writerSpeed: 0.02
   writerDelay: 0
-  dialogueColour: {r: 1, g: 1, b: 1, a: 1}
   colourChanges: []

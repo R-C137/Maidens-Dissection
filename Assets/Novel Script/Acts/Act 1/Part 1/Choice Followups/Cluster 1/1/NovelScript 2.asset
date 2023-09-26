@@ -21,14 +21,14 @@ MonoBehaviour:
     sfx: []
   choices: []
   characters:
-  - sprite: {fileID: 21300000, guid: 1b297e42a7bd8ba42a9dc5907808da12, type: 3}
+  - sprite: {fileID: 21300000, guid: fdca4b828ce6ad34481a4c7003142442, type: 3}
     feeling: 0
     customColor: {r: 0, g: 0, b: 0, a: 0}
     useCustomColor: 0
     poseChange: 0
     speaker: 1
     speakerSizeMultiplier: 0
-  - sprite: {fileID: 21300000, guid: f825f2b2e6739b4459c569e214cb9b32, type: 3}
+  - sprite: {fileID: 21300000, guid: d640d6dda76748f45b0119202b292982, type: 3}
     feeling: 0
     customColor: {r: 0, g: 0, b: 0, a: 0}
     useCustomColor: 0
@@ -37,10 +37,11 @@ MonoBehaviour:
     speakerSizeMultiplier: 0
   script: "I don\u2019t even sense when someone interrupts me. It\u2019s too hard
     to even notice them. "
-  speaker: Ivy
   fontStyle: 0
   fontAsset: {fileID: 0}
+  dialogueColour: {r: 0.8039216, g: 0.8352941, b: 0.9607843, a: 1}
+  speaker: Ivy
+  speakerColour: {r: 1, g: 1, b: 1, a: 1}
   writerSpeed: 0.02
   writerDelay: 0
-  dialogueColour: {r: 0.8039216, g: 0.8352941, b: 0.9607843, a: 1}
   colourChanges: []

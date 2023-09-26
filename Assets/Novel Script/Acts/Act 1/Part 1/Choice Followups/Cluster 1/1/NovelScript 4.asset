@@ -21,14 +21,14 @@ MonoBehaviour:
     sfx: []
   choices: []
   characters:
-  - sprite: {fileID: 21300000, guid: 1b297e42a7bd8ba42a9dc5907808da12, type: 3}
+  - sprite: {fileID: 21300000, guid: 2083eadf1e939d04bb12eccb7e988860, type: 3}
     feeling: 0
     customColor: {r: 0, g: 0, b: 0, a: 0}
     useCustomColor: 0
     poseChange: 0
     speaker: 0
     speakerSizeMultiplier: 0
-  - sprite: {fileID: 21300000, guid: f825f2b2e6739b4459c569e214cb9b32, type: 3}
+  - sprite: {fileID: 21300000, guid: dd1ad7bb62b5e3a4098eceb8dacaab91, type: 3}
     feeling: 0
     customColor: {r: 0, g: 0, b: 0, a: 0}
     useCustomColor: 0
@@ -36,10 +36,11 @@ MonoBehaviour:
     speaker: 0
     speakerSizeMultiplier: 0
   script: '*Camille playfully nudges Ivy.*'
-  speaker: 
   fontStyle: 1
   fontAsset: {fileID: 0}
+  dialogueColour: {r: 1, g: 1, b: 1, a: 1}
+  speaker: 
+  speakerColour: {r: 1, g: 1, b: 1, a: 1}
   writerSpeed: 0.02
   writerDelay: 0
-  dialogueColour: {r: 1, g: 1, b: 1, a: 1}
   colourChanges: []

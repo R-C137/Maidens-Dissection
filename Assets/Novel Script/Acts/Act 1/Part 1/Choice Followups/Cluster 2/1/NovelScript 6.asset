@@ -18,11 +18,22 @@ MonoBehaviour:
     voiceActing: {fileID: 0}
     background: {fileID: 0}
     loopBackground: 0
+    sfx: []
   choices: []
   characters:
-  - {fileID: 21300000, guid: 0e6ce51c30cbcfb46888ab3fd1a36907, type: 3}
+  - sprite: {fileID: 21300000, guid: 21e24b4cb512cf74188d09bccc002407, type: 3}
+    feeling: 0
+    customColor: {r: 0, g: 0, b: 0, a: 0}
+    useCustomColor: 0
+    poseChange: 0
+    speaker: 0
+    speakerSizeMultiplier: 0
   script: 'You truly amazed me when I volunteered to tutor you for that class. '
-  speaker: Camille
   fontStyle: 0
+  fontAsset: {fileID: 0}
+  dialogueColour: {r: 1, g: 1, b: 1, a: 1}
+  speaker: Camille
+  speakerColour: {r: 1, g: 1, b: 1, a: 1}
   writerSpeed: 0.02
   writerDelay: 0
+  colourChanges: []

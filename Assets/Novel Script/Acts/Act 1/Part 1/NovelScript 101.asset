@@ -21,7 +21,7 @@ MonoBehaviour:
     sfx: []
   choices: []
   characters:
-  - sprite: {fileID: 21300000, guid: 0d689dae60445e942ad988a50496b297, type: 3}
+  - sprite: {fileID: 21300000, guid: b7ff68ee59653fe4c9edd90db039ee8b, type: 3}
     feeling: 0
     customColor: {r: 0, g: 0, b: 0, a: 0}
     useCustomColor: 0
@@ -30,10 +30,11 @@ MonoBehaviour:
     speakerSizeMultiplier: 0
   script: "I didn\u2019t notice how bright her hair was before. She stands out from
     the rest of the academy."
-  speaker: MC
   fontStyle: 2
   fontAsset: {fileID: 0}
+  dialogueColour: {r: 1, g: 1, b: 1, a: 1}
+  speaker: MC
+  speakerColour: {r: 1, g: 1, b: 1, a: 1}
   writerSpeed: 0.02
   writerDelay: 0
-  dialogueColour: {r: 1, g: 1, b: 1, a: 1}
   colourChanges: []

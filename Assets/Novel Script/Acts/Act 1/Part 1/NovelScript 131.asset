@@ -21,28 +21,22 @@ MonoBehaviour:
     sfx: []
   choices: []
   characters:
-  - sprite: {fileID: 21300000, guid: 0d689dae60445e942ad988a50496b297, type: 3}
+  - sprite: {fileID: 21300000, guid: b1e935ca1bf89724896ee7957b4a50ce, type: 3}
     feeling: 0
     customColor: {r: 0, g: 0, b: 0, a: 0}
     useCustomColor: 0
     poseChange: 0
     speaker: 0
     speakerSizeMultiplier: 0
-  - sprite: {fileID: 21300000, guid: 34dee308b64044f40a499941bbd0e69a, type: 3}
-    feeling: 0
-    customColor: {r: 0, g: 0, b: 0, a: 0}
-    useCustomColor: 0
-    poseChange: 0
-    speaker: 0
-    speakerSizeMultiplier: 0
-  script: "Camille turns back to MC, holding a beautifully radiant Iris flower. Its
-    violet petals glisten in the sunlight just as Camille\u2019s eyes and wavy hair.
-    She smiles at MC as the world feels slightly more dreamy with the wind whistling
+  script: "Camille turns back, holding a beautifully radiant Iris flower. Its violet
+    petals glisten in the sunlight just as Camille\u2019s eyes and wavy hair. She
+    smiles at you as the world feels slightly more dreamy with the wind whistling
     by."
-  speaker: 
   fontStyle: 1
   fontAsset: {fileID: 0}
+  dialogueColour: {r: 1, g: 1, b: 1, a: 1}
+  speaker: 
+  speakerColour: {r: 1, g: 1, b: 1, a: 1}
   writerSpeed: 0.02
   writerDelay: 0
-  dialogueColour: {r: 1, g: 1, b: 1, a: 1}
   colourChanges: []
