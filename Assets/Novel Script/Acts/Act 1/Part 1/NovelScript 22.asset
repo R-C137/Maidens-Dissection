@@ -34,3 +34,5 @@ MonoBehaviour:
   fontAsset: {fileID: 0}
   writerSpeed: 0.02
   writerDelay: 0
+  dialogueColour: {r: 1, g: 1, b: 1, a: 1}
+  colourChanges: []
