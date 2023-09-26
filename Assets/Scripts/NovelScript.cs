@@ -57,8 +57,24 @@ public struct Audio
     /// The sfx audios to play
     /// </summary>
     [Space(10)]
-    public AudioClip[] sfx;
+    public SFXAudio[] sfx;
 
+}
+
+//Made it a class rather than a struct to set default values
+[Serializable]
+public class SFXAudio
+{
+    /// <summary>
+    /// The sfx clip to play
+    /// </summary>
+    public AudioClip clip;
+
+    /// <summary>
+    /// The volume of the sfx clip to play
+    /// </summary>
+    [Range(0f, 1f)]
+    public float volume = 1f;
 }
 
 public enum FeelingColour

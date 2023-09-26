@@ -8,7 +8,7 @@
  * Changes: 
  *  [17/09/2023] - Initial Implementation (C137)
  *  [25/09/2023] - SFX support (C137)
- *  [26/09/2023] - SFX no longer carry over scripts (C137)
+ *  [26/09/2023] - SFX no longer carry over scripts + Added sfx audio slider (C137)
  */
 using System.Collections;
 using System.Collections.Generic;
@@ -131,9 +131,9 @@ public class AudioHandler : Singleton<AudioHandler>
         }
     }
 
-    public static void PlaySFX(AudioClip[] clips)
+    public static void PlaySFX(SFXAudio[] sfx)
     {
-        if (!clips.Any())
+        if (!sfx.Any())
         {
             foreach(var audioSource in singleton.sfxAudioSources)
             {
@@ -143,15 +143,15 @@ public class AudioHandler : Singleton<AudioHandler>
             return;
         }
 
-        if(clips.Length > singleton.sfxAudioSources.Count)
+        if(sfx.Length > singleton.sfxAudioSources.Count)
         {
-            AddSFXSources(singleton.sfxAudioSources.Count - clips.Length);
+            AddSFXSources(singleton.sfxAudioSources.Count - sfx.Length);
         }
 
 
-        for (int i = 0; i < clips.Length; i++)
+        for (int i = 0; i < sfx.Length; i++)
         {
-            PlayAudio(singleton.sfxAudioSources[i], clips[i]);
+            PlayAudio(singleton.sfxAudioSources[i], sfx[i].clip, true, sfx[i].volume);
         }
     }
 
@@ -163,10 +163,10 @@ public class AudioHandler : Singleton<AudioHandler>
         }
     }
 
-    static void PlayAudio(AudioSource source, AudioClip clip, bool setVolume = true)
+    static void PlayAudio(AudioSource source, AudioClip clip, bool setVolume = true, float volume = 1)
     {
         if(setVolume)
-            source.volume = 1;
+            source.volume = volume;
 
         source.clip = clip;
         source.Play();
