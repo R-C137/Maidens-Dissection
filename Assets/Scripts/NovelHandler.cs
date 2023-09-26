@@ -14,6 +14,7 @@
  *  [20/09/2023] - Remap speaker names + Fix progress saving + Speaker name flower animation + Error handling + Improved character fading(C137)
  *  [21/09/2023] - Moved text handler to its own script
  *  [22/09/2023] - Multi-act support (C137)
+ *  [26/09/2023] - Background improvements (C137)
  *  
  */
 using System;
@@ -144,13 +145,25 @@ public class NovelHandler : MonoBehaviour
     /// </summary>
     public void Back()
     {
+        if (shownBackgrounds.Contains(scripts[act].scripts[currentScriptIndex].GetInstanceID()))
+            shownBackgrounds.Remove(scripts[act].scripts[currentScriptIndex].GetInstanceID());
+
+        if(act == 0 && currentScriptIndex == 0)//Back buttons shows the bcakground title of the first novel script (act 1 only)
+        {
+            currentScriptIndex = -1;
+            ProgressScript();
+            return;
+        }        
+
         currentScriptIndex -= 2;
+
         if(currentScript != null)
         {
             currentChoiceIndex = -1;
             choiceMadeIndex = -1;
             currentScript = null;
             choices[0].transform.parent.gameObject.SetActive(false);
+
         }
         ProgressScript();
     }
@@ -206,7 +219,7 @@ public class NovelHandler : MonoBehaviour
 
         ShowScript(script, choice);
 
-        backButton.SetActive(currentScriptIndex > 0);
+        //backButton.SetActive(currentScriptIndex > 0);
     }
 
     /// <summary>
@@ -265,6 +278,8 @@ public class NovelHandler : MonoBehaviour
             if (script.backgroundTitle != null && script.backgroundTitle != string.Empty && !shownBackgrounds.Contains(script.GetInstanceID()))
             {
                 backgroundWriter.text = script.backgroundTitle;
+                backgroundWriter.textShower.text = string.Empty;
+
                 if (backgroundWriter.textShower != null)
                     backgroundWriter.textShower.text = string.Empty;
                 backgroundWriter.transform.parent.gameObject.SetActive(true);
@@ -274,7 +289,7 @@ public class NovelHandler : MonoBehaviour
 
                 shownBackgrounds.Add(script.GetInstanceID());
 
-                backButton.SetActive(false);
+                //backButton.SetActive(false);
                 return false;
             }
             else
