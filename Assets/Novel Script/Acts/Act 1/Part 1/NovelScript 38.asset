@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92c1ce71a98cbc241a34affdff9fbad4, type: 3}
   m_Name: NovelScript 38
   m_EditorClassIdentifier: 
-  backgroundSprite: {fileID: 21300000, guid: eb61d8aeb2ea0da4a9a82e5f754dd6f3, type: 3}
+  backgroundSprite: {fileID: 21300000, guid: 7a055ce9cccb85645b658be84bc675ba, type: 3}
   backgroundTitle: 
   audio:
     voiceActing: {fileID: 0}

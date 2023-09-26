@@ -12,12 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92c1ce71a98cbc241a34affdff9fbad4, type: 3}
   m_Name: NovelScript 204
   m_EditorClassIdentifier: 
-  backgroundSprite: {fileID: 0}
+  backgroundSprite: {fileID: 21300000, guid: 4b10f8aaff16e8243ab7195442a9cebd, type: 3}
   backgroundTitle: 
   audio:
     voiceActing: {fileID: 0}
     background: {fileID: 0}
     loopBackground: 0
+    sfx: []
   choices:
   - name: When would you be able to hang out again?
     followup:
@@ -42,9 +43,19 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 61dd40647f4a5ab48b2d6075c057ca33, type: 2}
     - {fileID: 11400000, guid: 396ea2e2577dec144be14d2e10a6018e, type: 2}
     - {fileID: 11400000, guid: 719b3f3fd30891945acd427e26c1296e, type: 2}
-  characters: []
+  characters:
+  - sprite: {fileID: 21300000, guid: 34dee308b64044f40a499941bbd0e69a, type: 3}
+    feeling: 0
+    customColor: {r: 0, g: 0, b: 0, a: 0}
+    useCustomColor: 0
+    poseChange: 0
+    speaker: 0
+    speakerSizeMultiplier: 0
   script: '[Camille leaves. Aster glares at MC before leaving soon after.]'
   speaker: 
-  fontStyle: 0
+  fontStyle: 1
+  fontAsset: {fileID: 0}
   writerSpeed: 0.02
   writerDelay: 0
+  dialogueColour: {r: 1, g: 1, b: 1, a: 1}
+  colourChanges: []

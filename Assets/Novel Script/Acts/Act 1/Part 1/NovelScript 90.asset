@@ -12,17 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92c1ce71a98cbc241a34affdff9fbad4, type: 3}
   m_Name: NovelScript 90
   m_EditorClassIdentifier: 
-  backgroundSprite: {fileID: 0}
+  backgroundSprite: {fileID: 21300000, guid: 4b10f8aaff16e8243ab7195442a9cebd, type: 3}
   backgroundTitle: 
   audio:
     voiceActing: {fileID: 0}
     background: {fileID: 0}
     loopBackground: 0
+    sfx: []
   choices: []
   characters: []
   script: "I told her: \u201CYes. That\u2019s the smartest thing I\u2019ve heard
     you say\u201D . "
   speaker: MC
   fontStyle: 2
+  fontAsset: {fileID: 0}
   writerSpeed: 0.02
   writerDelay: 0
+  dialogueColour: {r: 1, g: 1, b: 1, a: 1}
+  colourChanges: []
