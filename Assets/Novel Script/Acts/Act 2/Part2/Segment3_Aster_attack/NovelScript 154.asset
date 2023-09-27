@@ -18,12 +18,24 @@ MonoBehaviour:
     voiceActing: {fileID: 0}
     background: {fileID: 0}
     loopBackground: 0
+    sfx: []
   choices: []
-  characters: []
+  characters:
+  - sprite: {fileID: 21300000, guid: 005b719c5657b624a9fbd8eb18454f5c, type: 3}
+    feeling: 0
+    customColor: {r: 0, g: 0, b: 0, a: 0}
+    useCustomColor: 0
+    poseChange: 0
+    speaker: 0
+    speakerSizeMultiplier: 0
   script: 'Why? Why would you rip away the one beautiful thing in this world?
 
 '
-  speaker: 
   fontStyle: 0
+  fontAsset: {fileID: 0}
+  dialogueColour: {r: 1, g: 1, b: 1, a: 1}
+  speaker: MC
+  speakerColour: {r: 1, g: 1, b: 1, a: 1}
   writerSpeed: 0.02
   writerDelay: 0
+  colourChanges: []

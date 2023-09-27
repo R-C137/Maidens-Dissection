@@ -18,11 +18,16 @@ MonoBehaviour:
     voiceActing: {fileID: 0}
     background: {fileID: 0}
     loopBackground: 0
+    sfx: []
   choices: []
   characters: []
   script: "You two rush down the academy\u2019s corridors as lockers and rooms fly
     by, but all you can see is Camille\u2019s terrified gaze looking back at you.\r\n"
-  speaker: Narration
   fontStyle: 1
+  fontAsset: {fileID: 0}
+  dialogueColour: {r: 1, g: 1, b: 1, a: 1}
+  speaker: 
+  speakerColour: {r: 1, g: 1, b: 1, a: 1}
   writerSpeed: 0.02
   writerDelay: 0
+  colourChanges: []

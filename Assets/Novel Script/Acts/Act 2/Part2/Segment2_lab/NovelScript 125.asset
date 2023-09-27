@@ -18,11 +18,16 @@ MonoBehaviour:
     voiceActing: {fileID: 0}
     background: {fileID: 0}
     loopBackground: 0
+    sfx: []
   choices: []
   characters: []
-  script: "*MC runs into Ivy, who holds a jar with a human heart pierced with rose
-    bush thorns.* \r\n"
+  script: "You run into Ivy, who holds a jar with a human heart pierced with rose
+    bush thorns. \r\n"
+  fontStyle: 1
+  fontAsset: {fileID: 0}
+  dialogueColour: {r: 1, g: 1, b: 1, a: 1}
   speaker: 
-  fontStyle: 0
+  speakerColour: {r: 1, g: 1, b: 1, a: 1}
   writerSpeed: 0.02
   writerDelay: 0
+  colourChanges: []

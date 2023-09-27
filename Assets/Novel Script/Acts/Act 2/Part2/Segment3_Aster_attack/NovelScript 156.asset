@@ -18,10 +18,22 @@ MonoBehaviour:
     voiceActing: {fileID: 0}
     background: {fileID: 0}
     loopBackground: 0
+    sfx: []
   choices: []
-  characters: []
+  characters:
+  - sprite: {fileID: 21300000, guid: 843f86955ced49e4ca3039c1737e29a3, type: 3}
+    feeling: 0
+    customColor: {r: 0, g: 0, b: 0, a: 0}
+    useCustomColor: 0
+    poseChange: 0
+    speaker: 1
+    speakerSizeMultiplier: 0
   script: ' I can love you more.'
-  speaker: 
   fontStyle: 0
+  fontAsset: {fileID: 0}
+  dialogueColour: {r: 1, g: 1, b: 1, a: 1}
+  speaker: Aster
+  speakerColour: {r: 1, g: 1, b: 1, a: 1}
   writerSpeed: 0.02
   writerDelay: 0
+  colourChanges: []

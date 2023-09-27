@@ -18,13 +18,18 @@ MonoBehaviour:
     voiceActing: {fileID: 0}
     background: {fileID: 0}
     loopBackground: 0
+    sfx: []
   choices: []
   characters: []
   script: 'Welcome everybody to the 6th annual Botanical Health  Conference brought
     to you by the Oleander Foundation.
 
 '
+  fontStyle: 0
+  fontAsset: {fileID: 0}
+  dialogueColour: {r: 1, g: 1, b: 1, a: 1}
   speaker: Committee's Member
-  fontStyle: 1
+  speakerColour: {r: 1, g: 1, b: 1, a: 1}
   writerSpeed: 0.02
   writerDelay: 0
+  colourChanges: []

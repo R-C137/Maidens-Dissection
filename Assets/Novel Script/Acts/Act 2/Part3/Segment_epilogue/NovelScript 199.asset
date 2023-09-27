@@ -18,14 +18,26 @@ MonoBehaviour:
     voiceActing: {fileID: 0}
     background: {fileID: 0}
     loopBackground: 0
+    sfx: []
   choices: []
-  characters: []
+  characters:
+  - sprite: {fileID: 0}
+    feeling: 0
+    customColor: {r: 0, g: 0, b: 0, a: 0}
+    useCustomColor: 0
+    poseChange: 0
+    speaker: 1
+    speakerSizeMultiplier: 0
   script: "What for? You still gripped the hope that Camille instilled in you as
     if that wasn\u2019t as much of a lie as your surroundings. Camille never had
     any protection. To answer you, yes, indeed she was the flower with pitiful thorns.
     Therefore, it would have been pitiful for me to try and spare her inevitable
     fate."
-  speaker: Narration
   fontStyle: 2
+  fontAsset: {fileID: 0}
+  dialogueColour: {r: 1, g: 1, b: 1, a: 1}
+  speaker: Ivy
+  speakerColour: {r: 1, g: 1, b: 1, a: 1}
   writerSpeed: 0.02
   writerDelay: 0
+  colourChanges: []

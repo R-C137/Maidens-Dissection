@@ -18,11 +18,16 @@ MonoBehaviour:
     voiceActing: {fileID: 0}
     background: {fileID: 0}
     loopBackground: 0
+    sfx: []
   choices: []
   characters: []
   script: "At the time, I didn\u2019t really think about it, since Camille was waiting
     for me. Looking back on it now I wonder what Aster meant by that.\r"
+  fontStyle: 2
+  fontAsset: {fileID: 0}
+  dialogueColour: {r: 1, g: 1, b: 1, a: 1}
   speaker: MC
-  fontStyle: 0
+  speakerColour: {r: 1, g: 1, b: 1, a: 1}
   writerSpeed: 0.02
   writerDelay: 0
+  colourChanges: []

@@ -18,11 +18,16 @@ MonoBehaviour:
     voiceActing: {fileID: 0}
     background: {fileID: 0}
     loopBackground: 0
+    sfx: []
   choices: []
   characters: []
   script: "But this is the annual conference we're talking about where I thought
     the student council's prez should at least attend. \r\n"
+  fontStyle: 2
+  fontAsset: {fileID: 0}
+  dialogueColour: {r: 1, g: 1, b: 1, a: 1}
   speaker: MC
-  fontStyle: 0
+  speakerColour: {r: 1, g: 1, b: 1, a: 1}
   writerSpeed: 0.02
   writerDelay: 0
+  colourChanges: []

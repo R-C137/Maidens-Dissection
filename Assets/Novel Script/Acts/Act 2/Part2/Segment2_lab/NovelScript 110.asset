@@ -18,13 +18,18 @@ MonoBehaviour:
     voiceActing: {fileID: 0}
     background: {fileID: 0}
     loopBackground: 0
+    sfx: []
   choices: []
   characters: []
   script: 'You fumble your hand around the wall, hoping to find a light switch, as
     the overwhelming stench burns your nose.
 
 '
-  speaker: Narration
-  fontStyle: 0
+  fontStyle: 1
+  fontAsset: {fileID: 0}
+  dialogueColour: {r: 1, g: 1, b: 1, a: 1}
+  speaker: 
+  speakerColour: {r: 1, g: 1, b: 1, a: 1}
   writerSpeed: 0.02
   writerDelay: 0
+  colourChanges: []

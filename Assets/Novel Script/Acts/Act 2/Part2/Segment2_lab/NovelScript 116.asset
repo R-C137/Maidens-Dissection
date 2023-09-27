@@ -18,11 +18,15 @@ MonoBehaviour:
     voiceActing: {fileID: 0}
     background: {fileID: 0}
     loopBackground: 0
+    sfx: []
   choices: []
   characters: []
-  script: "*The lights flicker on and MC sees Camille\u2019s severed head displayed
-    on a dissection table.*\r\n"
+  script: The lights flicker on and ...
+  fontStyle: 1
+  fontAsset: {fileID: 0}
+  dialogueColour: {r: 1, g: 1, b: 1, a: 1}
   speaker: 
-  fontStyle: 0
+  speakerColour: {r: 1, g: 1, b: 1, a: 1}
   writerSpeed: 0.02
   writerDelay: 0
+  colourChanges: []
