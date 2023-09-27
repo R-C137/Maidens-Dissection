@@ -18,11 +18,15 @@ MonoBehaviour:
     voiceActing: {fileID: 0}
     background: {fileID: 0}
     loopBackground: 0
+    sfx: []
   choices: []
-  characters:
-  - {fileID: 21300000, guid: 0e6ce51c30cbcfb46888ab3fd1a36907, type: 3}
+  characters: []
   script: Just stop by my dorm okay.
-  speaker: Camille
   fontStyle: 0
+  fontAsset: {fileID: 0}
+  dialogueColour: {r: 1, g: 1, b: 1, a: 1}
+  speaker: Camille
+  speakerColour: {r: 1, g: 1, b: 1, a: 1}
   writerSpeed: 0.02
   writerDelay: 0
+  colourChanges: []

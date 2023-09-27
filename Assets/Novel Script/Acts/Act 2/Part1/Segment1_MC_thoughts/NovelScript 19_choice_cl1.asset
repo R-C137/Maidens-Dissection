@@ -18,6 +18,7 @@ MonoBehaviour:
     voiceActing: {fileID: 0}
     background: {fileID: 0}
     loopBackground: 0
+    sfx: []
   choices:
   - name: No. Camille is special.
     followup:
@@ -45,22 +46,14 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 5242ad9a309c2b843a1c1a98a1abbd80, type: 2}
     - {fileID: 11400000, guid: 9422ecfe778ee3745a3ab892ba906e0f, type: 2}
     - {fileID: 11400000, guid: d60d8061ce2a6a94fbe9df5ed665b746, type: 2}
-  characters:
-  - sprite: {fileID: 21300000, guid: 617003e00f554c343b43b6d28f613922, type: 3}
-    feeling: 0
-    customColor: {r: 0, g: 0, b: 0, a: 0}
-    useCustomColor: 0
-    poseChange: 0
-    speaker: 0
-  - sprite: {fileID: 21300000, guid: 33ce4c9bceb61b54ab848673a78e70e8, type: 3}
-    feeling: 0
-    customColor: {r: 0, g: 0, b: 0, a: 0}
-    useCustomColor: 0
-    poseChange: 0
-    speaker: 1
-  script: '*The ambience softens to a whisper as if MC is sinking. Their stomach
-    grumbles sickly as they wake up from their short sleep*'
+  characters: []
+  script: '*The ambience softens to a whisper as if you are sinking. Your stomach
+    grumbles sickly as you wake up from your short sleep*'
+  fontStyle: 1
+  fontAsset: {fileID: 0}
+  dialogueColour: {r: 1, g: 1, b: 1, a: 1}
   speaker: 
-  fontStyle: 0
+  speakerColour: {r: 1, g: 1, b: 1, a: 1}
   writerSpeed: 0.02
   writerDelay: 0
+  colourChanges: []

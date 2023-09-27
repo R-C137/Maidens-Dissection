@@ -35,8 +35,8 @@ MonoBehaviour:
     poseChange: 0
     speaker: 0
     speakerSizeMultiplier: 0
-  script: "Hopefully,  when I meet with the director, I\u2019ll have a chance to
-    talk with them on how we can bring some relief to the students here."
+  script: "Hopefully, when I meet with the director, I\u2019ll have a chance to talk
+    with them on how we can bring some relief to the students here."
   fontStyle: 0
   fontAsset: {fileID: 0}
   dialogueColour: {r: 0.8039216, g: 0.8156863, b: 0.9607843, a: 1}
