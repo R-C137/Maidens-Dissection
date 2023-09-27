@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 92c1ce71a98cbc241a34affdff9fbad4, type: 3}
-  m_Name: NovelScript 157
+  m_Name: NovelScript 171_a
   m_EditorClassIdentifier: 
   backgroundSprite: {fileID: 21300000, guid: 4b10f8aaff16e8243ab7195442a9cebd, type: 3}
   backgroundTitle: 
@@ -21,7 +21,7 @@ MonoBehaviour:
     sfx: []
   choices: []
   characters:
-  - sprite: {fileID: 21300000, guid: d640d6dda76748f45b0119202b292982, type: 3}
+  - sprite: {fileID: 21300000, guid: b1e935ca1bf89724896ee7957b4a50ce, type: 3}
     feeling: 0
     customColor: {r: 0, g: 0, b: 0, a: 0}
     useCustomColor: 0
@@ -33,13 +33,13 @@ MonoBehaviour:
     customColor: {r: 0, g: 0, b: 0, a: 0}
     useCustomColor: 0
     poseChange: 0
-    speaker: 0
+    speaker: 1
     speakerSizeMultiplier: 0
-  script: So Maidens then?
+  script: So much so is the life of selfishness.
   fontStyle: 0
   fontAsset: {fileID: 0}
-  dialogueColour: {r: 1, g: 1, b: 1, a: 1}
-  speaker: MC
+  dialogueColour: {r: 0.9019608, g: 0.8039216, b: 0.9607843, a: 1}
+  speaker: Aster
   speakerColour: {r: 1, g: 1, b: 1, a: 1}
   writerSpeed: 0.02
   writerDelay: 0
