@@ -243,7 +243,7 @@ public class NovelHandler : MonoBehaviour
 
             ShowInformationWindow(act == 0 ? 
                 "Act 2 has been unlocked and is available in the title screen"
-                : "Bonus level has been unlocked", 2.5f, () => Utility.singleton.LoadScene(0));
+                : "Bonus section has been unlocked and is available in the title screen", 2.5f, () => Utility.singleton.LoadScene(0));
 
             actFinished = true;
             return;
