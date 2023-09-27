@@ -15,7 +15,7 @@ MonoBehaviour:
   backgroundSprite: {fileID: 21300000, guid: 7a055ce9cccb85645b658be84bc675ba, type: 3}
   backgroundTitle: 
   audio:
-    voiceActing: {fileID: 0}
+    voiceActing: {fileID: 8300000, guid: ddd55967d18568147b89a5d343937dfd, type: 3}
     background: {fileID: 0}
     loopBackground: 0
     sfx: []
@@ -30,7 +30,7 @@ MonoBehaviour:
     speakerSizeMultiplier: 0
   script: 'Heh. But this is the role of the gardener, one that I must play. You cannot
     take action out of pity. And if I did, what would I do? Should I just leave it
-    be? LET IT ROT ON THE GROUND?
+    be?
 
 '
   fontStyle: 0

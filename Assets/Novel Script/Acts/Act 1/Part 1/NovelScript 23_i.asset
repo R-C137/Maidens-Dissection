@@ -15,7 +15,7 @@ MonoBehaviour:
   backgroundSprite: {fileID: 21300000, guid: 7a055ce9cccb85645b658be84bc675ba, type: 3}
   backgroundTitle: 
   audio:
-    voiceActing: {fileID: 0}
+    voiceActing: {fileID: 8300000, guid: d85b915561adab44bb1250079db23254, type: 3}
     background: {fileID: 0}
     loopBackground: 0
     sfx: []
@@ -28,9 +28,7 @@ MonoBehaviour:
     poseChange: 0
     speaker: 1
     speakerSizeMultiplier: 0
-  script: "It\u2019s for my biology class. First, we cut up their stem so that all
-    there is left is the flower. We then dismember its petals and analyze them down
-    to their very cells and tissue. "
+  script: "It\u2019s for my biology class."
   fontStyle: 0
   fontAsset: {fileID: 0}
   dialogueColour: {r: 0.9607843, g: 0.80784315, b: 0.8039216, a: 1}

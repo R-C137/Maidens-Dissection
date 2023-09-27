@@ -28,7 +28,7 @@ MonoBehaviour:
     poseChange: 0
     speaker: 1
     speakerSizeMultiplier: 0
-  script: "It stings so\u2026 but it matters not."
+  script: "It stings so\u2026."
   fontStyle: 0
   fontAsset: {fileID: 0}
   dialogueColour: {r: 0.9607843, g: 0.80784315, b: 0.8039216, a: 1}

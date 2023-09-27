@@ -10,36 +10,31 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 92c1ce71a98cbc241a34affdff9fbad4, type: 3}
-  m_Name: NovelScript
+  m_Name: NovelScript 51_2_i
   m_EditorClassIdentifier: 
-  backgroundSprite: {fileID: 0}
+  backgroundSprite: {fileID: 21300000, guid: 7a055ce9cccb85645b658be84bc675ba, type: 3}
   backgroundTitle: 
   audio:
-    voiceActing: {fileID: 0}
+    voiceActing: {fileID: 8300000, guid: f540d5eab55ba6f43b1abcd46f414fb4, type: 3}
     background: {fileID: 0}
     loopBackground: 0
     sfx: []
   choices: []
   characters:
-  - sprite: {fileID: 21300000, guid: 8e3f365fd4d544e45824ea6290159f79, type: 3}
+  - sprite: {fileID: 21300000, guid: 01ffee6fdca917244b1a830977810d45, type: 3}
     feeling: 0
     customColor: {r: 0, g: 0, b: 0, a: 0}
     useCustomColor: 0
     poseChange: 0
-    speaker: 0
+    speaker: 1
     speakerSizeMultiplier: 0
-  - sprite: {fileID: 21300000, guid: 0b84936bbb947bf4b90991daf80bc634, type: 3}
-    feeling: 0
-    customColor: {r: 0, g: 0, b: 0, a: 0}
-    useCustomColor: 0
-    poseChange: 0
-    speaker: 0
-    speakerSizeMultiplier: 0
-  script: "Oh don\u2019t worry\u2026 we can teach you!"
+  script: 'LET IT ROT ON THE GROUND?
+
+'
   fontStyle: 0
   fontAsset: {fileID: 0}
-  dialogueColour: {r: 1, g: 1, b: 1, a: 1}
-  speaker: Camille
+  dialogueColour: {r: 0.9607843, g: 0.80784315, b: 0.8039216, a: 1}
+  speaker: Ivy
   speakerColour: {r: 1, g: 1, b: 1, a: 1}
   writerSpeed: 0.02
   writerDelay: 0
