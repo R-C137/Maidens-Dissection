@@ -14,8 +14,8 @@
  *  [20/09/2023] - Remap speaker names + Fix progress saving + Speaker name flower animation + Error handling + Improved character fading(C137)
  *  [21/09/2023] - Moved text handler to its own script
  *  [22/09/2023] - Multi-act support (C137)
- *  [26/09/2023] - Background improvements + Progressin buttons improvements + SFX improvements (C137)
- *  
+ *  [26/09/2023] - Background improvements + Progression buttons improvements + SFX improvements (C137)
+ *  [27/09/2023] - Added an information window at the end of each act (C137)
  */
 using System;
 using System.Collections;
@@ -116,6 +116,16 @@ public class NovelHandler : MonoBehaviour
     public int act = -1;
 
     /// <summary>
+    /// The text shower for the information window
+    /// </summary>
+    public TextMeshProUGUI informationWindowTextShower;
+
+    /// <summary>
+    /// Whether the act has finished playing. Internal use only
+    /// </summary>
+    bool actFinished = false;
+
+    /// <summary>
     /// Handles the saving and resuming of the novel's progress + The progressing of the script on start
     /// </summary>
     private void Start()
@@ -145,6 +155,9 @@ public class NovelHandler : MonoBehaviour
     /// </summary>
     public void Back()
     {
+        if (actFinished)
+            return;
+
         if (shownBackgrounds.Contains(scripts[act].scripts[currentScriptIndex].GetInstanceID()))
             shownBackgrounds.Remove(scripts[act].scripts[currentScriptIndex].GetInstanceID());
 
@@ -173,6 +186,9 @@ public class NovelHandler : MonoBehaviour
     /// </summary>
     private void Update()
     {
+        if (actFinished)
+            return;
+
         if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.Mouse1))
         {
             HandleProgression();
@@ -184,6 +200,9 @@ public class NovelHandler : MonoBehaviour
     /// </summary>
     public void HandleProgression()
     {
+        if (actFinished)
+            return;
+
         if (!storyWriter.writing)
             ProgressScript();
         else
@@ -195,6 +214,9 @@ public class NovelHandler : MonoBehaviour
     /// </summary>
     public void ProgressScript()
     {
+        if (actFinished)
+            return;
+
         bool choice = false;
 
         if(currentScript != null)
@@ -219,7 +241,11 @@ public class NovelHandler : MonoBehaviour
                 PlayerPrefs.SetInt("general.acts", act + 1);
             }
 
-            Utility.singleton.LoadScene(0);
+            ShowInformationWindow(act == 0 ? 
+                "Act 2 has been unlocked and is available in the title screen"
+                : "Bonus level has been unlocked", 2.5f, () => Utility.singleton.LoadScene(0));
+
+            actFinished = true;
             return;
         }
 
@@ -231,6 +257,19 @@ public class NovelHandler : MonoBehaviour
             backButton.SetActive(currentScriptIndex > -1);
         else
             backButton.SetActive(currentScriptIndex > 0);
+    }
+
+    /// <summary>
+    /// Shows the information window
+    /// </summary>
+    /// <param name="text">The information to display</param>
+    /// <param name="showTime">How long to display it</param>
+    /// <param name="onComplete">The callback once the window has been displayed</param>
+    public void ShowInformationWindow(string text, float showTime, Action onComplete)
+    {
+        informationWindowTextShower.text = text;
+        informationWindowTextShower.transform.parent.parent.gameObject.SetActive(true);
+        LeanTween.delayedCall(showTime, onComplete);
     }
 
     /// <summary>
