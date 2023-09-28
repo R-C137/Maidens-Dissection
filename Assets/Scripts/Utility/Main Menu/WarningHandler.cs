@@ -8,6 +8,7 @@
  * Changes: 
  *  [10/09/2023] - Initial Implementation (C137)
  *  [12/09/2023] - Show warning only in builds + Show warning only once (C137)
+ *  [28/09/2023] - Improved fading handling (C137)
  *  
  */
 using System.Collections;
@@ -19,19 +20,14 @@ using UnityEngine.UI;
 public class WarningHandler : MonoBehaviour
 {
     /// <summary>
-    /// The different text of the warning to be faded out
+    /// Used to fade all the graphics
     /// </summary>
-    public TextMeshProUGUI[] warningTexts;
+    public MultiImageFade fader;
 
     /// <summary>
-    /// The background of the warning to be faded
+    /// Reference to the backdrop for custom fading
     /// </summary>
-    public Image warningBackground;
-
-    /// <summary>
-    /// The backdrop of the warning to be faded
-    /// </summary>
-    public Image warningBackdrop;
+    public Image backdrop;
 
     /// <summary>
     /// The time it takes for the fading of the foreground to occur
@@ -46,9 +42,9 @@ public class WarningHandler : MonoBehaviour
     private void Awake()
     {
 #if UNITY_EDITOR
-        Destroy(gameObject);
+      Destroy(gameObject);
 #else
-        HandleFading();
+      HandleFading();
 #endif
     }
 
@@ -61,18 +57,8 @@ public class WarningHandler : MonoBehaviour
 
         transform.GetChild(0).gameObject.SetActive(true);
 
-        LeanTween.value(1, 0, fadeTime).setOnUpdate((v) =>
-        {
-            foreach (var text in warningTexts)
-            {
-                text.color = new(text.color.r, text.color.g, text.color.b, v);
-                warningBackground.color = new(warningBackground.color.r, warningBackground.color.g, warningBackground.color.b, v);
-            }
-        }).setDelay(fadeDelay).setOnComplete(() => Destroy(gameObject));
+        LeanTween.value(1, 0, fadeTime).setOnUpdate((v) => fader.SetOpacity(v)).setDelay(fadeDelay).setOnComplete(() => Destroy(gameObject));
 
-        LeanTween.value(warningBackdrop.color.a, 0, fadeTime).setOnUpdate((v) =>
-        {
-            warningBackdrop.color = new(warningBackdrop.color.r, warningBackdrop.color.g, warningBackdrop.color.b, v);
-        }).setDelay(fadeDelay);
+        LeanTween.value(backdrop.color.a, 0, fadeTime).setOnUpdate((v) => backdrop.color = new(backdrop.color.r, backdrop.color.g, backdrop.color.b, v)).setDelay(fadeDelay);
     }
 }

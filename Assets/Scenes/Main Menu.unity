@@ -2437,6 +2437,7 @@ GameObject:
   m_Component:
   - component: {fileID: 445056315}
   - component: {fileID: 445056316}
+  - component: {fileID: 445056317}
   m_Layer: 5
   m_Name: Warning
   m_TagString: Untagged
@@ -2476,13 +2477,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0508254d939ea5d41b2b3f735c32e2fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  warningTexts:
-  - {fileID: 113280852}
-  - {fileID: 1811593510}
-  warningBackground: {fileID: 1954046374}
-  warningBackdrop: {fileID: 604678920}
+  fader: {fileID: 445056317}
+  backdrop: {fileID: 604678920}
   fadeTime: 2.5
   fadeDelay: 3
+--- !u!114 &445056317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 445056314}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5b7409c3f2044343a989895283e2eff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graphics:
+  - {fileID: 1954046374}
+  - {fileID: 113280852}
+  - {fileID: 1811593510}
 --- !u!1 &454189677
 GameObject:
   m_ObjectHideFlags: 0
