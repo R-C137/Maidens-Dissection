@@ -15,7 +15,7 @@ MonoBehaviour:
   backgroundSprite: {fileID: 21300000, guid: 3ec4e160212b7234ab52f43dd929ccf2, type: 3}
   backgroundTitle: 
   audio:
-    voiceActing: {fileID: 0}
+    voiceActing: {fileID: 8300000, guid: 53c2381e92e2d924a90a648a161c0104, type: 3}
     background: {fileID: 0}
     loopBackground: 0
     sfx: []
@@ -32,7 +32,7 @@ MonoBehaviour:
   fontStyle: 0
   fontAsset: {fileID: 0}
   dialogueColour: {r: 1, g: 1, b: 1, a: 1}
-  speaker: 
+  speaker: Aster
   speakerColour: {r: 1, g: 1, b: 1, a: 1}
   writerSpeed: 0.02
   writerDelay: 0

@@ -15,7 +15,7 @@ MonoBehaviour:
   backgroundSprite: {fileID: 21300000, guid: 3ec4e160212b7234ab52f43dd929ccf2, type: 3}
   backgroundTitle: 
   audio:
-    voiceActing: {fileID: 0}
+    voiceActing: {fileID: 8300000, guid: bad5289adbf8ae44993ad83199ae8ade, type: 3}
     background: {fileID: 0}
     loopBackground: 0
     sfx: []
@@ -28,9 +28,10 @@ MonoBehaviour:
     poseChange: 0
     speaker: 1
     speakerSizeMultiplier: 0
-  script: 'Where are you going?
-
-'
+  script: "Where are you going?\nRunning away again?\nWhy?\nBut if it weren\u2019t
+    for all of this ugliness, I would have never seen you in all of this beautiful
+    pain! \nLife\u2019s ugliness is exhausting.\r\n\nAren\u2019t you tired of all
+    the running?\r\n\n"
   fontStyle: 0
   fontAsset: {fileID: 0}
   dialogueColour: {r: 0.9019608, g: 0.8039216, b: 0.9607843, a: 1}

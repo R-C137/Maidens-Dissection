@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: NovelScript 0
   m_EditorClassIdentifier: 
   backgroundSprite: {fileID: 21300000, guid: 0135512629c87234cbbfa8fa69bba4a9, type: 3}
-  backgroundTitle: 
+  backgroundTitle: The Conference
   audio:
     voiceActing: {fileID: 0}
     background: {fileID: 0}

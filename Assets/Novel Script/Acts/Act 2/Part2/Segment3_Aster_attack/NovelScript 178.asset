@@ -24,7 +24,7 @@ MonoBehaviour:
   script: 'Your trembling grip tightens on their handle.
 
 '
-  fontStyle: 0
+  fontStyle: 1
   fontAsset: {fileID: 0}
   dialogueColour: {r: 1, g: 1, b: 1, a: 1}
   speaker: 

@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92c1ce71a98cbc241a34affdff9fbad4, type: 3}
+  m_Name: NovelScript 40_a
+  m_EditorClassIdentifier: 
+  backgroundSprite: {fileID: 21300000, guid: 1a79ea6e772c89d41ab2a248bf5839e0, type: 3}
+  backgroundTitle: 
+  audio:
+    voiceActing: {fileID: 8300000, guid: 51f2dc9825797984c87bdbd588d08b1a, type: 3}
+    background: {fileID: 0}
+    loopBackground: 0
+    sfx: []
+  choices:
+  - name: 
+    followup: []
+  characters:
+  - sprite: {fileID: 21300000, guid: 21e24b4cb512cf74188d09bccc002407, type: 3}
+    feeling: 0
+    customColor: {r: 0, g: 0, b: 0, a: 0}
+    useCustomColor: 0
+    poseChange: 0
+    speaker: 1
+    speakerSizeMultiplier: 0
+  script: "N-n-noo! Wait! Pls! \r\nThese are for someone special, please don't look
+    at them! \r\n"
+  fontStyle: 0
+  fontAsset: {fileID: 0}
+  dialogueColour: {r: 0.9019608, g: 0.8039216, b: 0.9607843, a: 1}
+  speaker: Aster
+  speakerColour: {r: 0.9019608, g: 0.8039216, b: 0.9607843, a: 1}
+  writerSpeed: 0.02
+  writerDelay: 0
+  colourChanges: []

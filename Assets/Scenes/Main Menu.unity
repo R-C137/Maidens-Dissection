@@ -5659,14 +5659,30 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse efficitur
-    elit a hendrerit euismod. Integer accumsan placerat libero gravida tincidunt.
-    Mauris tempus ac justo a tincidunt. Ut dapibus egestas nisi, a tempor orci cursus
-    id. Donec sit amet elit urna. Nam placerat sem in urna rhoncus, in vulputate
-    dui egestas. Aenean et mollis nibh. Aliquam erat volutpat. Etiam ac enim ut mi
-    pulvinar iaculis. Cras finibus, ipsum quis sollicitudin sodales, velit urna cursus
-    neque, et lobortis lorem dolor in justo. Duis pretium nec eros quis pellentesque.
-    Integer eget blandit est.
+  m_text: 'She/her
+
+    Year II, Student Council President, Aster''s Pawn
+
+    
+
+    Height:
+    158 cm
+
+    Blood Type: A2
+
+    Medication: Adderall
+
+    Disease(s): Unspecified
+    Trauma, Bipolar Tendencies, Scoliosis
+
+    Favorite Tea: Nettle Extract with
+    Honey
+
+    Likes: Theater and Victorian Literature
+
+    Dislikes: Being interrupted
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 05498c7a6b946054ca8f40b6dee6416f, type: 2}
   m_sharedMaterial: {fileID: 956428870849805546, guid: 05498c7a6b946054ca8f40b6dee6416f, type: 2}
@@ -6594,7 +6610,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 7bbf4f527e14b7049afc4abf952ae97f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6c1a4471154f24849a1d4c36ed0b8a05, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8102,14 +8118,30 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse efficitur
-    elit a hendrerit euismod. Integer accumsan placerat libero gravida tincidunt.
-    Mauris tempus ac justo a tincidunt. Ut dapibus egestas nisi, a tempor orci cursus
-    id. Donec sit amet elit urna. Nam placerat sem in urna rhoncus, in vulputate
-    dui egestas. Aenean et mollis nibh. Aliquam erat volutpat. Etiam ac enim ut mi
-    pulvinar iaculis. Cras finibus, ipsum quis sollicitudin sodales, velit urna cursus
-    neque, et lobortis lorem dolor in justo. Duis pretium nec eros quis pellentesque.
-    Integer eget blandit est.
+  m_text: 'she/her
+
+    Year I, Doctor of the Academy
+
+    
+
+    Height:182cm
+
+    Blood
+    Type: B2
+
+    Medication: self-prescribed supplements
+
+    Disease(s): self-diagnosed
+    asthma
+
+    Favorite tea: drinks irish coffee
+
+    Likes: Humans as study objects
+
+    Dislikes:
+    Orders for intestines
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 05498c7a6b946054ca8f40b6dee6416f, type: 2}
   m_sharedMaterial: {fileID: 956428870849805546, guid: 05498c7a6b946054ca8f40b6dee6416f, type: 2}
@@ -8866,7 +8898,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 7bbf4f527e14b7049afc4abf952ae97f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3ff788cdf0937df448a102d2c03de31d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -10046,7 +10078,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 7bbf4f527e14b7049afc4abf952ae97f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 05e1164b3ea000e4399a179e189cae08, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -12863,14 +12895,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse efficitur
-    elit a hendrerit euismod. Integer accumsan placerat libero gravida tincidunt.
-    Mauris tempus ac justo a tincidunt. Ut dapibus egestas nisi, a tempor orci cursus
-    id. Donec sit amet elit urna. Nam placerat sem in urna rhoncus, in vulputate
-    dui egestas. Aenean et mollis nibh. Aliquam erat volutpat. Etiam ac enim ut mi
-    pulvinar iaculis. Cras finibus, ipsum quis sollicitudin sodales, velit urna cursus
-    neque, et lobortis lorem dolor in justo. Duis pretium nec eros quis pellentesque.
-    Integer eget blandit est.
+  m_text: "she/her\r\nYear I, Doctor of the Academy\r\n\r\nShe/her\r\nYear II, Top
+    of her class and school, deceased\r\n\r\nHeight: 170 cm \r\nBlood Type: 0\r\nMedication:
+    Allergy Pills and Eye drops\r\nDisease(s): Insomnia and Migraines\r\nFavorite
+    tea: Chamomile Infusion\r\nLikes: chatting, nightsky\r\nDislikes: N/A\r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 05498c7a6b946054ca8f40b6dee6416f, type: 2}
   m_sharedMaterial: {fileID: 956428870849805546, guid: 05498c7a6b946054ca8f40b6dee6416f, type: 2}

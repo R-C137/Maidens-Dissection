@@ -22,10 +22,10 @@ MonoBehaviour:
   choices: []
   characters: []
   script: "The scissors slice into your thigh and you scream in pain. \r\n"
-  fontStyle: 2
+  fontStyle: 1
   fontAsset: {fileID: 0}
   dialogueColour: {r: 1, g: 1, b: 1, a: 1}
-  speaker: Narration
+  speaker: 
   speakerColour: {r: 1, g: 1, b: 1, a: 1}
   writerSpeed: 0.02
   writerDelay: 0
