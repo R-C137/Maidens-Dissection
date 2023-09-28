@@ -16,6 +16,7 @@
  *  [22/09/2023] - Multi-act support (C137)
  *  [26/09/2023] - Background improvements + Progression buttons improvements + SFX improvements (C137)
  *  [27/09/2023] - Added an information window at the end of each act (C137)
+ *  [28/09/2023] - Updated act's end warning notice (C137)
  */
 using System;
 using System.Collections;
@@ -248,7 +249,7 @@ public class NovelHandler : MonoBehaviour
 
             ShowInformationWindow(act == 0 ? 
                 "Act 2 has been unlocked and is available in the title screen"
-                : "Bonus section has been unlocked and is available in the title screen", 2.5f, () => Utility.singleton.LoadScene(0));
+                : "Bonus section has been unlocked and is available in the chapter selection screen", 2.5f, () => Utility.singleton.LoadScene(0));
 
             actFinished = true;
             return;
