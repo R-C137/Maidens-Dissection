@@ -10,22 +10,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 92c1ce71a98cbc241a34affdff9fbad4, type: 3}
-  m_Name: NovelScript 20_2_i
+  m_Name: NovelScript 6_a
   m_EditorClassIdentifier: 
-  backgroundSprite: {fileID: 21300000, guid: 90e0393f7f22fa2458f5de7b0ebc5680, type: 3}
+  backgroundSprite: {fileID: 0}
   backgroundTitle: 
   audio:
-    voiceActing: {fileID: 8300000, guid: 5099768de0b1754439afff67a9b604bf, type: 3}
+    voiceActing: {fileID: 0}
     background: {fileID: 0}
     loopBackground: 0
     sfx: []
   choices: []
   characters: []
-  script: but it matters not.
+  script: 'Experienced.
+
+'
   fontStyle: 0
   fontAsset: {fileID: 0}
-  dialogueColour: {r: 0.9607843, g: 0.80784315, b: 0.8039216, a: 1}
-  speaker: Ivy
+  dialogueColour: {r: 1, g: 1, b: 1, a: 1}
+  speaker: 
   speakerColour: {r: 1, g: 1, b: 1, a: 1}
   writerSpeed: 0.02
   writerDelay: 0
