@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92c1ce71a98cbc241a34affdff9fbad4, type: 3}
   m_Name: NovelScript 209
   m_EditorClassIdentifier: 
-  backgroundSprite: {fileID: 21300000, guid: f6432d4d51430684185fb362332fbecd, type: 3}
+  backgroundSprite: {fileID: 21300000, guid: 45368fd99da14c445840269c33faca28, type: 3}
   backgroundTitle: 
   audio:
     voiceActing: {fileID: 0}
@@ -22,7 +22,7 @@ MonoBehaviour:
   choices: []
   characters: []
   script: "Thank you for playing Maiden\u2019s Dissection! \r\n"
-  fontStyle: 2
+  fontStyle: 3
   fontAsset: {fileID: 0}
   dialogueColour: {r: 1, g: 1, b: 1, a: 1}
   speaker: 

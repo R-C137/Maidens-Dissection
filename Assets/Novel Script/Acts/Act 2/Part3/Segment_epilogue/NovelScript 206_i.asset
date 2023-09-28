@@ -16,26 +16,19 @@ MonoBehaviour:
   backgroundTitle: 
   audio:
     voiceActing: {fileID: 0}
-    background: {fileID: 0}
+    background: {fileID: 8300000, guid: bac2be0f9a3c1154ab6d152de49ff1a0, type: 3}
     loopBackground: 0
     sfx: []
   choices: []
-  characters:
-  - sprite: {fileID: 0}
-    feeling: 0
-    customColor: {r: 0, g: 0, b: 0, a: 0}
-    useCustomColor: 0
-    poseChange: 0
-    speaker: 1
-    speakerSizeMultiplier: 0
+  characters: []
   script: 'It seems only I know that.
 
 '
   fontStyle: 1
   fontAsset: {fileID: 0}
-  dialogueColour: {r: 1, g: 1, b: 1, a: 1}
+  dialogueColour: {r: 0.9607843, g: 0.80784315, b: 0.8039216, a: 1}
   speaker: Ivy
-  speakerColour: {r: 1, g: 1, b: 1, a: 1}
+  speakerColour: {r: 0.9607843, g: 0.80784315, b: 0.8039216, a: 1}
   writerSpeed: 0.02
   writerDelay: 0
   colourChanges: []
