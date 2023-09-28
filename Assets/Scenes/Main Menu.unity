@@ -5663,7 +5663,6 @@ MonoBehaviour:
 
     Year II, Student Council President, Aster''s Pawn
 
-    
 
     Height:
     158 cm
@@ -8118,11 +8117,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'she/her
+  m_text: 'She/her
 
     Year I, Doctor of the Academy
 
-    
+
 
     Height:182cm
 
@@ -12895,10 +12894,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "she/her\r\nYear I, Doctor of the Academy\r\n\r\nShe/her\r\nYear II, Top
-    of her class and school, deceased\r\n\r\nHeight: 170 cm \r\nBlood Type: 0\r\nMedication:
-    Allergy Pills and Eye drops\r\nDisease(s): Insomnia and Migraines\r\nFavorite
-    tea: Chamomile Infusion\r\nLikes: chatting, nightsky\r\nDislikes: N/A\r"
+  m_text: "She/her\r\nYear II, Top of her class and school, deceased\r\n\r\nHeight:
+    170 cm \r\nBlood Type: 0\r\nMedication: Allergy Pills and Eye drops\r\nDisease(s):
+    Insomnia and Migraines\r\nFavorite tea: Chamomile Infusion\r\nLikes: chatting,
+    nightsky\r\nDislikes: N/A\r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 05498c7a6b946054ca8f40b6dee6416f, type: 2}
   m_sharedMaterial: {fileID: 956428870849805546, guid: 05498c7a6b946054ca8f40b6dee6416f, type: 2}
