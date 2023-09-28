@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 92c1ce71a98cbc241a34affdff9fbad4, type: 3}
-  m_Name: NovelScript 187
+  m_Name: NovelScript 197_i
   m_EditorClassIdentifier: 
-  backgroundSprite: {fileID: 0}
+  backgroundSprite: {fileID: 21300000, guid: f6432d4d51430684185fb362332fbecd, type: 3}
   backgroundTitle: 
   audio:
     voiceActing: {fileID: 0}
@@ -21,15 +21,16 @@ MonoBehaviour:
     sfx: []
   choices: []
   characters:
-  - sprite: {fileID: 21300000, guid: 9de4368af31b70c46a439860ae8de3c1, type: 3}
+  - sprite: {fileID: 0}
     feeling: 0
     customColor: {r: 0, g: 0, b: 0, a: 0}
     useCustomColor: 0
     poseChange: 0
     speaker: 1
     speakerSizeMultiplier: 0
-  script: 'I would not have changed anything. '
-  fontStyle: 0
+  script: "Then she waited for that one person to come and make the whole dissection
+    of the flower more impactful\u2026 more agonizing. And that person was you. \r\n"
+  fontStyle: 2
   fontAsset: {fileID: 0}
   dialogueColour: {r: 1, g: 1, b: 1, a: 1}
   speaker: Ivy

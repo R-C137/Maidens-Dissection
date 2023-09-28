@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92c1ce71a98cbc241a34affdff9fbad4, type: 3}
   m_Name: NovelScript 20_2_i
   m_EditorClassIdentifier: 
-  backgroundSprite: {fileID: 21300000, guid: 90e0393f7f22fa2458f5de7b0ebc5680, type: 3}
+  backgroundSprite: {fileID: 21300000, guid: 5731be1af158aa84785f96f3ee2c954d, type: 3}
   backgroundTitle: 
   audio:
     voiceActing: {fileID: 8300000, guid: 5099768de0b1754439afff67a9b604bf, type: 3}
-    background: {fileID: 0}
+    background: {fileID: 8300000, guid: e848db0ba10e0304090ccde903cd3e99, type: 3}
     loopBackground: 0
     sfx: []
   choices: []
@@ -26,7 +26,7 @@ MonoBehaviour:
   fontAsset: {fileID: 0}
   dialogueColour: {r: 0.9607843, g: 0.80784315, b: 0.8039216, a: 1}
   speaker: Ivy
-  speakerColour: {r: 1, g: 1, b: 1, a: 1}
+  speakerColour: {r: 0.9607843, g: 0.80784315, b: 0.8039216, a: 1}
   writerSpeed: 0.02
   writerDelay: 0
   colourChanges: []

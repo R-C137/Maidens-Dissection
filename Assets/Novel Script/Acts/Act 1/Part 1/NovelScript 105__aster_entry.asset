@@ -16,7 +16,7 @@ MonoBehaviour:
   backgroundTitle: 
   audio:
     voiceActing: {fileID: 8300000, guid: 9473fbe278f52c446a273b20ce8ce97e, type: 3}
-    background: {fileID: 0}
+    background: {fileID: 8300000, guid: 84577ffec5717734cbf7f0fe3e427286, type: 3}
     loopBackground: 0
     sfx: []
   choices: []
@@ -38,9 +38,9 @@ MonoBehaviour:
   script: I remember. Hello.
   fontStyle: 0
   fontAsset: {fileID: 0}
-  dialogueColour: {r: 0.8039216, g: 0.9607843, b: 0.8050146, a: 1}
+  dialogueColour: {r: 0.9019608, g: 0.8039216, b: 0.9607843, a: 1}
   speaker: Aster
-  speakerColour: {r: 1, g: 1, b: 1, a: 1}
+  speakerColour: {r: 0.9019608, g: 0.8039216, b: 0.9607843, a: 1}
   writerSpeed: 0.02
   writerDelay: 0
   colourChanges: []

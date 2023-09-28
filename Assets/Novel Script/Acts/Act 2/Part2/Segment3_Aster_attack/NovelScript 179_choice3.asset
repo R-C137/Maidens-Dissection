@@ -12,12 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92c1ce71a98cbc241a34affdff9fbad4, type: 3}
   m_Name: NovelScript 179_choice3
   m_EditorClassIdentifier: 
-  backgroundSprite: {fileID: 0}
+  backgroundSprite: {fileID: 21300000, guid: 3ec4e160212b7234ab52f43dd929ccf2, type: 3}
   backgroundTitle: 
   audio:
     voiceActing: {fileID: 0}
     background: {fileID: 0}
     loopBackground: 0
+    sfx: []
   choices:
   - name: Stab her
     followup:
@@ -32,11 +33,13 @@ MonoBehaviour:
     - {fileID: 11400000, guid: c535d49b2e3650d4396bd0b1279714d5, type: 2}
     - {fileID: 11400000, guid: 212522953262e3a44b83f99198b0d65b, type: 2}
     - {fileID: 11400000, guid: a94223ea0bc82e24faa5ff87a28cef13, type: 2}
-    - {fileID: 11400000, guid: 9264623ad796b7f4480e476723820f6e, type: 2}
-    - {fileID: 11400000, guid: e53107c80bc8cb04d9e32a86080444ea, type: 2}
   characters: []
   script: 
-  speaker: 
   fontStyle: 0
+  fontAsset: {fileID: 0}
+  dialogueColour: {r: 1, g: 1, b: 1, a: 1}
+  speaker: 
+  speakerColour: {r: 1, g: 1, b: 1, a: 1}
   writerSpeed: 0.02
   writerDelay: 0
+  colourChanges: []

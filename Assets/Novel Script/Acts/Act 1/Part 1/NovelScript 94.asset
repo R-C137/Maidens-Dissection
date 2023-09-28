@@ -16,17 +16,18 @@ MonoBehaviour:
   backgroundTitle: 
   audio:
     voiceActing: {fileID: 0}
-    background: {fileID: 0}
+    background: {fileID: 8300000, guid: 84577ffec5717734cbf7f0fe3e427286, type: 3}
     loopBackground: 0
     sfx: []
   choices: []
   characters: []
   script: "Camille isn\u2019t tho. Back then, in the front yard, I saw how genuine
     she was. Her year 1 is lucky to have her. "
-  speaker: MC
   fontStyle: 2
   fontAsset: {fileID: 0}
+  dialogueColour: {r: 1, g: 1, b: 1, a: 1}
+  speaker: MC
+  speakerColour: {r: 1, g: 1, b: 1, a: 1}
   writerSpeed: 0.02
   writerDelay: 0
-  dialogueColour: {r: 1, g: 1, b: 1, a: 1}
   colourChanges: []

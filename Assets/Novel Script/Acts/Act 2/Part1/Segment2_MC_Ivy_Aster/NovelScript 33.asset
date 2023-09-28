@@ -12,14 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92c1ce71a98cbc241a34affdff9fbad4, type: 3}
   m_Name: NovelScript 33
   m_EditorClassIdentifier: 
-  backgroundSprite: {fileID: 0}
+  backgroundSprite: {fileID: 21300000, guid: 1a79ea6e772c89d41ab2a248bf5839e0, type: 3}
   backgroundTitle: 
   audio:
     voiceActing: {fileID: 0}
     background: {fileID: 0}
     loopBackground: 0
     sfx: []
-  choices: []
+  choices:
+  - name: 
+    followup: []
   characters:
   - sprite: {fileID: 21300000, guid: 2083eadf1e939d04bb12eccb7e988860, type: 3}
     feeling: 0

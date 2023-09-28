@@ -26,7 +26,7 @@ MonoBehaviour:
     customColor: {r: 0, g: 0, b: 0, a: 0}
     useCustomColor: 0
     poseChange: 0
-    speaker: 0
+    speaker: 1
     speakerSizeMultiplier: 0
   - sprite: {fileID: 21300000, guid: 21e24b4cb512cf74188d09bccc002407, type: 3}
     feeling: 0
@@ -40,9 +40,9 @@ MonoBehaviour:
     it comes to mixing ingredients perfectly together."
   fontStyle: 0
   fontAsset: {fileID: 0}
-  dialogueColour: {r: 1, g: 1, b: 1, a: 1}
+  dialogueColour: {r: 0.9607843, g: 0.8039216, b: 0.91764706, a: 1}
   speaker: Camille
-  speakerColour: {r: 1, g: 1, b: 1, a: 1}
+  speakerColour: {r: 0.9607843, g: 0.8039216, b: 0.91764706, a: 1}
   writerSpeed: 0.02
   writerDelay: 0
   colourChanges: []

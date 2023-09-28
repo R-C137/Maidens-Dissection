@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 92c1ce71a98cbc241a34affdff9fbad4, type: 3}
-  m_Name: NovelScript 200
+  m_Name: NovelScript 204_i
   m_EditorClassIdentifier: 
-  backgroundSprite: {fileID: 0}
+  backgroundSprite: {fileID: 21300000, guid: f6432d4d51430684185fb362332fbecd, type: 3}
   backgroundTitle: 
   audio:
     voiceActing: {fileID: 0}
@@ -21,15 +21,15 @@ MonoBehaviour:
     sfx: []
   choices: []
   characters:
-  - sprite: {fileID: 0}
+  - sprite: {fileID: 21300000, guid: 6a3f5d927dafe8a468cec12d72644f30, type: 3}
     feeling: 0
     customColor: {r: 0, g: 0, b: 0, a: 0}
     useCustomColor: 0
     poseChange: 0
-    speaker: 1
+    speaker: 0
     speakerSizeMultiplier: 0
-  script: "If there was no beauty in our world\u2026  How easy would it be for all
-    of us to live and not die an artist\u2019s death. \r\n"
+  script: "When I first laid my eyes on you, it was like looking in a mirror, but
+    then it changed so quickly. I suppose seeing that natural beauty does that. \r\n"
   fontStyle: 0
   fontAsset: {fileID: 0}
   dialogueColour: {r: 1, g: 1, b: 1, a: 1}

@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 92c1ce71a98cbc241a34affdff9fbad4, type: 3}
-  m_Name: NovelScript 198
+  m_Name: NovelScript 196_i
   m_EditorClassIdentifier: 
-  backgroundSprite: {fileID: 0}
+  backgroundSprite: {fileID: 21300000, guid: f6432d4d51430684185fb362332fbecd, type: 3}
   backgroundTitle: 
   audio:
     voiceActing: {fileID: 0}
@@ -28,12 +28,10 @@ MonoBehaviour:
     poseChange: 0
     speaker: 1
     speakerSizeMultiplier: 0
-  script: "I remember I told myself how much I would have loved for you to not end
-    up on that path\u2026 because I felt a genuine connection to you. There\u2019s
-    really no reason for me to lie now as you lay on the table before me, dead, but
-    for what is worth, I liked you dearly. You were one of the only that saw the
-    actual ugliness of the world. \r\n"
-  fontStyle: 0
+  script: "She took a liking to Camille early on\u2026 they lured her in by awarding
+    her studies. Then promised that they could meet their idol if she had just tried
+    harder. \r\n"
+  fontStyle: 2
   fontAsset: {fileID: 0}
   dialogueColour: {r: 1, g: 1, b: 1, a: 1}
   speaker: Ivy

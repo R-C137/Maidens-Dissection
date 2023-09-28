@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 92c1ce71a98cbc241a34affdff9fbad4, type: 3}
-  m_Name: NovelScript 184
+  m_Name: NovelScript 200_i
   m_EditorClassIdentifier: 
-  backgroundSprite: {fileID: 0}
+  backgroundSprite: {fileID: 21300000, guid: f6432d4d51430684185fb362332fbecd, type: 3}
   backgroundTitle: 
   audio:
     voiceActing: {fileID: 0}
@@ -21,16 +21,16 @@ MonoBehaviour:
     sfx: []
   choices: []
   characters:
-  - sprite: {fileID: 21300000, guid: 2cabf346769aea347a68217848e74628, type: 3}
+  - sprite: {fileID: 0}
     feeling: 0
     customColor: {r: 0, g: 0, b: 0, a: 0}
     useCustomColor: 0
     poseChange: 0
     speaker: 1
     speakerSizeMultiplier: 0
-  script: "Thinking back on the events that transpired, I\u2019ve asked myself what
-    I would have done differently.\r\n"
-  fontStyle: 1
+  script: "If there was no beauty in our world\u2026  How easy would it be for all
+    of us to live and not die an artist\u2019s death. \r\n"
+  fontStyle: 0
   fontAsset: {fileID: 0}
   dialogueColour: {r: 1, g: 1, b: 1, a: 1}
   speaker: Ivy

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92c1ce71a98cbc241a34affdff9fbad4, type: 3}
   m_Name: NovelScript 8
   m_EditorClassIdentifier: 
-  backgroundSprite: {fileID: 0}
+  backgroundSprite: {fileID: 21300000, guid: 3ec4e160212b7234ab52f43dd929ccf2, type: 3}
   backgroundTitle: 
   audio:
     voiceActing: {fileID: 0}
@@ -20,12 +20,19 @@ MonoBehaviour:
     loopBackground: 0
     sfx: []
   choices: []
-  characters: []
-  script: 
+  characters:
+  - sprite: {fileID: 21300000, guid: 92fa64ef7f27a42419570461c8109f8e, type: 3}
+    feeling: 0
+    customColor: {r: 0, g: 0, b: 0, a: 0}
+    useCustomColor: 0
+    poseChange: 0
+    speaker: 0
+    speakerSizeMultiplier: 0
+  script: Get the hell away from me
   fontStyle: 0
   fontAsset: {fileID: 0}
   dialogueColour: {r: 1, g: 1, b: 1, a: 1}
-  speaker: 
+  speaker: MC
   speakerColour: {r: 1, g: 1, b: 1, a: 1}
   writerSpeed: 0.02
   writerDelay: 0

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92c1ce71a98cbc241a34affdff9fbad4, type: 3}
   m_Name: NovelScript 2
   m_EditorClassIdentifier: 
-  backgroundSprite: {fileID: 0}
+  backgroundSprite: {fileID: 21300000, guid: 0135512629c87234cbbfa8fa69bba4a9, type: 3}
   backgroundTitle: 
   audio:
     voiceActing: {fileID: 0}
@@ -21,11 +21,11 @@ MonoBehaviour:
     sfx: []
   choices: []
   characters: []
-  script: 
-  fontStyle: 0
+  script: '*The sound of blood gushing and a stabbing echo over black.*'
+  fontStyle: 1
   fontAsset: {fileID: 0}
   dialogueColour: {r: 1, g: 1, b: 1, a: 1}
-  speaker: Camille
+  speaker: 
   speakerColour: {r: 1, g: 1, b: 1, a: 1}
   writerSpeed: 0.02
   writerDelay: 0

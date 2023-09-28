@@ -16,17 +16,18 @@ MonoBehaviour:
   backgroundTitle: 
   audio:
     voiceActing: {fileID: 0}
-    background: {fileID: 8300000, guid: 9a715f5d441089b47b37f5042c6f992e, type: 3}
+    background: {fileID: 8300000, guid: e848db0ba10e0304090ccde903cd3e99, type: 3}
     loopBackground: 0
     sfx: []
   choices: []
   characters: []
   script: You rush over to the crying girl as she lays kneeling beside a rose bush
     riddle with thorns as she clenches her bleeding hand.
-  speaker: 
   fontStyle: 1
   fontAsset: {fileID: 0}
+  dialogueColour: {r: 1, g: 1, b: 1, a: 1}
+  speaker: 
+  speakerColour: {r: 1, g: 1, b: 1, a: 1}
   writerSpeed: 0.02
   writerDelay: 0
-  dialogueColour: {r: 1, g: 1, b: 1, a: 1}
   colourChanges: []

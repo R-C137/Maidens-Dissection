@@ -16,7 +16,7 @@ MonoBehaviour:
   backgroundTitle: 
   audio:
     voiceActing: {fileID: 0}
-    background: {fileID: 0}
+    background: {fileID: 8300000, guid: 84577ffec5717734cbf7f0fe3e427286, type: 3}
     loopBackground: 0
     sfx: []
   choices: []
@@ -24,10 +24,11 @@ MonoBehaviour:
   script: I wonder if she was lying. She seemed so energetic as she talked endlessly
     about the academy to me, but from the second I mentioned this picnic Camille
     offered, she grew quiet.
-  speaker: MC
   fontStyle: 2
   fontAsset: {fileID: 0}
+  dialogueColour: {r: 1, g: 1, b: 1, a: 1}
+  speaker: MC
+  speakerColour: {r: 1, g: 1, b: 1, a: 1}
   writerSpeed: 0.02
   writerDelay: 0
-  dialogueColour: {r: 1, g: 1, b: 1, a: 1}
   colourChanges: []

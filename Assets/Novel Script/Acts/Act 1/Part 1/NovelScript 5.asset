@@ -16,16 +16,17 @@ MonoBehaviour:
   backgroundTitle: 
   audio:
     voiceActing: {fileID: 0}
-    background: {fileID: 0}
+    background: {fileID: 8300000, guid: e848db0ba10e0304090ccde903cd3e99, type: 3}
     loopBackground: 0
     sfx: []
   choices: []
   characters: []
   script: I came to this school to learn botany, medicine and nursing.
-  speaker: MC
   fontStyle: 2
   fontAsset: {fileID: 0}
+  dialogueColour: {r: 1, g: 1, b: 1, a: 1}
+  speaker: MC
+  speakerColour: {r: 1, g: 1, b: 1, a: 1}
   writerSpeed: 0.02
   writerDelay: 0
-  dialogueColour: {r: 1, g: 1, b: 1, a: 1}
   colourChanges: []

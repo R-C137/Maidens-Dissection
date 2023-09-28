@@ -16,7 +16,7 @@ MonoBehaviour:
   backgroundTitle: 
   audio:
     voiceActing: {fileID: 8300000, guid: 4d3bb66aafe6af041abf3a35a630a04f, type: 3}
-    background: {fileID: 0}
+    background: {fileID: 8300000, guid: e848db0ba10e0304090ccde903cd3e99, type: 3}
     loopBackground: 0
     sfx: []
   choices: []
@@ -33,7 +33,7 @@ MonoBehaviour:
   fontAsset: {fileID: 0}
   dialogueColour: {r: 0.9607843, g: 0.80784315, b: 0.8039216, a: 1}
   speaker: Ivy
-  speakerColour: {r: 1, g: 1, b: 1, a: 1}
+  speakerColour: {r: 0.9607843, g: 0.80784315, b: 0.8039216, a: 1}
   writerSpeed: 0.02
   writerDelay: 0
   colourChanges: []

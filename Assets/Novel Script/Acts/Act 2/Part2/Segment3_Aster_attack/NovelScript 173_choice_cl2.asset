@@ -12,12 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92c1ce71a98cbc241a34affdff9fbad4, type: 3}
   m_Name: NovelScript 173_choice_cl2
   m_EditorClassIdentifier: 
-  backgroundSprite: {fileID: 0}
+  backgroundSprite: {fileID: 21300000, guid: 3ec4e160212b7234ab52f43dd929ccf2, type: 3}
   backgroundTitle: 
   audio:
     voiceActing: {fileID: 0}
     background: {fileID: 0}
     loopBackground: 0
+    sfx: []
   choices:
   - name: We can talk about this.
     followup:
@@ -33,7 +34,6 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 53d9b9fe339450f44a89ed71a646bfe3, type: 2}
     - {fileID: 11400000, guid: 93d01ac290414b54491f298782291795, type: 2}
     - {fileID: 11400000, guid: 83e8799f72986e04cbcdae0ef1a2ce87, type: 2}
-    - {fileID: 11400000, guid: 08afd464228f94a4f86d471ea322bf9e, type: 2}
   - name: '*Flee*'
     followup:
     - {fileID: 11400000, guid: 7da88dd384f02344690fc9e698a037bd, type: 2}
@@ -46,7 +46,11 @@ MonoBehaviour:
     - {fileID: 11400000, guid: b99c02f50d5180e45bd4999700e1f462, type: 2}
   characters: []
   script: "*Aster raises her scissors and lunges at MC.*\r"
-  speaker: 
   fontStyle: 0
+  fontAsset: {fileID: 0}
+  dialogueColour: {r: 1, g: 1, b: 1, a: 1}
+  speaker: 
+  speakerColour: {r: 1, g: 1, b: 1, a: 1}
   writerSpeed: 0.02
   writerDelay: 0
+  colourChanges: []

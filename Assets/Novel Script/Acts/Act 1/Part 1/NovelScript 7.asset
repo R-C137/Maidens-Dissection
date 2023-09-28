@@ -16,17 +16,19 @@ MonoBehaviour:
   backgroundTitle: 
   audio:
     voiceActing: {fileID: 0}
-    background: {fileID: 0}
+    background: {fileID: 8300000, guid: e848db0ba10e0304090ccde903cd3e99, type: 3}
     loopBackground: 0
     sfx:
-    - {fileID: 8300000, guid: 322cf8a23a1b8ae488716b7d93c4cfbf, type: 3}
+    - clip: {fileID: 0}
+      volume: 1
   choices: []
   characters: []
   script: Perhaps I should just withdraw. Leave this place.
-  speaker: MC
   fontStyle: 2
   fontAsset: {fileID: 0}
+  dialogueColour: {r: 1, g: 1, b: 1, a: 1}
+  speaker: MC
+  speakerColour: {r: 1, g: 1, b: 1, a: 1}
   writerSpeed: 0.02
   writerDelay: 0
-  dialogueColour: {r: 1, g: 1, b: 1, a: 1}
   colourChanges: []
