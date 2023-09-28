@@ -121,6 +121,11 @@ public class NovelHandler : MonoBehaviour
     public TextMeshProUGUI informationWindowTextShower;
 
     /// <summary>
+    /// Fader used to fade the information window
+    /// </summary>
+    public MultiImageFade informationWindowTextFader;
+
+    /// <summary>
     /// Whether the act has finished playing. Internal use only
     /// </summary>
     bool actFinished = false;
@@ -269,7 +274,8 @@ public class NovelHandler : MonoBehaviour
     {
         informationWindowTextShower.text = text;
         informationWindowTextShower.transform.parent.parent.gameObject.SetActive(true);
-        LeanTween.delayedCall(showTime, onComplete);
+
+        LeanTween.value(0, 1, .5f).setOnUpdate(v => informationWindowTextFader.SetOpacity(v)).setOnComplete(() => LeanTween.delayedCall(showTime, onComplete));
     }
 
     /// <summary>
