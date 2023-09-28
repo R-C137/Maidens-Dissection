@@ -28,11 +28,11 @@ MonoBehaviour:
     poseChange: 0
     speaker: 0
     speakerSizeMultiplier: 0
-  script: Ivy holds the flower to her nose and smells it, savoring its scent.
+  script: The girl holds the flower to her nose and smells it, savoring its scent.
   fontStyle: 1
   fontAsset: {fileID: 0}
   dialogueColour: {r: 1, g: 1, b: 1, a: 1}
-  speaker: 
+  speaker: '?'
   speakerColour: {r: 1, g: 1, b: 1, a: 1}
   writerSpeed: 0.02
   writerDelay: 0

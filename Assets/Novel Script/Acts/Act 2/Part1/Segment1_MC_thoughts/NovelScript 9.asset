@@ -25,7 +25,7 @@ MonoBehaviour:
     I was interested in early yet I used to see no point in learning a new skill,
     such a subjective one too. I really learned how to take a leap of faith from
     her.\r\n"
-  fontStyle: 0
+  fontStyle: 2
   fontAsset: {fileID: 0}
   dialogueColour: {r: 1, g: 1, b: 1, a: 1}
   speaker: MC

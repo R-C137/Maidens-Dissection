@@ -21,7 +21,7 @@ MonoBehaviour:
     sfx: []
   choices: []
   characters:
-  - sprite: {fileID: 0}
+  - sprite: {fileID: 21300000, guid: 44c95dd7c081a984783bb23df0d2ccb9, type: 3}
     feeling: 0
     customColor: {r: 0, g: 0, b: 0, a: 0}
     useCustomColor: 0
@@ -29,7 +29,7 @@ MonoBehaviour:
     speaker: 1
     speakerSizeMultiplier: 0
   script: "The gardener fell in love with the flower, and soon died just like how
-    an artist dies with their art. Death by beauty. \r\n"
+    an artist dies with their art... Death by beauty. \r\n"
   fontStyle: 2
   fontAsset: {fileID: 0}
   dialogueColour: {r: 0.9607843, g: 0.80784315, b: 0.8039216, a: 1}

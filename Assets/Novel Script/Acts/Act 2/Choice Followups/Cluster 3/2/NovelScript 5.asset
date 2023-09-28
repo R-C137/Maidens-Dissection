@@ -21,7 +21,7 @@ MonoBehaviour:
     sfx: []
   choices: []
   characters: []
-  script: Aster lunges at you
+  script: Aster lunges at you.
   fontStyle: 1
   fontAsset: {fileID: 0}
   dialogueColour: {r: 1, g: 1, b: 1, a: 1}

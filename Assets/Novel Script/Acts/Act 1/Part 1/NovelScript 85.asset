@@ -23,7 +23,7 @@ MonoBehaviour:
   characters: []
   script: "It is about that time when I meet Camille and her 1st year partner. \r\nIvy
     told me she couldn\u2019t come. I would have thought she would be interested
-    since it seems her and Camille are friends, but Ivy seemed\u2026\r\n"
+    since it seems her and Camille are... well... friends, but Ivy seemed\u2026\r\n"
   fontStyle: 2
   fontAsset: {fileID: 0}
   dialogueColour: {r: 1, g: 1, b: 1, a: 1}

@@ -24,7 +24,7 @@ MonoBehaviour:
   script: "Is \u201Cfriend\u201D the right word for Camille? I mean what do I know
     about her? What does she know about me? Everyone I\u2019ve ever known has been
     vile creatures wearing masks for others to see."
-  fontStyle: 0
+  fontStyle: 2
   fontAsset: {fileID: 0}
   dialogueColour: {r: 1, g: 1, b: 1, a: 1}
   speaker: MC

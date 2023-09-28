@@ -24,7 +24,7 @@ MonoBehaviour:
   script: "I suppose I\u2019ve never really thought about it, but is she a friend?
     I\u2019ve never had a friend before really or I\u2019ve never met someone I\u2019d
     call a friend, someone that would not lie to me\u2026 but then again\u2026\r\n"
-  fontStyle: 0
+  fontStyle: 2
   fontAsset: {fileID: 0}
   dialogueColour: {r: 1, g: 1, b: 1, a: 1}
   speaker: MC

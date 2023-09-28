@@ -28,7 +28,7 @@ MonoBehaviour:
     poseChange: 0
     speaker: 0
     speakerSizeMultiplier: 0
-  script: You watch as the girl stares longingly at the Rose, unable to take her
+  script: You watch as the girl stares longingly at the rose, unable to take her
     eyes off its violet petals.
   fontStyle: 1
   fontAsset: {fileID: 0}

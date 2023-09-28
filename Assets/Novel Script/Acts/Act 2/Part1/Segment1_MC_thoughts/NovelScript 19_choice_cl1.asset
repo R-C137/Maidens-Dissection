@@ -47,8 +47,8 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 9422ecfe778ee3745a3ab892ba906e0f, type: 2}
     - {fileID: 11400000, guid: d60d8061ce2a6a94fbe9df5ed665b746, type: 2}
   characters: []
-  script: '*The ambience softens to a whisper as if you are sinking. Your stomach
-    grumbles sickly as you wake up from your short sleep*'
+  script: The ambience softens to a whisper as if you are sinking. Your stomach grumbles
+    sickly as you wake up from your short sleep.
   fontStyle: 1
   fontAsset: {fileID: 0}
   dialogueColour: {r: 1, g: 1, b: 1, a: 1}

@@ -23,7 +23,7 @@ MonoBehaviour:
   characters: []
   script: "I suppose I can\u2019t really judge them because it has only allowed Camille
     and I to spend so much of these last several months together."
-  fontStyle: 0
+  fontStyle: 2
   fontAsset: {fileID: 0}
   dialogueColour: {r: 1, g: 1, b: 1, a: 1}
   speaker: MC

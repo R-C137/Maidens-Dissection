@@ -24,7 +24,7 @@ MonoBehaviour:
   script: 'Oh how the weeks and months fly by like a dandelion in the wind.
 
 '
-  fontStyle: 0
+  fontStyle: 2
   fontAsset: {fileID: 0}
   dialogueColour: {r: 1, g: 1, b: 1, a: 1}
   speaker: MC

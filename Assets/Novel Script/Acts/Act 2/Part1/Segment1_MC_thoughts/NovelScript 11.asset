@@ -24,7 +24,7 @@ MonoBehaviour:
   script: "And now the conference she has spoken endlessly about is finally here.
     Professionals from all aspects of botany and medical science have convened at
     this academy to present their latest discoveries. \r\n"
-  fontStyle: 0
+  fontStyle: 2
   fontAsset: {fileID: 0}
   dialogueColour: {r: 1, g: 1, b: 1, a: 1}
   speaker: MC

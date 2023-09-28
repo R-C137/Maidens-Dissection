@@ -23,7 +23,7 @@ MonoBehaviour:
   characters: []
   script: "And Camille is presenting alongside this mysterious idol of hers, the
     doctor and director of this academy. \r\n"
-  fontStyle: 0
+  fontStyle: 2
   fontAsset: {fileID: 0}
   dialogueColour: {r: 1, g: 1, b: 1, a: 1}
   speaker: MC

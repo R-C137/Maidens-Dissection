@@ -22,7 +22,7 @@ MonoBehaviour:
   choices: []
   characters: []
   script: My every thought. My every dream at night. My every waking action.
-  fontStyle: 0
+  fontStyle: 2
   fontAsset: {fileID: 0}
   dialogueColour: {r: 1, g: 1, b: 1, a: 1}
   speaker: MC

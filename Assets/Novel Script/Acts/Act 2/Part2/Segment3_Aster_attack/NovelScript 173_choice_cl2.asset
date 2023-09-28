@@ -45,8 +45,8 @@ MonoBehaviour:
     - {fileID: 11400000, guid: fa856f75b5ac51c43a2978932193eb8e, type: 2}
     - {fileID: 11400000, guid: b99c02f50d5180e45bd4999700e1f462, type: 2}
   characters: []
-  script: "*Aster raises her scissors and lunges at MC.*\r"
-  fontStyle: 0
+  script: "Aster raises her scissors and lunges at you.\r"
+  fontStyle: 1
   fontAsset: {fileID: 0}
   dialogueColour: {r: 1, g: 1, b: 1, a: 1}
   speaker: 

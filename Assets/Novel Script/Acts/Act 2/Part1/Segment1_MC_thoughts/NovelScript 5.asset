@@ -25,7 +25,7 @@ MonoBehaviour:
     Council President, she has not given me a single look ever since the opening
     day and Aster has been so invested with her studies that she has gone so far
     as to refuse Camille\u2019s eagerness to help. \r\n"
-  fontStyle: 0
+  fontStyle: 2
   fontAsset: {fileID: 0}
   dialogueColour: {r: 1, g: 1, b: 1, a: 1}
   speaker: MC

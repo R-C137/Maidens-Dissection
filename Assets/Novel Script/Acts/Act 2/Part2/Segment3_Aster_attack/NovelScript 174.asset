@@ -23,10 +23,10 @@ MonoBehaviour:
   characters: []
   script: 'You stumble backwards and fall into the rose bushes. The thorns dig into
     your skin as Aster approaches. Aster looms over you with her scissors shining
-    in the sunlight.
+    in the red sunlight.
 
 '
-  fontStyle: 0
+  fontStyle: 1
   fontAsset: {fileID: 0}
   dialogueColour: {r: 1, g: 1, b: 1, a: 1}
   speaker: Narration

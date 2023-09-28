@@ -20,7 +20,14 @@ MonoBehaviour:
     loopBackground: 0
     sfx: []
   choices: []
-  characters: []
+  characters:
+  - sprite: {fileID: 21300000, guid: 92fa64ef7f27a42419570461c8109f8e, type: 3}
+    feeling: 0
+    customColor: {r: 0, g: 0, b: 0, a: 0}
+    useCustomColor: 0
+    poseChange: 0
+    speaker: 1
+    speakerSizeMultiplier: 0
   script: 'Would you like to feel as I do?
 
 '

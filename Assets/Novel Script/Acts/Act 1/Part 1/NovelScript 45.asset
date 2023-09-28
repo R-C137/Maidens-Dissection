@@ -28,8 +28,8 @@ MonoBehaviour:
     poseChange: 0
     speaker: 0
     speakerSizeMultiplier: 0
-  script: Ivy hangs head, contemplating. The sound of flower dissection fills the
-    silence.
+  script: The girl hangs her head, contemplating. The sound of flower dissection
+    fills the silence.
   fontStyle: 1
   fontAsset: {fileID: 0}
   dialogueColour: {r: 1, g: 1, b: 1, a: 1}

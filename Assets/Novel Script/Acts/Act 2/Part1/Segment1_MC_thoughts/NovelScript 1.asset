@@ -23,7 +23,7 @@ MonoBehaviour:
   characters: []
   script: "I took Camille on her offer back on the first day we met and ever since
     then I\u2019ve struggled to tear myself from her orbit. "
-  fontStyle: 0
+  fontStyle: 2
   fontAsset: {fileID: 0}
   dialogueColour: {r: 1, g: 1, b: 1, a: 1}
   speaker: MC
