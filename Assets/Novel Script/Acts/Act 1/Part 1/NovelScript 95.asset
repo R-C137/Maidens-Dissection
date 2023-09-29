@@ -21,7 +21,7 @@ MonoBehaviour:
     sfx: []
   choices: []
   characters: []
-  script: "Anyways, I\u2019d better get going. "
+  script: 'Anyways... '
   fontStyle: 2
   fontAsset: {fileID: 0}
   dialogueColour: {r: 1, g: 1, b: 1, a: 1}

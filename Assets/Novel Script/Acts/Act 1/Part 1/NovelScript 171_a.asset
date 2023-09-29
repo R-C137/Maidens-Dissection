@@ -21,7 +21,7 @@ MonoBehaviour:
     sfx: []
   choices: []
   characters:
-  - sprite: {fileID: 21300000, guid: b1e935ca1bf89724896ee7957b4a50ce, type: 3}
+  - sprite: {fileID: 21300000, guid: d640d6dda76748f45b0119202b292982, type: 3}
     feeling: 0
     customColor: {r: 0, g: 0, b: 0, a: 0}
     useCustomColor: 0

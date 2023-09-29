@@ -21,8 +21,8 @@ MonoBehaviour:
     sfx: []
   choices: []
   characters: []
-  script: All the colors have disappeared from the gardens as it seems the roses
-    have all been severed from the bushes.
+  script: 'All the colors have disappeared from the gardens as it seems the roses
+    have all lost their ghastly glow. '
   fontStyle: 1
   fontAsset: {fileID: 0}
   dialogueColour: {r: 1, g: 1, b: 1, a: 1}

@@ -21,9 +21,8 @@ MonoBehaviour:
     sfx: []
   choices: []
   characters: []
-  script: You find yourself in a vibrant garden with a wide array of flowers blooming
-    all around. A picnic table is decorated under a booth.
-  fontStyle: 1
+  script: Just where are they?
+  fontStyle: 2
   fontAsset: {fileID: 0}
   dialogueColour: {r: 1, g: 1, b: 1, a: 1}
   speaker: 
