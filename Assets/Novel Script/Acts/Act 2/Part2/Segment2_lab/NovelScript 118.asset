@@ -19,23 +19,7 @@ MonoBehaviour:
     background: {fileID: 0}
     loopBackground: 0
     sfx: []
-  choices:
-  - name: "I\u2019ve never really drawn before"
-    followup:
-    - {fileID: 11400000, guid: 8457836c72972b540b1a32115ebd95e5, type: 2}
-    - {fileID: 11400000, guid: 1924c60aa24f6284895969aa07857f1b, type: 2}
-    - {fileID: 11400000, guid: 758c3bbc02638b94cb1a99dd0e5dbdd5, type: 2}
-    - {fileID: 11400000, guid: e01f9eb518ea42d41af310ecf4b1e8eb, type: 2}
-    - {fileID: 11400000, guid: 274a6d80e64530946900f74adfeb9261, type: 2}
-    - {fileID: 11400000, guid: 6bcbbd1db965d244ca5dfd32e29665da, type: 2}
-    - {fileID: 11400000, guid: 7b1b8527ff343324c8f8626aec1d969a, type: 2}
-  - name: "I don\u2019t think I\u2019ve ever had that kind of tea before"
-    followup:
-    - {fileID: 11400000, guid: 51618c2f43d068743a607e4fea4002c3, type: 2}
-    - {fileID: 11400000, guid: 7da88dd384f02344690fc9e698a037bd, type: 2}
-    - {fileID: 11400000, guid: 561e78b1f393234419ad3081096a1142, type: 2}
-    - {fileID: 11400000, guid: d99c29bd410b09741939d07c9b1b9d87, type: 2}
-    - {fileID: 11400000, guid: cef84caaf03f66043ab2ccf1d57cd1f5, type: 2}
+  choices: []
   characters: []
   script: "Camille\u2026\r\n"
   fontStyle: 0

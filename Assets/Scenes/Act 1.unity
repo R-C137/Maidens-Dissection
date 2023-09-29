@@ -2905,6 +2905,7 @@ MonoBehaviour:
   currentScript: {fileID: 0}
   speakerShower: {fileID: 1404173174}
   speakerImage: {fileID: 728069349}
+  useNewAnimation: 0
 --- !u!1 &1404173172
 GameObject:
   m_ObjectHideFlags: 0

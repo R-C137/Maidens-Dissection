@@ -30,7 +30,7 @@ MonoBehaviour:
     speakerSizeMultiplier: 0
   script: "Was it of any help to condemn the lies of the world? Life\u2019s bleak
     veil haunted you, which pushed you into life's biggest trap\u2026 beauty. \r\n"
-  fontStyle: 1
+  fontStyle: 0
   fontAsset: {fileID: 0}
   dialogueColour: {r: 0.9607843, g: 0.80784315, b: 0.8039216, a: 1}
   speaker: Ivy

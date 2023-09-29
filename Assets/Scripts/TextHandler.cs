@@ -10,6 +10,7 @@
  *  [22/09/2023] - Added default name remap for MC (C137)
  *  [23/09/2023] - Added custom font support (C137)
  *  [26/09/2023] - Custom color utility support + Speaker name colour support + Name remap is setup in Awake() (C137)
+ *  [29/09/2023] - Added support for default speaker text + Improved fade out animation (C137)
  *  
  */
 using System;
@@ -43,6 +44,11 @@ public class TextHandler : Singleton<TextHandler>
     public Image speakerImage;
 
     /// <summary>
+    /// Whether to use the
+    /// </summary>
+    public bool useNewAnimation = false;
+
+    /// <summary>
     /// The unique id of the tween used for the fading out of the speaker
     /// </summary>
     public static int speakerTweenFadeOut;
@@ -51,6 +57,7 @@ public class TextHandler : Singleton<TextHandler>
     /// The unique id of the tween used for the fading in of the speaker
     /// </summary>
     public static int speakerTweenFadeIn;
+
 
     /// <summary>
     /// Used for remapping names if any
@@ -153,28 +160,35 @@ public class TextHandler : Singleton<TextHandler>
         string remappedName = RemapName(script.speaker);
 
         //Set the colour of the speaker
-        singleton.speakerShower.color = script.speakerColour;
+        if(singleton.speakerShower.text != "")
+            singleton.speakerShower.color = script.speakerColour;
 
         if (script.speaker == string.Empty || script.speaker == null)
         {
             if (!singleton.speakerImage.gameObject.activeSelf)
                 return;
+            if (singleton.speakerShower.text != "Speaker Name")
+            {
+                if (speakerTweenFadeOut != -1)
+                    LeanTween.cancel(speakerTweenFadeOut);
 
-            if (speakerTweenFadeOut != -1)
-                LeanTween.cancel(speakerTweenFadeOut);
-
-            speakerTweenFadeOut = LeanTween.value(1, 0, .5f)
-                .setOnUpdate(v =>
-                {
-                    try
+                speakerTweenFadeOut = LeanTween.value(1, 0, .5f)
+                    .setOnUpdate(v =>
                     {
-                        singleton.speakerImage.fillAmount = v;
-                    }
-                    catch (Exception)
-                    {
-                        return;
-                    }
-                }).setOnComplete(() => { try { singleton.speakerShower.transform.parent.gameObject.SetActive(false); } catch (Exception) { return; } }).uniqueId;
+                        try
+                        {
+                            if(singleton.useNewAnimation)
+                                singleton.speakerShower.text = "";
+                            singleton.speakerImage.fillAmount = v;
+                        }
+                        catch (Exception)
+                        {
+                            return;
+                        }
+                    }).setOnComplete(() => { try { singleton.speakerShower.transform.parent.gameObject.SetActive(false); } catch (Exception) { return; } }).uniqueId;
+            }
+            else
+                singleton.speakerShower.transform.parent.gameObject.SetActive(false);
         }
         else
         {

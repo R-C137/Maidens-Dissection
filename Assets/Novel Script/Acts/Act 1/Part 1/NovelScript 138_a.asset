@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 92c1ce71a98cbc241a34affdff9fbad4, type: 3}
-  m_Name: NovelScript 138
+  m_Name: NovelScript 138_a
   m_EditorClassIdentifier: 
   backgroundSprite: {fileID: 21300000, guid: 4b10f8aaff16e8243ab7195442a9cebd, type: 3}
   backgroundTitle: 
@@ -38,9 +38,9 @@ MonoBehaviour:
   script: "And now you\u2019re meeting with them?"
   fontStyle: 0
   fontAsset: {fileID: 0}
-  dialogueColour: {r: 1, g: 1, b: 1, a: 1}
+  dialogueColour: {r: 0.9019608, g: 0.8039216, b: 0.9607843, a: 1}
   speaker: Aster
-  speakerColour: {r: 1, g: 1, b: 1, a: 1}
+  speakerColour: {r: 0.9019608, g: 0.8039216, b: 0.9607843, a: 1}
   writerSpeed: 0.02
   writerDelay: 0
   colourChanges: []

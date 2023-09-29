@@ -30,7 +30,7 @@ MonoBehaviour:
     speakerSizeMultiplier: 0
   script: "Thinking back on the events that transpired, I\u2019ve asked myself what
     I would have done differently.\r\n"
-  fontStyle: 1
+  fontStyle: 0
   fontAsset: {fileID: 0}
   dialogueColour: {r: 0.9607843, g: 0.80784315, b: 0.8039216, a: 1}
   speaker: Ivy

@@ -30,7 +30,7 @@ MonoBehaviour:
     speakerSizeMultiplier: 0
   script: "Then she waited for that one person to come and make the whole dissection
     of the flower more impactful\u2026 more agonizing. And that person was you. \r\n"
-  fontStyle: 2
+  fontStyle: 0
   fontAsset: {fileID: 0}
   dialogueColour: {r: 0.9607843, g: 0.80784315, b: 0.8039216, a: 1}
   speaker: Ivy
