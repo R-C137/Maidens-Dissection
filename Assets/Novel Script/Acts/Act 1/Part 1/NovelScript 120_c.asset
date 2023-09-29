@@ -35,7 +35,7 @@ MonoBehaviour:
     poseChange: 0
     speaker: 0
     speakerSizeMultiplier: 0
-  script: "(leans in closer to MC) She gets extremely talkative once she gets out
+  script: "*leans in closer to you*  She gets extremely talkative once she gets out
     of her shell. \r\n"
   fontStyle: 0
   fontAsset: {fileID: 0}

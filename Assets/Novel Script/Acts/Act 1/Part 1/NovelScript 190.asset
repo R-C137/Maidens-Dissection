@@ -35,7 +35,7 @@ MonoBehaviour:
     poseChange: 0
     speaker: 0
     speakerSizeMultiplier: 0
-  script: Camille turns to MC
+  script: Camille turns to you.
   fontStyle: 1
   fontAsset: {fileID: 0}
   dialogueColour: {r: 1, g: 1, b: 1, a: 1}

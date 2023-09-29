@@ -35,7 +35,7 @@ MonoBehaviour:
     poseChange: 0
     speaker: 0
     speakerSizeMultiplier: 0
-  script: All sound floats away like MC was falling down an endless pit.
+  script: All sound floats away like you are  falling down an endless pit.
   fontStyle: 1
   fontAsset: {fileID: 0}
   dialogueColour: {r: 1, g: 1, b: 1, a: 1}

@@ -32,9 +32,9 @@ MonoBehaviour:
     I can assist you with your studies if you ever find yourself in need of my help.\r\n"
   fontStyle: 0
   fontAsset: {fileID: 0}
-  dialogueColour: {r: 0.9607843, g: 0.8039216, b: 0.91764706, a: 1}
+  dialogueColour: {r: 0.8039216, g: 0.9607843, b: 0.9437653, a: 1}
   speaker: Camille
-  speakerColour: {r: 0.9607843, g: 0.8039216, b: 0.91764706, a: 1}
+  speakerColour: {r: 0.80392164, g: 0.9607844, b: 0.9450981, a: 1}
   writerSpeed: 0.02
   writerDelay: 0
   colourChanges: []

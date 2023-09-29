@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92c1ce71a98cbc241a34affdff9fbad4, type: 3}
   m_Name: NovelScript 1_c
   m_EditorClassIdentifier: 
-  backgroundSprite: {fileID: 21300000, guid: eb61d8aeb2ea0da4a9a82e5f754dd6f3, type: 3}
+  backgroundSprite: {fileID: 21300000, guid: 7a055ce9cccb85645b658be84bc675ba, type: 3}
   backgroundTitle: 
   audio:
     voiceActing: {fileID: 8300000, guid: 251020026cef0924cb1bd84d1c869dd7, type: 3}
@@ -38,7 +38,7 @@ MonoBehaviour:
   script: 'Got it! '
   fontStyle: 0
   fontAsset: {fileID: 0}
-  dialogueColour: {r: 0.9607843, g: 0.8039216, b: 0.91764706, a: 1}
+  dialogueColour: {r: 0.73118544, g: 0.8867924, b: 0.8791712, a: 1}
   speaker: Camille
   speakerColour: {r: 0.9607843, g: 0.8039216, b: 0.91764706, a: 1}
   writerSpeed: 0.02

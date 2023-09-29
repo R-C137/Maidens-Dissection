@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92c1ce71a98cbc241a34affdff9fbad4, type: 3}
   m_Name: NovelScript _i
   m_EditorClassIdentifier: 
-  backgroundSprite: {fileID: 21300000, guid: eb61d8aeb2ea0da4a9a82e5f754dd6f3, type: 3}
+  backgroundSprite: {fileID: 21300000, guid: 7a055ce9cccb85645b658be84bc675ba, type: 3}
   backgroundTitle: 
   audio:
     voiceActing: {fileID: 8300000, guid: e5f33e6168ca0bf4b82cb752614e5d45, type: 3}
@@ -38,7 +38,7 @@ MonoBehaviour:
   script: 'I am The Student Council President. I deserve the respect. '
   fontStyle: 0
   fontAsset: {fileID: 0}
-  dialogueColour: {r: 0.8039216, g: 0.8352941, b: 0.9607843, a: 1}
+  dialogueColour: {r: 0.9056604, g: 0.6698469, b: 0.79563534, a: 1}
   speaker: Ivy
   speakerColour: {r: 0.8039216, g: 0.8352941, b: 0.9607843, a: 1}
   writerSpeed: 0.02

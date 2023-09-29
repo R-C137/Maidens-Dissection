@@ -38,9 +38,9 @@ MonoBehaviour:
   script: "Oh no, those aren\u2019t mine! They are Aster\u2019s. "
   fontStyle: 0
   fontAsset: {fileID: 0}
-  dialogueColour: {r: 0.9607843, g: 0.8039216, b: 0.91764706, a: 1}
+  dialogueColour: {r: 0.8039216, g: 0.9607843, b: 0.9576443, a: 1}
   speaker: Camille
-  speakerColour: {r: 0.9607843, g: 0.8039216, b: 0.91764706, a: 1}
+  speakerColour: {r: 0.8039216, g: 0.9607843, b: 0.9532559, a: 1}
   writerSpeed: 0.02
   writerDelay: 0
   colourChanges: []

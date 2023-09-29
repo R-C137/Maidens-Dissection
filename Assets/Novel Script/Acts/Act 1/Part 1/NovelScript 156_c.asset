@@ -35,7 +35,7 @@ MonoBehaviour:
     poseChange: 0
     speaker: 0
     speakerSizeMultiplier: 0
-  script: Lessens any pain that may come of it.
+  script: ...
   fontStyle: 0
   fontAsset: {fileID: 0}
   dialogueColour: {r: 0.8039216, g: 0.8156863, b: 0.9607843, a: 1}

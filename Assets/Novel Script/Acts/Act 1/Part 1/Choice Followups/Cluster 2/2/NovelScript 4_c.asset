@@ -40,7 +40,7 @@ MonoBehaviour:
     it comes to mixing ingredients perfectly together."
   fontStyle: 0
   fontAsset: {fileID: 0}
-  dialogueColour: {r: 0.9607843, g: 0.8039216, b: 0.91764706, a: 1}
+  dialogueColour: {r: 0.8039216, g: 0.95919776, b: 0.9607843, a: 1}
   speaker: Camille
   speakerColour: {r: 0.9607843, g: 0.8039216, b: 0.91764706, a: 1}
   writerSpeed: 0.02
