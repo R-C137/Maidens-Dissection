@@ -22,7 +22,7 @@ MonoBehaviour:
   choices: []
   characters: []
   script: "Aster doesn\u2019t say a word."
-  fontStyle: 3
+  fontStyle: 1
   fontAsset: {fileID: 0}
   dialogueColour: {r: 1, g: 1, b: 1, a: 1}
   speaker: 

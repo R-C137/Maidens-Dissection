@@ -33,7 +33,7 @@ MonoBehaviour:
     any protection. To answer you, yes, indeed she was the flower with pitiful thorns.
     Therefore, it would have been pitiful for me to try and spare her inevitable
     fate."
-  fontStyle: 2
+  fontStyle: 0
   fontAsset: {fileID: 0}
   dialogueColour: {r: 0.9607843, g: 0.80784315, b: 0.8039216, a: 1}
   speaker: Ivy

@@ -31,7 +31,7 @@ MonoBehaviour:
   script: "In our reality, beauty is perceived as a lie. A crude sick joke that is
     played upon its players\u2026 and it is. Beauty is just a trite trap bringing
     you closer to your own fragility. \r\n"
-  fontStyle: 1
+  fontStyle: 0
   fontAsset: {fileID: 0}
   dialogueColour: {r: 0.9607843, g: 0.80784315, b: 0.8039216, a: 1}
   speaker: Ivy

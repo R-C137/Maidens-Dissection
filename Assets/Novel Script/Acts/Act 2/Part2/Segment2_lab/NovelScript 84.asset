@@ -31,7 +31,7 @@ MonoBehaviour:
   script: 'Aster steps before you and looks disheveled with tear scared eyes.
 
 '
-  fontStyle: 0
+  fontStyle: 1
   fontAsset: {fileID: 0}
   dialogueColour: {r: 1, g: 1, b: 1, a: 1}
   speaker: 

@@ -23,7 +23,7 @@ MonoBehaviour:
   characters: []
   script: "Aster takes you by the hand and drags you back through the academy\u2019s
     hallways. \r\n"
-  fontStyle: 3
+  fontStyle: 1
   fontAsset: {fileID: 0}
   dialogueColour: {r: 1, g: 1, b: 1, a: 1}
   speaker: 

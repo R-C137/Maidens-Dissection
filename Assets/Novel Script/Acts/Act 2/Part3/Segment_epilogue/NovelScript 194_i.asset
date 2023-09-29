@@ -30,7 +30,7 @@ MonoBehaviour:
     speakerSizeMultiplier: 0
   script: "The gardener fell in love with the flower, and soon died just like how
     an artist dies with their art... Death by beauty. \r\n"
-  fontStyle: 2
+  fontStyle: 0
   fontAsset: {fileID: 0}
   dialogueColour: {r: 0.9607843, g: 0.80784315, b: 0.8039216, a: 1}
   speaker: Ivy

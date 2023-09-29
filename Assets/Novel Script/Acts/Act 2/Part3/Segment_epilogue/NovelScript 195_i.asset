@@ -31,7 +31,7 @@ MonoBehaviour:
   script: "Perhaps if the artist hadn't fantasized about beauty that could only survive
     within a dream\u2026 they would have seen that Aster was the doctor of this academy.
     \r\n"
-  fontStyle: 2
+  fontStyle: 0
   fontAsset: {fileID: 0}
   dialogueColour: {r: 0.9607843, g: 0.80784315, b: 0.8039216, a: 1}
   speaker: Ivy
