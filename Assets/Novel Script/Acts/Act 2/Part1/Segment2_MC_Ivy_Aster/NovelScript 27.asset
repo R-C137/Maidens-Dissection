@@ -19,9 +19,7 @@ MonoBehaviour:
     background: {fileID: 0}
     loopBackground: 0
     sfx: []
-  choices:
-  - name: 
-    followup: []
+  choices: []
   characters: []
   script: "Come to think of it, I have rarely seen Aster this last year. Last time
     I saw her she was with Ivy. \r\n"

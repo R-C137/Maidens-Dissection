@@ -19,9 +19,7 @@ MonoBehaviour:
     background: {fileID: 0}
     loopBackground: 0
     sfx: []
-  choices:
-  - name: 
-    followup: []
+  choices: []
   characters: []
   script: "It's the day of the annual conference. I wonder where my \u201CMaiden\"
     Ivy is. She doesn\u2019t seem to be present in this auditorium. \r\n"

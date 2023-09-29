@@ -19,9 +19,7 @@ MonoBehaviour:
     background: {fileID: 0}
     loopBackground: 0
     sfx: []
-  choices:
-  - name: 
-    followup: []
+  choices: []
   characters:
   - sprite: {fileID: 21300000, guid: 2083eadf1e939d04bb12eccb7e988860, type: 3}
     feeling: 0

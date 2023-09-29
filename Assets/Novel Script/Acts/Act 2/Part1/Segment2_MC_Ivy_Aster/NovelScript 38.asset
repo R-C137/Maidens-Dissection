@@ -19,9 +19,7 @@ MonoBehaviour:
     background: {fileID: 0}
     loopBackground: 0
     sfx: []
-  choices:
-  - name: 
-    followup: []
+  choices: []
   characters: []
   script: 'I looked at the dissection table in the middle of the classroom and noticed
     some cylindrical jars covered in some white cloth. '

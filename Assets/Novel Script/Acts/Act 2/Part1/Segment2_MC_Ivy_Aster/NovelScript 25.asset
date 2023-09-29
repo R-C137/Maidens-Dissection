@@ -19,9 +19,7 @@ MonoBehaviour:
     background: {fileID: 0}
     loopBackground: 0
     sfx: []
-  choices:
-  - name: 
-    followup: []
+  choices: []
   characters: []
   script: 'Aster is here though. Front line as always. She''s always so focused when
     I get to see her in class. Must be one influence to her genius. '

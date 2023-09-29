@@ -19,9 +19,7 @@ MonoBehaviour:
     background: {fileID: 0}
     loopBackground: 0
     sfx: []
-  choices:
-  - name: 
-    followup: []
+  choices: []
   characters: []
   script: "*You lay your head down on the auditorium\u2019s desk. *\r\n"
   fontStyle: 1

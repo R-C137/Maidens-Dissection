@@ -19,9 +19,7 @@ MonoBehaviour:
     background: {fileID: 0}
     loopBackground: 0
     sfx: []
-  choices:
-  - name: 
-    followup: []
+  choices: []
   characters: []
   script: "What a strange occurrence it was. I was just trying to get some medicine
     from the lockers when I heard them from the classroom. \r\n"

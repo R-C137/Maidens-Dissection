@@ -19,9 +19,7 @@ MonoBehaviour:
     background: {fileID: 0}
     loopBackground: 0
     sfx: []
-  choices:
-  - name: 
-    followup: []
+  choices: []
   characters: []
   script: "Eh\u2026 whatever. It is not like we're friends or anything.\r\n"
   fontStyle: 2
