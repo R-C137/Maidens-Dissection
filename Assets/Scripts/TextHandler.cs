@@ -160,7 +160,8 @@ public class TextHandler : Singleton<TextHandler>
         string remappedName = RemapName(script.speaker);
 
         //Set the colour of the speaker
-        singleton.speakerShower.color = script.speakerColour;
+        if(singleton.speakerShower.text != "")
+            singleton.speakerShower.color = script.speakerColour;
 
         if (script.speaker == string.Empty || script.speaker == null)
         {
