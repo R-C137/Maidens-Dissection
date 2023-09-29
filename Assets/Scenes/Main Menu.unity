@@ -11458,21 +11458,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Warning text here
-
-    L1
-
-    L2
-
-    L3
-
-    L4
-
-    L5
-
-    L6
-
-    L7'
+  m_text: "This game may contain disturbing themes and content such as ...\r\nmurder,
+    gore, violence.\r\n\r\nPlayer discretion \nis advised."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a9939efc99078bf4eb1453bde3ba9154, type: 2}
   m_sharedMaterial: {fileID: -1031181673956890668, guid: a9939efc99078bf4eb1453bde3ba9154, type: 2}
