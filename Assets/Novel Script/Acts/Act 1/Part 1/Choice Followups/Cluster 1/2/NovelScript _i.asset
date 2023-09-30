@@ -38,9 +38,9 @@ MonoBehaviour:
   script: 'I am The Student Council President. I deserve the respect. '
   fontStyle: 0
   fontAsset: {fileID: 0}
-  dialogueColour: {r: 0.9056604, g: 0.6698469, b: 0.79563534, a: 1}
+  dialogueColour: {r: 0.9607843, g: 0.80784315, b: 0.8039216, a: 1}
   speaker: Ivy
-  speakerColour: {r: 0.8039216, g: 0.8352941, b: 0.9607843, a: 1}
+  speakerColour: {r: 0.9607843, g: 0.80784315, b: 0.8039216, a: 1}
   writerSpeed: 0.02
   writerDelay: 0
   colourChanges: []
