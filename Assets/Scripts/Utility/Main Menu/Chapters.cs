@@ -8,6 +8,7 @@
  * Changes: 
  *  [09/09/2023] - Initial Implementation (C137)
  *  [12/09/2023] - Added animation to back button (C137)
+ *  [30/09/2023] - Improved characters page (C137)
  *  
  */
 using System;
@@ -37,6 +38,16 @@ public class Chapters : MonoBehaviour
     public GameObject tutorial;
 
     /// <summary>
+    /// Reference to the text of the characters page
+    /// </summary>
+    public TextMeshProUGUI charactersText;
+
+    /// <summary>
+    /// The button used to access the characters page
+    /// </summary>
+    public Button charactersButton;
+
+    /// <summary>
     /// The amount of time the tutorial is shown for
     /// </summary>
     public float tutorialShowTime;
@@ -55,13 +66,20 @@ public class Chapters : MonoBehaviour
     {
         int unlockedActs = PlayerPrefs.GetInt("general.unlocked-acts", 0);
 
-        if(acts.Any())
+        if (acts.Any())
+        {
             for (int i = unlockedActs + 1; i < acts.Length; i++)
             {
                 acts[i].enabled = false;
                 Destroy(acts[i].GetComponent<HoverAnimation>());
                 acts[i].transform.GetChild(0).GetComponent<TextMeshProUGUI>().color = Color.grey;
             }
+            if(unlockedActs >= 2)
+            {
+                charactersText.text = "~ Characters ~";
+                charactersButton.enabled = true;
+            }
+        }
     }
 
     /// <summary>

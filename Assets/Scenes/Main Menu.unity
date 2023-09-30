@@ -312,26 +312,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textShower: {fileID: 853329941}
   descriptions:
-  - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse efficitur
-    elit a hendrerit euismod. Integer accumsan placerat libero gravida tincidunt.
-    Mauris tempus ac justo a tincidunt. Ut dapibus egestas nisi, a tempor orci cursus
-    id. Donec sit amet elit urna. Nam placerat sem in urna rhoncus, in vulputate
-    dui egestas. Aenean et mollis nibh. Aliquam erat volutpat. Etiam ac enim ut mi
-    pulvinar iaculis. Cras finibus, ipsum quis sollicitudin sodales, velit urna cursus
-    neque, et lobortis lorem dolor in justo. Duis pretium nec eros quis pellentesque.
-    Integer eget blandit est.
-  - Duis sed nisi nec purus scelerisque dapibus consequat at ante. Donec aliquam
-    aliquam erat. Nulla luctus semper nibh a blandit. Nunc et semper nisl. Donec
-    id aliquam eros. In id sapien ac arcu tincidunt hendrerit. Pellentesque eu vulputate
-    nunc. Aliquam hendrerit eleifend consequat. Vestibulum a vestibulum ipsum. Donec
-    iaculis mi quis vulputate pellentesque. Nam hendrerit vel nunc vel facilisis.
-    Duis vestibulum, felis quis volutpat ultricies, purus lectus consequat nulla,
-    vel maximus libero nisi vel tortor.
-  - Praesent aliquam dui felis, nec consequat lacus iaculis a. Pellentesque porttitor
-    efficitur turpis vel maximus. Aliquam erat volutpat. Suspendisse potenti. Ut
-    a dui urna. Fusce egestas libero nibh, quis condimentum enim commodo placerat.
-    Praesent sagittis sapien non tellus faucibus imperdiet. Donec maximus mattis
-    tellus vel suscipit.
+  - 'She/her
+
+    Year II, Student Council President, Aster''s Pawn
+
+
+    Height:
+    158 cm
+
+    Blood Type: A2
+
+    Medication: Adderall
+
+    Disease(s): Unspecified
+    Trauma, Bipolar Tendencies, Scoliosis
+
+    Favorite Tea: Nettle Extract with
+    Honey
+
+    Likes: Theater and Victorian Literature
+
+    Dislikes: Being interrupted
+
+'
   currentIndex: 0
   rightButton: {fileID: 1358953657}
   leftButton: {fileID: 1666600673}
@@ -6584,10 +6587,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1400366054}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -1077.268, y: -0.0015258789}
-  m_SizeDelta: {x: 702.332, y: -0.006072998}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 359, y: 0}
+  m_SizeDelta: {x: 632, y: 632}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1012004565
 MonoBehaviour:
@@ -7928,6 +7931,7 @@ GameObject:
   - component: {fileID: 1224532979}
   - component: {fileID: 1224532978}
   - component: {fileID: 1224532980}
+  - component: {fileID: 1224532981}
   m_Layer: 5
   m_Name: Character
   m_TagString: Untagged
@@ -7951,8 +7955,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 691.333, y: 289.293}
+  m_AnchoredPosition: {x: 0, y: 0.000015258789}
+  m_SizeDelta: {x: 642.3718, y: 658.4471}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1224532978
 MonoBehaviour:
@@ -7974,7 +7978,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 7bbf4f527e14b7049afc4abf952ae97f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 85de2548605349d4381c6cc5a1af2fcc, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7999,7 +8003,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1224532976}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
@@ -8060,6 +8064,21 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1224532981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1224532976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 12, y: -12}
+  m_UseGraphicAlpha: 1
 --- !u!1 &1244255575
 GameObject:
   m_ObjectHideFlags: 0
@@ -8123,22 +8142,22 @@ MonoBehaviour:
 
 
 
-    Height:182cm
+    Height: 182cm
 
     Blood
-    Type: B2
+    Type: B2</color>
 
     Medication: self-prescribed supplements
 
-    Disease(s): self-diagnosed
-    asthma
+    Disease(s):
+    self-diagnosed asthma
 
     Favorite tea: drinks irish coffee
 
-    Likes: Humans as study objects
+    Likes: Humans
+    as study objects
 
-    Dislikes:
-    Orders for intestines
+    Dislikes: Orders for intestines
 
 '
   m_isRightToLeft: 0
@@ -8872,10 +8891,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 79114990}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -1077.268, y: -0.0015258789}
-  m_SizeDelta: {x: 702.332, y: -0.006072998}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 359, y: 0}
+  m_SizeDelta: {x: 632, y: 632}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1326094450
 MonoBehaviour:
@@ -9654,26 +9673,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textShower: {fileID: 1244255577}
   descriptions:
-  - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse efficitur
-    elit a hendrerit euismod. Integer accumsan placerat libero gravida tincidunt.
-    Mauris tempus ac justo a tincidunt. Ut dapibus egestas nisi, a tempor orci cursus
-    id. Donec sit amet elit urna. Nam placerat sem in urna rhoncus, in vulputate
-    dui egestas. Aenean et mollis nibh. Aliquam erat volutpat. Etiam ac enim ut mi
-    pulvinar iaculis. Cras finibus, ipsum quis sollicitudin sodales, velit urna cursus
-    neque, et lobortis lorem dolor in justo. Duis pretium nec eros quis pellentesque.
-    Integer eget blandit est.
-  - Duis sed nisi nec purus scelerisque dapibus consequat at ante. Donec aliquam
-    aliquam erat. Nulla luctus semper nibh a blandit. Nunc et semper nisl. Donec
-    id aliquam eros. In id sapien ac arcu tincidunt hendrerit. Pellentesque eu vulputate
-    nunc. Aliquam hendrerit eleifend consequat. Vestibulum a vestibulum ipsum. Donec
-    iaculis mi quis vulputate pellentesque. Nam hendrerit vel nunc vel facilisis.
-    Duis vestibulum, felis quis volutpat ultricies, purus lectus consequat nulla,
-    vel maximus libero nisi vel tortor.
-  - Praesent aliquam dui felis, nec consequat lacus iaculis a. Pellentesque porttitor
-    efficitur turpis vel maximus. Aliquam erat volutpat. Suspendisse potenti. Ut
-    a dui urna. Fusce egestas libero nibh, quis condimentum enim commodo placerat.
-    Praesent sagittis sapien non tellus faucibus imperdiet. Donec maximus mattis
-    tellus vel suscipit.
+  - 'She/her
+
+    Year I, Doctor of the Academy
+
+
+
+    Height: 182cm
+
+    Blood Type:
+    B2</color>
+
+    Medication: self-prescribed supplements
+
+    Disease(s): self-diagnosed
+    asthma
+
+    Favorite tea: drinks irish coffee
+
+    Likes: Humans as study objects
+
+    Dislikes:
+    Orders for intestines
+
+'
   currentIndex: 0
   rightButton: {fileID: 1740208218}
   leftButton: {fileID: 113529318}
@@ -10052,10 +10075,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1909047712}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -1077.268, y: -0.0015258789}
-  m_SizeDelta: {x: 702.332, y: -0.006072998}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 359, y: 0}
+  m_SizeDelta: {x: 632, y: 632}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1446182659
 MonoBehaviour:
@@ -10705,6 +10728,8 @@ MonoBehaviour:
   mainMenu: {fileID: 2031143308}
   chapters: {fileID: 1585868600}
   tutorial: {fileID: 850719492}
+  charactersText: {fileID: 845040447}
+  charactersButton: {fileID: 1224532980}
   tutorialShowTime: 3
   acts:
   - {fileID: 164387544}
@@ -11918,26 +11943,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textShower: {fileID: 2038942541}
   descriptions:
-  - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse efficitur
-    elit a hendrerit euismod. Integer accumsan placerat libero gravida tincidunt.
-    Mauris tempus ac justo a tincidunt. Ut dapibus egestas nisi, a tempor orci cursus
-    id. Donec sit amet elit urna. Nam placerat sem in urna rhoncus, in vulputate
-    dui egestas. Aenean et mollis nibh. Aliquam erat volutpat. Etiam ac enim ut mi
-    pulvinar iaculis. Cras finibus, ipsum quis sollicitudin sodales, velit urna cursus
-    neque, et lobortis lorem dolor in justo. Duis pretium nec eros quis pellentesque.
-    Integer eget blandit est.
-  - Duis sed nisi nec purus scelerisque dapibus consequat at ante. Donec aliquam
-    aliquam erat. Nulla luctus semper nibh a blandit. Nunc et semper nisl. Donec
-    id aliquam eros. In id sapien ac arcu tincidunt hendrerit. Pellentesque eu vulputate
-    nunc. Aliquam hendrerit eleifend consequat. Vestibulum a vestibulum ipsum. Donec
-    iaculis mi quis vulputate pellentesque. Nam hendrerit vel nunc vel facilisis.
-    Duis vestibulum, felis quis volutpat ultricies, purus lectus consequat nulla,
-    vel maximus libero nisi vel tortor.
-  - Praesent aliquam dui felis, nec consequat lacus iaculis a. Pellentesque porttitor
-    efficitur turpis vel maximus. Aliquam erat volutpat. Suspendisse potenti. Ut
-    a dui urna. Fusce egestas libero nibh, quis condimentum enim commodo placerat.
-    Praesent sagittis sapien non tellus faucibus imperdiet. Donec maximus mattis
-    tellus vel suscipit.
+  - "She/her\r\nYear II, Top of her class and school, deceased\r\n\r\nHeight: 170
+    cm \r\nBlood Type: 0\r\nMedication: Allergy Pills and Eye drops\r\nDisease(s):
+    Insomnia and Migraines\r\nFavorite tea: Chamomile Infusion\r\nLikes: chatting,
+    nightsky\r\nDislikes: N/A\r"
   currentIndex: 0
   rightButton: {fileID: 911446405}
   leftButton: {fileID: 1956179234}
