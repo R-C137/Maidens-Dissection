@@ -11,6 +11,7 @@
  *  [23/09/2023] - Added custom font support (C137)
  *  [26/09/2023] - Custom color utility support + Speaker name colour support + Name remap is setup in Awake() (C137)
  *  [29/09/2023] - Added support for default speaker text + Improved fade out animation (C137)
+ *  [30/09/2023] - Fixed speaker colour during fade out animation (C137)
  *  
  */
 using System;
@@ -160,7 +161,7 @@ public class TextHandler : Singleton<TextHandler>
         string remappedName = RemapName(script.speaker);
 
         //Set the colour of the speaker
-        if(singleton.speakerShower.text != "")
+        if(script.speaker != string.Empty)
             singleton.speakerShower.color = script.speakerColour;
 
         if (script.speaker == string.Empty || script.speaker == null)
