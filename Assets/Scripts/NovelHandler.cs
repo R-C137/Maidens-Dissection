@@ -17,6 +17,7 @@
  *  [26/09/2023] - Background improvements + Progression buttons improvements + SFX improvements (C137)
  *  [27/09/2023] - Added an information window at the end of each act (C137)
  *  [28/09/2023] - Updated act's end warning notice (C137)
+ *  [30/09/2023] - Updated back button to support choices (C137)
  */
 using System;
 using System.Collections;
@@ -78,6 +79,11 @@ public class NovelHandler : MonoBehaviour
     /// </summary>
     [Header("General References")]
     public GameObject backButton;
+
+    /// <summary>
+    /// Reference to the forward button
+    /// </summary>
+    public GameObject forwardButton;
 
     /// <summary>
     /// The parent of the main story ui
@@ -164,10 +170,32 @@ public class NovelHandler : MonoBehaviour
         if (actFinished)
             return;
 
+        if(currentScript != null)
+        {
+            if(choiceMadeIndex == -1)
+            {
+                EnableStoryTelling();
+                forwardButton.SetActive(true);
+                goto BackNormalFlow;
+            }
+            if(currentChoiceIndex == 0)
+            {
+                currentScript = null;
+                choiceMadeIndex = -1;
+                currentChoiceIndex = -1;
+                ProgressScript();
+                return;
+            }
+            currentChoiceIndex -= 2;
+            HandleChoiceProgress();
+            return;
+        }
+        BackNormalFlow:
+
         if (shownBackgrounds.Contains(scripts[act].scripts[currentScriptIndex].GetInstanceID()))
             shownBackgrounds.Remove(scripts[act].scripts[currentScriptIndex].GetInstanceID());
 
-        if(act == 0 && currentScriptIndex == 0)//Back buttons shows the bcakground title of the first novel script (act 1 only)
+        if(act == 0 && currentScriptIndex == 0)//Back buttons shows the background title of the first novel script (act 1 only)
         {
             currentScriptIndex = -1;
             ProgressScript();
@@ -257,6 +285,7 @@ public class NovelHandler : MonoBehaviour
 
         NovelScript script = scripts[act].scripts[currentScriptIndex];
 
+        forwardButton.SetActive(true);
         ShowScript(script, choice);
 
         if (act == 0)
@@ -345,7 +374,8 @@ public class NovelHandler : MonoBehaviour
 
                 shownBackgrounds.Add(script.GetInstanceID());
 
-                //backButton.SetActive(false);
+                backButton.SetActive(false);
+                forwardButton.SetActive(false);
                 return false;
             }
             else
@@ -375,6 +405,7 @@ public class NovelHandler : MonoBehaviour
             mainStory.SetActive(false);
 
             backButton.SetActive(true);
+            forwardButton.SetActive(false);
 
             for (int i = 0; i < choices.Length; i++)
             {
@@ -411,6 +442,8 @@ public class NovelHandler : MonoBehaviour
 
         currentChoiceIndex++;
 
+        //backButton.SetActive(currentChoiceIndex > 0);
+
         if (currentChoiceIndex >= currentScript.choices[choiceMadeIndex].followup.Length)
         {
             currentChoiceIndex = -1;
@@ -429,12 +462,21 @@ public class NovelHandler : MonoBehaviour
     /// <param name="choiceIndex">The index of the choice made</param>
     void ChoiceMade(int choiceIndex)
     {
-        choices[0].transform.parent.gameObject.SetActive(false);
-        mainStory.SetActive(true);
-        backButton.SetActive(false);
+        EnableStoryTelling();
 
         choiceMadeIndex = choiceIndex;
 
         HandleChoiceProgress();
+
+        forwardButton.SetActive(true);
+    }
+
+    /// <summary>
+    /// Re enables all the parts related to story telling
+    /// </summary>
+    void EnableStoryTelling()
+    {
+        choices[0].transform.parent.gameObject.SetActive(false);
+        mainStory.SetActive(true);
     }
 }

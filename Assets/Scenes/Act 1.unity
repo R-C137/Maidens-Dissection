@@ -234,7 +234,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 761.9251, y: 323.57758}
+  m_AnchoredPosition: {x: -30.57978, y: 0.0011138916}
   m_SizeDelta: {x: 61.150024, y: 65.04999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &184580406
@@ -361,12 +361,12 @@ RectTransform:
   m_Children:
   - {fileID: 555316289}
   - {fileID: 184580405}
-  m_Father: {fileID: 2039657769}
+  m_Father: {fileID: 1313747935}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 1}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -959.99994, y: -376.08044}
-  m_SizeDelta: {x: 208.1499, y: 65.04498}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -167.57, y: 355.49603}
+  m_SizeDelta: {x: 208.3, y: 65.048004}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &299499741
 GameObject:
@@ -1085,7 +1085,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 822.9251, y: 323.57758}
+  m_AnchoredPosition: {x: 30.570312, y: 0.0011138916}
   m_SizeDelta: {x: 61.150024, y: 65.04999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &555316291
@@ -2379,6 +2379,7 @@ RectTransform:
   - {fileID: 1573313525}
   - {fileID: 782009185}
   - {fileID: 1460525612}
+  - {fileID: 268836957}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -2842,13 +2843,14 @@ MonoBehaviour:
   backgroundWriter: {fileID: 623379524}
   storyWriter: {fileID: 1080842819}
   backButton: {fileID: 555316288}
+  forwardButton: {fileID: 184580404}
   mainStory: {fileID: 2039657768}
   background: {fileID: 2023492948}
   saveProgress: 0
   currentScriptIndex: -1
   currentChoiceIndex: -1
   choiceMadeIndex: -1
-  act: -1
+  act: 0
   informationWindowTextShower: {fileID: 749699861}
   informationWindowTextFader: {fileID: 1460525613}
 --- !u!114 &1313747938
@@ -4401,7 +4403,6 @@ RectTransform:
   m_Children:
   - {fileID: 728069348}
   - {fileID: 623149220}
-  - {fileID: 268836957}
   m_Father: {fileID: 1313747935}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
