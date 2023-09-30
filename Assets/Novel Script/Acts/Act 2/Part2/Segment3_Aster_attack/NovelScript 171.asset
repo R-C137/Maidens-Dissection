@@ -18,10 +18,12 @@ MonoBehaviour:
     voiceActing: {fileID: 0}
     background: {fileID: 0}
     loopBackground: 0
-    sfx: []
+    sfx:
+    - clip: {fileID: 8300000, guid: bb6e632de4e7fed489328435483d4c2f, type: 3}
+      volume: 0.2
   choices: []
   characters:
-  - sprite: {fileID: 21300000, guid: 10816c0dfbad8334da60b67bcad88bee, type: 3}
+  - sprite: {fileID: 21300000, guid: 9ec14d09b43007b4d9d49010701e4b5f, type: 3}
     feeling: 0
     customColor: {r: 0, g: 0, b: 0, a: 0}
     useCustomColor: 0

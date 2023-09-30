@@ -18,7 +18,9 @@ MonoBehaviour:
     voiceActing: {fileID: 0}
     background: {fileID: 0}
     loopBackground: 0
-    sfx: []
+    sfx:
+    - clip: {fileID: 8300000, guid: 2df28ce1790f1c442a18a601767373d9, type: 3}
+      volume: 1
   choices: []
   characters: []
   script: Aster lunges at you.

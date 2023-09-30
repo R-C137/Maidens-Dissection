@@ -18,7 +18,9 @@ MonoBehaviour:
     voiceActing: {fileID: 0}
     background: {fileID: 0}
     loopBackground: 0
-    sfx: []
+    sfx:
+    - clip: {fileID: 8300000, guid: e30e591d49299084b888dcb6ce19e133, type: 3}
+      volume: 1
   choices: []
   characters: []
   script: 'You slowly open the door.

@@ -19,8 +19,8 @@ MonoBehaviour:
     background: {fileID: 8300000, guid: e848db0ba10e0304090ccde903cd3e99, type: 3}
     loopBackground: 0
     sfx:
-    - clip: {fileID: 0}
-      volume: 1
+    - clip: {fileID: 8300000, guid: 91453703fddd9a643a8c22bb56191f81, type: 3}
+      volume: 0.4
   choices: []
   characters: []
   script: Perhaps I should just withdraw. Leave this place.

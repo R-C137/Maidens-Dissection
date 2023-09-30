@@ -18,10 +18,15 @@ MonoBehaviour:
     voiceActing: {fileID: 0}
     background: {fileID: 0}
     loopBackground: 0
-    sfx: []
+    sfx:
+    - clip: {fileID: 8300000, guid: 439b6256e8ba8eb48b90fb1ffb0df1bb, type: 3}
+      volume: 1
   choices: []
   characters: []
-  script: "You crawl just as she swings\u2026\r\n"
+  script: 'The thorns dig into your skin as Aster approaches. Aster looms over you
+    with her scissors shining in the red sunlight.
+
+'
   fontStyle: 1
   fontAsset: {fileID: 0}
   dialogueColour: {r: 1, g: 1, b: 1, a: 1}

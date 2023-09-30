@@ -18,7 +18,9 @@ MonoBehaviour:
     voiceActing: {fileID: 8300000, guid: ec955f44b1a3bc4488df902b7e72fcc4, type: 3}
     background: {fileID: 8300000, guid: e848db0ba10e0304090ccde903cd3e99, type: 3}
     loopBackground: 0
-    sfx: []
+    sfx:
+    - clip: {fileID: 8300000, guid: 439b6256e8ba8eb48b90fb1ffb0df1bb, type: 3}
+      volume: 1
   choices: []
   characters: []
   script: "It stings so\u2026."

@@ -18,10 +18,12 @@ MonoBehaviour:
     voiceActing: {fileID: 0}
     background: {fileID: 0}
     loopBackground: 0
-    sfx: []
+    sfx:
+    - clip: {fileID: 8300000, guid: 65be02864f347d04fbd9bbf38bfd6869, type: 3}
+      volume: 1
   choices: []
   characters: []
-  script: The sound of blood gushing and a stabbing echo over black.
+  script: The sound of blood gushing and a chopping echo over black.
   fontStyle: 1
   fontAsset: {fileID: 0}
   dialogueColour: {r: 1, g: 1, b: 1, a: 1}

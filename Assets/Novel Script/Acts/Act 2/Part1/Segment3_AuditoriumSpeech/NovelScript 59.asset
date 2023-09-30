@@ -20,14 +20,7 @@ MonoBehaviour:
     loopBackground: 0
     sfx: []
   choices: []
-  characters:
-  - sprite: {fileID: 21300000, guid: 184b19ddd8f97044ea2ce0f938f2c526, type: 3}
-    feeling: 0
-    customColor: {r: 0, g: 0, b: 0, a: 0}
-    useCustomColor: 0
-    poseChange: 0
-    speaker: 0
-    speakerSizeMultiplier: 0
+  characters: []
   script: 'Perhaps the student council body had to be involved. That must be it.
 
 '

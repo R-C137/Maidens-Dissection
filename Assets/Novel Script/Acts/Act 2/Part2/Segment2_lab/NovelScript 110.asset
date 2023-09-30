@@ -18,7 +18,9 @@ MonoBehaviour:
     voiceActing: {fileID: 0}
     background: {fileID: 0}
     loopBackground: 0
-    sfx: []
+    sfx:
+    - clip: {fileID: 8300000, guid: 7dbed82ece334d54cbacc0f99f830c47, type: 3}
+      volume: 0
   choices: []
   characters: []
   script: 'You fumble your hand around the wall, hoping to find a light switch, as

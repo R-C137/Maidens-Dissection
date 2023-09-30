@@ -18,7 +18,9 @@ MonoBehaviour:
     voiceActing: {fileID: 0}
     background: {fileID: 0}
     loopBackground: 0
-    sfx: []
+    sfx:
+    - clip: {fileID: 8300000, guid: c46a45b1d591b674682b89a8a21ebc30, type: 3}
+      volume: 1
   choices: []
   characters: []
   script: 'Aster rushes to your side and grabs you by the wrists again.

@@ -18,7 +18,9 @@ MonoBehaviour:
     voiceActing: {fileID: 0}
     background: {fileID: 0}
     loopBackground: 0
-    sfx: []
+    sfx:
+    - clip: {fileID: 8300000, guid: 5d48f21fde1cf5243b3d468ccc3f0be2, type: 3}
+      volume: 1
   choices: []
   characters: []
   script: "You follow as Aster digs her grip into your wrists until you finally reach\u2026\r\n"

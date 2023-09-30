@@ -18,7 +18,9 @@ MonoBehaviour:
     voiceActing: {fileID: 0}
     background: {fileID: 0}
     loopBackground: 0
-    sfx: []
+    sfx:
+    - clip: {fileID: 8300000, guid: 1cb56017b3f2bbd4d9dfb4b676e44637, type: 3}
+      volume: 1
   choices: []
   characters: []
   script: 'You steps into a darkly lit room.
