@@ -312,29 +312,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textShower: {fileID: 853329941}
   descriptions:
-  - 'She/her
-
-    Year II, Student Council President, Aster''s Pawn
+  - 'Year II, Student Council President, Aster''s Pawn
 
 
-    Height:
-    158 cm
+    Height: 158 cm
 
-    Blood Type: A2
+    Blood
+    Type: A2
 
     Medication: Adderall
 
-    Disease(s): Unspecified
-    Trauma, Bipolar Tendencies, Scoliosis
+    Disease(s): Unspecified Trauma, Bipolar
+    Tendencies, Scoliosis
 
-    Favorite Tea: Nettle Extract with
-    Honey
+    Favorite Tea: Nettle Extract with Honey
 
-    Likes: Theater and Victorian Literature
+    Likes:
+    Theater and Victorian Literature
 
-    Dislikes: Being interrupted
-
-'
+    Dislikes: Being interrupted'
   currentIndex: 0
   rightButton: {fileID: 1358953657}
   leftButton: {fileID: 1666600673}
@@ -4765,26 +4761,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textShower: {fileID: 1843130539}
   descriptions:
-  - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse efficitur
-    elit a hendrerit euismod. Integer accumsan placerat libero gravida tincidunt.
-    Mauris tempus ac justo a tincidunt. Ut dapibus egestas nisi, a tempor orci cursus
-    id. Donec sit amet elit urna. Nam placerat sem in urna rhoncus, in vulputate
-    dui egestas. Aenean et mollis nibh. Aliquam erat volutpat. Etiam ac enim ut mi
-    pulvinar iaculis. Cras finibus, ipsum quis sollicitudin sodales, velit urna cursus
-    neque, et lobortis lorem dolor in justo. Duis pretium nec eros quis pellentesque.
-    Integer eget blandit est.
-  - Duis sed nisi nec purus scelerisque dapibus consequat at ante. Donec aliquam
-    aliquam erat. Nulla luctus semper nibh a blandit. Nunc et semper nisl. Donec
-    id aliquam eros. In id sapien ac arcu tincidunt hendrerit. Pellentesque eu vulputate
-    nunc. Aliquam hendrerit eleifend consequat. Vestibulum a vestibulum ipsum. Donec
-    iaculis mi quis vulputate pellentesque. Nam hendrerit vel nunc vel facilisis.
-    Duis vestibulum, felis quis volutpat ultricies, purus lectus consequat nulla,
-    vel maximus libero nisi vel tortor.
-  - Praesent aliquam dui felis, nec consequat lacus iaculis a. Pellentesque porttitor
-    efficitur turpis vel maximus. Aliquam erat volutpat. Suspendisse potenti. Ut
-    a dui urna. Fusce egestas libero nibh, quis condimentum enim commodo placerat.
-    Praesent sagittis sapien non tellus faucibus imperdiet. Donec maximus mattis
-    tellus vel suscipit.
+  - "The New Student \r\nYear I, deceased\r\n\nHeight: 175 cm\r\nBlood Type: \r\nMedication:
+    Calcium and Vitamin D tablets\r\nDisease(s): Depression\r\nLikes: Camille \r\nDislikes:
+    Lies, Aster, Ivy\r"
   currentIndex: 0
   rightButton: {fileID: 511470305}
   leftButton: {fileID: 182377505}
@@ -5763,25 +5742,23 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'She/her
-
-    Year II, Student Council President, Aster''s Pawn
+  m_text: 'Year II, Student Council President, Aster''s Pawn
 
 
-    Height:
-    158 cm
+    Height: 158 cm
 
-    Blood Type: A2
+    Blood
+    Type: A2
 
     Medication: Adderall
 
-    Disease(s): Unspecified
-    Trauma, Bipolar Tendencies, Scoliosis
+    Disease(s): Unspecified Trauma, Bipolar
+    Tendencies, Scoliosis
 
-    Favorite Tea: Nettle Extract with
-    Honey
+    Favorite Tea: Nettle Extract with Honey
 
-    Likes: Theater and Victorian Literature
+    Likes:
+    Theater and Victorian Literature
 
     Dislikes: Being interrupted
 
@@ -6863,7 +6840,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 6c1a4471154f24849a1d4c36ed0b8a05, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3d3a1dfe4418976409eaf8c2043424fe, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8387,28 +8364,25 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'She/her
-
-    Year I, Doctor of the Academy
-
+  m_text: 'Year I, Doctor of the Academy
 
 
     Height: 182cm
 
-    Blood
-    Type: B2</color>
+    Blood Type: B2</color>
 
-    Medication: self-prescribed supplements
+    Medication:
+    self-prescribed supplements
 
-    Disease(s):
-    self-diagnosed asthma
+    Disease(s): self-diagnosed asthma
 
-    Favorite tea: drinks irish coffee
+    Favorite
+    tea: drinks irish coffee
 
-    Likes: Humans
-    as study objects
+    Likes: Humans as study objects
 
-    Dislikes: Orders for intestines
+    Dislikes: Orders
+    for intestines
 
 '
   m_isRightToLeft: 0
@@ -9167,7 +9141,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 3ff788cdf0937df448a102d2c03de31d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2baf7f7a579470f4fb0ad76fd3d62d7b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -9924,30 +9898,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textShower: {fileID: 1244255577}
   descriptions:
-  - 'She/her
-
-    Year I, Doctor of the Academy
-
+  - 'Year I, Doctor of the Academy
 
 
     Height: 182cm
 
-    Blood Type:
-    B2</color>
+    Blood Type: B2</color>
 
-    Medication: self-prescribed supplements
+    Medication:
+    self-prescribed supplements
 
-    Disease(s): self-diagnosed
-    asthma
+    Disease(s): self-diagnosed asthma
 
-    Favorite tea: drinks irish coffee
+    Favorite
+    tea: drinks irish coffee
 
     Likes: Humans as study objects
 
-    Dislikes:
-    Orders for intestines
-
-'
+    Dislikes: Orders
+    for intestines'
   currentIndex: 0
   rightButton: {fileID: 1740208218}
   leftButton: {fileID: 113529318}
@@ -10351,7 +10320,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 05e1164b3ea000e4399a179e189cae08, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 243dbe326fc892f4a924917691eef9e8, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -10907,7 +10876,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 7bbf4f527e14b7049afc4abf952ae97f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d7feb20bef52cb44ea8c0e2d6a66b62c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -11431,7 +11400,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: MC
+  m_text: 'The New Student '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a43f4454bd226234b8e9de2f1701137d, type: 2}
   m_sharedMaterial: {fileID: -1517896459467318721, guid: a43f4454bd226234b8e9de2f1701137d, type: 2}
@@ -12013,14 +11982,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse efficitur
-    elit a hendrerit euismod. Integer accumsan placerat libero gravida tincidunt.
-    Mauris tempus ac justo a tincidunt. Ut dapibus egestas nisi, a tempor orci cursus
-    id. Donec sit amet elit urna. Nam placerat sem in urna rhoncus, in vulputate
-    dui egestas. Aenean et mollis nibh. Aliquam erat volutpat. Etiam ac enim ut mi
-    pulvinar iaculis. Cras finibus, ipsum quis sollicitudin sodales, velit urna cursus
-    neque, et lobortis lorem dolor in justo. Duis pretium nec eros quis pellentesque.
-    Integer eget blandit est.
+  m_text: "The New Student \r\nYear I, deceased\r\n\nHeight: 175 cm\r\nBlood Type:
+    \r\nMedication: Calcium and Vitamin D tablets\r\nDisease(s): Depression\r\nLikes:
+    Camille \r\nDislikes: Lies, Aster, Ivy\r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 05498c7a6b946054ca8f40b6dee6416f, type: 2}
   m_sharedMaterial: {fileID: 956428870849805546, guid: 05498c7a6b946054ca8f40b6dee6416f, type: 2}
@@ -12194,10 +12158,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textShower: {fileID: 2038942541}
   descriptions:
-  - "She/her\r\nYear II, Top of her class and school, deceased\r\n\r\nHeight: 170
-    cm \r\nBlood Type: 0\r\nMedication: Allergy Pills and Eye drops\r\nDisease(s):
-    Insomnia and Migraines\r\nFavorite tea: Chamomile Infusion\r\nLikes: chatting,
-    nightsky\r\nDislikes: N/A\r"
+  - "Year II, Top of her class and school, deceased\r\n\r\nHeight: 170 cm \r\nBlood
+    Type: 0\r\nMedication: Allergy Pills and Eye drops\r\nDisease(s): Insomnia and
+    Migraines\r\nFavorite tea: Chamomile Infusion\r\nLikes: chatting, nightsky\r\nDislikes:
+    N/A\r"
   currentIndex: 0
   rightButton: {fileID: 911446405}
   leftButton: {fileID: 1956179234}
@@ -13275,10 +13239,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "She/her\r\nYear II, Top of her class and school, deceased\r\n\r\nHeight:
-    170 cm \r\nBlood Type: 0\r\nMedication: Allergy Pills and Eye drops\r\nDisease(s):
-    Insomnia and Migraines\r\nFavorite tea: Chamomile Infusion\r\nLikes: chatting,
-    nightsky\r\nDislikes: N/A\r"
+  m_text: "Year II, Top of her class and school, deceased\r\n\r\nHeight: 170 cm \r\nBlood
+    Type: 0\r\nMedication: Allergy Pills and Eye drops\r\nDisease(s): Insomnia and
+    Migraines\r\nFavorite tea: Chamomile Infusion\r\nLikes: chatting, nightsky\r\nDislikes:
+    N/A\r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 05498c7a6b946054ca8f40b6dee6416f, type: 2}
   m_sharedMaterial: {fileID: 956428870849805546, guid: 05498c7a6b946054ca8f40b6dee6416f, type: 2}
