@@ -2531,7 +2531,6 @@ MonoBehaviour:
     - {fileID: 11400000, guid: d74e977f64bb3ca4988ffb6c3621079a, type: 2}
     - {fileID: 11400000, guid: d292bcb4163cb92499e6961acc4140d7, type: 2}
     - {fileID: 11400000, guid: 95572929896108f40bf78c3049405747, type: 2}
-    - {fileID: 11400000, guid: 7509dfd80f805dd4b934e1023861e678, type: 2}
     - {fileID: 11400000, guid: 768ba9e8ff032174db910f255b65e57d, type: 2}
     - {fileID: 11400000, guid: 3791f5dead5be774e8c575011f1da11c, type: 2}
     - {fileID: 11400000, guid: 0660ce7b694c9ae4b86661b54e940d8a, type: 2}
@@ -2850,7 +2849,7 @@ MonoBehaviour:
   currentScriptIndex: -1
   currentChoiceIndex: -1
   choiceMadeIndex: -1
-  act: 0
+  act: -1
   informationWindowTextShower: {fileID: 749699861}
   informationWindowTextFader: {fileID: 1460525613}
 --- !u!114 &1313747938

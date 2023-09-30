@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92c1ce71a98cbc241a34affdff9fbad4, type: 3}
+  m_Name: NovelScript 4_c 1
+  m_EditorClassIdentifier: 
+  backgroundSprite: {fileID: 0}
+  backgroundTitle: 
+  audio:
+    voiceActing: {fileID: 8300000, guid: a2a267fe5937652458901a48b5b0a1fc, type: 3}
+    background: {fileID: 0}
+    loopBackground: 0
+    sfx: []
+  choices: []
+  characters:
+  - sprite: {fileID: 21300000, guid: 8e3f365fd4d544e45824ea6290159f79, type: 3}
+    feeling: 0
+    customColor: {r: 0, g: 0, b: 0, a: 0}
+    useCustomColor: 0
+    poseChange: 0
+    speaker: 0
+    speakerSizeMultiplier: 0
+  - sprite: {fileID: 21300000, guid: 21e24b4cb512cf74188d09bccc002407, type: 3}
+    feeling: 0
+    customColor: {r: 0, g: 0, b: 0, a: 0}
+    useCustomColor: 0
+    poseChange: 0
+    speaker: 1
+    speakerSizeMultiplier: 0
+  script: "Oh you two are too kind. If I were to give you some tips, I\u2019d say
+    that finding the correct measures to your herbal blend is the most crucial step.
+    Other than that, making tea is just about analyzing your ingredients, creating
+    a mental model of it, and then putting it all together."
+  fontStyle: 0
+  fontAsset: {fileID: 0}
+  dialogueColour: {r: 0.9019608, g: 0.8039216, b: 0.9607843, a: 1}
+  speaker: Aster
+  speakerColour: {r: 0.9019608, g: 0.8039216, b: 0.9607843, a: 1}
+  writerSpeed: 0.02
+  writerDelay: 0
+  colourChanges: []

@@ -35,7 +35,7 @@ MonoBehaviour:
     poseChange: 0
     speaker: 0
     speakerSizeMultiplier: 0
-  script: What is going on with me? My heart beeps so rapidly and my hands are shaking.
+  script: What is going on with me? My heart beats so rapidly and my hands are shaking.
   fontStyle: 2
   fontAsset: {fileID: 0}
   dialogueColour: {r: 1, g: 1, b: 1, a: 1}

@@ -29,6 +29,7 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 7b3d593772d77824da6960d59e24c530, type: 2}
     - {fileID: 11400000, guid: 8388b03b5b659a645a6e1d79deab8c11, type: 2}
     - {fileID: 11400000, guid: faf88c4b494373046ac3c692834ee006, type: 2}
+    - {fileID: 11400000, guid: 423f8401e0132234cbc6ee53dcc97139, type: 2}
   - name: "I don\u2019t think I\u2019ve ever had that kind of tea before"
     followup:
     - {fileID: 11400000, guid: 498194f05af4cfd4a909af52729d64fe, type: 2}
@@ -36,6 +37,7 @@ MonoBehaviour:
     - {fileID: 11400000, guid: eda6a349fdd19b54d88925f6cdcf3c2b, type: 2}
     - {fileID: 11400000, guid: 0ec26f813a7665444878e4f60713f2aa, type: 2}
     - {fileID: 11400000, guid: 26acc3573f0a71f44b0a971cd473cec6, type: 2}
+    - {fileID: 11400000, guid: 037d17754deedd64cb31076e64263ee1, type: 2}
   characters:
   - sprite: {fileID: 21300000, guid: aa46d9b0b8f81dc4eab1e675aa6ac19b, type: 3}
     feeling: 0
@@ -44,17 +46,14 @@ MonoBehaviour:
     poseChange: 0
     speaker: 0
     speakerSizeMultiplier: 0
-  - sprite: {fileID: 21300000, guid: 005b719c5657b624a9fbd8eb18454f5c, type: 3}
+  - sprite: {fileID: 21300000, guid: 0b84936bbb947bf4b90991daf80bc634, type: 3}
     feeling: 0
     customColor: {r: 0, g: 0, b: 0, a: 0}
     useCustomColor: 0
     poseChange: 0
     speaker: 1
     speakerSizeMultiplier: 0
-  script: "Oh you two are too kind. Honestly, if I were to give you any tips, I\u2019d
-    say the pen position is most crucial. Other than that, drawing is just about
-    analyzing the picture, creating a mental model of it, and then putting it all
-    together. \r\n\r\n"
+  script: It is like construction really. It is very technical.
   fontStyle: 0
   fontAsset: {fileID: 0}
   dialogueColour: {r: 0.9019608, g: 0.8039216, b: 0.9607843, a: 1}

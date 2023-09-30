@@ -374,8 +374,8 @@ public class NovelHandler : MonoBehaviour
 
                 shownBackgrounds.Add(script.GetInstanceID());
 
-                backButton.SetActive(false);
-                forwardButton.SetActive(false);
+                //backButton.SetActive(false);
+                //forwardButton.SetActive(false);
                 return false;
             }
             else
@@ -385,6 +385,8 @@ public class NovelHandler : MonoBehaviour
                 backgroundWriter.transform.parent.gameObject.SetActive(false);
                 mainStory.SetActive(true);
             }
+
+            TextHandler.singleton.speakerShower.transform.parent.gameObject.SetActive(false);
 
             return true;
         }

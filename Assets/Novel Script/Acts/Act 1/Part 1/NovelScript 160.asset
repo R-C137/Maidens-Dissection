@@ -35,7 +35,7 @@ MonoBehaviour:
     poseChange: 0
     speaker: 0
     speakerSizeMultiplier: 0
-  script: Aster begins to cry. Camille reaches over and hugs her
+  script: Aster begins to cry. Camille reaches over and hugs her.
   fontStyle: 1
   fontAsset: {fileID: 0}
   dialogueColour: {r: 1, g: 1, b: 1, a: 1}

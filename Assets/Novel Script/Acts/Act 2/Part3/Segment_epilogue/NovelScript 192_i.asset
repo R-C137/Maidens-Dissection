@@ -31,7 +31,7 @@ MonoBehaviour:
   script: 'Because that is what beauty does. It corrupts.
 
 '
-  fontStyle: 512
+  fontStyle: 64
   fontAsset: {fileID: 0}
   dialogueColour: {r: 0.21960786, g: 0.21960786, b: 0.21960786, a: 1}
   speaker: Ivy
