@@ -27,7 +27,7 @@ MonoBehaviour:
     useCustomColor: 0
     poseChange: 0
     speaker: 1
-    speakerSizeMultiplier: 0
+    speakerSizeMultiplier: 1.1
   script: 'And this has only stained your person further, creating quite the alluring
     collage of pain.
 

@@ -31,9 +31,9 @@ MonoBehaviour:
   script: The girl holds the flower to her nose and smells it, savoring its scent.
   fontStyle: 1
   fontAsset: {fileID: 0}
-  dialogueColour: {r: 0.9607843, g: 0.80784315, b: 0.8039216, a: 1}
-  speaker: '?'
-  speakerColour: {r: 0.9607843, g: 0.80784315, b: 0.8039216, a: 1}
+  dialogueColour: {r: 1, g: 1, b: 1, a: 1}
+  speaker: 
+  speakerColour: {r: 1, g: 1, b: 1, a: 1}
   writerSpeed: 0.02
   writerDelay: 0
   colourChanges: []

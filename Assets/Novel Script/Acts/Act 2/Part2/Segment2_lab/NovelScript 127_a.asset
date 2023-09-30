@@ -27,7 +27,7 @@ MonoBehaviour:
     useCustomColor: 0
     poseChange: 0
     speaker: 1
-    speakerSizeMultiplier: 0
+    speakerSizeMultiplier: 1.1
   script: 'COME! FASTER!
 
 '

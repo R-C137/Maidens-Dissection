@@ -27,7 +27,7 @@ MonoBehaviour:
     useCustomColor: 0
     poseChange: 0
     speaker: 1
-    speakerSizeMultiplier: 0
+    speakerSizeMultiplier: 1.1
   script: "Oh, just how beautiful you were, how I love you so\u2026 For love is the
     pain of others. Yes, you\u2019ve heard me.... LOVE IS ABOUT PAIN... OF OTHERS! "
   fontStyle: 0

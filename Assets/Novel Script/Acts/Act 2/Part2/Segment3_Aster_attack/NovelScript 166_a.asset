@@ -27,7 +27,7 @@ MonoBehaviour:
     useCustomColor: 0
     poseChange: 0
     speaker: 1
-    speakerSizeMultiplier: 0
+    speakerSizeMultiplier: 1.1
   script: "Every day you\u2019d pass me by in the halls, watching that defenseless
     flower Camille was, while I\u2019d witness your soul scream in anguish.\r\n"
   fontStyle: 0

@@ -27,7 +27,7 @@ MonoBehaviour:
     useCustomColor: 0
     poseChange: 0
     speaker: 1
-    speakerSizeMultiplier: 0
+    speakerSizeMultiplier: 1.1
   script: "It\u2019ll be okay. I'm here for you. I\u2019ll always be here for you.\r"
   fontStyle: 0
   fontAsset: {fileID: 0}

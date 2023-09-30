@@ -27,7 +27,7 @@ MonoBehaviour:
     useCustomColor: 0
     poseChange: 0
     speaker: 1
-    speakerSizeMultiplier: 0
+    speakerSizeMultiplier: 1.1
   script: "N-n-noo! Wait! Pls! \r\nThese are for someone special, please don't look
     at them! \r\n"
   fontStyle: 0

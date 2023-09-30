@@ -27,7 +27,7 @@ MonoBehaviour:
     useCustomColor: 0
     poseChange: 0
     speaker: 1
-    speakerSizeMultiplier: 0
+    speakerSizeMultiplier: 1.1
   script: "Where are you going? Running away again? Why?\nAren\u2019t you tired of
     all the running? Life\u2019s ugliness is exhausting.\r\n\nBut if it weren\u2019t
     for all of this ugliness, I would have never seen you in all of this beautiful

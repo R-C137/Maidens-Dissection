@@ -27,7 +27,7 @@ MonoBehaviour:
     useCustomColor: 0
     poseChange: 0
     speaker: 1
-    speakerSizeMultiplier: 0
+    speakerSizeMultiplier: 1.1
   script: "Umm\u2026 M-maybe we should paint together one day! I think we could make
     something very special together.\r"
   fontStyle: 0

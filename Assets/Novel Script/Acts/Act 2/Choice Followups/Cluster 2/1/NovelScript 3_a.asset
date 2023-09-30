@@ -27,7 +27,7 @@ MonoBehaviour:
     useCustomColor: 0
     poseChange: 0
     speaker: 1
-    speakerSizeMultiplier: 0
+    speakerSizeMultiplier: 1.1
   script: "Shhh\u2026 True art should never be discussed. It is felt.\nExperienced.
     Let me feel your pain!\n\n"
   fontStyle: 0

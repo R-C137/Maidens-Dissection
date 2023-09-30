@@ -2231,8 +2231,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 960, y: -657.235}
-  m_SizeDelta: {x: 603.18, y: 845.53}
+  m_AnchoredPosition: {x: 1439.3306, y: -553.8815}
+  m_SizeDelta: {x: 750.85, y: 1052.54}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1259998096
 MonoBehaviour:
@@ -2889,7 +2889,7 @@ MonoBehaviour:
   - {fileID: 1094111454}
   - {fileID: 0}
   - {fileID: 0}
-  speakerSizeMultiplier: 1.25
+  speakerSizeMultiplier: 1.2
 --- !u!114 &1313747940
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3424,8 +3424,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 320, y: -657.235}
-  m_SizeDelta: {x: 603.18, y: 845.53}
+  m_AnchoredPosition: {x: 479.4652, y: -555.19147}
+  m_SizeDelta: {x: 748.98, y: 1049.92}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1531909172
 MonoBehaviour:

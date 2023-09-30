@@ -27,7 +27,7 @@ MonoBehaviour:
     useCustomColor: 0
     poseChange: 0
     speaker: 1
-    speakerSizeMultiplier: 0
+    speakerSizeMultiplier: 1.1
   script: "You didn\u2019t like the quiet Aster\u2026 that shy Aster who was in love
     with you\u2026you didn\u2019t even notice her for you were so in love with Camille
     and her innocence\u2026 It pained me. \r\n"

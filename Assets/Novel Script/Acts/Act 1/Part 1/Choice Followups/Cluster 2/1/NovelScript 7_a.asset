@@ -34,7 +34,7 @@ MonoBehaviour:
     useCustomColor: 0
     poseChange: 0
     speaker: 1
-    speakerSizeMultiplier: 0
+    speakerSizeMultiplier: 1.1
   script: "Oh you two are too kind. Honestly, if I were to give you any tips, I\u2019d
     say the pen position is most crucial. Other than that, drawing is just about
     analyzing the picture, creating a mental model of it, and then putting it all

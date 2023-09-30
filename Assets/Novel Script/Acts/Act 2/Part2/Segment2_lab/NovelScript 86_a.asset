@@ -27,7 +27,7 @@ MonoBehaviour:
     useCustomColor: 0
     poseChange: 0
     speaker: 1
-    speakerSizeMultiplier: 0
+    speakerSizeMultiplier: 1.1
   script: "Nevermind, I need to show you something. Come! FAST! \r\n"
   fontStyle: 0
   fontAsset: {fileID: 0}

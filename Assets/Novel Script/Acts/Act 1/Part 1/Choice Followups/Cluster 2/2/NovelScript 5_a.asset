@@ -34,7 +34,7 @@ MonoBehaviour:
     useCustomColor: 0
     poseChange: 0
     speaker: 1
-    speakerSizeMultiplier: 0
+    speakerSizeMultiplier: 1.1
   script: "Oh you two are too kind. If I were to give you some tips, I\u2019d say
     that finding the correct measures to your herbal blend is the most crucial step.
     Other than that, making tea is just about analyzing your ingredients, creating

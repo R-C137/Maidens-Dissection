@@ -27,7 +27,7 @@ MonoBehaviour:
     useCustomColor: 0
     poseChange: 0
     speaker: 1
-    speakerSizeMultiplier: 0
+    speakerSizeMultiplier: 1.1
   script: "You get it now isn\u2019t it? This is the true nature of life."
   fontStyle: 0
   fontAsset: {fileID: 0}

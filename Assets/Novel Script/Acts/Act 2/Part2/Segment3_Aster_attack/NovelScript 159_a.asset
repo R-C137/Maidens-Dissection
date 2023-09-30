@@ -27,7 +27,7 @@ MonoBehaviour:
     useCustomColor: 0
     poseChange: 0
     speaker: 1
-    speakerSizeMultiplier: 0
+    speakerSizeMultiplier: 1.1
   script: "Camille was a kind soul but she was untouched by the world\u2019s true
     nature. One unable to properly see how harsh reality is.\r\n"
   fontStyle: 0
