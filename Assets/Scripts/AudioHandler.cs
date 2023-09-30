@@ -9,6 +9,7 @@
  *  [17/09/2023] - Initial Implementation (C137)
  *  [25/09/2023] - SFX support (C137)
  *  [26/09/2023] - SFX no longer carry over scripts + Added sfx audio slider (C137)
+ *  [30/09/2023] - Added support for settings (C137)
  */
 using System.Collections;
 using System.Collections.Generic;
@@ -59,7 +60,10 @@ public class AudioHandler : Singleton<AudioHandler>
     /// <param name="clip">The audio clip to play</param>
     public static void PlayVoiceActing(AudioClip clip)
     {
-        if(singleton.voiceActingAudioSource.clip != null && singleton.voiceActingAudioSource.isPlaying)
+        if (PlayerPrefs.GetInt("settings.voice-over", 1) == 0)
+            return;
+
+        if (singleton.voiceActingAudioSource.clip != null && singleton.voiceActingAudioSource.isPlaying)
         {
             if(voiceActingTween != -1)
                 LeanTween.cancel(voiceActingTween);
@@ -89,6 +93,9 @@ public class AudioHandler : Singleton<AudioHandler>
     /// <param name="loop">Whether the loop the clip</param>
     public static void PlayBackground(AudioClip clip, bool loop = true)
     {
+        if (PlayerPrefs.GetInt("settings.bg-music", 1) == 0)
+            return;
+
         if (singleton.backgroundAudioSource.clip != null && singleton.backgroundAudioSource.isPlaying)
         {
             if (singleton.backgroundAudioSource.clip == clip)
@@ -133,6 +140,9 @@ public class AudioHandler : Singleton<AudioHandler>
 
     public static void PlaySFX(SFXAudio[] sfx)
     {
+        if (PlayerPrefs.GetInt("settings.sfx", 1) == 0)
+            return;
+
         if (!sfx.Any())
         {
             foreach(var audioSource in singleton.sfxAudioSources)
