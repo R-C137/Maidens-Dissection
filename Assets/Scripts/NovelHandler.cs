@@ -376,6 +376,7 @@ public class NovelHandler : MonoBehaviour
 
                 //backButton.SetActive(false);
                 //forwardButton.SetActive(false);
+                TextHandler.singleton.speakerShower.transform.parent.gameObject.SetActive(false);
                 return false;
             }
             else
@@ -386,7 +387,6 @@ public class NovelHandler : MonoBehaviour
                 mainStory.SetActive(true);
             }
 
-            TextHandler.singleton.speakerShower.transform.parent.gameObject.SetActive(false);
 
             return true;
         }
