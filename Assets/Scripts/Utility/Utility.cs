@@ -60,16 +60,26 @@ public class Utility : Singleton<Utility>
         base.Awake();
         DontDestroyOnLoad(this);
 
+
         SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
     private void OnSceneLoaded(Scene arg0, LoadSceneMode arg1)
     {
-        if(backgroundAudioSource != null)
+
+        HandleAudio();
+    }
+
+    /// <summary>
+    /// Handles all audio related actions for the main menu
+    /// </summary>
+    void HandleAudio()
+    {
+        if (backgroundAudioSource != null)
         {
             backgroundAudioSource.clip = PlayerPrefs.GetInt("general.unlocked-acts", 0) == 0 ? audioClips[0] : audioClips[1];
+            backgroundAudioSource.Play();
         }
-
     }
 
     /// <summary>

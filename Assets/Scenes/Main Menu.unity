@@ -331,7 +331,7 @@ MonoBehaviour:
     Theater and Victorian Literature
 
     Dislikes: Being interrupted'
-  - "<b>BONUS STORY\n\r\r\r\nIvy guides you through the corridors of the academy,
+  - "<b>Bonus Story\n\r\r\r\nIvy guides you through the corridors of the academy,
     showing each and every classroom you will find yourself attending throughout
     the program.\r\n\r\nBut as you pass by the laboratory doors, you watch Ivy rush
     over and peak inside.\r\n\r\nShe holds her breath and then shuts the door. She
@@ -10994,8 +10994,8 @@ MonoBehaviour:
   charactersButton: {fileID: 1224532980}
   tutorialShowTime: 3
   acts:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 164387547}
+  - {fileID: 665744746}
   currentAct: 0
 --- !u!1 &1633140859
 GameObject:

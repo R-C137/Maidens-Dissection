@@ -195,7 +195,7 @@ public class NovelHandler : MonoBehaviour
         if (shownBackgrounds.Contains(scripts[act].scripts[currentScriptIndex].GetInstanceID()))
             shownBackgrounds.Remove(scripts[act].scripts[currentScriptIndex].GetInstanceID());
 
-        if(act == 0 && currentScriptIndex == 0)//Back buttons shows the background title of the first novel script (act 1 only)
+        if((act == 0 || act == 1) && currentScriptIndex == 0)//Back buttons shows the background title of the first novel script (act 1 only)
         {
             currentScriptIndex = -1;
             ProgressScript();
@@ -288,7 +288,7 @@ public class NovelHandler : MonoBehaviour
         forwardButton.SetActive(true);
         ShowScript(script, choice);
 
-        if (act == 0)
+        if (act == 0 || act == 1)
             backButton.SetActive(currentScriptIndex > -1);
         else
             backButton.SetActive(currentScriptIndex > 0);

@@ -16,8 +16,8 @@ MonoBehaviour:
   backgroundTitle: Dissection
   audio:
     voiceActing: {fileID: 0}
-    background: {fileID: 8300000, guid: 84577ffec5717734cbf7f0fe3e427286, type: 3}
-    loopBackground: 0
+    background: {fileID: 8300000, guid: e848db0ba10e0304090ccde903cd3e99, type: 3}
+    loopBackground: 1
     sfx: []
   choices: []
   characters: []
@@ -26,7 +26,7 @@ MonoBehaviour:
   fontStyle: 1
   fontAsset: {fileID: 0}
   dialogueColour: {r: 1, g: 1, b: 1, a: 1}
-  speaker: MC
+  speaker: 
   speakerColour: {r: 1, g: 1, b: 1, a: 1}
   writerSpeed: 0.02
   writerDelay: 0

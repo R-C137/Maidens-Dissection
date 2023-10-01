@@ -9,6 +9,7 @@
  *  [09/09/2023] - Initial Implementation (C137)
  *  [12/09/2023] - Added animation to back button (C137)
  *  [30/09/2023] - Improved characters page (C137)
+ *  [01/10/2023] - Fix buttons handling with new button system (C13&)
  *  
  */
 using System;
@@ -55,7 +56,7 @@ public class Chapters : MonoBehaviour
     /// <summary>
     /// A collection of the different acts
     /// </summary>
-    public Button[] acts;
+    public ImprovedButton[] acts;
 
     /// <summary>
     /// The current act reache

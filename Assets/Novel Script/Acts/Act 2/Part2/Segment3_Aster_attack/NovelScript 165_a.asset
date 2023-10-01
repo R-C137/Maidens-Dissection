@@ -29,7 +29,7 @@ MonoBehaviour:
     speaker: 1
     speakerSizeMultiplier: 1.1
   script: "And just like the aura of the Iris flower Camille spoke endlessly about,
-    I can\u2019t seem to take my eyes of you. \r\n"
+    I can\u2019t seem to take my eyes off you. \r\n"
   fontStyle: 0
   fontAsset: {fileID: 0}
   dialogueColour: {r: 0.9019608, g: 0.8039216, b: 0.9607843, a: 1}
