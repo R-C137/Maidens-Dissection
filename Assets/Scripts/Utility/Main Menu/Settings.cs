@@ -33,22 +33,22 @@ public class Settings : MonoBehaviour
     public Slider voiceSlider;
 
     /// <summary>
-    /// The checkbox of the sounds setting
+    /// The slider of the sfx setting
     /// </summary>
-    public Slider soundsSlider;
+    public Slider sfxSlider;
 
     /// <summary>
-    /// Slider for the master volume
+    /// Slider for the background music
     /// </summary>
-    public Slider masterVolumeSlider;
+    public Slider bgMusic;
 
     private void Start()
     {
-        masterVolumeSlider.value = PlayerPrefs.GetFloat("settings.mastervolume", 1);
+        bgMusic.value = PlayerPrefs.GetFloat("settings.background-music-slider", 1);
 
-        voiceSlider.value = PlayerPrefs.GetFloat("settings.voice", 1);
+        voiceSlider.value = PlayerPrefs.GetFloat("settings.voice-slider", 1);
 
-        soundsSlider.value = PlayerPrefs.GetFloat("settings.sounds", 1);
+        sfxSlider.value = PlayerPrefs.GetFloat("settings.sfx-slider", 1);
     }
 
     /// <summary>
@@ -60,18 +60,18 @@ public class Settings : MonoBehaviour
         settings.SetActive(false);
     }
 
-    public void MasterAudioUpdated(float value)
+    public void BackgroundMusicUpdated(float value)
     {
-        PlayerPrefs.SetFloat("settings.mastervolume", value);
+        PlayerPrefs.SetFloat("settings.background-music-slider", value);
     }
 
     public void VoiceUpdated(float value)
     {
-        PlayerPrefs.SetFloat("settings.voice", value);
+        PlayerPrefs.SetFloat("settings.voice-slider", value);
     }
 
-    public void SoundsUpdated(float value)
+    public void SFXUpdated(float value)
     {
-        PlayerPrefs.SetFloat("settings.sounds", value);
+        PlayerPrefs.SetFloat("settings.sfx-slider", value);
     }
 }

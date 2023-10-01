@@ -10,7 +10,7 @@
  *  [10/09/2023] - Handling of scene loading with transition (C137)
  *  [12/09/2023] - Show warning only once per start (C137)
  *  [20/09/2023] - Unity editor only screen shots (C137)
- *  
+ *  [01/09/2023] - Background music support (C137)
  */
 using System;
 using System.Collections;
@@ -42,6 +42,16 @@ public class Utility : Singleton<Utility>
     /// </summary>
     public static int currentAct = 0;
 
+    /// <summary>
+    /// Audio source for handling the background music
+    /// </summary>
+    public AudioSource backgroundAudioSource;
+
+    /// <summary>
+    /// Audio clips to play based on the unlocked acts
+    /// </summary>
+    public AudioClip[] audioClips;
+
     public int screenShotMultiplier = 1;
 
 
@@ -49,6 +59,17 @@ public class Utility : Singleton<Utility>
     {
         base.Awake();
         DontDestroyOnLoad(this);
+
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    private void OnSceneLoaded(Scene arg0, LoadSceneMode arg1)
+    {
+        if(backgroundAudioSource != null)
+        {
+            backgroundAudioSource.clip = PlayerPrefs.GetInt("general.unlocked-acts", 0) == 0 ? audioClips[0] : audioClips[1];
+        }
+
     }
 
     /// <summary>
@@ -94,6 +115,7 @@ public class Utility : Singleton<Utility>
         if(Input.GetKeyDown(KeyCode.L))
             StartCoroutine(Screenshot());
 #endif
+        backgroundAudioSource.volume = PlayerPrefs.GetFloat("settings.background-music-slider", 1);
     }
 
     public IEnumerator Screenshot()

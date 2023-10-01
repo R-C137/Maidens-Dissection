@@ -10,12 +10,14 @@
  *  [25/09/2023] - SFX support (C137)
  *  [26/09/2023] - SFX no longer carry over scripts + Added sfx audio slider (C137)
  *  [30/09/2023] - Added support for settings (C137)
+ *  [01/09/2023] - Improved support for settings (C137)
  */
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
+using static UnityEngine.Rendering.DebugUI;
 
 public class AudioHandler : Singleton<AudioHandler>
 {
@@ -68,7 +70,7 @@ public class AudioHandler : Singleton<AudioHandler>
             if(voiceActingTween != -1)
                 LeanTween.cancel(voiceActingTween);
 
-            var tween = LeanTween.value(1, 0, .2f)
+            var tween = LeanTween.value(1 * PlayerPrefs.GetFloat("settings.voice-slider", 1), 0, .2f)
                 .setOnUpdate((v) => singleton.voiceActingAudioSource.volume = v)
                 .setOnComplete(() => 
                 {
@@ -83,7 +85,7 @@ public class AudioHandler : Singleton<AudioHandler>
             return;
         }
 
-        PlayAudio(singleton.voiceActingAudioSource, clip);
+        PlayAudio(singleton.voiceActingAudioSource, clip, true, 1 * PlayerPrefs.GetFloat("settings.voice-slider", 1));
     }
     
     /// <summary>
@@ -104,7 +106,7 @@ public class AudioHandler : Singleton<AudioHandler>
             if (backgroundFadeOutTween != -1)
                 LeanTween.cancel(backgroundFadeOutTween);
 
-            var fadeOutTween = LeanTween.value(1, 0, 1.5f)
+            var fadeOutTween = LeanTween.value(1 * PlayerPrefs.GetFloat("settings.background-music-slider", 1), 0, 1.5f)
                 .setOnUpdate(v => singleton.backgroundAudioSource.volume = v)
                 .setOnComplete(() =>
                 {
@@ -130,7 +132,7 @@ public class AudioHandler : Singleton<AudioHandler>
             if (backgroundFadeInTween != -1)
                 LeanTween.cancel(backgroundFadeInTween);
 
-            var fadeInTween = LeanTween.value(0, 1, 1.5f).setOnUpdate(v => singleton.backgroundAudioSource.volume = v);
+            var fadeInTween = LeanTween.value(0, 1 * PlayerPrefs.GetFloat("settings.background-music-slider", 1), 1.5f).setOnUpdate(v => singleton.backgroundAudioSource.volume = v);
 
             singleton.backgroundAudioSource.loop = loop;
 
@@ -161,7 +163,7 @@ public class AudioHandler : Singleton<AudioHandler>
 
         for (int i = 0; i < sfx.Length; i++)
         {
-            PlayAudio(singleton.sfxAudioSources[i], sfx[i].clip, true, sfx[i].volume);
+            PlayAudio(singleton.sfxAudioSources[i], sfx[i].clip, true, sfx[i].volume * PlayerPrefs.GetFloat("settings.sfx-slider", 1));
         }
     }
 
