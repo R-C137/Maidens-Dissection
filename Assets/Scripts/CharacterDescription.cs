@@ -7,6 +7,7 @@
  * 
  * Changes: 
  *  [21/09/2023] - Initial Implementation (C137)
+ *  [01/10/2023] - Remap MC's Name (C137)
  *  
  */
 using System.Collections;
@@ -43,18 +44,34 @@ public class CharacterDescription : MonoBehaviour
     public GameObject leftButton;
 
     /// <summary>
+    /// Whether to update the index each frame
+    /// </summary>
+    public bool updateIndex = false;
+
+    /// <summary>
+    /// The color to replace the hexes with
+    /// </summary>
+    public string colorReplace = "#cc5a63";
+
+    /// <summary>
     /// Displays the current index's description to the screen
     /// </summary>
     /// <param name="index">The index to display</param>
     public void ShowIndex(int index)
     {
-        textShower.text = descriptions[index];
+        textShower.text = descriptions[index].Replace("MC", PlayerPrefs.GetString("general.mc-name", "MC")).Replace("#F5CECD", colorReplace);
 
         currentIndex = index;
 
         rightButton.SetActive(currentIndex < descriptions.Length - 1);
 
         leftButton.SetActive(currentIndex > 0);
+    }
+
+    public void Update()
+    {
+        if(updateIndex)
+            ShowIndex(currentIndex);
     }
 
     /// <summary>

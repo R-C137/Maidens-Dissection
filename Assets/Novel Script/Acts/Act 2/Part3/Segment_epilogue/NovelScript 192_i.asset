@@ -31,9 +31,9 @@ MonoBehaviour:
   script: 'Because that is what beauty does. It corrupts.
 
 '
-  fontStyle: 64
+  fontStyle: 0
   fontAsset: {fileID: 0}
-  dialogueColour: {r: 0.21960786, g: 0.21960786, b: 0.21960786, a: 1}
+  dialogueColour: {r: 0.9607843, g: 0.80784315, b: 0.8039216, a: 1}
   speaker: Ivy
   speakerColour: {r: 0.9607843, g: 0.80784315, b: 0.8039216, a: 1}
   writerSpeed: 0.02
