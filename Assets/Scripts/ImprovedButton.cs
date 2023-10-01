@@ -47,7 +47,6 @@ public class ImprovedButton : Selectable, IPointerClickHandler, IPointerExitHand
     {
         InstantClearState();
         DoStateTransition(SelectionState.Normal, true);
-        Debug.Log(currentSelectionState);
     }
 
     // Trigger all registered callbacks.
