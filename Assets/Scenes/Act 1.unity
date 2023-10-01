@@ -2231,7 +2231,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1439.3306, y: -553.8815}
+  m_AnchoredPosition: {x: 1439.3306, y: -576.8815}
   m_SizeDelta: {x: 750.85, y: 1052.54}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1259998096
@@ -3424,7 +3424,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 479.4652, y: -555.19147}
+  m_AnchoredPosition: {x: 479.4652, y: -578.19147}
   m_SizeDelta: {x: 748.98, y: 1049.92}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1531909172
@@ -4215,6 +4215,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fadingImage: {fileID: 1738884658}
   fadeTime: 0.5
+  backgroundAudioSource: {fileID: 0}
+  audioClips: []
   screenShotMultiplier: 1
 --- !u!4 &1907369871
 Transform:
