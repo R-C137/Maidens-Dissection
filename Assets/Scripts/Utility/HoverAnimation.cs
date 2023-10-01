@@ -91,7 +91,7 @@ public class HoverAnimation : MonoBehaviour, IPointerEnterHandler, IPointerExitH
         if (Input.GetKeyUp(KeyCode.Mouse0))
             OnPointerExit(null);
 
-        if(hovering && forceShow != null)
+        if (hovering && forceShow != null)
             spriteHandler.sprite = forceShow;
     }
 
