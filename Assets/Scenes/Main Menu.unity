@@ -331,28 +331,24 @@ MonoBehaviour:
     Theater and Victorian Literature
 
     Dislikes: Being interrupted'
-  - "<b>BONUS STORY:</b>\n\r\n<b>Narration: Ivy guides you through the corridors
-    of the academy, showing each and every classroom you will find yourself attending
-    throughout the program.\r\n\r\nBut as you pass by the laboratory doors, you watch
-    Ivy rush over and peak inside.\r\n\r\nShe holds her breath and then shuts the
-    door. She turns to you with a disappointed gaze.</b>\r"
-  - "<color=#F5CECD>Ivy: The laboratory is indisposed for today. I apologize.</color>\n\n<color=#F5CECD>{
-    Ivy\u2019s Thoughts }: <i>Why did I think I could give a proper tour of this
-    place\u2026\r\n\r\nor even become her maiden\u2026\r\n\r\nThose hearts were...
-    </i></color>\r\n\r\n<b>Narration:  You watch as Ivy clenches her teeth, unaware</b>\r\n\r\nMC:
-    Are you alright?\r\r"
-  - "<color=#F5CECD>Ivy: Hm? Yes, sure! Come, let's proceed to the dorms.</color>\n\n<b>Narration:
-    The two of you continue down the academy\u2019s halls in silence.</b>\r\n\r\n<color=#F5CECD>{Ivy\u2019s
-    Thoughts }: <i>Perhaps I can be a proper maiden for them.\r\n\r\nNo... I can't.
-    There is simply no way to make friends in this world. \r\n\r\nIf I did then it
-    will only hurt her just as much as it will for that natural beauty. \r\n\r\nSeeing
-    their interaction\u2026\r\n\r\nIt\u2019ll end the same pitiful way as always.</color></i>\r."
-  - '<i><color=#F5CECD>I can''t help it.
-
-    
-
-    I cannot feel any shame</color></i>'
-  currentIndex: 3
+  - "<b>BONUS STORY\n\r\r\r\nIvy guides you through the corridors of the academy,
+    showing each and every classroom you will find yourself attending throughout
+    the program.\r\n\r\nBut as you pass by the laboratory doors, you watch Ivy rush
+    over and peak inside.\r\n\r\nShe holds her breath and then shuts the door. She
+    turns to you with a disappointed gaze.\r\n"
+  - "</b>\r       <color=#7a3d59> \rIvy: The laboratory is indisposed for today.
+    I apologize.\r\n\r\n{ Ivy\u2019s Thoughts }: <i>Why did I think I could give
+    a proper tour of this place\u2026\r\n\r\nor even become her maiden\u2026\r\n\r\nThose
+    hearts were... \n\r\n</i>\r</color>\r<b>\rYou watch as Ivy clenches her teeth,
+    unaware. \r</b>\r\n\r\nMC: Are you alright?\r"
+  - "<color=#7a3d59>\rIvy: Hm? Yes, sure! Come, let's proceed to the dorms.\r</color>\r\n\r\n<b>\rThe
+    two of you continue down the academy\u2019s halls in silence.\r</b>\r\n\r\n<color=#7a3d59>
+    <i>\r{Ivy\u2019s Thoughts }: Perhaps I can be a proper maiden for them.\r\n\r\nNo...
+    I can't. There is simply no way to make friends in this world. \r\n\r\nIf I did
+    then it will only hurt her just as much as it will for that natural beauty. \r\r\n"
+  - "<i><color=#7a3d59>Seeing their interaction\u2026\n\nI can't help it.\n\nI cannot
+    feel any shame</color></i>"
+  currentIndex: 4
   rightButton: {fileID: 1358953657}
   leftButton: {fileID: 1666600673}
   updateIndex: 1
@@ -4776,7 +4772,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &747669303
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4794,10 +4790,23 @@ MonoBehaviour:
   - "The New Student \r\nYear I, deceased\r\n\nHeight: 175 cm\r\nBlood Type: \r\nMedication:
     Calcium and Vitamin D tablets\r\nDisease(s): Depression\r\nLikes: Camille \r\nDislikes:
     Lies, Aster, Ivy\r"
-  currentIndex: 0
+  - "<b> Some Final Thoughts:</b> \r\n\r\n<i> <color=#785534>I still don't know how
+    to feel about the academy now after what Camille said. \r\n\nOnce again, more
+    and more lies... \r\n\r\nWhy does it not surprise me? \r\n\r\nEven then, something
+    still feels off, apart from classes full of students with slender backs, trying
+    to dissect \"those pitiful creations\u201D. \r\n\nHonestly, I should just pack
+    my things and get out of here.\r\n"
+  - "<i> <color=#785534>I'm sure Camille felt this way too when she found out\u2026\r\n\r\nBut
+    she still decided to stay. \r\n\r\nFrankly, I feel like that's a mistake on her
+    part, but perhaps I\u2019m wrong. I trust Camille\u2019s judgment.\r\n\r\nShe\u2019s
+    the only thing I can trust in this place.\r\n\r\nBesides, it's just for two years
+    anyway, and one will be with Camille. \r\n\r\n"
+  - "<i> <color=#785534>She will make this whole thing worth it. With her, I won\u2019t
+    be so lost in this place."
+  currentIndex: 1
   rightButton: {fileID: 511470305}
   leftButton: {fileID: 182377505}
-  updateIndex: 0
+  updateIndex: 1
   colorReplace: '#cc5a63'
 --- !u!224 &747669304
 RectTransform:
@@ -9874,7 +9883,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1400366054
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9931,10 +9940,27 @@ MonoBehaviour:
 
     Dislikes: Orders
     for intestines'
-  currentIndex: 0
+  - "<b>Bonus Story: </b> \r\n\r\n<b>The sounds of flower dissections echo within
+    the library as Aster sits alone at a corner table, reading a textbook on bodily
+    anatomy.\r\n\r\nFootsteps approach.\r\n\r\nAster glances up at the footsteps
+    and sees Camille quickly approaching her.</b>\r\n\n<color=#3d787a>Camille: Hi,
+    Aster! Haven't seen you around for a while!... </color>\r\n"
+  - "<color=#3d787a>How have you been? How did that dissection of blue irises that
+    you told me about go?</color>\n\n<color=#6f3d7a>Aster: I-I started to become
+    quite fond of them ever since you showed one to us in the garden! It's just that...</color>\n\n<b>Aster
+    looks Camille over with an intense glare.</b>\r\n\r\n<color=#6f3d7a>Aster: Their
+    shade of bright blue, their fragile petals, their bright appearance on the moonlit
+    sky, and all the tissue so meticulously designed to make this flower so majestic\u2026</color>\r"
+  - "<color=#6f3d7a>I'm onto something...  \r\n\r\nI know\u2026I just know the more
+    I get to see their internal nature... I will find it\u2026 \r\n\r\nThat pureness
+    component- that which gives its beauty.</color> \r\n\n<color=#3d787a>Camille:
+    Woah... that's quite some thought you've put into it! I could maybe show your
+    work to the doctor of the academy when I get to meet them.</color> \r\n\n<b>Aster
+    smiles.</b>\n<color=#6f3d7a>Aster: I'm sure ... they'd love it.</color> \r\n"
+  currentIndex: 3
   rightButton: {fileID: 1740208218}
   leftButton: {fileID: 113529318}
-  updateIndex: 0
+  updateIndex: 1
   colorReplace: '#cc5a63'
 --- !u!1 &1403563320
 GameObject:
@@ -12175,10 +12201,32 @@ MonoBehaviour:
     Type: 0\r\nMedication: Allergy Pills and Eye drops\r\nDisease(s): Insomnia and
     Migraines\r\nFavorite tea: Chamomile Infusion\r\nLikes: chatting, nightsky\r\nDislikes:
     N/A\r"
-  currentIndex: 0
+  - "<b> Bonus Story: </b>\r\n\r\n<b>You step out into the garden as the wind whistles
+    all around.\r\n\r\nYou look to your side and you notice Camille standing idly
+    beside a floral bush \r\n\r\nYou approach her as she stares down at the flowers,
+    oblivious to your presence.</b>\r\n\r\n\r\nMC: Camille?\r\r"
+  - "<color=#3d787a>Camille : Oh hey, sorry, I was just lost in thought.</color>
+    \r\n\r\nMC : What were you looking at?\r\n  \r\n<b>Camille smiles.</b>\r\n\r\n<color=#3d787a>Camille:
+    Did you know some flowers only bloom once in their lifetime?</color>\r\n\r\nMC: 
+    Is that so? \r\n\n<color=#3d787a>Camille : Mhm.</color>"
+  - "<b>Silence lingers in the space between you two. \r\n\r\nYour hands tremble
+    as the sounds of floral dissections echo.\r\n\r\nCamille returns her gaze to
+    the flower bush by her feet. \r\n\r\n\u2026\r\n\r\nEvery fiber of your being
+    aches as the silence drones on. </b>\r\n\r\nMC : Do you have a favorite flower?
+    \r\n"
+  - "<color=#3d787a> Camile : Hm? Oh, I love them all! \r\n\u2026\r\nBut if I had
+    to pick.... \r\n\r\nI\u2019d go with Myosotis! </color> \r\n\r\nMC: Myosotis?
+    What is that?\r\n\n<color=#3d787a>Camille : Well, it's a simple flower, not as
+    flashy as roses or lilies, but its story is both beautiful and tragic, the Forget-Me-Not.
+    \r\n\r\nIt's a plea, a reminder... to always remember the moments and people
+    that matter.</color> \r\n"
+  - "<b>Silence fills the void again as Camille\u2019s cheery smile returns down
+    to the flower bush before her. \r\n\r\nYou look and on the flower bush\u2019s
+    marker reads\u2026\r\n\r\n\u201CMyosotis\u201D.</b>\r\n"
+  currentIndex: 5
   rightButton: {fileID: 911446405}
   leftButton: {fileID: 1956179234}
-  updateIndex: 0
+  updateIndex: 1
   colorReplace: '#cc5a63'
 --- !u!224 &1909047712
 RectTransform:
