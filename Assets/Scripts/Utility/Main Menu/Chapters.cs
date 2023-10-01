@@ -109,7 +109,6 @@ public class Chapters : MonoBehaviour
     /// <param name="onFinish">Callback to execute on finish</param>
     public void ShowTutorial(Action onFinish)
     {
-
         bool firstPlay = PlayerPrefs.GetInt("genereal.first-start", 1) == 1;
 
         if (firstPlay)

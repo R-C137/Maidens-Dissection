@@ -17,7 +17,7 @@ MonoBehaviour:
   audio:
     voiceActing: {fileID: 8300000, guid: ddd55967d18568147b89a5d343937dfd, type: 3}
     background: {fileID: 8300000, guid: e848db0ba10e0304090ccde903cd3e99, type: 3}
-    loopBackground: 0
+    loopBackground: 1
     sfx: []
   choices: []
   characters:
