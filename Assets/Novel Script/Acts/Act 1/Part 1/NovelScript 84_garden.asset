@@ -22,7 +22,7 @@ MonoBehaviour:
   choices: []
   characters: []
   script: "You find yourself in a vibrant garden with a wide array of flowers blooming
-    all around. A picnic table is decorated under a booth.\r"
+    all around. A picnic mat is decorated under a sunken willow tree. \r"
   fontStyle: 1
   fontAsset: {fileID: 0}
   dialogueColour: {r: 1, g: 1, b: 1, a: 1}

@@ -35,8 +35,9 @@ MonoBehaviour:
     poseChange: 0
     speaker: 0
     speakerSizeMultiplier: 0
-  script: Anyway, the project caught the eyes of the director, saying that it may
-    be vital in their own research.
+  script: "Anyway, the project caught the eyes of the director, saying that it may
+    be vital in their own research. This has all felt like a dream come true. I\u2019ve
+    always wanted to speak with the director\u2026"
   fontStyle: 0
   fontAsset: {fileID: 0}
   dialogueColour: {r: 0.8039216, g: 0.8156863, b: 0.9607843, a: 1}
