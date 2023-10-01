@@ -115,7 +115,8 @@ public class Utility : Singleton<Utility>
         if(Input.GetKeyDown(KeyCode.L))
             StartCoroutine(Screenshot());
 #endif
-        backgroundAudioSource.volume = PlayerPrefs.GetFloat("settings.background-music-slider", 1);
+        if(backgroundAudioSource != null)
+            backgroundAudioSource.volume = PlayerPrefs.GetFloat("settings.background-music-slider", 1);
     }
 
     public IEnumerator Screenshot()
