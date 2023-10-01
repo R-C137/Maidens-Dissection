@@ -16,8 +16,8 @@ MonoBehaviour:
   backgroundTitle: 
   audio:
     voiceActing: {fileID: 8300000, guid: 4e8e3966ace76fc4d9c98b633ccdd95e, type: 3}
-    background: {fileID: 8300000, guid: bac2be0f9a3c1154ab6d152de49ff1a0, type: 3}
-    loopBackground: 0
+    background: {fileID: 8300000, guid: 877d756d7ae1b944ca90168f5a3cf4a0, type: 3}
+    loopBackground: 1
     sfx: []
   choices: []
   characters:
@@ -28,7 +28,7 @@ MonoBehaviour:
     poseChange: 0
     speaker: 1
     speakerSizeMultiplier: 0
-  script: 'I would not have changed a thing. '
+  script: 'I would not have changed any thing. '
   fontStyle: 0
   fontAsset: {fileID: 0}
   dialogueColour: {r: 0.9607843, g: 0.80784315, b: 0.8039216, a: 1}

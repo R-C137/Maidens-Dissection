@@ -16,8 +16,8 @@ MonoBehaviour:
   backgroundTitle: Epilogue
   audio:
     voiceActing: {fileID: 8300000, guid: 1a3adfb30eef5ce44a7fa9a47da134d1, type: 3}
-    background: {fileID: 0}
-    loopBackground: 0
+    background: {fileID: 8300000, guid: 877d756d7ae1b944ca90168f5a3cf4a0, type: 3}
+    loopBackground: 1
     sfx: []
   choices: []
   characters: []
