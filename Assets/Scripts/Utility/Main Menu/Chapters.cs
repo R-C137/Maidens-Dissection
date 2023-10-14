@@ -49,6 +49,11 @@ public class Chapters : MonoBehaviour
     public Button charactersButton;
 
     /// <summary>
+    /// The lock image on the characters button
+    /// </summary>
+    public GameObject characterLock;
+
+    /// <summary>
     /// The amount of time the tutorial is shown for
     /// </summary>
     public float tutorialShowTime;
@@ -78,6 +83,8 @@ public class Chapters : MonoBehaviour
             if(unlockedActs >= 2)
             {
                 charactersText.text = "~ Characters ~";
+                charactersButton.GetComponent<Image>().color = Color.white;
+                characterLock.SetActive(false);
                 charactersButton.enabled = true;
             }
         }
