@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92c1ce71a98cbc241a34affdff9fbad4, type: 3}
+  m_Name: NovelScript 227
+  m_EditorClassIdentifier: 
+  backgroundSprite: {fileID: 21300000, guid: f6432d4d51430684185fb362332fbecd, type: 3}
+  backgroundTitle: 
+  audio:
+    voiceActing: {fileID: 0}
+    background: {fileID: 8300000, guid: 590cc27fe37e6d44391a5e28c8506181, type: 3}
+    loopBackground: 0
+    sfx: []
+  choices: []
+  characters:
+  - sprite: {fileID: 21300000, guid: 2083eadf1e939d04bb12eccb7e988860, type: 3}
+    feeling: 0
+    customColor: {r: 0, g: 0, b: 0, a: 0}
+    useCustomColor: 0
+    poseChange: 0
+    speaker: 1
+    speakerSizeMultiplier: 0
+  script: "Aster was right\u2026 I can\u2019t feel pity for myself or fear what becomes
+    of every student in this place. I can\u2019t even wince in pain as thorns dig
+    into my flesh.\r\n"
+  fontStyle: 0
+  fontAsset: {fileID: 0}
+  dialogueColour: {r: 0.9921569, g: 0.75294125, b: 0.78823537, a: 1}
+  speaker: Ivy
+  speakerColour: {r: 0.990566, g: 0.75133497, b: 0.7872592, a: 1}
+  writerSpeed: 0.02
+  writerDelay: 0
+  colourChanges: []
