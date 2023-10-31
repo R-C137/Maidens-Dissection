@@ -26,7 +26,7 @@ MonoBehaviour:
     customColor: {r: 0, g: 0, b: 0, a: 0}
     useCustomColor: 0
     poseChange: 0
-    speaker: 1
+    speaker: 0
     speakerSizeMultiplier: 0
   script: " Now tell me, Ivy, what should I do with you? I can\u2019t dissect you
     since you are so unsavory. \r\n"

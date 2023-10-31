@@ -26,7 +26,7 @@ MonoBehaviour:
     customColor: {r: 0, g: 0, b: 0, a: 0}
     useCustomColor: 0
     poseChange: 0
-    speaker: 1
+    speaker: 0
     speakerSizeMultiplier: 0
   script: I will make use of you one way or another.
   fontStyle: 0

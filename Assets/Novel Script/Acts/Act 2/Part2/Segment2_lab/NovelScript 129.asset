@@ -16,7 +16,7 @@ MonoBehaviour:
   backgroundTitle: 
   audio:
     voiceActing: {fileID: 0}
-    background: {fileID: 8300000, guid: c57757639af11c44ca5d193c2310588f, type: 3}
+    background: {fileID: 8300000, guid: 8655f29907428f9429464828213ee710, type: 3}
     loopBackground: 0
     sfx:
     - clip: {fileID: 8300000, guid: 5d48f21fde1cf5243b3d468ccc3f0be2, type: 3}

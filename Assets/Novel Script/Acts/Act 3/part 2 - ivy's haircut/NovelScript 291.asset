@@ -26,7 +26,7 @@ MonoBehaviour:
     customColor: {r: 0, g: 0, b: 0, a: 0}
     useCustomColor: 0
     poseChange: 0
-    speaker: 1
+    speaker: 0
     speakerSizeMultiplier: 0
   script: 'Tomorrow you will help me get all of these to the deposit to ship them.
 

@@ -28,7 +28,7 @@ MonoBehaviour:
     customColor: {r: 0, g: 0, b: 0, a: 0}
     useCustomColor: 0
     poseChange: 0
-    speaker: 1
+    speaker: 0
     speakerSizeMultiplier: 0
   script: "Feels a comb brush through her locks as Aster begins to carve into Ivy\u2019s
     hair with the scissors.\r\n"

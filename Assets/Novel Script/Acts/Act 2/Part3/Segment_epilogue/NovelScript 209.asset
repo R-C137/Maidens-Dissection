@@ -21,7 +21,7 @@ MonoBehaviour:
     sfx: []
   choices: []
   characters: []
-  script: The end
+  script: the end...
   fontStyle: 3
   fontAsset: {fileID: 0}
   dialogueColour: {r: 1, g: 1, b: 1, a: 1}
