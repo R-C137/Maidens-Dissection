@@ -18,6 +18,7 @@
  *  [27/09/2023] - Added an information window at the end of each act (C137)
  *  [28/09/2023] - Updated act's end warning notice (C137)
  *  [30/09/2023] - Updated back button to support choices (C137)
+ *  [31/10/2023] - Added notice at the end of act 2 (C137)
  */
 using System;
 using System.Collections;
@@ -195,7 +196,7 @@ public class NovelHandler : MonoBehaviour
         if (shownBackgrounds.Contains(scripts[act].scripts[currentScriptIndex].GetInstanceID()))
             shownBackgrounds.Remove(scripts[act].scripts[currentScriptIndex].GetInstanceID());
 
-        if((act == 0 || act == 1) && currentScriptIndex == 0)//Back buttons shows the background title of the first novel script (act 1 only)
+        if((act == 0 || act == 1 || act == 2) && currentScriptIndex == 0)//Back buttons shows the background title of the first novel script (act 1, 2 & 3 only)
         {
             currentScriptIndex = -1;
             ProgressScript();
@@ -275,9 +276,7 @@ public class NovelHandler : MonoBehaviour
                 PlayerPrefs.SetInt("general.acts", act + 1);
             }
 
-            ShowInformationWindow(act == 0 ? 
-                "Act 2 has been unlocked and is available in the title screen"
-                : "Bonus section has been unlocked and is available in the chapter selection screen", 2.5f, () => Utility.singleton.LoadScene(0));
+            ShowInformationWindow(GetEndOfActNotice(act), 2.5f, () => Utility.singleton.LoadScene(0));
 
             actFinished = true;
             return;
@@ -292,6 +291,20 @@ public class NovelHandler : MonoBehaviour
             backButton.SetActive(currentScriptIndex > -1);
         else
             backButton.SetActive(currentScriptIndex > 0);
+
+        string GetEndOfActNotice(int act)
+        {
+            switch (act)
+            {
+                case 0:
+                    return "Act 2 has been unlocked and is available in the title screen";
+                case 1:
+                    return "Act 3 has been unlocked and is available in the title screen";
+                case 2:
+                    return "Bonus section has been unlocked and is available in the chapter selection screen";
+            }
+            return "End of Act Notice has been improperly set";
+        }
     }
 
     /// <summary>

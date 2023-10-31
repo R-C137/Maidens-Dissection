@@ -30,9 +30,9 @@ MonoBehaviour:
     poseChange: 0
     speaker: 1
     speakerSizeMultiplier: 0
-  script: "Such specimens usually last thousands of years because of their innate
-    ability not to \r\nattract attention. Moss, grass, weeds - all deserve nothing
-    else but disgust. \r\n"
+  script: Such specimens usually last thousands of years because of their innate
+    ability not to attract attention. Moss, grass, weeds - all deserve nothing else
+    but disgust.
   fontStyle: 0
   fontAsset: {fileID: 0}
   dialogueColour: {r: 0.9215687, g: 0.7843138, b: 0.9843138, a: 1}

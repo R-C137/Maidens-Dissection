@@ -9,7 +9,8 @@
  *  [09/09/2023] - Initial Implementation (C137)
  *  [12/09/2023] - Added animation to back button (C137)
  *  [30/09/2023] - Improved characters page (C137)
- *  [01/10/2023] - Fix buttons handling with new button system (C13&)
+ *  [01/10/2023] - Fix buttons handling with new button system (C137)
+ *  [31/10/2023] - Fixed continue button + Unlocked characters after act 3(C137)
  *  
  */
 using System;
@@ -64,7 +65,7 @@ public class Chapters : MonoBehaviour
     public ImprovedButton[] acts;
 
     /// <summary>
-    /// The current act reache
+    /// The current act reached
     /// </summary>
     public int currentAct;
 
@@ -80,7 +81,7 @@ public class Chapters : MonoBehaviour
                 Destroy(acts[i].GetComponent<HoverAnimation>());
                 acts[i].transform.GetChild(0).GetComponent<TextMeshProUGUI>().color = Color.grey;
             }
-            if(unlockedActs >= 2)
+            if(unlockedActs >= 3)
             {
                 charactersText.text = "~ Characters ~";
                 charactersButton.GetComponent<Image>().color = Color.white;
@@ -99,10 +100,15 @@ public class Chapters : MonoBehaviour
         {
             currentAct = PlayerPrefs.GetInt("general.acts", 0);
 
-            if (currentAct > 1)
+            if (currentAct == 1)
             {
                 Utility.currentAct = 1;
                 PlayerPrefs.SetInt($"general.act1.scriptpos", -1);
+            }
+            else if(currentAct == 2)
+            {
+                Utility.currentAct = 2;
+                PlayerPrefs.SetInt($"general.act2.scriptpos", -1);
             }
 
             Utility.singleton.LoadScene(1);

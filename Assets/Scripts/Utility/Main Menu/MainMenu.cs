@@ -9,12 +9,14 @@
  *  [09/09/2023] - Initial Implementation (C137)
  *  [12/09/2023] - Added animation to play button (C137)
  *  [21/09/2023] - Added character name selection (C137)
+ *  [31/10/2023] - Change background on act 3 unlock (C137)
  *  
  */
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MainMenu : MonoBehaviour
 {
@@ -42,6 +44,40 @@ public class MainMenu : MonoBehaviour
     /// Reference to the character name input field
     /// </summary>
     public TMP_InputField characterNameInputField;
+
+    /// <summary>
+    /// The background to use exclusively for act 2
+    /// </summary>
+    public Sprite act2Background;
+
+    /// <summary>
+    /// The shower for the main menu background
+    /// </summary>
+    public Image backgroundImageShower;
+
+    /// <summary>
+    /// By how much to offset the menu buttons to accommodate for the new background
+    /// </summary>
+    public float menuOffset;
+
+    /// <summary>
+    /// Reference to the menus
+    /// </summary>
+    public Transform menus;
+
+
+    private void Start()
+    {
+        if(PlayerPrefs.GetInt("general.unlocked-acts", 0) >= 2)
+        {
+            backgroundImageShower.sprite = act2Background;
+            Vector2 originalPositon = (menus as RectTransform).anchoredPosition;
+
+            originalPositon.x += menuOffset;
+
+            (menus as RectTransform).anchoredPosition = originalPositon;
+        }
+    }
 
     /// <summary>
     /// Called when the play button is pressed

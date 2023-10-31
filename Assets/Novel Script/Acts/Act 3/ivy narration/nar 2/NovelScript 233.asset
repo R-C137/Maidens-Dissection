@@ -21,8 +21,8 @@ MonoBehaviour:
     sfx: []
   choices: []
   characters: []
-  script: thank you for playing Maiden's Dissection- Ivy's Past. stay tuned for further
-    updates ;))
+  script: "thank you for playing <b>Maiden's Dissection</b> <i>- Ivy's Past</i>.
+    \nStay tuned for further updates ;))"
   fontStyle: 0
   fontAsset: {fileID: 0}
   dialogueColour: {r: 1, g: 1, b: 1, a: 1}

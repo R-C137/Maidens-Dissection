@@ -3948,9 +3948,9 @@ RectTransform:
   - {fileID: 2060962884}
   m_Father: {fileID: 2031143309}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -549.5849, y: -25.9187}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 410, y: -25.9187}
   m_SizeDelta: {x: 686.9702, y: 1027.5227}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &664695465
@@ -13543,6 +13543,10 @@ MonoBehaviour:
   settings: {fileID: 625827550}
   characterNameSelection: {fileID: 2140654757}
   characterNameInputField: {fileID: 729438356}
+  act2Background: {fileID: 21300000, guid: 0f1c7fcbfe167904db95a5bce7745a14, type: 3}
+  backgroundImageShower: {fileID: 725138729}
+  menuOffset: -33
+  menus: {fileID: 651153043}
 --- !u!1 &2034098166
 GameObject:
   m_ObjectHideFlags: 0

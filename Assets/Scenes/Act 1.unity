@@ -2827,8 +2827,6 @@ MonoBehaviour:
     - {fileID: 11400000, guid: ff2f20dee9aafab459c7a8ddaed269da, type: 2}
     - {fileID: 11400000, guid: 35357c3e150bbf14990bdea878d80f94, type: 2}
     - {fileID: 11400000, guid: 5a588e007ec4da74fa5a23c72bd2e08c, type: 2}
-    - {fileID: 11400000, guid: 8331ee469e8c47e47b179b63ec123584, type: 2}
-    - {fileID: 11400000, guid: 3ca78c0dd7eabb141bb631641b5e5b8b, type: 2}
   - scripts:
     - {fileID: 11400000, guid: f71445eee5a3afb4fabd654dec4c52d3, type: 2}
     - {fileID: 11400000, guid: e1f78007c18dc91478eb12410324e10c, type: 2}

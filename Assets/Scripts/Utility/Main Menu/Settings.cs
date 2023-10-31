@@ -7,6 +7,7 @@
  * 
  * Changes: 
  *  [09/09/2023] - Initial Implementation (C137)
+ *  [31/10/2023] - Change the default value for the background audio (C137)
  *  
  */
 using System;
@@ -44,7 +45,7 @@ public class Settings : MonoBehaviour
 
     private void Start()
     {
-        bgMusic.value = PlayerPrefs.GetFloat("settings.background-music-slider", 1);
+        bgMusic.value = PlayerPrefs.GetFloat("settings.background-music-slider", .5f);
 
         voiceSlider.value = PlayerPrefs.GetFloat("settings.voice-slider", 1);
 
