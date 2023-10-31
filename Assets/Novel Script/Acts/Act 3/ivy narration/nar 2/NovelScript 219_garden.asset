@@ -12,17 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92c1ce71a98cbc241a34affdff9fbad4, type: 3}
   m_Name: NovelScript 219_garden
   m_EditorClassIdentifier: 
-  backgroundSprite: {fileID: 21300000, guid: 4b10f8aaff16e8243ab7195442a9cebd, type: 3}
+  backgroundSprite: {fileID: 21300000, guid: 1c1f7bf916fd8ab47a78a3be9a5c888e, type: 3}
   backgroundTitle: 
   audio:
-    voiceActing: {fileID: 0}
-    background: {fileID: 8300000, guid: 590cc27fe37e6d44391a5e28c8506181, type: 3}
+    voiceActing: {fileID: 8300000, guid: a939dc00fadd33e48b235f0526b6f4bd, type: 3}
+    background: {fileID: 0}
     loopBackground: 0
     sfx: []
   choices: []
   characters: []
-  script: "\u2026was peaceful. Nobody would ever be there and I could practice my
-    own plays without judging eyes. "
+  script: ' Nobody would ever be there and I could practice my own plays without
+    judging eyes. '
   fontStyle: 2
   fontAsset: {fileID: 0}
   dialogueColour: {r: 0.9921569, g: 0.75294125, b: 0.78823537, a: 1}

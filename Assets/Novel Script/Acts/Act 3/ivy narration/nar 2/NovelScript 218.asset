@@ -15,13 +15,14 @@ MonoBehaviour:
   backgroundSprite: {fileID: 21300000, guid: 0135512629c87234cbbfa8fa69bba4a9, type: 3}
   backgroundTitle: 
   audio:
-    voiceActing: {fileID: 0}
-    background: {fileID: 8300000, guid: 590cc27fe37e6d44391a5e28c8506181, type: 3}
+    voiceActing: {fileID: 8300000, guid: a7a13f4c07f465d4c9982a29230b1b25, type: 3}
+    background: {fileID: 0}
     loopBackground: 0
     sfx: []
   choices: []
   characters: []
-  script: "Still, writing in the auditorium or the garden\u2026 \r\n"
+  script: "Still, writing in the auditorium or the garden\u2026 \u2026was peaceful.
+    \r\n"
   fontStyle: 2
   fontAsset: {fileID: 0}
   dialogueColour: {r: 0.9921569, g: 0.75294125, b: 0.78823537, a: 1}

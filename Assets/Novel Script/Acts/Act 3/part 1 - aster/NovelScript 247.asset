@@ -15,7 +15,7 @@ MonoBehaviour:
   backgroundSprite: {fileID: 21300000, guid: a7d8e4eaef2fcfd4ba9a94e4e8088c95, type: 3}
   backgroundTitle: 
   audio:
-    voiceActing: {fileID: 0}
+    voiceActing: {fileID: 8300000, guid: 3b2969db553913448b29500e17ce6278, type: 3}
     background: {fileID: 8300000, guid: 590cc27fe37e6d44391a5e28c8506181, type: 3}
     loopBackground: 0
     sfx: []

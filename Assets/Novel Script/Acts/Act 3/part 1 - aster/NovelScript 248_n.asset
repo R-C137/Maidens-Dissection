@@ -18,7 +18,9 @@ MonoBehaviour:
     voiceActing: {fileID: 0}
     background: {fileID: 8300000, guid: 590cc27fe37e6d44391a5e28c8506181, type: 3}
     loopBackground: 0
-    sfx: []
+    sfx:
+    - clip: {fileID: 8300000, guid: 2980e2e4c5f25474b978e7f10fa81375, type: 3}
+      volume: 1
   choices: []
   characters: []
   script: "Aster quickly raises the dissection scissors and thrusts them close to

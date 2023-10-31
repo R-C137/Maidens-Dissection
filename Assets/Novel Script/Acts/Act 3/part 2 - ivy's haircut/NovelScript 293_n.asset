@@ -18,7 +18,9 @@ MonoBehaviour:
     voiceActing: {fileID: 0}
     background: {fileID: 8300000, guid: 590cc27fe37e6d44391a5e28c8506181, type: 3}
     loopBackground: 0
-    sfx: []
+    sfx:
+    - clip: {fileID: 8300000, guid: 51488024c4e1c1f459dea3bd2ba28885, type: 3}
+      volume: 0.499
   choices: []
   characters: []
   script: " Aster walks out the lab leaving Ivy... \r"

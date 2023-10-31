@@ -16,18 +16,20 @@ MonoBehaviour:
   backgroundTitle: 
   audio:
     voiceActing: {fileID: 0}
-    background: {fileID: 8300000, guid: 590cc27fe37e6d44391a5e28c8506181, type: 3}
+    background: {fileID: 0}
     loopBackground: 0
-    sfx: []
+    sfx:
+    - clip: {fileID: 8300000, guid: 91453703fddd9a643a8c22bb56191f81, type: 3}
+      volume: 1
   choices: []
   characters: []
   script: '*The sounds of floral dissections echo.*
 
 '
-  fontStyle: 2
+  fontStyle: 3
   fontAsset: {fileID: 0}
-  dialogueColour: {r: 0.9921569, g: 0.75294125, b: 0.78823537, a: 1}
-  speaker: Ivy's Thoughts
+  dialogueColour: {r: 1, g: 1, b: 1, a: 1}
+  speaker: 
   speakerColour: {r: 0.990566, g: 0.75133497, b: 0.7872592, a: 1}
   writerSpeed: 0.02
   writerDelay: 0

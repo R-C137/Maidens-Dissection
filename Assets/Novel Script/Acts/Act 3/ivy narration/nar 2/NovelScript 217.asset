@@ -16,13 +16,15 @@ MonoBehaviour:
   backgroundTitle: 
   audio:
     voiceActing: {fileID: 0}
-    background: {fileID: 8300000, guid: 590cc27fe37e6d44391a5e28c8506181, type: 3}
+    background: {fileID: 0}
     loopBackground: 0
-    sfx: []
+    sfx:
+    - clip: {fileID: 8300000, guid: 91453703fddd9a643a8c22bb56191f81, type: 3}
+      volume: 1
   choices: []
   characters: []
   script: "Well, not silence, but I got used to the droning of dissections pretty
-    fast\u2026 \r\n"
+    fast\u2026 Not that I could forget them after what Aster has done to me...\r\n"
   fontStyle: 2
   fontAsset: {fileID: 0}
   dialogueColour: {r: 0.9921569, g: 0.75294125, b: 0.78823537, a: 1}

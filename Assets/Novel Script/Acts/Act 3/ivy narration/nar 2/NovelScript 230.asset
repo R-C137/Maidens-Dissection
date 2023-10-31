@@ -12,23 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92c1ce71a98cbc241a34affdff9fbad4, type: 3}
   m_Name: NovelScript 230
   m_EditorClassIdentifier: 
-  backgroundSprite: {fileID: 21300000, guid: f6432d4d51430684185fb362332fbecd, type: 3}
+  backgroundSprite: {fileID: 21300000, guid: d8465544a783a5c45b21f489a6643d03, type: 3}
   backgroundTitle: 
   audio:
-    voiceActing: {fileID: 0}
-    background: {fileID: 8300000, guid: 590cc27fe37e6d44391a5e28c8506181, type: 3}
+    voiceActing: {fileID: 8300000, guid: 4012e6dcd0765844a81ebe9a896ed00b, type: 3}
+    background: {fileID: 8300000, guid: 877d756d7ae1b944ca90168f5a3cf4a0, type: 3}
     loopBackground: 0
     sfx: []
   choices: []
-  characters:
-  - sprite: {fileID: 21300000, guid: fdca4b828ce6ad34481a4c7003142442, type: 3}
-    feeling: 0
-    customColor: {r: 0, g: 0, b: 0, a: 0}
-    useCustomColor: 0
-    poseChange: 0
-    speaker: 1
-    speakerSizeMultiplier: 0
-  script: "Perhaps that is for the best. \n"
+  characters: []
+  script: "Perhaps that is for the best. Otherwise my own pitiful death would follow.
+    \r\n"
   fontStyle: 0
   fontAsset: {fileID: 0}
   dialogueColour: {r: 0.9921569, g: 0.75294125, b: 0.78823537, a: 1}

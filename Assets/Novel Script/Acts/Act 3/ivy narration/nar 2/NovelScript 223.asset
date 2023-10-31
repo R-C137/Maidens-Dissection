@@ -12,20 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92c1ce71a98cbc241a34affdff9fbad4, type: 3}
   m_Name: NovelScript 223
   m_EditorClassIdentifier: 
-  backgroundSprite: {fileID: 21300000, guid: 0135512629c87234cbbfa8fa69bba4a9, type: 3}
+  backgroundSprite: {fileID: 21300000, guid: f6432d4d51430684185fb362332fbecd, type: 3}
   backgroundTitle: 
   audio:
-    voiceActing: {fileID: 0}
-    background: {fileID: 8300000, guid: 590cc27fe37e6d44391a5e28c8506181, type: 3}
+    voiceActing: {fileID: 8300000, guid: 97dc9e1391c0e464e9fad96dd0c9dc7f, type: 3}
+    background: {fileID: 0}
     loopBackground: 0
     sfx: []
   choices: []
   characters: []
-  script: "The only inspiration I found\u2026 "
+  script: 'The only inspiration I found... were the organs that make up you and I. '
   fontStyle: 0
   fontAsset: {fileID: 0}
   dialogueColour: {r: 0.9921569, g: 0.75294125, b: 0.78823537, a: 1}
-  speaker: Ivy's Thoughts
+  speaker: Ivy
   speakerColour: {r: 0.990566, g: 0.75133497, b: 0.7872592, a: 1}
   writerSpeed: 0.02
   writerDelay: 0

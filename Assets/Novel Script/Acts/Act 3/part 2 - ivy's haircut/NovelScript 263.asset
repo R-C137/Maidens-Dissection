@@ -18,7 +18,9 @@ MonoBehaviour:
     voiceActing: {fileID: 0}
     background: {fileID: 8300000, guid: 590cc27fe37e6d44391a5e28c8506181, type: 3}
     loopBackground: 0
-    sfx: []
+    sfx:
+    - clip: {fileID: 8300000, guid: baabb5ecd17d9924a9ee63ff70534afd, type: 3}
+      volume: 1
   choices: []
   characters: []
   script: 'Ivy steps forward and seats herself in a cold steel chair as Aster steps

@@ -15,7 +15,7 @@ MonoBehaviour:
   backgroundSprite: {fileID: 21300000, guid: a7d8e4eaef2fcfd4ba9a94e4e8088c95, type: 3}
   backgroundTitle: 
   audio:
-    voiceActing: {fileID: 0}
+    voiceActing: {fileID: 8300000, guid: b51b5faaae2a6514ebad6334a0ed57ef, type: 3}
     background: {fileID: 8300000, guid: 590cc27fe37e6d44391a5e28c8506181, type: 3}
     loopBackground: 0
     sfx: []
@@ -28,7 +28,8 @@ MonoBehaviour:
     poseChange: 0
     speaker: 1
     speakerSizeMultiplier: 0
-  script: ' Now tell me, Ivy, what should I do with you? '
+  script: " Now tell me, Ivy, what should I do with you? I can\u2019t dissect you
+    since you are so unsavory. \r\n"
   fontStyle: 0
   fontAsset: {fileID: 0}
   dialogueColour: {r: 0.9215687, g: 0.7803922, b: 0.9803922, a: 1}
