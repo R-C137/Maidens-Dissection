@@ -13543,9 +13543,9 @@ MonoBehaviour:
   settings: {fileID: 625827550}
   characterNameSelection: {fileID: 2140654757}
   characterNameInputField: {fileID: 729438356}
-  act2Background: {fileID: 21300000, guid: 0f1c7fcbfe167904db95a5bce7745a14, type: 3}
+  act2Background: {fileID: 21300000, guid: d3a5c8f59e3a3444b960b0533d4396df, type: 3}
   backgroundImageShower: {fileID: 725138729}
-  menuOffset: -33
+  menuOffset: 0
   menus: {fileID: 651153043}
 --- !u!1 &2034098166
 GameObject:
